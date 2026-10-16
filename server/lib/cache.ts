@@ -10,7 +10,10 @@ export type AvailableCacheIds =
   | 'github'
   | 'plextv'
   | 'plexwatchlist'
-  | 'tvdb';
+  | 'tvdb'
+  | 'lidarr'
+  | 'musicbrainz'
+  | 'lidarrmetadata';
 
 const DEFAULT_TTL = 300;
 
@@ -28,6 +31,17 @@ const TMDB_SCAN_MAX_KEYS = 2000;
 // these tiers, and keys are prefixed by server url, so this is a few keys per server.
 const RADARR_MAX_KEYS = 64;
 const SONARR_MAX_KEYS = 64;
+
+// The music metadata service also keeps its Lidarr answers here: one key per
+// searched term, per artist, per album and per tracks list, and the artist list.
+const LIDARR_MAX_KEYS = 500;
+
+// One key per artist's release-group page and per release looked up.
+const MUSICBRAINZ_MAX_KEYS = 500;
+
+// One key per artist Lidarr holds whose record lacks an image, a backdrop or an
+// overview.
+const LIDARRMETADATA_MAX_KEYS = 500;
 
 // One key per searched title, each holding twenty search hits.
 const RT_MAX_KEYS = 500;
@@ -227,6 +241,15 @@ class CacheManager {
     }),
     radarr: new Cache('radarr', 'Radarr API', { max: RADARR_MAX_KEYS }),
     sonarr: new Cache('sonarr', 'Sonarr API', { max: SONARR_MAX_KEYS }),
+    lidarr: new Cache('lidarr', 'Lidarr API', { max: LIDARR_MAX_KEYS }),
+    musicbrainz: new Cache('musicbrainz', 'MusicBrainz API', {
+      stdTtl: 86400,
+      max: MUSICBRAINZ_MAX_KEYS,
+    }),
+    lidarrmetadata: new Cache('lidarrmetadata', 'Lidarr Metadata API', {
+      stdTtl: 86400,
+      max: LIDARRMETADATA_MAX_KEYS,
+    }),
     rt: new Cache('rt', 'Rotten Tomatoes API', {
       stdTtl: 43200,
       max: RT_MAX_KEYS,

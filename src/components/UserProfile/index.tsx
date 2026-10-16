@@ -369,7 +369,7 @@ const UserProfile = () => {
                   id={item.tmdbId}
                   key={`watchlist-slider-item-${item.ratingKey}`}
                   tmdbId={item.tmdbId}
-                  type={item.mediaType}
+                  type={item.mediaType as 'movie' | 'tv'}
                 />
               ))}
             />
@@ -395,7 +395,7 @@ const UserProfile = () => {
                   id={item.id}
                   tmdbId={item.tmdbId}
                   tvdbId={item.tvdbId}
-                  type={item.mediaType}
+                  type={item.mediaType as 'movie' | 'tv'}
                 />
               ))}
             />

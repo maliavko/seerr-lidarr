@@ -31,6 +31,7 @@ const messages = defineMessages('components.RequestList', {
   sortAdded: 'Most Recent',
   sortModified: 'Last Modified',
   sortDirection: 'Toggle Sort Direction',
+  music: 'Music',
   unableToConnect:
     'Unable to connect to {services}. Some information may be unavailable.',
 });
@@ -51,7 +52,7 @@ type Sort = 'added' | 'modified';
 
 type SortDirection = 'asc' | 'desc';
 
-type MediaType = 'all' | 'movie' | 'tv';
+type MediaType = 'all' | 'movie' | 'tv' | 'music';
 
 const RequestList = () => {
   const router = useRouter();
@@ -193,6 +194,9 @@ const RequestList = () => {
               </option>
               <option value="tv">
                 {intl.formatMessage(globalMessages.tvshows)}
+              </option>
+              <option value="music">
+                {intl.formatMessage(messages.music)}
               </option>
             </select>
           </div>

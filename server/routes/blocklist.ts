@@ -15,7 +15,9 @@ const blocklistRoutes = Router();
 
 export const blocklistAdd = z.object({
   tmdbId: z.coerce.number(),
-  mediaType: z.nativeEnum(MediaType),
+  // music has no TMDB id to blocklist by: only the two kinds this accepted
+  // before music joined MediaType (D-84)
+  mediaType: z.enum([MediaType.MOVIE, MediaType.TV]),
   title: z.coerce.string().optional(),
   user: z.coerce.number(),
   blocklistedTags: z.string().optional(),

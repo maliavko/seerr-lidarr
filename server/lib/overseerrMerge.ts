@@ -1,9 +1,11 @@
+import { MediaType } from '@server/constants/media';
 import { MediaServerType } from '@server/constants/server';
 import dataSource, { getRepository } from '@server/datasource';
 import Media from '@server/entity/Media';
 import Settings from '@server/lib/settings';
 import logger from '@server/logger';
 import type { MigrationInterface, MixedList, QueryRunner } from 'typeorm';
+import { Not } from 'typeorm';
 
 const checkOverseerrMerge = async (): Promise<boolean> => {
   // Load settings without running migrations
@@ -113,13 +115,16 @@ const checkOverseerrMerge = async (): Promise<boolean> => {
   // MediaStatus.Blacklisted was added before MediaStatus.Deleted in Jellyseerr
   try {
     const mediaRepository = getRepository(Media);
-    const mediaToUpdate = await mediaRepository.find({ where: { status: 6 } });
+    // music rows are not Overseerr's: a status of theirs is never converted (D-84)
+    const mediaToUpdate = await mediaRepository.find({
+      where: { status: 6, mediaType: Not(MediaType.MUSIC) },
+    });
     for (const media of mediaToUpdate) {
       media.status = 7;
       await mediaRepository.save(media);
     }
     const media4kToUpdate = await mediaRepository.find({
-      where: { status4k: 6 },
+      where: { status4k: 6, mediaType: Not(MediaType.MUSIC) },
     });
     for (const media of media4kToUpdate) {
       media.status4k = 7;

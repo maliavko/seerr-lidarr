@@ -1,0 +1,1953 @@
+[
+  {
+    "title": "Crush",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 36,
+    "foreignAlbumId": "3b13fa4c-36b8-46b5-bfa1-b9345491565b",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 0,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 3,
+      "value": 7.3
+    },
+    "releaseDate": "2019-10-18T00:00:00Z",
+    "releases": [
+      {
+        "id": 2857,
+        "albumId": 378,
+        "foreignReleaseId": "16a6b051-f1d5-43d1-86c4-e64d6bf2d172",
+        "title": "Crush",
+        "status": "Official",
+        "duration": 2641049,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Ninja Tune"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2858,
+        "albumId": 378,
+        "foreignReleaseId": "2e7caf57-af4d-4e90-a0f3-2126bdbf6693",
+        "title": "Crush",
+        "status": "Official",
+        "duration": 2643489,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Ninja Tune"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 2859,
+        "albumId": 378,
+        "foreignReleaseId": "f10bb74d-5864-44a7-b00b-399536619445",
+        "title": "Crush",
+        "status": "Official",
+        "duration": 2641934,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Ninja Tune", "Ninja Tune"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2860,
+        "albumId": 378,
+        "foreignReleaseId": "6329eda8-4771-471e-9149-e3681d4c6cce",
+        "title": "Crush",
+        "status": "Official",
+        "duration": 0,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "Japan Bonus Track",
+        "country": ["Japan"],
+        "label": ["Beat Records", "Ninja Tune"],
+        "format": "CD",
+        "monitored": true
+      },
+      {
+        "id": 2861,
+        "albumId": 378,
+        "foreignReleaseId": "f891fc54-79ed-4eea-8b0e-1250625b58b6",
+        "title": "Crush",
+        "status": "Official",
+        "duration": 2986215,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Ninja Tune"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Electronic", "Electro"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "CD"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Floating Points",
+      "foreignArtistId": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "https://myspace.com/floatingpoints",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1385084",
+          "name": "discogs"
+        },
+        {
+          "url": "https://twitter.com/floatingpoints",
+          "name": "twitter"
+        },
+        {
+          "url": "https://floatingpoints.co.uk/",
+          "name": "floatingpoints"
+        },
+        {
+          "url": "https://soundcloud.com/floatingpoints",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.facebook.com/floatingpoints",
+          "name": "facebook"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q22277802",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.instagram.com/floatingpoints/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://www.songkick.com/artists/2486306",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC5NbPNPbdLwAPPwWTJw0EbQ",
+          "name": "youtube"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/floating-points",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://ra.co/dj/floatingpoints",
+          "name": "ra"
+        },
+        {
+          "url": "https://www.last.fm/music/Floating+Points",
+          "name": "last"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0002132247",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L",
+          "name": "spotify"
+        },
+        {
+          "url": "https://floatingpoints.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm8262567/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1544337",
+          "name": "discogs"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2016002860",
+          "name": "loc"
+        },
+        {
+          "url": "http://viaf.org/viaf/242145542576196641311",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.beatport.com/artist/floating-points/104114",
+          "name": "beatport"
+        },
+        {
+          "url": "https://tidal.com/artist/3714298",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.deezer.com/artist/336440",
+          "name": "deezer"
+        },
+        {
+          "url": "https://www.tiktok.com/@floatingpoints",
+          "name": "tiktok"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1237828597",
+          "name": "d-nb"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2016003112/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://play.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Floating_Points_(2011).jpg",
+          "name": "wikimedia"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://itunes.apple.com/gb/artist/id311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://ototoy.jp/_/default/a/60996",
+          "name": "ototoy"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Floating Points",
+      "qualityProfileId": 1,
+      "metadataProfileId": 1,
+      "monitored": true,
+      "monitorNewItems": "all",
+      "genres": [
+        "Electronic",
+        "House",
+        "Dubstep",
+        "Progressive House",
+        "Tech House",
+        "Post-Dubstep",
+        "Microhouse"
+      ],
+      "cleanName": "floatingpoints",
+      "sortName": "floating points",
+      "tags": [],
+      "added": "2026-10-15T09:11:58Z",
+      "ratings": {
+        "votes": 1,
+        "value": 10.0
+      },
+      "id": 36
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/378/cover.jpg?lastWrite=639276523188702419",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/f891fc54-79ed-4eea-8b0e-1250625b58b6/44994766061-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.allmusic.com/album/mw0003314832",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.discogs.com/master/1621345",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q85754715",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.last.fm/music/Floating+Points/Crush",
+        "name": "last"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 13,
+      "totalTrackCount": 13,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 378
+  },
+  {
+    "title": "Cascade",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 36,
+    "foreignAlbumId": "70410894-5005-4fac-a254-c82912a069cc",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 3853000,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 4,
+      "value": 6.5
+    },
+    "releaseDate": "2024-09-13T00:00:00Z",
+    "releases": [
+      {
+        "id": 2862,
+        "albumId": 379,
+        "foreignReleaseId": "1cf2ae06-bb5e-4256-af6c-e40d406abba5",
+        "title": "Cascade",
+        "status": "Official",
+        "duration": 3456849,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Ninja Tune"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 2863,
+        "albumId": 379,
+        "foreignReleaseId": "eede7c8f-9120-4a8f-af4c-d7bc601e33e4",
+        "title": "Cascade",
+        "status": "Official",
+        "duration": 3449000,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Ninja Tune"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2864,
+        "albumId": 379,
+        "foreignReleaseId": "e3d1b69c-199c-47be-996c-b939f1e5b2d5",
+        "title": "Cascade",
+        "status": "Official",
+        "duration": 3853000,
+        "trackCount": 10,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Beat Records", "Ninja Tune"],
+        "format": "CD",
+        "monitored": true
+      }
+    ],
+    "genres": ["Progressive House", "Tech House"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "CD"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Floating Points",
+      "foreignArtistId": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "https://myspace.com/floatingpoints",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1385084",
+          "name": "discogs"
+        },
+        {
+          "url": "https://twitter.com/floatingpoints",
+          "name": "twitter"
+        },
+        {
+          "url": "https://floatingpoints.co.uk/",
+          "name": "floatingpoints"
+        },
+        {
+          "url": "https://soundcloud.com/floatingpoints",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.facebook.com/floatingpoints",
+          "name": "facebook"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q22277802",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.instagram.com/floatingpoints/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://www.songkick.com/artists/2486306",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC5NbPNPbdLwAPPwWTJw0EbQ",
+          "name": "youtube"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/floating-points",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://ra.co/dj/floatingpoints",
+          "name": "ra"
+        },
+        {
+          "url": "https://www.last.fm/music/Floating+Points",
+          "name": "last"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0002132247",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L",
+          "name": "spotify"
+        },
+        {
+          "url": "https://floatingpoints.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm8262567/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1544337",
+          "name": "discogs"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2016002860",
+          "name": "loc"
+        },
+        {
+          "url": "http://viaf.org/viaf/242145542576196641311",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.beatport.com/artist/floating-points/104114",
+          "name": "beatport"
+        },
+        {
+          "url": "https://tidal.com/artist/3714298",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.deezer.com/artist/336440",
+          "name": "deezer"
+        },
+        {
+          "url": "https://www.tiktok.com/@floatingpoints",
+          "name": "tiktok"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1237828597",
+          "name": "d-nb"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2016003112/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://play.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Floating_Points_(2011).jpg",
+          "name": "wikimedia"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://itunes.apple.com/gb/artist/id311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://ototoy.jp/_/default/a/60996",
+          "name": "ototoy"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Floating Points",
+      "qualityProfileId": 1,
+      "metadataProfileId": 1,
+      "monitored": true,
+      "monitorNewItems": "all",
+      "genres": [
+        "Electronic",
+        "House",
+        "Dubstep",
+        "Progressive House",
+        "Tech House",
+        "Post-Dubstep",
+        "Microhouse"
+      ],
+      "cleanName": "floatingpoints",
+      "sortName": "floating points",
+      "tags": [],
+      "added": "2026-10-15T09:11:58Z",
+      "ratings": {
+        "votes": 1,
+        "value": 10.0
+      },
+      "id": 36
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/379/cover.jpg?lastWrite=639276523192497135",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/eede7c8f-9120-4a8f-af4c-d7bc601e33e4/40062716259-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.allmusic.com/album/mw0004325606",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.discogs.com/master/3595454",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q131549479",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.last.fm/music/Floating+Points/Cascade",
+        "name": "last"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 4,
+      "trackCount": 10,
+      "totalTrackCount": 10,
+      "sizeOnDisk": 66605,
+      "percentOfTracks": 40.0
+    },
+    "id": 379
+  },
+  {
+    "title": "Elaenia",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 36,
+    "foreignAlbumId": "b05bb6b1-7416-4b41-8e65-8592f2f8713d",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 2949133,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 2,
+      "value": 7.0
+    },
+    "releaseDate": "2015-11-04T00:00:00Z",
+    "releases": [
+      {
+        "id": 2865,
+        "albumId": 380,
+        "foreignReleaseId": "c61e9e5b-42d0-4573-818e-60e764465c25",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2951000,
+        "trackCount": 8,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Beat Records", "Pluto"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 2866,
+        "albumId": 380,
+        "foreignReleaseId": "560732a7-5db6-4651-aa4f-9212ec2d1aa1",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2550931,
+        "trackCount": 7,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["Luaka Bop", "Pluto"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 2867,
+        "albumId": 380,
+        "foreignReleaseId": "280a874c-2944-4c01-ba3a-a0b5e22c9ea9",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2561000,
+        "trackCount": 7,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2868,
+        "albumId": 380,
+        "foreignReleaseId": "958f5ffa-c1d4-47b2-b5a1-2ba7666e8bb8",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2792400,
+        "trackCount": 8,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2869,
+        "albumId": 380,
+        "foreignReleaseId": "18e7f731-e89a-4591-b201-499977d7688a",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 6028211,
+        "trackCount": 8,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "Rough Trade exclusive bonus mix",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "Rough Trade exclusive",
+        "country": ["United Kingdom"],
+        "label": ["Pluto"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 2870,
+        "albumId": 380,
+        "foreignReleaseId": "9a1e8c0e-462b-4573-b1d5-638b8f066578",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2561000,
+        "trackCount": 7,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Pluto"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2871,
+        "albumId": 380,
+        "foreignReleaseId": "695a001b-e247-4246-a826-e6d140d32af2",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2949133,
+        "trackCount": 8,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "10 year anniversary",
+        "country": ["[Worldwide]"],
+        "label": ["Pluto"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 2872,
+        "albumId": 380,
+        "foreignReleaseId": "b3dbbcfe-9db4-42be-b68b-f0d3e000fcff",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2949133,
+        "trackCount": 8,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "10 year anniversary",
+        "country": ["[Worldwide]"],
+        "label": ["Republic of Music"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2873,
+        "albumId": 380,
+        "foreignReleaseId": "14c029eb-5a6d-40f9-b9fd-4e519d5b8402",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2560280,
+        "trackCount": 7,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2874,
+        "albumId": 380,
+        "foreignReleaseId": "987adf7a-7a0c-4b38-8e7e-98c5402c08b3",
+        "title": "Elaenia",
+        "status": "Official",
+        "duration": 2561000,
+        "trackCount": 7,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Pluto"],
+        "format": "CD",
+        "monitored": false
+      }
+    ],
+    "genres": ["Electronic"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Floating Points",
+      "foreignArtistId": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "https://myspace.com/floatingpoints",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1385084",
+          "name": "discogs"
+        },
+        {
+          "url": "https://twitter.com/floatingpoints",
+          "name": "twitter"
+        },
+        {
+          "url": "https://floatingpoints.co.uk/",
+          "name": "floatingpoints"
+        },
+        {
+          "url": "https://soundcloud.com/floatingpoints",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.facebook.com/floatingpoints",
+          "name": "facebook"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q22277802",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.instagram.com/floatingpoints/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://www.songkick.com/artists/2486306",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC5NbPNPbdLwAPPwWTJw0EbQ",
+          "name": "youtube"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/floating-points",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://ra.co/dj/floatingpoints",
+          "name": "ra"
+        },
+        {
+          "url": "https://www.last.fm/music/Floating+Points",
+          "name": "last"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0002132247",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L",
+          "name": "spotify"
+        },
+        {
+          "url": "https://floatingpoints.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm8262567/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1544337",
+          "name": "discogs"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2016002860",
+          "name": "loc"
+        },
+        {
+          "url": "http://viaf.org/viaf/242145542576196641311",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.beatport.com/artist/floating-points/104114",
+          "name": "beatport"
+        },
+        {
+          "url": "https://tidal.com/artist/3714298",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.deezer.com/artist/336440",
+          "name": "deezer"
+        },
+        {
+          "url": "https://www.tiktok.com/@floatingpoints",
+          "name": "tiktok"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1237828597",
+          "name": "d-nb"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2016003112/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://play.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Floating_Points_(2011).jpg",
+          "name": "wikimedia"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://itunes.apple.com/gb/artist/id311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://ototoy.jp/_/default/a/60996",
+          "name": "ototoy"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Floating Points",
+      "qualityProfileId": 1,
+      "metadataProfileId": 1,
+      "monitored": true,
+      "monitorNewItems": "all",
+      "genres": [
+        "Electronic",
+        "House",
+        "Dubstep",
+        "Progressive House",
+        "Tech House",
+        "Post-Dubstep",
+        "Microhouse"
+      ],
+      "cleanName": "floatingpoints",
+      "sortName": "floating points",
+      "tags": [],
+      "added": "2026-10-15T09:11:58Z",
+      "ratings": {
+        "votes": 1,
+        "value": 10.0
+      },
+      "id": 36
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/380/cover.jpg?lastWrite=639276523194994013",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/987adf7a-7a0c-4b38-8e7e-98c5402c08b3/45687093464-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/380/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/18e7f731-e89a-4591-b201-499977d7688a/45686830953-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.wikidata.org/wiki/Q21761948",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.discogs.com/master/908559",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0002876824",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/floating-points/elaenia/",
+        "name": "rateyourmusic"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 8,
+      "trackCount": 8,
+      "totalTrackCount": 8,
+      "sizeOnDisk": 133233,
+      "percentOfTracks": 100
+    },
+    "id": 380
+  },
+  {
+    "title": "Promises",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 36,
+    "foreignAlbumId": "970f689d-1778-4953-b3ed-48d057625724",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 2797451,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 4,
+      "value": 7.0
+    },
+    "releaseDate": "2020-11-24T00:00:00Z",
+    "releases": [
+      {
+        "id": 2875,
+        "albumId": 381,
+        "foreignReleaseId": "115d3d33-8c82-4129-adaf-bc1b844e35af",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2777000,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "gold vinyl",
+        "country": ["Germany"],
+        "label": ["Luaka Bop"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 2876,
+        "albumId": 381,
+        "foreignReleaseId": "8117b7b2-5d90-40e7-aae1-da89844bfa02",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2777000,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["P\u2010VINE RECORDS"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 2877,
+        "albumId": 381,
+        "foreignReleaseId": "7469bd0f-e697-4234-88b8-61efc77c8062",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2797451,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["Luaka Bop"],
+        "format": "CD",
+        "monitored": true
+      },
+      {
+        "id": 2878,
+        "albumId": 381,
+        "foreignReleaseId": "3c62ecb0-5ebc-43b3-8cd6-4056d0d3682b",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 0,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["Luaka Bop"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 2879,
+        "albumId": 381,
+        "foreignReleaseId": "0a81992c-b8d6-43c5-8509-d74fd2846590",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2777000,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "test pressing",
+        "country": ["United States"],
+        "label": ["Luaka Bop"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 2880,
+        "albumId": 381,
+        "foreignReleaseId": "56b45f69-4541-4b12-9c03-9a2a99559d73",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 0,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Europe"],
+        "label": ["Luaka Bop"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 2881,
+        "albumId": 381,
+        "foreignReleaseId": "f27dba9d-a46e-4f41-80ac-8e43d27e1152",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2797000,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2882,
+        "albumId": 381,
+        "foreignReleaseId": "433aabc8-f42e-4400-a4ae-2f6322f05948",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2797000,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "Dolby Atmos mix",
+        "country": ["Canada", "United States"],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2883,
+        "albumId": 381,
+        "foreignReleaseId": "db83f092-ace9-48bc-9bd2-66e834ff08e8",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2797445,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Australia",
+          "Christmas Island",
+          "Cocos (Keeling) Islands",
+          "Cook Islands",
+          "New Zealand",
+          "Niue",
+          "Norfolk Island",
+          "Tokelau"
+        ],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2884,
+        "albumId": 381,
+        "foreignReleaseId": "9f279a47-778f-44fe-a9ff-4ca61dae26c8",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2797348,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2885,
+        "albumId": 381,
+        "foreignReleaseId": "dc0aeb04-1abe-4d81-9d04-91430fde9b5b",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2797440,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2886,
+        "albumId": 381,
+        "foreignReleaseId": "548322af-25a9-4ead-80ad-c4f0752293ec",
+        "title": "Promises",
+        "status": "Official",
+        "duration": 2797445,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Luaka Bop"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": [
+      "Jazz",
+      "Electronic",
+      "Third Stream",
+      "Ambient",
+      "Instrumental",
+      "Instrumental Jazz"
+    ],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "CD"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Floating Points",
+      "foreignArtistId": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "https://myspace.com/floatingpoints",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1385084",
+          "name": "discogs"
+        },
+        {
+          "url": "https://twitter.com/floatingpoints",
+          "name": "twitter"
+        },
+        {
+          "url": "https://floatingpoints.co.uk/",
+          "name": "floatingpoints"
+        },
+        {
+          "url": "https://soundcloud.com/floatingpoints",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.facebook.com/floatingpoints",
+          "name": "facebook"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q22277802",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.instagram.com/floatingpoints/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://www.songkick.com/artists/2486306",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC5NbPNPbdLwAPPwWTJw0EbQ",
+          "name": "youtube"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/floating-points",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://ra.co/dj/floatingpoints",
+          "name": "ra"
+        },
+        {
+          "url": "https://www.last.fm/music/Floating+Points",
+          "name": "last"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0002132247",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L",
+          "name": "spotify"
+        },
+        {
+          "url": "https://floatingpoints.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm8262567/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1544337",
+          "name": "discogs"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2016002860",
+          "name": "loc"
+        },
+        {
+          "url": "http://viaf.org/viaf/242145542576196641311",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.beatport.com/artist/floating-points/104114",
+          "name": "beatport"
+        },
+        {
+          "url": "https://tidal.com/artist/3714298",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.deezer.com/artist/336440",
+          "name": "deezer"
+        },
+        {
+          "url": "https://www.tiktok.com/@floatingpoints",
+          "name": "tiktok"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1237828597",
+          "name": "d-nb"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2016003112/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://play.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Floating_Points_(2011).jpg",
+          "name": "wikimedia"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://itunes.apple.com/gb/artist/id311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://ototoy.jp/_/default/a/60996",
+          "name": "ototoy"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Floating Points",
+      "qualityProfileId": 1,
+      "metadataProfileId": 1,
+      "monitored": true,
+      "monitorNewItems": "all",
+      "genres": [
+        "Electronic",
+        "House",
+        "Dubstep",
+        "Progressive House",
+        "Tech House",
+        "Post-Dubstep",
+        "Microhouse"
+      ],
+      "cleanName": "floatingpoints",
+      "sortName": "floating points",
+      "tags": [],
+      "added": "2026-10-15T09:11:58Z",
+      "ratings": {
+        "votes": 1,
+        "value": 10.0
+      },
+      "id": 36
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/381/cover.jpg?lastWrite=639276523197260384",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/9f279a47-778f-44fe-a9ff-4ca61dae26c8/28949992190-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/381/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/7469bd0f-e697-4234-88b8-61efc77c8062/29008583854-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/2041873",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q106318794",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0003479180",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://pitchfork.com/reviews/albums/floating-points-pharoah-sanders-the-promises/",
+        "name": "pitchfork"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/floating-points-pharoah-sanders-london-symphony-orchestra/promises/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.plattentests.de/rezi.php?show=17599",
+        "name": "plattentests"
+      },
+      {
+        "url": "https://www.laut.de/Floating-Points-Pharoah-Sanders/Alben/Promises-116056",
+        "name": "laut"
+      },
+      {
+        "url": "https://www.musikexpress.de/reviews/floating-points-pharoah-sanders-the-london-symphony-orchestra-promises/",
+        "name": "musikexpress"
+      },
+      {
+        "url": "https://hicemusic.wordpress.com/2021/04/07/floating-points-pharoah-sanders-london-symphony-orchestra-promises/",
+        "name": "wordpress"
+      },
+      {
+        "url": "https://kulturnews.de/keine-angst-vor-experimenten-die-alben-der-woche/",
+        "name": "kulturnews"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 9,
+      "totalTrackCount": 9,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 381
+  },
+  {
+    "title": "Mere Mortals",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 36,
+    "foreignAlbumId": "5bfcf374-b5c7-4e65-ab82-d1deb15efadd",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 3683219,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 1,
+      "value": 8.0
+    },
+    "releaseDate": "2026-08-28T00:00:00Z",
+    "releases": [
+      {
+        "id": 2887,
+        "albumId": 382,
+        "foreignReleaseId": "258796d2-ebb5-4d7f-b784-5ff00ddf5918",
+        "title": "Mere Mortals",
+        "status": "Official",
+        "duration": 3683219,
+        "trackCount": 14,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Deutsche Grammophon"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 2888,
+        "albumId": 382,
+        "foreignReleaseId": "a576209f-7d6d-4870-abc0-f43918c2c2e3",
+        "title": "Mere Mortals",
+        "status": "Official",
+        "duration": 3684000,
+        "trackCount": 14,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Deutsche Grammophon"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 2889,
+        "albumId": 382,
+        "foreignReleaseId": "cc65d475-2ccd-458a-9dc5-646a6428d03a",
+        "title": "Mere Mortals",
+        "status": "Official",
+        "duration": 3683219,
+        "trackCount": 14,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Deutsche Grammophon"],
+        "format": "CD",
+        "monitored": false
+      }
+    ],
+    "genres": ["Downtempo", "Electronic", "House", "Jazz"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Floating Points",
+      "foreignArtistId": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "https://myspace.com/floatingpoints",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1385084",
+          "name": "discogs"
+        },
+        {
+          "url": "https://twitter.com/floatingpoints",
+          "name": "twitter"
+        },
+        {
+          "url": "https://floatingpoints.co.uk/",
+          "name": "floatingpoints"
+        },
+        {
+          "url": "https://soundcloud.com/floatingpoints",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.facebook.com/floatingpoints",
+          "name": "facebook"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q22277802",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.instagram.com/floatingpoints/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://www.songkick.com/artists/2486306",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC5NbPNPbdLwAPPwWTJw0EbQ",
+          "name": "youtube"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/floating-points",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://ra.co/dj/floatingpoints",
+          "name": "ra"
+        },
+        {
+          "url": "https://www.last.fm/music/Floating+Points",
+          "name": "last"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0002132247",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L",
+          "name": "spotify"
+        },
+        {
+          "url": "https://floatingpoints.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm8262567/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1544337",
+          "name": "discogs"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2016002860",
+          "name": "loc"
+        },
+        {
+          "url": "http://viaf.org/viaf/242145542576196641311",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.beatport.com/artist/floating-points/104114",
+          "name": "beatport"
+        },
+        {
+          "url": "https://tidal.com/artist/3714298",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.deezer.com/artist/336440",
+          "name": "deezer"
+        },
+        {
+          "url": "https://www.tiktok.com/@floatingpoints",
+          "name": "tiktok"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1237828597",
+          "name": "d-nb"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2016003112/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://play.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Floating_Points_(2011).jpg",
+          "name": "wikimedia"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://itunes.apple.com/gb/artist/id311514259",
+          "name": "apple"
+        },
+        {
+          "url": "https://ototoy.jp/_/default/a/60996",
+          "name": "ototoy"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/574593",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Floating Points",
+      "qualityProfileId": 1,
+      "metadataProfileId": 1,
+      "monitored": true,
+      "monitorNewItems": "all",
+      "genres": [
+        "Electronic",
+        "House",
+        "Dubstep",
+        "Progressive House",
+        "Tech House",
+        "Post-Dubstep",
+        "Microhouse"
+      ],
+      "cleanName": "floatingpoints",
+      "sortName": "floating points",
+      "tags": [],
+      "added": "2026-10-15T09:11:58Z",
+      "ratings": {
+        "votes": 1,
+        "value": 10.0
+      },
+      "id": 36
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/382/cover.jpg?lastWrite=639276523201365694",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/a576209f-7d6d-4870-abc0-f43918c2c2e3/45328658383-1200.jpg"
+      }
+    ],
+    "links": [],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 14,
+      "totalTrackCount": 14,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 382
+  }
+]

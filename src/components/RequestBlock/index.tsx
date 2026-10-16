@@ -81,7 +81,7 @@ const RequestBlock = ({ request, onUpdate }: RequestBlockProps) => {
       <RequestModal
         show={showEditModal}
         tmdbId={request.media.tmdbId}
-        type={request.type}
+        type={request.type as 'movie' | 'tv'}
         is4k={request.is4k}
         editRequest={request}
         onCancel={() => setShowEditModal(false)}

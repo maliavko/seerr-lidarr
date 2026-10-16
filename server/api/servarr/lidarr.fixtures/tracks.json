@@ -1,0 +1,1731 @@
+[
+  {
+    "artistId": 5,
+    "foreignTrackId": "b0e9a29f-0a90-4f12-9632-2f652c533551",
+    "foreignRecordingId": "4a7fea2e-545b-4c63-bc9a-9943cc3a29d7",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "A1",
+    "title": "Airbag",
+    "duration": 284000,
+    "mediumNumber": 1,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17059
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "25624701-99db-4c26-abcb-7e3ee0f9876d",
+    "foreignRecordingId": "9f9cf187-d6f9-437f-9d98-d59cdbd52757",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 2,
+    "trackNumber": "A2",
+    "title": "Paranoid Android",
+    "duration": 383000,
+    "mediumNumber": 1,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17060
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "b11ee339-3ac3-4921-af4b-5c1a040f6596",
+    "foreignRecordingId": "bd82738d-163c-4b1a-bfaf-7acffe30e68a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 3,
+    "trackNumber": "A3",
+    "title": "Subterranean Homesick Alien",
+    "duration": 267000,
+    "mediumNumber": 1,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17061
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "c953b143-d6a9-4b94-afb6-a296ed11082f",
+    "foreignRecordingId": "23c3c36b-9449-4484-9040-6ef2125999aa",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 4,
+    "trackNumber": "B1",
+    "title": "Exit Music (for a Film)",
+    "duration": 264000,
+    "mediumNumber": 1,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17062
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "67c844d3-12d1-441e-90f9-46c677b38f9a",
+    "foreignRecordingId": "47b02a82-c3bf-4647-b894-dd1c8f608e7f",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 5,
+    "trackNumber": "B2",
+    "title": "Let Down",
+    "duration": 299000,
+    "mediumNumber": 1,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17063
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "69d09a3f-28c9-4ff7-8459-17d6efb12fa6",
+    "foreignRecordingId": "9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 6,
+    "trackNumber": "B3",
+    "title": "Karma Police",
+    "duration": 261000,
+    "mediumNumber": 1,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17064
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "59e82f21-92f4-4266-9331-e45c52c82d3c",
+    "foreignRecordingId": "5838f978-0822-4e28-874f-e1511324ec3a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "C1",
+    "title": "Fitter Happier",
+    "duration": 117000,
+    "mediumNumber": 2,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17065
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "6faa6f5a-a484-4577-8ab9-342bd9895881",
+    "foreignRecordingId": "ba0a796c-bd1f-4d4b-85a8-918f217a204a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 2,
+    "trackNumber": "C2",
+    "title": "Electioneering",
+    "duration": 230000,
+    "mediumNumber": 2,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17066
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "e6e55afa-85d7-4983-888b-87e844ca1ada",
+    "foreignRecordingId": "c7225576-001e-423c-adc1-58f0985dcb27",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 3,
+    "trackNumber": "C3",
+    "title": "Climbing Up the Walls",
+    "duration": 285000,
+    "mediumNumber": 2,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17067
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "472e83d0-a2af-49c0-9a10-3dc90d40f4f0",
+    "foreignRecordingId": "980a426e-623e-4ea5-98c7-008d037a0508",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 4,
+    "trackNumber": "C4",
+    "title": "No Surprises",
+    "duration": 228000,
+    "mediumNumber": 2,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17068
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "50ba20f3-7376-41ca-b9ff-2c6bec2d7c6e",
+    "foreignRecordingId": "79047824-f821-4b1a-9893-e0cea1c947dd",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 5,
+    "trackNumber": "D1",
+    "title": "Lucky",
+    "duration": 259000,
+    "mediumNumber": 2,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17069
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9b1533ec-f7df-4115-8b30-1cf5920629f9",
+    "foreignRecordingId": "610c0012-6eb4-42a0-b759-3a2532ce0f15",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 6,
+    "trackNumber": "D2",
+    "title": "The Tourist",
+    "duration": 324000,
+    "mediumNumber": 2,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17070
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "682bf328-7898-4f94-9517-90ac96709ec1",
+    "foreignRecordingId": "384d9061-ca6a-4e74-a66a-f788ea0049a7",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "E1",
+    "title": "I Promise",
+    "duration": 240000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17071
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "d374a8af-b209-40cb-ac20-a06a24b0b161",
+    "foreignRecordingId": "e7bf5ae0-dc12-46d2-8f17-39e3545c74a9",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 2,
+    "trackNumber": "E2",
+    "title": "Man of War",
+    "duration": 269000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17072
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "e4e9d4ab-cf4d-429f-9a22-e7c53485d036",
+    "foreignRecordingId": "d48778df-68a1-43ed-a4e0-b82f09bccf86",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 3,
+    "trackNumber": "E3",
+    "title": "Lift",
+    "duration": 247000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17073
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "ae93eb75-fd3e-41c1-9aab-df7144997abd",
+    "foreignRecordingId": "07d6c937-9bf1-4ff6-866d-99b3a23b5854",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 4,
+    "trackNumber": "E4",
+    "title": "Lull",
+    "duration": 146000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17074
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "25d97261-08f6-413f-b4ed-33c738bf1b2c",
+    "foreignRecordingId": "27369abc-a525-47ac-9461-a4ab7598229a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 5,
+    "trackNumber": "E5",
+    "title": "Meeting in the Aisle",
+    "duration": 188000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17075
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "4cc0bd14-c078-489c-877d-dadc2ab4a645",
+    "foreignRecordingId": "08dcb5f9-a716-4a36-ac5e-b3740cf85cbb",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 6,
+    "trackNumber": "E6",
+    "title": "Melatonin",
+    "duration": 129000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17076
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "17e55047-1d7a-43bf-8593-d828c94c2455",
+    "foreignRecordingId": "72f541ac-0d82-44e1-9f12-e50a7d23cfcf",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 7,
+    "trackNumber": "F1",
+    "title": "A Reminder",
+    "duration": 232000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17077
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "b33bec96-5768-4518-9f80-6be94dda2fa0",
+    "foreignRecordingId": "785c6db0-ad42-492c-b786-6c60c85049ea",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 8,
+    "trackNumber": "F2",
+    "title": "Polyethylene, Parts 1 & 2",
+    "duration": 262000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17078
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "dc0bac6b-a1c4-400c-9748-d3b46ff8f481",
+    "foreignRecordingId": "d7d0da31-0eb9-4d19-9b82-efbab8089bb3",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 9,
+    "trackNumber": "F3",
+    "title": "Pearly*",
+    "duration": 219000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17079
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "0f6449ef-b56b-4e2a-9c2e-b1ae1c5388fc",
+    "foreignRecordingId": "5b558519-0719-4e02-a753-0aef518b39f8",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 10,
+    "trackNumber": "F4",
+    "title": "Palo Alto",
+    "duration": 232000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17080
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "dce7359a-079c-46d2-a7b7-d3b4dbbe7a36",
+    "foreignRecordingId": "59c1ca98-8a33-466b-9a64-a20f1fee3167",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 11,
+    "trackNumber": "F5",
+    "title": "How I Made My Millions",
+    "duration": 189000,
+    "mediumNumber": 3,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17081
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "f199b258-ee71-4e20-b904-0aea183dcc52",
+    "foreignRecordingId": "3acc1c05-c8c1-43d4-aaac-fc9c03432c58",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "A1",
+    "title": "ZX Spectrum Symphony",
+    "duration": 72000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17082
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "ebb942d0-5a37-4388-b0dc-b85fc608d016",
+    "foreignRecordingId": "a1e4f7e7-109a-40e0-8ff6-050d95f1e713",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 2,
+    "trackNumber": "A2",
+    "title": "A.M.S. Hello",
+    "duration": 19000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17083
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "20a4d937-1f70-4e4f-9fe5-cc9c73fe9686",
+    "foreignRecordingId": "bb223a71-1ef1-4a0a-8d9e-7fbe5b86eac1",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 3,
+    "trackNumber": "A3",
+    "title": "True Love Tape Loop",
+    "duration": 303000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17084
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "1b25c66f-04e7-4503-aaee-7dca83cac60e",
+    "foreignRecordingId": "360c9ddb-0a5e-4b6e-8c7d-347a4f6f3ff8",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 4,
+    "trackNumber": "A4",
+    "title": "Let Down (Thom 4track)",
+    "duration": 176000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17085
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "4b9d84d6-f1e8-4d47-802d-3c8f206f008d",
+    "foreignRecordingId": "0f4e0ecd-53f5-4705-b220-b307dcbcddf3",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 5,
+    "trackNumber": "A5",
+    "title": "I may be paranoid but not an android",
+    "duration": 16000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17086
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9b04198f-6b09-4ead-a264-ca3f8b4b1fba",
+    "foreignRecordingId": "de6e76bb-a11e-41ed-90f6-f40f36e57182",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 6,
+    "trackNumber": "A6",
+    "title": "Attention (Thom 4track)",
+    "duration": 161000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17087
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "3c960a7b-2336-4ddb-841a-fedc9ee8b883",
+    "foreignRecordingId": "4bbfcc2e-240e-4c41-82c7-7dbf148625e0",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 7,
+    "trackNumber": "A7",
+    "title": "Noise sketch by Nigel",
+    "duration": 76000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17088
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "439dae1b-2556-4942-98a6-47b4d1e75fed",
+    "foreignRecordingId": "8b42a95b-ecda-4416-825d-8a120d36dc67",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 8,
+    "trackNumber": "A8",
+    "title": "Climbing Up the Walls (Abbey Road strings)",
+    "duration": 75000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17089
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "7d46ca4d-7339-40d4-88be-1c0f10153fbb",
+    "foreignRecordingId": "04e69f15-3228-4dc5-8804-3312129884af",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 9,
+    "trackNumber": "A9",
+    "title": "Someone help this guy..",
+    "duration": 30000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17090
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "31647299-5a26-4b19-a4fd-dacc92c7ffec",
+    "foreignRecordingId": "a44c523a-6328-4de1-ae47-aedf896e232d",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 10,
+    "trackNumber": "A10",
+    "title": "Motion Picture Soundtrack (solo piano)",
+    "duration": 313000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17091
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "6d59c614-a67f-4953-a118-9ad2a716cdb8",
+    "foreignRecordingId": "26f013b7-9278-4441-baf2-eeeceb96f112",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 11,
+    "trackNumber": "A11",
+    "title": "Was that recording?",
+    "duration": 15000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17092
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "3de1a931-cad4-4cbf-babb-2995bc9e15b0",
+    "foreignRecordingId": "d91d476d-b277-4297-a857-ba2b34ee96e9",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 12,
+    "trackNumber": "A12",
+    "title": "The jumbled words of Climbing Up the Walls read by Little Dan Clements",
+    "duration": 81000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17093
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "7ec0dbdf-7c6f-4810-966a-a3ff4fb52407",
+    "foreignRecordingId": "2ea05405-e97f-452a-a2dc-a22eaba1c0a4",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 13,
+    "trackNumber": "A13",
+    "title": "Lull (Ed guitar infinite reverb)",
+    "duration": 91000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17094
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "3d05efd8-9a08-4758-9755-c23ce7111fd1",
+    "foreignRecordingId": "86ad4cf6-b5f6-4ff6-a5a6-58f600440b03",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 14,
+    "trackNumber": "A14",
+    "title": "Airbag drums through Moog",
+    "duration": 66000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17095
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "bff1e700-64bf-4173-b90c-d9fd2c7547e7",
+    "foreignRecordingId": "5724df00-ba18-4381-9798-e2d0d84930f8",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 15,
+    "trackNumber": "A15",
+    "title": "Karma Police in Space Echo",
+    "duration": 116000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17096
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "e419471f-f655-44cf-b199-23b60187ef5b",
+    "foreignRecordingId": "b0c1805d-eac6-40ae-8694-4e0646dc2b27",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 16,
+    "trackNumber": "A16",
+    "title": "Karma Police voice through telephone",
+    "duration": 28000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17097
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "696d1d89-75f7-4b48-a22d-3b32735df34c",
+    "foreignRecordingId": "512a254e-6f21-44af-b00f-15d476e31456",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 17,
+    "trackNumber": "A17",
+    "title": "(Talking)",
+    "duration": 7000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17098
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "3a10e5ed-75f9-4b09-9326-e647d6c406e3",
+    "foreignRecordingId": "ada5f473-3a5b-44dd-bb1c-e126e998e3d7",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 18,
+    "trackNumber": "A18",
+    "title": "Piano sketch by Jonny",
+    "duration": 40000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17099
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "dd10a0b7-93cd-4cfb-b297-affce65f3e36",
+    "foreignRecordingId": "fccc506c-d876-4fbb-a47c-7ff111eb024a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 19,
+    "trackNumber": "A19",
+    "title": "Big Bird Story by Stanley Donwood",
+    "duration": 124000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17100
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9c24c311-a5de-42f1-8388-087417816eb0",
+    "foreignRecordingId": "dc5b53c3-90d0-4d70-9f26-c8e3a92e4701",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 20,
+    "trackNumber": "A20",
+    "title": "No Surprises (first idea from a soundcheck somewhere)",
+    "duration": 179000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17101
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "724a25d3-809c-4692-8af6-520ccb966386",
+    "foreignRecordingId": "16f9366a-972d-4ee9-92d0-535e2e9dec9f",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 21,
+    "trackNumber": "A21",
+    "title": "Radio chaser noise",
+    "duration": 24000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17102
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "84a63e10-9190-4b26-ab3b-1348809df8df",
+    "foreignRecordingId": "ab44676f-842b-461b-88e2-cb7a26032797",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 22,
+    "trackNumber": "A22",
+    "title": "Fridge buzz",
+    "duration": 14000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17103
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "f570009d-bde6-4475-94bb-156d9e56625f",
+    "foreignRecordingId": "e4c7c96d-fbff-4134-a744-9f3e8e0df6fc",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 23,
+    "trackNumber": "A23",
+    "title": "True Love Space Loop",
+    "duration": 57000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17104
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "61a25798-7bdb-4767-8dfb-4c6b05a22cbf",
+    "foreignRecordingId": "bf774d46-7af4-4627-b05d-9b27b2216d37",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 24,
+    "trackNumber": "A24",
+    "title": "(Talking)",
+    "duration": 28000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17105
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "13938009-7d96-4048-97d8-e2848aeecf41",
+    "foreignRecordingId": "398600de-1bbe-4ccc-a30c-70e8e7439afe",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 25,
+    "trackNumber": "A25",
+    "title": "Are you someone?",
+    "duration": 226000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17106
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "a21592e3-85cb-42c1-bb1c-7cf04cf1cca1",
+    "foreignRecordingId": "4c8f1ced-3867-4935-a938-6e47b5a6c849",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 26,
+    "trackNumber": "B1",
+    "title": "Nigel A.M.S. delay",
+    "duration": 58000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17107
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "524e9757-4e57-4ef7-b253-90865c2abf79",
+    "foreignRecordingId": "97cb9e86-063e-4c67-a191-6856bf725179",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 27,
+    "trackNumber": "B2",
+    "title": "Jonny’s Radio from Climbing Up the Walls",
+    "duration": 75000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17108
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "d3535983-35c9-4d9b-9faf-6a116e62c82b",
+    "foreignRecordingId": "aecb7fee-faaf-4000-adc9-2f9a82e0a28b",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 28,
+    "trackNumber": "B3",
+    "title": "Climbing Up the Walls (Thom 4track)",
+    "duration": 238000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17109
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "1f9a6bec-80cb-47d9-9d19-b3327d301bd4",
+    "foreignRecordingId": "630be137-fe37-42fc-96e4-48fef67afa8c",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 29,
+    "trackNumber": "B4",
+    "title": "A piano lies down in the middle of the road",
+    "duration": 155000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17110
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "49c0f48e-c147-404b-b359-55f6b92091ba",
+    "foreignRecordingId": "19d8ce4b-d7fb-4b6a-9f78-8984edb2c5f5",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 30,
+    "trackNumber": "B5",
+    "title": "Transposing Noise Sketch by Nigel",
+    "duration": 128000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17111
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "d1a42778-51f2-484f-98c0-3b1ff84544aa",
+    "foreignRecordingId": "bb1e4dbc-0101-4b08-ae78-1f27a7b4bb9e",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 31,
+    "trackNumber": "B6",
+    "title": "Early Paranoid Android version Jonny & Thom",
+    "duration": 82000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17112
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "196ce62f-8651-4b39-aff3-62f337c75ebc",
+    "foreignRecordingId": "466bffa8-0ca2-41e9-8314-5e5b8aff9471",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 32,
+    "trackNumber": "B7",
+    "title": "Alternative Paranoid Android Ending Live in Pittsburg",
+    "duration": 148000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17113
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "1811e29e-7d17-4aaf-9850-47ae9117d092",
+    "foreignRecordingId": "c03cea36-f832-4af7-923f-7f75c5e91db7",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 33,
+    "trackNumber": "B8",
+    "title": "Airbag early acoustic version",
+    "duration": 251000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17114
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9e0f9178-f984-47fd-82f6-fdd629d1dd85",
+    "foreignRecordingId": "f5d962c7-7d4e-478b-b32a-49bbd8a82372",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 34,
+    "trackNumber": "B9",
+    "title": "(Talking)",
+    "duration": 22000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17115
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9a568097-39ec-4c3c-b8a7-61c7e9102e6e",
+    "foreignRecordingId": "c5e4dbae-c293-4e4a-b7be-505f66eda8b9",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 35,
+    "trackNumber": "B10",
+    "title": "Paranoid Android Loud Room at St Catherine’s",
+    "duration": 57000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17116
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "f1733357-fd2d-4e18-a40a-9de8c8108a2e",
+    "foreignRecordingId": "1c7552cf-43ae-4901-95c6-c09c9b0851d3",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 36,
+    "trackNumber": "B11",
+    "title": "Nigel A.M.S. paranoid guitar sample",
+    "duration": 103000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17117
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "09662801-2022-4d94-a976-9dd48dea1516",
+    "foreignRecordingId": "35736ba8-b947-4000-ba2a-50b063931d32",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 37,
+    "trackNumber": "B12",
+    "title": "Nude early band version",
+    "duration": 338000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17118
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "115f66eb-bd52-4427-ba90-7cecde82cbad",
+    "foreignRecordingId": "29473455-d63c-4729-9a1e-af4f433c5d05",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 38,
+    "trackNumber": "B13",
+    "title": "The National Anthem (Thom 4track)",
+    "duration": 194000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17119
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "a019d431-f073-4b3a-8407-9a7a4bb578c1",
+    "foreignRecordingId": "f328341e-e981-4402-80fc-761667aed30e",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 39,
+    "trackNumber": "B14",
+    "title": "Ambient Loops",
+    "duration": 45000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17120
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "8fd78392-9b5b-4c25-8adc-841c43a6a596",
+    "foreignRecordingId": "92ce48d7-982f-4ec2-9791-eecf40e66b24",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 40,
+    "trackNumber": "B15",
+    "title": "Man of War live in Montpellier",
+    "duration": 268000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17121
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "35fa1d05-be86-4285-be4d-ad1af5fd3d79",
+    "foreignRecordingId": "033b8a50-4b3a-4532-9e52-4b0ab7962e04",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 41,
+    "trackNumber": "B16",
+    "title": "Nigel A.M.S. delay again",
+    "duration": 16000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17122
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "57529381-6d19-4efa-b0d0-309b705be58e",
+    "foreignRecordingId": "4089cf9f-d109-43fc-9c85-7c4bbdcc3c9d",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 42,
+    "trackNumber": "B17",
+    "title": "Thom’s acoustic as microphone in Climbing Up the Walls",
+    "duration": 168000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17123
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "3a5f7cea-0501-4ccf-8dde-81c3018511b9",
+    "foreignRecordingId": "2e85aa1d-36ed-439f-b288-d46bc08e7c5f",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 43,
+    "trackNumber": "B18",
+    "title": "OK Computer Program",
+    "duration": 130000,
+    "mediumNumber": 4,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17124
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "697ea3c0-adfe-47d8-82a3-e8432ead7749",
+    "foreignRecordingId": "4a7fea2e-545b-4c63-bc9a-9943cc3a29d7",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "1",
+    "title": "Airbag",
+    "duration": 284000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17125
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9ab6418f-2516-4159-af90-c34f78a25cdd",
+    "foreignRecordingId": "9f9cf187-d6f9-437f-9d98-d59cdbd52757",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 2,
+    "trackNumber": "2",
+    "title": "Paranoid Android",
+    "duration": 384000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17126
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "3aa9ab7f-b210-4b19-aada-d9027519464f",
+    "foreignRecordingId": "bd82738d-163c-4b1a-bfaf-7acffe30e68a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 3,
+    "trackNumber": "3",
+    "title": "Subterranean Homesick Alien",
+    "duration": 269000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17127
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "f4371213-b16a-445c-8641-1442d375f14d",
+    "foreignRecordingId": "23c3c36b-9449-4484-9040-6ef2125999aa",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 4,
+    "trackNumber": "4",
+    "title": "Exit Music (for a Film)",
+    "duration": 265000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17128
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "e31a8fa8-41d0-443c-946d-30a5ed72cae8",
+    "foreignRecordingId": "47b02a82-c3bf-4647-b894-dd1c8f608e7f",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 5,
+    "trackNumber": "5",
+    "title": "Let Down",
+    "duration": 299000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17129
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "c4a7dd21-612c-41a2-a7e3-119dbbedd8c9",
+    "foreignRecordingId": "9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 6,
+    "trackNumber": "6",
+    "title": "Karma Police",
+    "duration": 261000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17130
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "6c1bc7d1-8713-4f4a-93a5-2c5b89ea9618",
+    "foreignRecordingId": "5838f978-0822-4e28-874f-e1511324ec3a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 7,
+    "trackNumber": "7",
+    "title": "Fitter Happier",
+    "duration": 117000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17131
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "2dfb699b-165d-4306-aeed-2f4b4cfcbdcb",
+    "foreignRecordingId": "ba0a796c-bd1f-4d4b-85a8-918f217a204a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 8,
+    "trackNumber": "8",
+    "title": "Electioneering",
+    "duration": 231000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17132
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "2938103e-f250-498c-87b4-86a21c65b3d8",
+    "foreignRecordingId": "c7225576-001e-423c-adc1-58f0985dcb27",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 9,
+    "trackNumber": "9",
+    "title": "Climbing Up the Walls",
+    "duration": 285000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17133
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "dc795f13-857e-41fc-b26f-4d00db40c360",
+    "foreignRecordingId": "980a426e-623e-4ea5-98c7-008d037a0508",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 10,
+    "trackNumber": "10",
+    "title": "No Surprises",
+    "duration": 228000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17134
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "227994cf-80f6-4368-8b2c-4bb120ec0d4d",
+    "foreignRecordingId": "79047824-f821-4b1a-9893-e0cea1c947dd",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 11,
+    "trackNumber": "11",
+    "title": "Lucky",
+    "duration": 260000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17135
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9839e3b9-4741-4c02-8f69-6badedf75b4f",
+    "foreignRecordingId": "610c0012-6eb4-42a0-b759-3a2532ce0f15",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 12,
+    "trackNumber": "12",
+    "title": "The Tourist",
+    "duration": 324000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17136
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9c198f71-c4c2-4385-9fb0-6a51ba44f0f7",
+    "foreignRecordingId": "384d9061-ca6a-4e74-a66a-f788ea0049a7",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 13,
+    "trackNumber": "13",
+    "title": "I Promise",
+    "duration": 239000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17137
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "9641bdfa-0f7d-467b-a917-cda3a934d214",
+    "foreignRecordingId": "e7bf5ae0-dc12-46d2-8f17-39e3545c74a9",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 14,
+    "trackNumber": "14",
+    "title": "Man of War",
+    "duration": 269000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17138
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "b809782b-6f4d-424d-b33d-de5eb585f178",
+    "foreignRecordingId": "d48778df-68a1-43ed-a4e0-b82f09bccf86",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 15,
+    "trackNumber": "15",
+    "title": "Lift",
+    "duration": 247000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17139
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "7dd733bb-785b-4071-a017-1a03258f2319",
+    "foreignRecordingId": "07d6c937-9bf1-4ff6-866d-99b3a23b5854",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 16,
+    "trackNumber": "16",
+    "title": "Lull",
+    "duration": 146000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17140
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "021bc637-720c-46ce-94b0-e6976f800a3c",
+    "foreignRecordingId": "27369abc-a525-47ac-9461-a4ab7598229a",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 17,
+    "trackNumber": "17",
+    "title": "Meeting in the Aisle",
+    "duration": 188000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17141
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "c45a8dcc-d451-448d-9cf5-738eedc46d0f",
+    "foreignRecordingId": "08dcb5f9-a716-4a36-ac5e-b3740cf85cbb",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 18,
+    "trackNumber": "18",
+    "title": "Melatonin",
+    "duration": 129000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17142
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "1e7404a4-e7aa-4de2-ae4a-854b086bfb44",
+    "foreignRecordingId": "72f541ac-0d82-44e1-9f12-e50a7d23cfcf",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 19,
+    "trackNumber": "19",
+    "title": "A Reminder",
+    "duration": 232000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17143
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "0b32f076-41b0-40ef-9e7f-785f3990b3aa",
+    "foreignRecordingId": "785c6db0-ad42-492c-b786-6c60c85049ea",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 20,
+    "trackNumber": "20",
+    "title": "Polyethylene, Parts 1 & 2",
+    "duration": 262000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17144
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "da9254a6-0c60-4280-bcae-f3b5767cba96",
+    "foreignRecordingId": "d7d0da31-0eb9-4d19-9b82-efbab8089bb3",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 21,
+    "trackNumber": "21",
+    "title": "Pearly*",
+    "duration": 219000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17145
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "337749ef-714a-4fbd-be80-c0f299eee56f",
+    "foreignRecordingId": "5b558519-0719-4e02-a753-0aef518b39f8",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 22,
+    "trackNumber": "22",
+    "title": "Palo Alto",
+    "duration": 232000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17146
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "03d1cfaf-7025-402d-914e-df239c0bcb6e",
+    "foreignRecordingId": "59c1ca98-8a33-466b-9a64-a20f1fee3167",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 23,
+    "trackNumber": "23",
+    "title": "How I Made My Millions",
+    "duration": 187000,
+    "mediumNumber": 5,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17147
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "5eadfc4c-2ccc-449b-8d76-d9a93b09a01c",
+    "foreignRecordingId": "88e15050-cc66-4589-8390-2cc57d2a4785",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "1",
+    "title": "Side A",
+    "duration": 2329000,
+    "mediumNumber": 6,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17148
+  },
+  {
+    "artistId": 5,
+    "foreignTrackId": "ba2ecd91-0041-4cf2-a149-2b1ff3566ee2",
+    "foreignRecordingId": "c4528e25-9ac3-41db-819b-586542e1a913",
+    "trackFileId": 0,
+    "albumId": 45,
+    "explicit": false,
+    "absoluteTrackNumber": 2,
+    "trackNumber": "2",
+    "title": "Side B",
+    "duration": 2452000,
+    "mediumNumber": 6,
+    "hasFile": false,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 17149
+  }
+]

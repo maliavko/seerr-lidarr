@@ -1,5 +1,6 @@
 import RadarrAPI from '@server/api/servarr/radarr';
 import SonarrAPI from '@server/api/servarr/sonarr';
+import type { MusicKind } from '@server/constants/media';
 import {
   MediaRequestStatus,
   MediaStatus,
@@ -33,7 +34,16 @@ import Season from './Season';
 
 @Entity()
 @Index(['tmdbId', 'mediaType'])
+@Index(['musicBrainzId', 'musicKind'], { unique: true })
 class Media {
+  // the music columns exist on every row, but only a music row serialises them,
+  // so movie and TV answers keep exactly the keys they carried before the columns
+  static readonly musicSerializationFields: string[] = [
+    'musicBrainzId',
+    'musicKind',
+    'artistMusicBrainzId',
+  ];
+
   public static async getRelatedMedia(
     user: User | undefined,
     items: { tmdbId: number; mediaType: string }[],
@@ -114,15 +124,71 @@ class Media {
     }
   }
 
+  public static async getMusicMedia(
+    mbid: string,
+    kind: MusicKind
+  ): Promise<Media | undefined> {
+    const mediaRepository = getRepository(Media);
+
+    try {
+      const media = await mediaRepository.findOne({
+        where: { musicBrainzId: mbid, musicKind: kind },
+        relations: { requests: true, issues: true },
+      });
+
+      return media ?? undefined;
+    } catch (e) {
+      logger.error(e.message);
+      return undefined;
+    }
+  }
+
+  public static async getRelatedMusicMedia(
+    items: { mbid: string; kind: MusicKind }[]
+  ): Promise<Media[]> {
+    const mediaRepository = getRepository(Media);
+
+    try {
+      if (items.length === 0) {
+        return [];
+      }
+
+      const finalIds = [...new Set(items.map((i) => i.mbid))];
+
+      const media = await mediaRepository
+        .createQueryBuilder('media')
+        .where('media.musicBrainzId in (:...finalIds)', { finalIds })
+        .getMany();
+
+      return media.filter((m) =>
+        items.some((i) => i.mbid === m.musicBrainzId && i.kind === m.musicKind)
+      );
+    } catch (e) {
+      logger.error(e.message);
+      return [];
+    }
+  }
+
   @PrimaryGeneratedColumn()
   public id: number;
 
   @Column({ type: 'varchar' })
   public mediaType: MediaType;
 
-  @Column()
+  // null on music rows only; set on every movie and TV row
+  @Column({ nullable: true })
   @Index()
   public tmdbId: number;
+
+  @Column({ nullable: true, type: 'varchar' })
+  public musicBrainzId?: string | null;
+
+  @Column({ nullable: true, type: 'varchar' })
+  public musicKind?: MusicKind | null;
+
+  @Index()
+  @Column({ nullable: true, type: 'varchar' })
+  public artistMusicBrainzId?: string | null;
 
   @Column({ unique: true, nullable: true })
   @Index()
@@ -427,6 +493,18 @@ class Media {
     }
   }
 
+  public toJSON(): Partial<Media> {
+    const hidden =
+      this.mediaType === MediaType.MUSIC ? [] : Media.musicSerializationFields;
+
+    return Object.assign(
+      {},
+      ...(Object.keys(this) as (keyof Media)[])
+        .filter((k) => !hidden.includes(k))
+        .map((k) => ({ [k]: this[k] }))
+    );
+  }
+
   public filter(user?: User): Media {
     const canViewIssues =
       user?.hasPermission(
@@ -439,7 +517,8 @@ class Media {
       ) ?? false;
 
     return {
-      ...this,
+      // a spread of the instance would carry the music keys of a movie or TV row
+      ...this.toJSON(),
       requests: (this.requests ?? []).map((request) => ({
         ...request,
         requestedBy: request.requestedBy?.filter(),

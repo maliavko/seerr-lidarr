@@ -1,0 +1,1021 @@
+{
+  "release-groups": [
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "1995‐06‐10: Cabaret Metro, Chicago, IL, USA",
+      "first-release-date": "1995-06-10",
+      "disambiguation": "",
+      "id": "01618034-2de5-4ace-a057-fcd0bca4cf08",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "0479139d-c3ed-4bc7-807a-bee5d2e66b62",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1992‐11‐11: Huddersfield University, Huddersfield, UK",
+      "primary-type": "Album",
+      "first-release-date": "1992",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "04f9826d-419a-4484-a282-7c3a571979dd",
+      "first-release-date": "1995-12-12",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "1995‐12‐12: Warehouse, Toronto, ON, Canada",
+      "primary-type": "Album"
+    },
+    {
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "Fond, but Not in Love: The B Sides",
+      "disambiguation": "",
+      "first-release-date": "",
+      "id": "0711af11-e061-3ec9-a2a8-8c85738be984",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "BBC in Concert 601: Glastonbury Festival 1994",
+      "first-release-date": "1994",
+      "disambiguation": "",
+      "id": "0b1fce60-47b8-4664-8f59-3d7520456ae2",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "0be7bec9-8bc0-4613-9adf-ea707e9b9897",
+      "first-release-date": "2005",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "Hovering Above the Tower"
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "27 5 94: The Astoria London Live",
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "first-release-date": "1995-05-17",
+      "disambiguation": "",
+      "id": "0ef22186-e92d-4f03-9b05-500fa2d581ad",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "secondary-types": ["Compilation", "Live"],
+      "primary-type": "Album",
+      "title": "Take Me Back: Live Recordings 2000–2018",
+      "first-release-date": "2020",
+      "disambiguation": "",
+      "id": "10333b16-c430-4294-a192-e0893f83e1e8",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "11a5cc29-6314-4e25-b83a-e90ee7917f1e",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "1994‐06‐26: Glastonbury Festival, NME Stage, Worthy Farm, Glastonbury, England, UK",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "1994-06-26"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "11f16b31-da2e-48b8-90a1-f65014bc8262",
+      "disambiguation": "",
+      "first-release-date": "2005-08",
+      "secondary-type-ids": ["0c60f497-ff81-3818-befd-abfc84a4858b"],
+      "primary-type": "Album",
+      "secondary-types": ["Remix"],
+      "title": "Greenhouse Effect vs. Radiohead"
+    },
+    {
+      "title": "MINIDISCS [HACKED]",
+      "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+        "81598169-0d6c-3bce-b4be-866fa658eda3"
+      ],
+      "secondary-types": ["Compilation", "Demo"],
+      "primary-type": "Album",
+      "first-release-date": "2019-06-05",
+      "disambiguation": "",
+      "id": "1af3fda4-4281-4ed9-ba38-389ed83d9ab2",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "1e14dc24-8a10-4ef2-885c-4b8a0d02f551",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "1995‐04‐19: The Anson Rooms, Bristol, UK",
+      "disambiguation": "",
+      "first-release-date": "1995-04-19"
+    },
+    {
+      "first-release-date": "1996",
+      "disambiguation": "",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Paragons of Virtue",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "21028e69-d1a2-4bd6-8f0f-6f072d4b97c2"
+    },
+    {
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Transmission Impossible",
+      "primary-type": "Album",
+      "first-release-date": "2025-08",
+      "disambiguation": "",
+      "id": "24d688b1-7c73-467f-8e1b-109d6cc8174b",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "270ff9af-bcfb-402c-8e6b-d1372a1e8824",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["12af3f5e-ce2a-3941-8b93-d482884031e5"],
+      "primary-type": "Album",
+      "secondary-types": ["Interview"],
+      "title": "The Interview",
+      "disambiguation": "",
+      "first-release-date": "2010-08-23"
+    },
+    {
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Kill All the Rarities",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "",
+      "id": "2a3892ce-ce25-3577-8c1c-634dc3faaf8b",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2003",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Hail and Backtrack",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "2c435990-69a2-43e0-b124-c96e8b02c455"
+    },
+    {
+      "id": "30f765ef-d7f0-4cce-8a3b-d6e1069f1dda",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "5 Album Set",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "first-release-date": "2012-10-12",
+      "disambiguation": "Pablo Honey / The Bends / OK Computer / Kid A / Amnesiac"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "32c97b05-44a7-309b-b498-3fbfa24bdb11",
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "Complete B-Sides"
+    },
+    {
+      "first-release-date": "2020-03-20",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "Kid Amnesiac",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "345686b4-5976-42df-a6ed-c65711dfee4d"
+    },
+    {
+      "id": "37410f3e-b7a0-40e3-8bcd-ba3aabc339ce",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "B‐Sides, Vol. 1",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "first-release-date": "",
+      "disambiguation": ""
+    },
+    {
+      "title": "Every Last Crumb",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "first-release-date": "2017",
+      "disambiguation": "",
+      "id": "39baf9d2-f625-4bae-bec8-5505d81c80fd",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1997-06-28: Glastonbury Festival of Contemporary Performing Arts",
+      "first-release-date": "1997-06-28",
+      "disambiguation": "",
+      "id": "441803f3-eb4d-3847-93cf-ab473cf0b8ec",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2025-08-13",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "Hail to the Thief: Live Recordings 2003–2009",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "44419ec0-d44a-4ec5-875c-d08f5c7ec13c"
+    },
+    {
+      "id": "45c89737-53d3-42de-bd0a-ff639719f082",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Unplugged",
+      "primary-type": "Album",
+      "first-release-date": "",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "46479293-ce6d-3a4d-8fe9-73ebb5ee5881",
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "B-Sides"
+    },
+    {
+      "title": "Oxford Angels: The Rarities",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "first-release-date": "2013",
+      "disambiguation": "",
+      "id": "4e0ea78b-d058-461b-ac7c-3de43823a131",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "4f33db0c-051e-472d-b010-14882fbea23d",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "OKNOTOK: White Cassette Tape",
+      "first-release-date": "2017-07-01",
+      "disambiguation": ""
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Rarities",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "502b7edd-701b-3ba5-b56e-09ce581bdfe1"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "54ec58a5-4149-4fa3-b395-052fede66730",
+      "first-release-date": "1999",
+      "disambiguation": "",
+      "primary-type": "Album",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Unplugged and Unreleased"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "5c14fd50-a2f1-3672-9537-b0dad91bea2f",
+      "first-release-date": "2003-05-26",
+      "disambiguation": "",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type": "Album",
+      "title": "Hail to the Thief"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "60b9bffe-5959-3de1-ac79-63581b541323",
+      "disambiguation": "",
+      "first-release-date": "1997",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "Leftover Computer"
+    },
+    {
+      "id": "612fd528-2ebb-43e4-928b-14a6b6090a10",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Mne$i@¢",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": ""
+    },
+    {
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "Uncut",
+      "disambiguation": "",
+      "first-release-date": "",
+      "id": "63fb90c6-e005-3c9a-a808-6900908b9b3b",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "65281add-0a95-447f-8f7c-a38bcb158469",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "Greatest Songs",
+      "disambiguation": "",
+      "first-release-date": "2018"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "65d99b2c-05c1-378a-9218-5e0c19bc106f",
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "A Total Waste of Time"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "69553ea8-c62c-4e2a-a878-d85276c45215",
+      "disambiguation": "",
+      "first-release-date": "2022-01-21",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2008-08-01: Lollapalooza, Chicago, IL",
+      "primary-type": "Album"
+    },
+    {
+      "title": "1995-06-01: PASTE.COM Presents: Radiohead Live at Tramps: New York, NY, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "first-release-date": "2013-06-21",
+      "disambiguation": "",
+      "id": "6ac50c71-cfbf-4f6d-acb0-84af1462aae3",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Oxford Devils",
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "6c70ab0d-2559-31d6-b4c5-15cf513aa076"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2007-10-10",
+      "title": "In Rainbows",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "6e335887-60ba-38f0-95af-fae7774336bf"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "6e78d500-67be-44e3-9aa5-e4d366e29f61",
+      "first-release-date": "2020-01",
+      "disambiguation": "",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2016‐05‐27: Roundhouse, London, UK"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "6f25f9fb-e9e3-4c0d-8904-ecb8b46cd8aa",
+      "first-release-date": "2021-11-05",
+      "disambiguation": "",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "KID A MNESIA"
+    },
+    {
+      "id": "71cf51e2-cc31-43f5-83de-e779ea8561e2",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "Bittersweet Distractions",
+      "first-release-date": "2010",
+      "disambiguation": ""
+    },
+    {
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1996‐07‐13: Planet Acoustic: T in the Park, Glasgow, UK",
+      "first-release-date": "1996-07-13",
+      "disambiguation": "",
+      "id": "72438363-80a6-3aa5-a683-a9e843c2f3d5",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "72907a4e-b683-47f4-90d3-67c2b54e8391",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "primary-type": "Album",
+      "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "secondary-types": ["Compilation", "Live"],
+      "title": "Black Sessions",
+      "first-release-date": "",
+      "disambiguation": ""
+    },
+    {
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Radiotick Tracks",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "1997",
+      "id": "74ffecfc-5feb-419b-9e04-ae603544e663",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Raretrax 2",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "77382869-e555-3c04-8ab5-acbeedcd61c0"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2004",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Hail to the Thief (B‐Sides)",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "7fe26c12-b0a2-47c1-a9fc-3ea11b29225b"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "80975c59-4094-30d5-bb58-365e8b061274",
+      "first-release-date": "2008-05-28",
+      "disambiguation": "",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "The Best Of",
+      "primary-type": "Album"
+    },
+    {
+      "id": "84adb69a-ae1a-4c2f-801b-d6c61c659420",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "1995‐05‐02: Planet Rock Session, RAI Studios, Rome, Italy",
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "1995-05-02"
+    },
+    {
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "Coup d’État",
+      "disambiguation": "",
+      "first-release-date": "2001-01-22",
+      "id": "85a1b388-7b4c-3145-8812-0de4d231c8c5",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "85b7b7b5-cf37-3380-8569-f281c5edbe15",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Climbing Up the Walls",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": ""
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2011-02-18",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "title": "The King of Limbs",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "899b6d09-807e-4c18-a6d4-3642e00d6a3d"
+    },
+    {
+      "id": "8a2f8e2a-d51b-3bd1-ba9b-b152f05bcd29",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "Oxford’s Angels",
+      "first-release-date": "",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "8d51e3fc-e99c-31cb-b881-32cdb3d3563e",
+      "disambiguation": "",
+      "first-release-date": "2001",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "The Golden Unplugged Album",
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "The Best Thing That You Ever Had",
+      "first-release-date": "1996-04-13",
+      "disambiguation": "",
+      "id": "90521697-19b7-3c78-9acf-dc122712fdd1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "98088692-b303-4e94-9931-fe95b2352677",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "Data Complete",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "1996-04-13"
+    },
+    {
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type": "Album",
+      "title": "Radiotick Tracks 2",
+      "disambiguation": "",
+      "first-release-date": "1997",
+      "id": "9c5abe48-3918-40e9-84da-c843d147da4a",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "9ee00cb6-9fc9-40f4-9ef7-aa321cac9040",
+      "disambiguation": "",
+      "first-release-date": "2024-11-15",
+      "title": "OK OUTTAKES",
+      "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+        "81598169-0d6c-3bce-b4be-866fa658eda3"
+      ],
+      "secondary-types": ["Compilation", "Demo"],
+      "primary-type": "Album"
+    },
+    {
+      "id": "a1ce7465-e83e-4ac9-9b61-f2211c8281af",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "Nottingham Rock City",
+      "disambiguation": "",
+      "first-release-date": "1995"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "a9368cad-fd41-4a9b-8b13-bca07d75a4fa",
+      "first-release-date": "2007",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "The Kid A Theory",
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "ae075b11-a344-4a6a-8f6a-3d2a5393a7ed",
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Un-wired & Raw",
+      "primary-type": "Album"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "af44dc42-1bf4-4cdc-ad98-cdfdc2312b09",
+      "disambiguation": "",
+      "first-release-date": "2009-11",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "The Best of Radiohead"
+    },
+    {
+      "first-release-date": "1997-05-21",
+      "disambiguation": "",
+      "title": "OK Computer",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "b1392450-e666-3926-a536-22c65f834433"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2007-12-10",
+      "primary-type": "Album",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Album Box Set",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "b7db08f4-835a-4a69-970b-5321e6305032"
+    },
+    {
+      "id": "b8048f24-c026-3398-b23a-b5e50716cbc7",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "primary-type": "Album",
+      "title": "The Bends",
+      "disambiguation": "",
+      "first-release-date": "1994-11-29"
+    },
+    {
+      "id": "b9e65b67-32e2-45ac-9e6b-cad36c248c14",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1997‐07‐04: Eurockéennes Festival, Belfort, France",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2020-07-02"
+    },
+    {
+      "first-release-date": "2016-05-08",
+      "disambiguation": "",
+      "title": "A Moon Shaped Pool",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "bbce0087-d386-4246-a51d-dbcdfdbe8fb2"
+    },
+    {
+      "first-release-date": "1993-09-02",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "1993‐09‐02: Signal Radio Studios: Cheshire, UK",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "bbfcf0d4-fa9c-4783-abd5-44146862c992"
+    },
+    {
+      "primary-type": "Album",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "title": "Amnesiac",
+      "disambiguation": "",
+      "first-release-date": "2001-05-30",
+      "id": "bca9280e-28b4-327f-8fe0-fd918579e486",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "bcd690a4-bd50-4be7-822b-138dd5c410b6",
+      "disambiguation": "",
+      "first-release-date": "1995-04-25",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1995‐04‐25: Live Europe 1",
+      "primary-type": "Album"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "1994-02-21",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "1994‐02‐21: Royal Berks Social Club, Reading, England, UK",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "be5459f1-2d85-4f21-8be6-4fcef7dbda05"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "c2ac2c8d-51c5-3abf-aafa-3f0e93795151",
+      "disambiguation": "",
+      "first-release-date": "1997",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "Lost Treasures 1993–1997"
+    },
+    {
+      "id": "c4ae4ebb-2d68-4ba7-9c81-18ad7cb9022f",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Greatest Hits",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2008"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "1996-04-16",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1996‐04‐16: La Cigale, Paris, France",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "cba3bc38-dbc2-408c-a29b-88d97929bc95"
+    },
+    {
+      "id": "cd76f76b-ff15-3784-a71d-4da3078a6851",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "title": "Pablo Honey",
+      "primary-type": "Album",
+      "first-release-date": "1993-02-22",
+      "disambiguation": ""
+    },
+    {
+      "id": "ceee3ae6-d614-350d-92ee-9c0b001a1440",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "title": "B Sides",
+      "first-release-date": "",
+      "disambiguation": ""
+    },
+    {
+      "id": "cfb30e6e-48a9-4e3f-b7c9-f70d2f7f7262",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["12af3f5e-ce2a-3941-8b93-d482884031e5"],
+      "primary-type": "Album",
+      "secondary-types": ["Interview"],
+      "title": "An Interview with Jonny and Colin Greenwood",
+      "disambiguation": "",
+      "first-release-date": "2000"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "cfb8d0b5-65ed-3cdc-888d-9100efcf3d65",
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Gagging Order: Acoustic Renditions",
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "d0271409-f1a8-4b47-98d8-f61364f73354",
+      "first-release-date": "1997",
+      "disambiguation": "",
+      "primary-type": "Album",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Ground Control to Major Thom"
+    },
+    {
+      "id": "d2f48ef0-9a77-42bc-95af-89dd0c8452b4",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "In Rainbows: From the Basement",
+      "primary-type": "Album",
+      "first-release-date": "2008-06-24",
+      "disambiguation": ""
+    },
+    {
+      "secondary-types": ["Compilation"],
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "Bootleg No. 2: Do Not Tell Me..",
+      "primary-type": "Album",
+      "first-release-date": "",
+      "disambiguation": "",
+      "id": "d4fe59d3-4d22-3f99-8a08-b07cb548c949",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "d814a65a-707e-417d-a83e-89493356b206",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "B‐Sides, Vol. 2",
+      "first-release-date": "",
+      "disambiguation": ""
+    },
+    {
+      "id": "d8dd81ab-d840-4663-8da3-d8c27c2eaf91",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Radiohead Box",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "first-release-date": "2008-01-01",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "dc626f33-2cf3-40b1-9612-c1d5bd2edf64",
+      "first-release-date": "2005",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "Breaks and Beats"
+    },
+    {
+      "id": "dcfaca33-c71d-3f2d-b8ce-0194ff7fce43",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Fucking Rarities",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": ""
+    },
+    {
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2017‐04‐17: Greek Theatre, Berkely, CA, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "e078a7ce-4147-4bbb-8909-0aaa2a7972ad"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2001-11-07",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "I Might Be Wrong: Live Recordings",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "e404b349-7cef-398f-ac5e-ce06737341d1"
+    },
+    {
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "Towering Above the Rest",
+      "disambiguation": "",
+      "first-release-date": "2004",
+      "id": "e449d0a3-5661-338c-a51e-a9910f725fa5",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "e5d384d2-7455-388d-933e-8bc1ae3fad53",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "Les Enfants Terrible",
+      "first-release-date": "2000",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "e607d0d4-b520-37f9-b82b-8aec9e786c72",
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "Greatest Hits 98"
+    },
+    {
+      "id": "e75c0549-ad55-39e3-8025-c72c5d4a3c5d",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [],
+      "primary-type": "Album",
+      "secondary-types": [],
+      "title": "Kid A",
+      "disambiguation": "",
+      "first-release-date": "2000-08-03"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "ebaf8e7b-12f5-39db-9caf-f3b82ceda1eb",
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "title": "Unplugged: The Complete Acoustic Sessions",
+      "primary-type": "Album"
+    },
+    {
+      "first-release-date": "2015-04",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "Secrets to Be Told",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "efa95117-971c-4ad4-aa14-0f2d30a206b3"
+    },
+    {
+      "first-release-date": "2011-09-21",
+      "disambiguation": "",
+      "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1",
+        "0c60f497-ff81-3818-befd-abfc84a4858b"
+      ],
+      "secondary-types": ["Compilation", "Remix"],
+      "primary-type": "Album",
+      "title": "TKOL RMX 1 2 3 4 5 6 7",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "f1b5c8a1-a597-40c5-b244-f3c0f34f83ee"
+    },
+    {
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "Looking Back At…",
+      "disambiguation": "",
+      "first-release-date": "2000",
+      "id": "f4302994-a6fa-4a4a-9605-355a750468e6",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album",
+      "title": "World Ballads Collection",
+      "disambiguation": "",
+      "first-release-date": "1999",
+      "id": "f720c4d7-a80d-4466-b92d-9d1de99ddba7",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1995‐12‐04: Planet Paradiso: Paradiso, Amsterdam, Netherlands",
+      "first-release-date": "1995-12-04",
+      "disambiguation": "",
+      "id": "f8c12cd6-f8ac-37c2-b638-803c1bbcfda2",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "primary-type": "Album",
+      "secondary-types": ["Compilation"],
+      "title": "On a Friday",
+      "disambiguation": "",
+      "first-release-date": "",
+      "id": "f950742c-0616-42f3-8eab-010fd6927b75",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "feb600b9-eb3a-4976-8cf3-d09a818bc01a",
+      "first-release-date": "2009",
+      "disambiguation": "",
+      "secondary-type-ids": ["dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"],
+      "title": "10 Great Songs: The Best Of",
+      "secondary-types": ["Compilation"],
+      "primary-type": "Album"
+    }
+  ],
+  "release-group-offset": 0,
+  "release-group-count": 388
+}

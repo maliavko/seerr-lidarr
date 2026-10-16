@@ -41,6 +41,7 @@ import path from 'path';
 import semver from 'semver';
 import { URL } from 'url';
 import { z } from 'zod';
+import lidarrRoutes from './lidarr';
 import metadataRoutes from './metadata';
 import notificationRoutes from './notifications';
 import radarrRoutes from './radarr';
@@ -51,6 +52,7 @@ const settingsRoutes = Router();
 settingsRoutes.use('/notifications', notificationRoutes);
 settingsRoutes.use('/radarr', radarrRoutes);
 settingsRoutes.use('/sonarr', sonarrRoutes);
+settingsRoutes.use('/lidarr', lidarrRoutes);
 settingsRoutes.use('/discover', discoverSettingRoutes);
 settingsRoutes.use('/metadatas', metadataRoutes);
 

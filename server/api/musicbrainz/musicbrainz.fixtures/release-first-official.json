@@ -1,0 +1,229 @@
+{
+  "text-representation": { "script": "Latn", "language": "eng" },
+  "barcode": "724385522949",
+  "release-events": [
+    {
+      "area": {
+        "disambiguation": "",
+        "type": null,
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "name": "United Kingdom",
+        "iso-3166-1-codes": ["GB"],
+        "type-id": null,
+        "sort-name": "United Kingdom"
+      },
+      "date": "1997-06-16"
+    }
+  ],
+  "disambiguation": "",
+  "title": "OK Computer",
+  "media": [
+    {
+      "tracks": [
+        {
+          "recording": {
+            "length": 284400,
+            "video": false,
+            "id": "4a7fea2e-545b-4c63-bc9a-9943cc3a29d7",
+            "title": "Airbag",
+            "disambiguation": "",
+            "first-release-date": "1997-05-21"
+          },
+          "number": "A1",
+          "title": "Airbag",
+          "id": "a31f27a1-dfd8-38cc-958a-07f3af52fc25",
+          "length": 284400,
+          "position": 1
+        },
+        {
+          "number": "A2",
+          "recording": {
+            "video": false,
+            "id": "9f9cf187-d6f9-437f-9d98-d59cdbd52757",
+            "length": 384000,
+            "title": "Paranoid Android",
+            "disambiguation": "",
+            "first-release-date": "1997-05-21"
+          },
+          "position": 2,
+          "length": 383493,
+          "id": "26ca3f84-46d8-3627-b894-b1eb8599a110",
+          "title": "Paranoid Android"
+        },
+        {
+          "id": "66ee1e73-a67c-3988-9ab5-e74721be5258",
+          "title": "Subterranean Homesick Alien",
+          "position": 3,
+          "length": 267706,
+          "recording": {
+            "first-release-date": "1997-05-21",
+            "disambiguation": "",
+            "title": "Subterranean Homesick Alien",
+            "length": 267706,
+            "id": "bd82738d-163c-4b1a-bfaf-7acffe30e68a",
+            "video": false
+          },
+          "number": "A3"
+        },
+        {
+          "position": 4,
+          "length": 264800,
+          "id": "db7b6f2d-18b8-39b2-826d-eb9e82f35f3a",
+          "title": "Exit Music (for a Film)",
+          "number": "A4",
+          "recording": {
+            "title": "Exit Music (for a Film)",
+            "disambiguation": "",
+            "first-release-date": "1997-05-21",
+            "video": false,
+            "id": "23c3c36b-9449-4484-9040-6ef2125999aa",
+            "length": 264800
+          }
+        },
+        {
+          "recording": {
+            "disambiguation": "",
+            "title": "Let Down",
+            "first-release-date": "1997-05-21",
+            "id": "47b02a82-c3bf-4647-b894-dd1c8f608e7f",
+            "video": false,
+            "length": 299266
+          },
+          "number": "A5",
+          "id": "5fe3d1b0-2f09-327e-b7e7-9fcff3158a8a",
+          "title": "Let Down",
+          "position": 5,
+          "length": 299266
+        },
+        {
+          "position": 6,
+          "length": 261626,
+          "id": "944a6d7d-a244-3295-ad6c-1440a52998e8",
+          "title": "Karma Police",
+          "number": "A6",
+          "recording": {
+            "video": false,
+            "id": "9e2ad5bc-c6f9-40d2-a36f-3122ee2072a3",
+            "length": 262426,
+            "first-release-date": "1997-05-21",
+            "title": "Karma Police",
+            "disambiguation": ""
+          }
+        },
+        {
+          "number": "B1",
+          "recording": {
+            "video": false,
+            "id": "5838f978-0822-4e28-874f-e1511324ec3a",
+            "length": 117333,
+            "first-release-date": "1997-05-21",
+            "title": "Fitter Happier",
+            "disambiguation": ""
+          },
+          "length": 117333,
+          "position": 7,
+          "title": "Fitter Happier",
+          "id": "7feb7034-4809-39c0-8576-2ea7a83d118e"
+        },
+        {
+          "number": "B2",
+          "recording": {
+            "length": 230640,
+            "id": "ba0a796c-bd1f-4d4b-85a8-918f217a204a",
+            "video": false,
+            "first-release-date": "1997-05-21",
+            "disambiguation": "",
+            "title": "Electioneering"
+          },
+          "position": 8,
+          "length": 230640,
+          "id": "0481f01e-b351-3c42-b851-748fa741ca74",
+          "title": "Electioneering"
+        },
+        {
+          "recording": {
+            "first-release-date": "1997-05-21",
+            "title": "Climbing Up the Walls",
+            "disambiguation": "",
+            "length": 285200,
+            "video": false,
+            "id": "c7225576-001e-423c-adc1-58f0985dcb27"
+          },
+          "number": "B3",
+          "id": "52ac1a5e-a231-37b4-a82d-7dbc0c74bd72",
+          "title": "Climbing Up the Walls",
+          "position": 9,
+          "length": 285200
+        },
+        {
+          "length": 228533,
+          "position": 10,
+          "title": "No Surprises",
+          "id": "94cede1d-3eb0-3978-8235-3747bb616cc0",
+          "number": "B4",
+          "recording": {
+            "length": 228533,
+            "id": "980a426e-623e-4ea5-98c7-008d037a0508",
+            "video": false,
+            "disambiguation": "",
+            "title": "No Surprises",
+            "first-release-date": "1997-05-21"
+          }
+        },
+        {
+          "title": "Lucky",
+          "id": "34a59962-7e37-3fd9-8a74-f80528ffa1a0",
+          "length": 259626,
+          "position": 11,
+          "recording": {
+            "length": 259626,
+            "video": false,
+            "id": "79047824-f821-4b1a-9893-e0cea1c947dd",
+            "title": "Lucky",
+            "disambiguation": "",
+            "first-release-date": "1995-09-09"
+          },
+          "number": "B5"
+        },
+        {
+          "number": "B6",
+          "recording": {
+            "first-release-date": "1997-05-21",
+            "disambiguation": "",
+            "title": "The Tourist",
+            "length": 324533,
+            "id": "610c0012-6eb4-42a0-b759-3a2532ce0f15",
+            "video": false
+          },
+          "length": 324533,
+          "position": 12,
+          "title": "The Tourist",
+          "id": "9f537c38-29dc-3114-9ce3-8c99d37e743f"
+        }
+      ],
+      "track-offset": 0,
+      "format-id": "f5e6e254-8f39-331c-936b-9c69d686dc47",
+      "track-count": 12,
+      "position": 1,
+      "format": "Cassette",
+      "title": "",
+      "id": "2de5342c-a798-35cc-bf75-97f06c7cdbde"
+    }
+  ],
+  "asin": "B000002UJR",
+  "id": "fba5f8fe-c6c8-4511-8562-c9febf482674",
+  "packaging": "Cassette Case",
+  "packaging-id": "c70b737a-0114-39a9-88f7-82843e54f906",
+  "date": "1997-06-16",
+  "status": "Official",
+  "quality": "normal",
+  "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+  "country": "GB",
+  "cover-art-archive": {
+    "darkened": false,
+    "count": 4,
+    "back": true,
+    "front": true,
+    "artwork": true
+  }
+}

@@ -3,6 +3,7 @@ import Badge from '@app/components/Common/Badge';
 import Button from '@app/components/Common/Button';
 import CachedImage from '@app/components/Common/CachedImage';
 import ConfirmButton from '@app/components/Common/ConfirmButton';
+import MusicRequestItem from '@app/components/RequestList/RequestItem/MusicRequestItem';
 import RequestModal from '@app/components/RequestModal';
 import StatusBadge from '@app/components/StatusBadge';
 import useDeepLinks from '@app/hooks/useDeepLinks';
@@ -21,7 +22,11 @@ import {
   TrashIcon,
   XMarkIcon,
 } from '@heroicons/react/24/solid';
-import { MediaRequestStatus, MediaStatus } from '@server/constants/media';
+import {
+  MediaRequestStatus,
+  MediaStatus,
+  MediaType,
+} from '@server/constants/media';
 import type { MediaRequest } from '@server/entity/MediaRequest';
 import type { NonFunctionProperties } from '@server/interfaces/api/common';
 import type { RequestResultsResponse } from '@server/interfaces/api/requestInterfaces';
@@ -155,7 +160,7 @@ const RequestItemError = ({
                     title={intl.formatMessage(messages.unknowntitle)}
                     inProgress={requestDownloadStatus.length > 0}
                     is4k={requestData.is4k}
-                    mediaType={requestData.type}
+                    mediaType={requestData.type as 'movie' | 'tv'}
                     plexUrl={requestData.is4k ? plexUrl4k : plexUrl}
                     serviceUrl={
                       requestData.is4k
@@ -426,7 +431,7 @@ const RequestItem = ({ request, revalidateList }: RequestItemProps) => {
       <RequestModal
         show={showEditModal}
         tmdbId={request.media.tmdbId}
-        type={request.type}
+        type={request.type as 'movie' | 'tv'}
         is4k={request.is4k}
         editRequest={request}
         onCancel={() => setShowEditModal(false)}
@@ -552,7 +557,7 @@ const RequestItem = ({ request, revalidateList }: RequestItemProps) => {
                   inProgress={requestDownloadStatus.length > 0}
                   is4k={requestData.is4k}
                   tmdbId={requestData.media.tmdbId}
-                  mediaType={requestData.type}
+                  mediaType={requestData.type as 'movie' | 'tv'}
                   plexUrl={requestData.is4k ? plexUrl4k : plexUrl}
                   serviceUrl={
                     requestData.is4k
@@ -789,4 +794,12 @@ const RequestItem = ({ request, revalidateList }: RequestItemProps) => {
   );
 };
 
-export default RequestItem;
+// A music request has its own row (R-12): its metadata is not TMDB's.
+const RequestItemRow = (props: RequestItemProps) =>
+  props.request.type === MediaType.MUSIC ? (
+    <MusicRequestItem {...props} />
+  ) : (
+    <RequestItem {...props} />
+  );
+
+export default RequestItemRow;

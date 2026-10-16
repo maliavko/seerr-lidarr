@@ -1,0 +1,772 @@
+[
+  {
+    "title": "Kid A",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 3,
+    "foreignAlbumId": "e75c0549-ad55-39e3-8025-c72c5d4a3c5d",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 3,
+    "duration": 6976460,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 2,
+    "ratings": {
+      "votes": 72,
+      "value": 9.0
+    },
+    "releaseDate": "2000-08-03T00:00:00Z",
+    "genres": [
+      "Electronic",
+      "Art Rock",
+      "Experimental Rock",
+      "Alternative Rock",
+      "Avant-Garde",
+      "Rock",
+      "Post-Rock",
+      "Idm",
+      "Ambient",
+      "Electronica",
+      "Art Pop",
+      "Indietronica",
+      "Indie Rock",
+      "Ambient Pop",
+      "Leftfield"
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Radiohead",
+      "foreignArtistId": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Group",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "http://www.radiohead.com/",
+          "name": "radiohead"
+        },
+        {
+          "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/",
+          "name": "musicmoz"
+        },
+        {
+          "url": "https://www.discogs.com/artist/3840",
+          "name": "discogs"
+        },
+        {
+          "url": "https://myspace.com/radiohead",
+          "name": "myspace"
+        },
+        {
+          "url": "http://www.purevolume.com/radiohead",
+          "name": "purevolume"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm1955602/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/a74b1b7f-71a5-4011-9441-d0b5e4122711",
+          "name": "bbc"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000326249",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://www.facebook.com/radiohead",
+          "name": "facebook"
+        },
+        {
+          "url": "https://soundcloud.com/radiohead",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://secondhandsongs.com/artist/2279",
+          "name": "secondhandsongs"
+        },
+        {
+          "url": "https://www.last.fm/music/Radiohead",
+          "name": "last"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/radiohead",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://twitter.com/radiohead",
+          "name": "twitter"
+        },
+        {
+          "url": "http://viaf.org/viaf/141028845",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q44190",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-3909/radiohead/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+          "name": "spotify"
+        },
+        {
+          "url": "https://genius.com/artists/Radiohead",
+          "name": "genius"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/radiohead/",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.songkick.com/artists/253846",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.setlist.fm/setlists/radiohead-bd6bd12.html",
+          "name": "setlist"
+        },
+        {
+          "url": "https://www.deezer.com/artist/399",
+          "name": "deezer"
+        },
+        {
+          "url": "https://imvdb.com/n/radiohead",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://ra.co/dj/radiohead",
+          "name": "ra"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=A3qpbllyfot4yhqo7isoomtctli",
+          "name": "google"
+        },
+        {
+          "url": "https://www.musik-sammler.de/artist/3211/",
+          "name": "musik-sammler"
+        },
+        {
+          "url": "https://www.bandsintown.com/a/25874",
+          "name": "bandsintown"
+        },
+        {
+          "url": "https://www.whosampled.com/Radiohead/",
+          "name": "whosampled"
+        },
+        {
+          "url": "http://www.spirit-of-rock.com/groupe-groupe-Radiohead-l-en.html",
+          "name": "spirit-of-rock"
+        },
+        {
+          "url": "https://www.45cat.com/artist/radiohead",
+          "name": "45cat"
+        },
+        {
+          "url": "https://www.dailymotion.com/Radiohead-vevo",
+          "name": "dailymotion"
+        },
+        {
+          "url": "https://plus.google.com/118195887388913664436",
+          "name": "google"
+        },
+        {
+          "url": "https://www.instagram.com/radiohead/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://radiohead.tumblr.com/",
+          "name": "tumblr"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1707341-8",
+          "name": "d-nb"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no97045991",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no97045991",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb139551041",
+          "name": "bnf"
+        },
+        {
+          "url": "https://vgmdb.net/artist/13395",
+          "name": "vgmdb"
+        },
+        {
+          "url": "https://radiohead.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://tidal.com/artist/64518",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.tiktok.com/@radiohead",
+          "name": "tiktok"
+        },
+        {
+          "url": "http://www.btinternet.com/~r.j.arthur/rh/rhdisc.htm",
+          "name": "btinternet"
+        },
+        {
+          "url": "https://www.progarchives.com/artist.asp?id=1492",
+          "name": "progarchives"
+        },
+        {
+          "url": "https://music.youtube.com/channel/UCr_iyUANcn9OX_yy9piYoLw",
+          "name": "youtube"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://citizeninsane.eu/",
+          "name": "citizeninsane"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://www.beatport.com/artist/radiohead/112220",
+          "name": "beatport"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA",
+          "name": "youtube"
+        },
+        {
+          "url": "https://music.amazon.co.uk/artists/B000QJXOGC",
+          "name": "amazon"
+        },
+        {
+          "url": "https://www.idref.fr/069877327",
+          "name": "idref"
+        },
+        {
+          "url": "https://jaxsta.com/profile/0e8bd208-ea18-4a75-853d-7391f4c715b2",
+          "name": "jaxsta"
+        },
+        {
+          "url": "https://www.deezer.com/artist/323887691",
+          "name": "deezer"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Radiohead",
+      "qualityProfileId": 3,
+      "metadataProfileId": 1,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Alternative Rock",
+        "Art Rock",
+        "Rock",
+        "Experimental Rock",
+        "Electronic",
+        "Indie Rock",
+        "Experimental",
+        "Art Pop",
+        "Post-Britpop",
+        "Electronica",
+        "Britpop",
+        "Chamber Pop",
+        "Indietronica",
+        "Post-Grunge",
+        "Crossover Prog",
+        "Electronic Rock",
+        "Ambient Pop",
+        "Idm"
+      ],
+      "cleanName": "radiohead",
+      "sortName": "radiohead",
+      "tags": [],
+      "added": "2026-10-14T11:13:45Z",
+      "ratings": {
+        "votes": 80,
+        "value": 9.0
+      },
+      "id": 3
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/19/cover.jpg?lastWrite=639275732260726491",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/0e8a1994-f0a7-481d-9be2-6c2f80e14de5/29475045164-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/19/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/f7c1ed90-d7df-4a99-85f4-2eee2d620505/31949046590-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/Discography/Kid_A/",
+        "name": "musicmoz"
+      },
+      {
+        "url": "https://www.discogs.com/master/21501",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/reviews/jmf9",
+        "name": "bbc"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q220726",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0000620999",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.musik-sammler.de/album/30866/",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/radiohead/kid_a/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://genius.com/albums/Radiohead/Kid-a",
+        "name": "genius"
+      },
+      {
+        "url": "https://www.spirit-of-rock.com/en/album/Kid_A/1907",
+        "name": "spirit-of-rock"
+      },
+      {
+        "url": "https://www.progarchives.com/album.asp?id=7093",
+        "name": "progarchives"
+      },
+      {
+        "url": "https://www.sputnikmusic.com/review/32295/Radiohead-Kid-A/",
+        "name": "sputnikmusic"
+      },
+      {
+        "url": "https://www.albumoftheyear.org/album/366-radiohead-kid-a.php",
+        "name": "albumoftheyear"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 23,
+      "totalTrackCount": 23,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 19
+  },
+  {
+    "title": "Amnesiac",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 3,
+    "foreignAlbumId": "bca9280e-28b4-327f-8fe0-fd918579e486",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 3,
+    "duration": 6397378,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 2,
+    "ratings": {
+      "votes": 59,
+      "value": 7.8
+    },
+    "releaseDate": "2001-05-30T00:00:00Z",
+    "genres": [
+      "Alternative Rock",
+      "Rock",
+      "Art Rock",
+      "Experimental Rock",
+      "Electronic",
+      "Jazz Rock",
+      "Leftfield"
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Radiohead",
+      "foreignArtistId": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Group",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "http://www.radiohead.com/",
+          "name": "radiohead"
+        },
+        {
+          "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/",
+          "name": "musicmoz"
+        },
+        {
+          "url": "https://www.discogs.com/artist/3840",
+          "name": "discogs"
+        },
+        {
+          "url": "https://myspace.com/radiohead",
+          "name": "myspace"
+        },
+        {
+          "url": "http://www.purevolume.com/radiohead",
+          "name": "purevolume"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm1955602/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/a74b1b7f-71a5-4011-9441-d0b5e4122711",
+          "name": "bbc"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000326249",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://www.facebook.com/radiohead",
+          "name": "facebook"
+        },
+        {
+          "url": "https://soundcloud.com/radiohead",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://secondhandsongs.com/artist/2279",
+          "name": "secondhandsongs"
+        },
+        {
+          "url": "https://www.last.fm/music/Radiohead",
+          "name": "last"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/radiohead",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://twitter.com/radiohead",
+          "name": "twitter"
+        },
+        {
+          "url": "http://viaf.org/viaf/141028845",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q44190",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-3909/radiohead/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+          "name": "spotify"
+        },
+        {
+          "url": "https://genius.com/artists/Radiohead",
+          "name": "genius"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/radiohead/",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.songkick.com/artists/253846",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.setlist.fm/setlists/radiohead-bd6bd12.html",
+          "name": "setlist"
+        },
+        {
+          "url": "https://www.deezer.com/artist/399",
+          "name": "deezer"
+        },
+        {
+          "url": "https://imvdb.com/n/radiohead",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://ra.co/dj/radiohead",
+          "name": "ra"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=A3qpbllyfot4yhqo7isoomtctli",
+          "name": "google"
+        },
+        {
+          "url": "https://www.musik-sammler.de/artist/3211/",
+          "name": "musik-sammler"
+        },
+        {
+          "url": "https://www.bandsintown.com/a/25874",
+          "name": "bandsintown"
+        },
+        {
+          "url": "https://www.whosampled.com/Radiohead/",
+          "name": "whosampled"
+        },
+        {
+          "url": "http://www.spirit-of-rock.com/groupe-groupe-Radiohead-l-en.html",
+          "name": "spirit-of-rock"
+        },
+        {
+          "url": "https://www.45cat.com/artist/radiohead",
+          "name": "45cat"
+        },
+        {
+          "url": "https://www.dailymotion.com/Radiohead-vevo",
+          "name": "dailymotion"
+        },
+        {
+          "url": "https://plus.google.com/118195887388913664436",
+          "name": "google"
+        },
+        {
+          "url": "https://www.instagram.com/radiohead/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://radiohead.tumblr.com/",
+          "name": "tumblr"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1707341-8",
+          "name": "d-nb"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no97045991",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no97045991",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb139551041",
+          "name": "bnf"
+        },
+        {
+          "url": "https://vgmdb.net/artist/13395",
+          "name": "vgmdb"
+        },
+        {
+          "url": "https://radiohead.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://tidal.com/artist/64518",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.tiktok.com/@radiohead",
+          "name": "tiktok"
+        },
+        {
+          "url": "http://www.btinternet.com/~r.j.arthur/rh/rhdisc.htm",
+          "name": "btinternet"
+        },
+        {
+          "url": "https://www.progarchives.com/artist.asp?id=1492",
+          "name": "progarchives"
+        },
+        {
+          "url": "https://music.youtube.com/channel/UCr_iyUANcn9OX_yy9piYoLw",
+          "name": "youtube"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://citizeninsane.eu/",
+          "name": "citizeninsane"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://www.beatport.com/artist/radiohead/112220",
+          "name": "beatport"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA",
+          "name": "youtube"
+        },
+        {
+          "url": "https://music.amazon.co.uk/artists/B000QJXOGC",
+          "name": "amazon"
+        },
+        {
+          "url": "https://www.idref.fr/069877327",
+          "name": "idref"
+        },
+        {
+          "url": "https://jaxsta.com/profile/0e8bd208-ea18-4a75-853d-7391f4c715b2",
+          "name": "jaxsta"
+        },
+        {
+          "url": "https://www.deezer.com/artist/323887691",
+          "name": "deezer"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Radiohead",
+      "qualityProfileId": 3,
+      "metadataProfileId": 1,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Alternative Rock",
+        "Art Rock",
+        "Rock",
+        "Experimental Rock",
+        "Electronic",
+        "Indie Rock",
+        "Experimental",
+        "Art Pop",
+        "Post-Britpop",
+        "Electronica",
+        "Britpop",
+        "Chamber Pop",
+        "Indietronica",
+        "Post-Grunge",
+        "Crossover Prog",
+        "Electronic Rock",
+        "Ambient Pop",
+        "Idm"
+      ],
+      "cleanName": "radiohead",
+      "sortName": "radiohead",
+      "tags": [],
+      "added": "2026-10-14T11:13:45Z",
+      "ratings": {
+        "votes": 80,
+        "value": 9.0
+      },
+      "id": 3
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/20/cover.jpg?lastWrite=639275732266272988",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/910c1006-887c-3044-b13c-34f906f15ea7/2336491200-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/20/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/910c1006-887c-3044-b13c-34f906f15ea7/2336645295-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/Discography/Amnesiac/",
+        "name": "musicmoz"
+      },
+      {
+        "url": "https://www.discogs.com/master/2507",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/reviews/bv3n",
+        "name": "bbc"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q223650",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0000001712",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/radiohead/amnesiac/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.musik-sammler.de/album/30842/",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://genius.com/albums/Radiohead/Amnesiac",
+        "name": "genius"
+      },
+      {
+        "url": "https://www.spirit-of-rock.com/en/album/Amnesiac/3117",
+        "name": "spirit-of-rock"
+      },
+      {
+        "url": "https://www.progarchives.com/album.asp?id=7094",
+        "name": "progarchives"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 26,
+      "totalTrackCount": 26,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 20
+  }
+]

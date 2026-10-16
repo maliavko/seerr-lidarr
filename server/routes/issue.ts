@@ -1,4 +1,5 @@
 import { IssueStatus, IssueType } from '@server/constants/issue';
+import { MediaType } from '@server/constants/media';
 import { getRepository } from '@server/datasource';
 import Issue from '@server/entity/Issue';
 import IssueComment from '@server/entity/IssueComment';
@@ -118,7 +119,9 @@ issueRoutes.post<Record<string, string>, Issue, IssueRequestBody>(
       where: { id: req.body.mediaId },
     });
 
-    if (!media) {
+    // an issue's notifications read TMDB for its media, which a music row has
+    // none of (D-84): music has no issues, as for a missing media
+    if (!media || media.mediaType === MediaType.MUSIC) {
       return next({ status: 404, message: 'Media does not exist.' });
     }
 

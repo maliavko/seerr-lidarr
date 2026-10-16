@@ -1,0 +1,30 @@
+[
+  {
+    "propertyName": "QualityProfileId",
+    "errorMessage": "'Quality Profile Id' must be greater than '0'.",
+    "attemptedValue": 0,
+    "severity": "error",
+    "errorCode": "GreaterThanValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "comparisonValue": 0,
+      "comparisonProperty": "",
+      "propertyName": "Quality Profile Id",
+      "propertyValue": 0
+    }
+  },
+  {
+    "propertyName": "MetadataProfileId",
+    "errorMessage": "'Metadata Profile Id' must be greater than '0'.",
+    "attemptedValue": 0,
+    "severity": "error",
+    "errorCode": "GreaterThanValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "comparisonValue": 0,
+      "comparisonProperty": "",
+      "propertyName": "Metadata Profile Id",
+      "propertyValue": 0
+    }
+  }
+]

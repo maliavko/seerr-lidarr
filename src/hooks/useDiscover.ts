@@ -15,7 +15,8 @@ export interface BaseSearchResult<T> {
 }
 
 interface BaseMedia {
-  id: number;
+  // a TMDB id, or a MusicBrainz id for music
+  id: number | string;
   mediaType: string;
   mediaInfo?: {
     status: MediaStatus;
@@ -95,7 +96,7 @@ const useDiscover = <
     }
   );
 
-  const resultIds: Set<number> = new Set<number>();
+  const resultIds: Set<number | string> = new Set<number | string>();
 
   const isLoadingInitialData = !data && !error;
   const isLoadingMore =

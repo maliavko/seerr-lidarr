@@ -1,0 +1,1722 @@
+{
+  "status": "continuing",
+  "ended": false,
+  "artistName": "Radiohead",
+  "foreignArtistId": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+  "tadbId": 0,
+  "discogsId": 0,
+  "artistType": "Group",
+  "disambiguation": "",
+  "links": [
+    {
+      "url": "http://www.radiohead.com/",
+      "name": "radiohead"
+    },
+    {
+      "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/",
+      "name": "musicmoz"
+    },
+    {
+      "url": "https://www.discogs.com/artist/3840",
+      "name": "discogs"
+    },
+    {
+      "url": "https://myspace.com/radiohead",
+      "name": "myspace"
+    },
+    {
+      "url": "http://www.purevolume.com/radiohead",
+      "name": "purevolume"
+    },
+    {
+      "url": "https://www.imdb.com/name/nm1955602/",
+      "name": "imdb"
+    },
+    {
+      "url": "https://www.bbc.co.uk/music/artists/a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "name": "bbc"
+    },
+    {
+      "url": "https://www.allmusic.com/artist/mn0000326249",
+      "name": "allmusic"
+    },
+    {
+      "url": "https://www.facebook.com/radiohead",
+      "name": "facebook"
+    },
+    {
+      "url": "https://soundcloud.com/radiohead",
+      "name": "soundcloud"
+    },
+    {
+      "url": "https://secondhandsongs.com/artist/2279",
+      "name": "secondhandsongs"
+    },
+    {
+      "url": "https://www.last.fm/music/Radiohead",
+      "name": "last"
+    },
+    {
+      "url": "https://rateyourmusic.com/artist/radiohead",
+      "name": "rateyourmusic"
+    },
+    {
+      "url": "https://twitter.com/radiohead",
+      "name": "twitter"
+    },
+    {
+      "url": "http://viaf.org/viaf/141028845",
+      "name": "viaf"
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q44190",
+      "name": "wikidata"
+    },
+    {
+      "url": "http://muzikum.eu/en/122-3909/radiohead/lyrics.html",
+      "name": "muzikum"
+    },
+    {
+      "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+      "name": "spotify"
+    },
+    {
+      "url": "https://genius.com/artists/Radiohead",
+      "name": "genius"
+    },
+    {
+      "url": "https://uk.7digital.com/artist/radiohead/",
+      "name": "7digital"
+    },
+    {
+      "url": "https://www.songkick.com/artists/253846",
+      "name": "songkick"
+    },
+    {
+      "url": "https://www.setlist.fm/setlists/radiohead-bd6bd12.html",
+      "name": "setlist"
+    },
+    {
+      "url": "https://www.deezer.com/artist/399",
+      "name": "deezer"
+    },
+    {
+      "url": "https://imvdb.com/n/radiohead",
+      "name": "imvdb"
+    },
+    {
+      "url": "https://ra.co/dj/radiohead",
+      "name": "ra"
+    },
+    {
+      "url": "https://play.google.com/store/music/artist?id=A3qpbllyfot4yhqo7isoomtctli",
+      "name": "google"
+    },
+    {
+      "url": "https://www.musik-sammler.de/artist/3211/",
+      "name": "musik-sammler"
+    },
+    {
+      "url": "https://www.bandsintown.com/a/25874",
+      "name": "bandsintown"
+    },
+    {
+      "url": "https://www.whosampled.com/Radiohead/",
+      "name": "whosampled"
+    },
+    {
+      "url": "http://www.spirit-of-rock.com/groupe-groupe-Radiohead-l-en.html",
+      "name": "spirit-of-rock"
+    },
+    {
+      "url": "https://www.45cat.com/artist/radiohead",
+      "name": "45cat"
+    },
+    {
+      "url": "https://www.dailymotion.com/Radiohead-vevo",
+      "name": "dailymotion"
+    },
+    {
+      "url": "https://plus.google.com/118195887388913664436",
+      "name": "google"
+    },
+    {
+      "url": "https://www.instagram.com/radiohead/",
+      "name": "instagram"
+    },
+    {
+      "url": "https://radiohead.tumblr.com/",
+      "name": "tumblr"
+    },
+    {
+      "url": "https://d-nb.info/gnd/1707341-8",
+      "name": "d-nb"
+    },
+    {
+      "url": "http://id.loc.gov/authorities/names/no97045991",
+      "name": "loc"
+    },
+    {
+      "url": "https://www.worldcat.org/identities/lccn-no97045991",
+      "name": "worldcat"
+    },
+    {
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb139551041",
+      "name": "bnf"
+    },
+    {
+      "url": "https://vgmdb.net/artist/13395",
+      "name": "vgmdb"
+    },
+    {
+      "url": "https://radiohead.bandcamp.com/",
+      "name": "bandcamp"
+    },
+    {
+      "url": "https://tidal.com/artist/64518",
+      "name": "tidal"
+    },
+    {
+      "url": "https://www.tiktok.com/@radiohead",
+      "name": "tiktok"
+    },
+    {
+      "url": "http://www.btinternet.com/~r.j.arthur/rh/rhdisc.htm",
+      "name": "btinternet"
+    },
+    {
+      "url": "https://www.progarchives.com/artist.asp?id=1492",
+      "name": "progarchives"
+    },
+    {
+      "url": "https://music.youtube.com/channel/UCr_iyUANcn9OX_yy9piYoLw",
+      "name": "youtube"
+    },
+    {
+      "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+      "name": "qobuz"
+    },
+    {
+      "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+      "name": "qobuz"
+    },
+    {
+      "url": "https://citizeninsane.eu/",
+      "name": "citizeninsane"
+    },
+    {
+      "url": "https://music.apple.com/gb/artist/657515",
+      "name": "apple"
+    },
+    {
+      "url": "https://music.apple.com/gb/artist/657515",
+      "name": "apple"
+    },
+    {
+      "url": "https://www.beatport.com/artist/radiohead/112220",
+      "name": "beatport"
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA",
+      "name": "youtube"
+    },
+    {
+      "url": "https://music.amazon.co.uk/artists/B000QJXOGC",
+      "name": "amazon"
+    },
+    {
+      "url": "https://www.idref.fr/069877327",
+      "name": "idref"
+    },
+    {
+      "url": "https://jaxsta.com/profile/0e8bd208-ea18-4a75-853d-7391f4c715b2",
+      "name": "jaxsta"
+    },
+    {
+      "url": "https://www.deezer.com/artist/323887691",
+      "name": "deezer"
+    },
+    {
+      "url": "https://open.qobuz.com/artist/43840",
+      "name": "qobuz"
+    },
+    {
+      "url": "https://open.qobuz.com/artist/43840",
+      "name": "qobuz"
+    }
+  ],
+  "nextAlbum": null,
+  "lastAlbum": {
+    "title": "OK Computer",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 3,
+    "foreignAlbumId": "b1392450-e666-3926-a536-22c65f834433",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 3,
+    "duration": 20705000,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 6,
+    "ratings": {
+      "votes": 89,
+      "value": 9.1
+    },
+    "releaseDate": "1997-05-21T00:00:00Z",
+    "releases": [
+      {
+        "id": 655,
+        "albumId": 27,
+        "foreignReleaseId": "fba5f8fe-c6c8-4511-8562-c9febf482674",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Cassette"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "Cassette",
+        "monitored": false
+      },
+      {
+        "id": 656,
+        "albumId": 27,
+        "foreignReleaseId": "541a0976-ca45-3c0f-89e5-26bc376f58d1",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3208000,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 657,
+        "albumId": 27,
+        "foreignReleaseId": "175d6ac9-7185-357c-af04-5887dc3ea788",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["EMI", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 658,
+        "albumId": 27,
+        "foreignReleaseId": "bdf93ecb-85e8-3505-98f7-e2e8c5052723",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 6849215,
+        "trackCount": 27,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "bonus disc",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["EMI"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 659,
+        "albumId": 27,
+        "foreignReleaseId": "51df2038-5682-303e-9d87-7aeb99660433",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3208000,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["Capitol Records"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 660,
+        "albumId": 27,
+        "foreignReleaseId": "9c1e5e9e-9f40-4cd8-94a4-785fa5d0b613",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Cassette"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Poland"],
+        "label": ["Parlophone"],
+        "format": "Cassette",
+        "monitored": false
+      },
+      {
+        "id": 661,
+        "albumId": 27,
+        "foreignReleaseId": "9eff0482-170f-3e93-8c65-73ce18e10ee7",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 6851229,
+        "trackCount": 27,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Europe"],
+        "label": ["EMI"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 662,
+        "albumId": 27,
+        "foreignReleaseId": "0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["BMG Direct Marketing, Inc.", "Capitol Records"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 663,
+        "albumId": 27,
+        "foreignReleaseId": "52e7fc61-fcf3-4b46-ac72-38e9644bf982",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3827489,
+        "trackCount": 15,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "OK Computer",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "Karma Police",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Europe"],
+        "label": ["Parlophone"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 664,
+        "albumId": 27,
+        "foreignReleaseId": "7169a92a-4dc1-42bb-9a21-c1c9223b68a8",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 6849215,
+        "trackCount": 27,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Canada"],
+        "label": ["EMI"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 665,
+        "albumId": 27,
+        "foreignReleaseId": "a736eb98-ba6b-3e42-ad80-a65f648910a3",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 6849215,
+        "trackCount": 27,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "OK Computer",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "Paranoid Android / Karma Police / No Surprises/ BBC Radio One Evening Session 28.05.97",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["EMI", "EMI"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 666,
+        "albumId": 27,
+        "foreignReleaseId": "d4635a34-caf5-3b35-9a5b-d805f1126633",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 6849215,
+        "trackCount": 27,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "special collector’s edition",
+        "country": ["United States"],
+        "label": ["Capitol Records"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 667,
+        "albumId": 27,
+        "foreignReleaseId": "a1ed87aa-2079-4e42-bbeb-6309b3b68674",
+        "title": "OK Computer: OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 5557426,
+        "trackCount": 23,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "2xDigital Media",
+        "monitored": false
+      },
+      {
+        "id": 668,
+        "albumId": 27,
+        "foreignReleaseId": "839966ab-7612-447c-b805-2a36b3e18aa5",
+        "title": "OK Computer: OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 20705000,
+        "trackCount": 91,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "ip / skip",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "sky / blue",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 3,
+            "mediumName": "who's / it",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 4,
+            "mediumName": "",
+            "mediumFormat": "Cassette"
+          },
+          {
+            "mediumNumber": 5,
+            "mediumName": "Vinyl Download",
+            "mediumFormat": "Download Card"
+          },
+          {
+            "mediumNumber": 6,
+            "mediumName": "White Cassette Download",
+            "mediumFormat": "Download Card"
+          }
+        ],
+        "mediumCount": 6,
+        "disambiguation": "deluxe boxed edition",
+        "country": ["United Kingdom", "United States"],
+        "label": ["XL Recordings", "XL Recordings"],
+        "format": "3x12\" Vinyl, Cassette, 2xDownload Card",
+        "monitored": true
+      },
+      {
+        "id": 669,
+        "albumId": 27,
+        "foreignReleaseId": "4b3d18cc-8937-36f4-8de0-481088be58e6",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Canada"],
+        "label": ["EMI Music Canada"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 670,
+        "albumId": 27,
+        "foreignReleaseId": "1834eae1-741b-3c03-9ca5-0df3decb43ea",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["EMI"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 671,
+        "albumId": 27,
+        "foreignReleaseId": "3c8cbdc8-555f-3987-8f03-6baf9488d1b0",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Argentina"],
+        "label": ["Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 672,
+        "albumId": 27,
+        "foreignReleaseId": "5048852c-1b89-4acf-989e-2df6598c4e1e",
+        "title": "OK Computer: OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 5554000,
+        "trackCount": 23,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "ip / skip",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "sky / blue",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 3,
+            "mediumName": "who's / it",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 3,
+        "disambiguation": "",
+        "country": ["United Kingdom", "United States"],
+        "label": ["XL Recordings"],
+        "format": "3x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 673,
+        "albumId": 27,
+        "foreignReleaseId": "a95ea77a-e7b1-4116-b647-8210f472b3e8",
+        "title": "OK Computer: OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 5550824,
+        "trackCount": 23,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "OK",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "NOTOK",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["XL Recordings"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 674,
+        "albumId": 27,
+        "foreignReleaseId": "16f227a1-fa4a-4d7e-bba2-6a8ca18c33a8",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 675,
+        "albumId": 27,
+        "foreignReleaseId": "e16cda60-6e6d-4a32-8d7c-e12d9aeb72de",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Australia"],
+        "label": ["Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 676,
+        "albumId": 27,
+        "foreignReleaseId": "e8c3ff98-75f0-383f-a7d1-35db67661d89",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 6849215,
+        "trackCount": 27,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "bonus disc",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["EMI", "EMI"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 677,
+        "albumId": 27,
+        "foreignReleaseId": "a64e09a7-2f26-4d7a-8505-f2561ad3299b",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "MiniDisc"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "MiniDisc",
+        "monitored": false
+      },
+      {
+        "id": 678,
+        "albumId": 27,
+        "foreignReleaseId": "0c324f3a-dcbb-4f09-b33a-c03c676b4044",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3209170,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Europe"],
+        "label": ["XL Recordings"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 679,
+        "albumId": 27,
+        "foreignReleaseId": "943aa9da-7dc7-4a4a-a95e-2ffa707b6858",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3201000,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Europe"],
+        "label": ["XL Recordings"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 680,
+        "albumId": 27,
+        "foreignReleaseId": "425d8db9-88a3-31e2-bd23-b1a967626dd5",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "UDEN",
+        "country": ["France", "Germany", "Italy", "United Kingdom", "Europe"],
+        "label": ["Parlophone", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 681,
+        "albumId": 27,
+        "foreignReleaseId": "c7569949-0f67-4682-a0d8-75c4290c52dc",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "EMI SWINDON",
+        "country": ["United Kingdom", "Europe"],
+        "label": ["Parlophone", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 682,
+        "albumId": 27,
+        "foreignReleaseId": "1c16cd42-472f-47cc-9848-d081d0737a7c",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "repress, Sonopress",
+        "country": ["Europe"],
+        "label": ["Parlophone", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 683,
+        "albumId": 27,
+        "foreignReleaseId": "ad0e6676-3e55-4bd6-a9ed-7f6424fd46f6",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "made in Italy; printed in Holland",
+        "country": ["Europe"],
+        "label": ["Parlophone", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 684,
+        "albumId": 27,
+        "foreignReleaseId": "d6dc018d-5caa-4e6f-8e9d-d889fcd585f4",
+        "title": "OK Computer: OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 5563431,
+        "trackCount": 23,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "OK",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "NOTOK",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["Europe"],
+        "label": ["XL Recordings"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 685,
+        "albumId": 27,
+        "foreignReleaseId": "52709206-8816-3c12-9ff6-f957f2f1eecf",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "EMI UDEN, made in Italy, printed in Italy",
+        "country": ["Europe"],
+        "label": ["Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 686,
+        "albumId": 27,
+        "foreignReleaseId": "d7881c68-914a-4da3-8a7d-be89f0201307",
+        "title": "OK Computer OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 5557415,
+        "trackCount": 23,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "2xDigital Media",
+        "monitored": false
+      },
+      {
+        "id": 687,
+        "albumId": 27,
+        "foreignReleaseId": "2629071c-1d8f-43f1-be99-712d931e3bf1",
+        "title": "OK Computer: OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 5563431,
+        "trackCount": 23,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "OK",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "NOTOK",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["XL Recordings"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 688,
+        "albumId": 27,
+        "foreignReleaseId": "ab2c2726-a2c4-4f4d-a207-c1985c3f9a1b",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "BMG club version",
+        "country": ["Canada"],
+        "label": ["Capitol Records", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 689,
+        "albumId": 27,
+        "foreignReleaseId": "6a09041b-0f79-3278-88d9-0552dd28d37f",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["Capitol Records"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 690,
+        "albumId": 27,
+        "foreignReleaseId": "83becfd2-0a58-4d5b-9214-55ecc17c928d",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["XL Recordings"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 691,
+        "albumId": 27,
+        "foreignReleaseId": "30702389-5c67-4438-9ea0-2351c8de0f1d",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3216332,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 692,
+        "albumId": 27,
+        "foreignReleaseId": "8e2b5322-f9a6-4ab7-b3f4-f65e7ddbc9e4",
+        "title": "OK Computer: OKNOTOK 1997 2017",
+        "status": "Official",
+        "duration": 5557000,
+        "trackCount": 23,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 693,
+        "albumId": 27,
+        "foreignReleaseId": "d339ba4d-0e44-4d2d-bc7a-b8078c072da9",
+        "title": "OK Computer",
+        "status": "Official",
+        "duration": 3207156,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "AG31715-01 manufactured by optimal media GmbH IFPI L576",
+        "country": ["Europe"],
+        "label": ["XL Recordings"],
+        "format": "CD",
+        "monitored": false
+      }
+    ],
+    "genres": [
+      "Alternative Rock",
+      "Art Rock",
+      "Rock",
+      "Post-Britpop",
+      "Experimental",
+      "Space Rock Revival",
+      "Indie Rock",
+      "Leftfield",
+      "Electronic",
+      "Pop Rock",
+      "Experimental Rock",
+      "Neo-Psychedelia",
+      "Britpop"
+    ],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "ip / skip",
+        "mediumFormat": "12\" Vinyl"
+      },
+      {
+        "mediumNumber": 2,
+        "mediumName": "sky / blue",
+        "mediumFormat": "12\" Vinyl"
+      },
+      {
+        "mediumNumber": 3,
+        "mediumName": "who's / it",
+        "mediumFormat": "12\" Vinyl"
+      },
+      {
+        "mediumNumber": 4,
+        "mediumName": "",
+        "mediumFormat": "Cassette"
+      },
+      {
+        "mediumNumber": 5,
+        "mediumName": "Vinyl Download",
+        "mediumFormat": "Download Card"
+      },
+      {
+        "mediumNumber": 6,
+        "mediumName": "White Cassette Download",
+        "mediumFormat": "Download Card"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Radiohead",
+      "foreignArtistId": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Group",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "http://www.radiohead.com/",
+          "name": "radiohead"
+        },
+        {
+          "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/",
+          "name": "musicmoz"
+        },
+        {
+          "url": "https://www.discogs.com/artist/3840",
+          "name": "discogs"
+        },
+        {
+          "url": "https://myspace.com/radiohead",
+          "name": "myspace"
+        },
+        {
+          "url": "http://www.purevolume.com/radiohead",
+          "name": "purevolume"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm1955602/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/a74b1b7f-71a5-4011-9441-d0b5e4122711",
+          "name": "bbc"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000326249",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://www.facebook.com/radiohead",
+          "name": "facebook"
+        },
+        {
+          "url": "https://soundcloud.com/radiohead",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://secondhandsongs.com/artist/2279",
+          "name": "secondhandsongs"
+        },
+        {
+          "url": "https://www.last.fm/music/Radiohead",
+          "name": "last"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/radiohead",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://twitter.com/radiohead",
+          "name": "twitter"
+        },
+        {
+          "url": "http://viaf.org/viaf/141028845",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q44190",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-3909/radiohead/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+          "name": "spotify"
+        },
+        {
+          "url": "https://genius.com/artists/Radiohead",
+          "name": "genius"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/radiohead/",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.songkick.com/artists/253846",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.setlist.fm/setlists/radiohead-bd6bd12.html",
+          "name": "setlist"
+        },
+        {
+          "url": "https://www.deezer.com/artist/399",
+          "name": "deezer"
+        },
+        {
+          "url": "https://imvdb.com/n/radiohead",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://ra.co/dj/radiohead",
+          "name": "ra"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=A3qpbllyfot4yhqo7isoomtctli",
+          "name": "google"
+        },
+        {
+          "url": "https://www.musik-sammler.de/artist/3211/",
+          "name": "musik-sammler"
+        },
+        {
+          "url": "https://www.bandsintown.com/a/25874",
+          "name": "bandsintown"
+        },
+        {
+          "url": "https://www.whosampled.com/Radiohead/",
+          "name": "whosampled"
+        },
+        {
+          "url": "http://www.spirit-of-rock.com/groupe-groupe-Radiohead-l-en.html",
+          "name": "spirit-of-rock"
+        },
+        {
+          "url": "https://www.45cat.com/artist/radiohead",
+          "name": "45cat"
+        },
+        {
+          "url": "https://www.dailymotion.com/Radiohead-vevo",
+          "name": "dailymotion"
+        },
+        {
+          "url": "https://plus.google.com/118195887388913664436",
+          "name": "google"
+        },
+        {
+          "url": "https://www.instagram.com/radiohead/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://radiohead.tumblr.com/",
+          "name": "tumblr"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1707341-8",
+          "name": "d-nb"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no97045991",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no97045991",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb139551041",
+          "name": "bnf"
+        },
+        {
+          "url": "https://vgmdb.net/artist/13395",
+          "name": "vgmdb"
+        },
+        {
+          "url": "https://radiohead.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://tidal.com/artist/64518",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.tiktok.com/@radiohead",
+          "name": "tiktok"
+        },
+        {
+          "url": "http://www.btinternet.com/~r.j.arthur/rh/rhdisc.htm",
+          "name": "btinternet"
+        },
+        {
+          "url": "https://www.progarchives.com/artist.asp?id=1492",
+          "name": "progarchives"
+        },
+        {
+          "url": "https://music.youtube.com/channel/UCr_iyUANcn9OX_yy9piYoLw",
+          "name": "youtube"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://citizeninsane.eu/",
+          "name": "citizeninsane"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://www.beatport.com/artist/radiohead/112220",
+          "name": "beatport"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA",
+          "name": "youtube"
+        },
+        {
+          "url": "https://music.amazon.co.uk/artists/B000QJXOGC",
+          "name": "amazon"
+        },
+        {
+          "url": "https://www.idref.fr/069877327",
+          "name": "idref"
+        },
+        {
+          "url": "https://jaxsta.com/profile/0e8bd208-ea18-4a75-853d-7391f4c715b2",
+          "name": "jaxsta"
+        },
+        {
+          "url": "https://www.deezer.com/artist/323887691",
+          "name": "deezer"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Radiohead",
+      "qualityProfileId": 3,
+      "metadataProfileId": 1,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Alternative Rock",
+        "Art Rock",
+        "Rock",
+        "Experimental Rock",
+        "Electronic",
+        "Indie Rock",
+        "Experimental",
+        "Art Pop",
+        "Post-Britpop",
+        "Electronica",
+        "Britpop",
+        "Chamber Pop",
+        "Indietronica",
+        "Post-Grunge",
+        "Crossover Prog",
+        "Electronic Rock",
+        "Ambient Pop",
+        "Idm"
+      ],
+      "cleanName": "radiohead",
+      "sortName": "radiohead",
+      "tags": [],
+      "added": "2026-10-14T11:13:45Z",
+      "ratings": {
+        "votes": 80,
+        "value": 9.0
+      },
+      "id": 3
+    },
+    "images": [
+      {
+        "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/30702389-5c67-4438-9ea0-2351c8de0f1d/43287476628-1200.jpg",
+        "coverType": "cover",
+        "extension": ".jpg"
+      },
+      {
+        "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/943aa9da-7dc7-4a4a-a95e-2ffa707b6858/26256626289-1200.jpg",
+        "coverType": "disc",
+        "extension": ".jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/Discography/OK_Computer/",
+        "name": "musicmoz"
+      },
+      {
+        "url": "http://www.inmusicwetrust.com/articles/01r36.html",
+        "name": "inmusicwetrust"
+      },
+      {
+        "url": "https://www.discogs.com/master/21491",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0000024289",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/reviews/wcp2",
+        "name": "bbc"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/radiohead/ok_computer/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q202996",
+        "name": "wikidata"
+      },
+      {
+        "url": "http://www.musik-sammler.de/album/30875",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "http://articles.chicagotribune.com/1997-07-04/entertainment/9707040186_1_ambition-ugly-star",
+        "name": "chicagotribune"
+      },
+      {
+        "url": "http://www.ew.com/ew/article/0,,20202376,00.html",
+        "name": "ew"
+      },
+      {
+        "url": "http://web.archive.org/web/20010303103405/www.pitchforkmedia.com/record-reviews/r/radiohead/ok-computer.shtml",
+        "name": "archive"
+      },
+      {
+        "url": "http://content.time.com/time/magazine/article/0,9171,986902,00.html",
+        "name": "time"
+      },
+      {
+        "url": "https://genius.com/albums/Radiohead/Ok-computer",
+        "name": "genius"
+      },
+      {
+        "url": "https://www.spirit-of-rock.com/en/album/OK_Computer/3113",
+        "name": "spirit-of-rock"
+      },
+      {
+        "url": "https://www.progarchives.com/album.asp?id=7066",
+        "name": "progarchives"
+      },
+      {
+        "url": "https://www.offiziellecharts.de/charts/album-details-2562",
+        "name": "offiziellecharts"
+      },
+      {
+        "url": "https://www.last.fm/music/Radiohead/OK+Computer",
+        "name": "last"
+      }
+    ],
+    "id": 27
+  },
+  "images": [
+    {
+      "url": "/MediaCover/3/clearlogo.png?lastWrite=639275732310278783",
+      "coverType": "clearlogo",
+      "extension": ".png",
+      "remoteUrl": "/config/MediaCover/3/clearlogo.png"
+    },
+    {
+      "url": "/MediaCover/3/poster.jpg?lastWrite=639275732308775993",
+      "coverType": "poster",
+      "extension": ".jpg",
+      "remoteUrl": "/config/MediaCover/3/poster.jpg"
+    },
+    {
+      "url": "/MediaCover/3/fanart.jpg?lastWrite=639275732309322360",
+      "coverType": "fanart",
+      "extension": ".jpg",
+      "remoteUrl": "/config/MediaCover/3/fanart.jpg"
+    },
+    {
+      "url": "/MediaCover/3/banner.jpg?lastWrite=639275732309833185",
+      "coverType": "banner",
+      "extension": ".jpg",
+      "remoteUrl": "/config/MediaCover/3/banner.jpg"
+    }
+  ],
+  "path": "/music/Radiohead",
+  "qualityProfileId": 3,
+  "metadataProfileId": 1,
+  "monitored": false,
+  "monitorNewItems": "none",
+  "rootFolderPath": "/music",
+  "genres": [
+    "Alternative Rock",
+    "Art Rock",
+    "Rock",
+    "Experimental Rock",
+    "Electronic",
+    "Indie Rock",
+    "Experimental",
+    "Art Pop",
+    "Post-Britpop",
+    "Electronica",
+    "Britpop",
+    "Chamber Pop",
+    "Indietronica",
+    "Post-Grunge",
+    "Crossover Prog",
+    "Electronic Rock",
+    "Ambient Pop",
+    "Idm"
+  ],
+  "cleanName": "radiohead",
+  "sortName": "radiohead",
+  "tags": [],
+  "added": "2026-10-14T11:13:45Z",
+  "ratings": {
+    "votes": 80,
+    "value": 9.0
+  },
+  "statistics": {
+    "albumCount": 9,
+    "trackFileCount": 0,
+    "trackCount": 91,
+    "totalTrackCount": 302,
+    "sizeOnDisk": 0,
+    "percentOfTracks": 0
+  },
+  "id": 3
+}

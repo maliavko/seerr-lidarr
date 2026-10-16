@@ -1,0 +1,24 @@
+{
+  "name": "AlbumSearch",
+  "commandName": "Album Search",
+  "body": {
+    "albumIds": [19, 20],
+    "sendUpdatesToClient": true,
+    "updateScheduledTask": true,
+    "requiresDiskAccess": false,
+    "isExclusive": false,
+    "isTypeExclusive": false,
+    "isLongRunning": false,
+    "name": "AlbumSearch",
+    "trigger": "manual",
+    "suppressMessages": false
+  },
+  "priority": "normal",
+  "status": "queued",
+  "result": "unknown",
+  "queued": "2026-10-14T11:14:04Z",
+  "trigger": "manual",
+  "sendUpdatesToClient": true,
+  "updateScheduledTask": true,
+  "id": 385
+}

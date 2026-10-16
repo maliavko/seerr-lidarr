@@ -1,12 +1,17 @@
+import AlbumCard from '@app/components/MusicCard/AlbumCard';
+import ArtistCard from '@app/components/MusicCard/ArtistCard';
 import PersonCard from '@app/components/PersonCard';
 import TitleCard from '@app/components/TitleCard';
 import TmdbTitleCard from '@app/components/TitleCard/TmdbTitleCard';
 import { Permission, useUser } from '@app/hooks/useUser';
 import useVerticalScroll from '@app/hooks/useVerticalScroll';
 import globalMessages from '@app/i18n/globalMessages';
+import { albumCardProps, artistCardProps } from '@app/utils/musicHelpers';
 import { MediaStatus } from '@server/constants/media';
 import type { WatchlistItem } from '@server/interfaces/api/discoverInterfaces';
 import type {
+  AlbumResult,
+  ArtistResult,
   CollectionResult,
   MovieResult,
   PersonResult,
@@ -15,7 +20,14 @@ import type {
 import { useIntl } from 'react-intl';
 
 type ListViewProps = {
-  items?: (TvResult | MovieResult | PersonResult | CollectionResult)[];
+  items?: (
+    | TvResult
+    | MovieResult
+    | PersonResult
+    | CollectionResult
+    | ArtistResult
+    | AlbumResult
+  )[];
   plexItems?: WatchlistItem[];
   isEmpty?: boolean;
   isLoading?: boolean;
@@ -56,7 +68,7 @@ const ListView = ({
               <TmdbTitleCard
                 id={title.tmdbId}
                 tmdbId={title.tmdbId}
-                type={title.mediaType}
+                type={title.mediaType as 'movie' | 'tv'}
                 isAddedToWatchlist={true}
                 canExpand
                 mutateParent={mutateParent}
@@ -142,6 +154,14 @@ const ListView = ({
                     canExpand
                   />
                 );
+                break;
+              case 'artist':
+                titleCard = (
+                  <ArtistCard {...artistCardProps(title)} canExpand />
+                );
+                break;
+              case 'album':
+                titleCard = <AlbumCard {...albumCardProps(title)} canExpand />;
                 break;
             }
 

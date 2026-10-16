@@ -1,0 +1,1241 @@
+{
+  "status": "continuing",
+  "ended": false,
+  "artistName": "Radiohead",
+  "foreignArtistId": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+  "tadbId": 0,
+  "discogsId": 0,
+  "artistType": "Group",
+  "disambiguation": "",
+  "links": [
+    {
+      "url": "http://www.radiohead.com/",
+      "name": "radiohead"
+    },
+    {
+      "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/",
+      "name": "musicmoz"
+    },
+    {
+      "url": "https://www.discogs.com/artist/3840",
+      "name": "discogs"
+    },
+    {
+      "url": "https://myspace.com/radiohead",
+      "name": "myspace"
+    },
+    {
+      "url": "http://www.purevolume.com/radiohead",
+      "name": "purevolume"
+    },
+    {
+      "url": "https://www.imdb.com/name/nm1955602/",
+      "name": "imdb"
+    },
+    {
+      "url": "https://www.bbc.co.uk/music/artists/a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "name": "bbc"
+    },
+    {
+      "url": "https://www.allmusic.com/artist/mn0000326249",
+      "name": "allmusic"
+    },
+    {
+      "url": "https://www.facebook.com/radiohead",
+      "name": "facebook"
+    },
+    {
+      "url": "https://soundcloud.com/radiohead",
+      "name": "soundcloud"
+    },
+    {
+      "url": "https://secondhandsongs.com/artist/2279",
+      "name": "secondhandsongs"
+    },
+    {
+      "url": "https://www.last.fm/music/Radiohead",
+      "name": "last"
+    },
+    {
+      "url": "https://rateyourmusic.com/artist/radiohead",
+      "name": "rateyourmusic"
+    },
+    {
+      "url": "https://twitter.com/radiohead",
+      "name": "twitter"
+    },
+    {
+      "url": "http://viaf.org/viaf/141028845",
+      "name": "viaf"
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q44190",
+      "name": "wikidata"
+    },
+    {
+      "url": "http://muzikum.eu/en/122-3909/radiohead/lyrics.html",
+      "name": "muzikum"
+    },
+    {
+      "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+      "name": "spotify"
+    },
+    {
+      "url": "https://genius.com/artists/Radiohead",
+      "name": "genius"
+    },
+    {
+      "url": "https://uk.7digital.com/artist/radiohead/",
+      "name": "7digital"
+    },
+    {
+      "url": "https://www.songkick.com/artists/253846",
+      "name": "songkick"
+    },
+    {
+      "url": "https://www.setlist.fm/setlists/radiohead-bd6bd12.html",
+      "name": "setlist"
+    },
+    {
+      "url": "https://www.deezer.com/artist/399",
+      "name": "deezer"
+    },
+    {
+      "url": "https://imvdb.com/n/radiohead",
+      "name": "imvdb"
+    },
+    {
+      "url": "https://ra.co/dj/radiohead",
+      "name": "ra"
+    },
+    {
+      "url": "https://play.google.com/store/music/artist?id=A3qpbllyfot4yhqo7isoomtctli",
+      "name": "google"
+    },
+    {
+      "url": "https://www.musik-sammler.de/artist/3211/",
+      "name": "musik-sammler"
+    },
+    {
+      "url": "https://www.bandsintown.com/a/25874",
+      "name": "bandsintown"
+    },
+    {
+      "url": "https://www.whosampled.com/Radiohead/",
+      "name": "whosampled"
+    },
+    {
+      "url": "http://www.spirit-of-rock.com/groupe-groupe-Radiohead-l-en.html",
+      "name": "spirit-of-rock"
+    },
+    {
+      "url": "https://www.45cat.com/artist/radiohead",
+      "name": "45cat"
+    },
+    {
+      "url": "https://www.dailymotion.com/Radiohead-vevo",
+      "name": "dailymotion"
+    },
+    {
+      "url": "https://plus.google.com/118195887388913664436",
+      "name": "google"
+    },
+    {
+      "url": "https://www.instagram.com/radiohead/",
+      "name": "instagram"
+    },
+    {
+      "url": "https://radiohead.tumblr.com/",
+      "name": "tumblr"
+    },
+    {
+      "url": "https://d-nb.info/gnd/1707341-8",
+      "name": "d-nb"
+    },
+    {
+      "url": "http://id.loc.gov/authorities/names/no97045991",
+      "name": "loc"
+    },
+    {
+      "url": "https://www.worldcat.org/identities/lccn-no97045991",
+      "name": "worldcat"
+    },
+    {
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb139551041",
+      "name": "bnf"
+    },
+    {
+      "url": "https://vgmdb.net/artist/13395",
+      "name": "vgmdb"
+    },
+    {
+      "url": "https://radiohead.bandcamp.com/",
+      "name": "bandcamp"
+    },
+    {
+      "url": "https://tidal.com/artist/64518",
+      "name": "tidal"
+    },
+    {
+      "url": "https://www.tiktok.com/@radiohead",
+      "name": "tiktok"
+    },
+    {
+      "url": "http://www.btinternet.com/~r.j.arthur/rh/rhdisc.htm",
+      "name": "btinternet"
+    },
+    {
+      "url": "https://www.progarchives.com/artist.asp?id=1492",
+      "name": "progarchives"
+    },
+    {
+      "url": "https://music.youtube.com/channel/UCr_iyUANcn9OX_yy9piYoLw",
+      "name": "youtube"
+    },
+    {
+      "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+      "name": "qobuz"
+    },
+    {
+      "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+      "name": "qobuz"
+    },
+    {
+      "url": "https://citizeninsane.eu/",
+      "name": "citizeninsane"
+    },
+    {
+      "url": "https://music.apple.com/gb/artist/657515",
+      "name": "apple"
+    },
+    {
+      "url": "https://music.apple.com/gb/artist/657515",
+      "name": "apple"
+    },
+    {
+      "url": "https://www.beatport.com/artist/radiohead/112220",
+      "name": "beatport"
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA",
+      "name": "youtube"
+    },
+    {
+      "url": "https://music.amazon.co.uk/artists/B000QJXOGC",
+      "name": "amazon"
+    },
+    {
+      "url": "https://www.idref.fr/069877327",
+      "name": "idref"
+    },
+    {
+      "url": "https://jaxsta.com/profile/0e8bd208-ea18-4a75-853d-7391f4c715b2",
+      "name": "jaxsta"
+    },
+    {
+      "url": "https://www.deezer.com/artist/323887691",
+      "name": "deezer"
+    },
+    {
+      "url": "https://open.qobuz.com/artist/43840",
+      "name": "qobuz"
+    },
+    {
+      "url": "https://open.qobuz.com/artist/43840",
+      "name": "qobuz"
+    }
+  ],
+  "nextAlbum": null,
+  "lastAlbum": {
+    "title": "Amnesiac",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 3,
+    "foreignAlbumId": "bca9280e-28b4-327f-8fe0-fd918579e486",
+    "monitored": true,
+    "anyReleaseOk": true,
+    "profileId": 3,
+    "duration": 6397378,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 2,
+    "ratings": {
+      "votes": 59,
+      "value": 7.8
+    },
+    "releaseDate": "2001-05-30T00:00:00Z",
+    "releases": [
+      {
+        "id": 493,
+        "albumId": 20,
+        "foreignReleaseId": "a0ef32c4-669d-3b9f-9e16-ca99a16dcbc4",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 6397378,
+        "trackCount": 26,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "bonus disc",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "2xCD",
+        "monitored": true
+      },
+      {
+        "id": 494,
+        "albumId": 20,
+        "foreignReleaseId": "9a883dfa-4135-49fb-9e79-7f1a2e28f60e",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635000,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Australia"],
+        "label": ["EMI"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 495,
+        "albumId": 20,
+        "foreignReleaseId": "23029567-703d-4189-9503-0f97745feb0f",
+        "title": "4 Songs From Amnesiac",
+        "status": "Promotion",
+        "duration": 1109759,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 496,
+        "albumId": 20,
+        "foreignReleaseId": "0762fd5f-99f2-4501-8b4b-c294e09f90db",
+        "title": "Amnesiac",
+        "status": "Promotion",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 497,
+        "albumId": 20,
+        "foreignReleaseId": "910c1006-887c-3044-b13c-34f906f15ea7",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["Capitol Records"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 498,
+        "albumId": 20,
+        "foreignReleaseId": "5cc3cb6c-af18-4317-8999-97dedee622b5",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635000,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Canada"],
+        "label": ["EMI Music Canada", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 499,
+        "albumId": 20,
+        "foreignReleaseId": "d3f9b159-8eeb-4820-a258-19cc1ebfc770",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "limited edition",
+        "country": ["Japan"],
+        "label": ["EMI", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 500,
+        "albumId": 20,
+        "foreignReleaseId": "e3e270f2-7de9-40c9-9bdb-744a154a73dd",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 501,
+        "albumId": 20,
+        "foreignReleaseId": "67365d7e-9514-4cbe-acd4-6d8d8f758ad2",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2608000,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "10\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "10\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["Capitol Records"],
+        "format": "2x10\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 502,
+        "albumId": 20,
+        "foreignReleaseId": "576b18ac-3e8b-4838-85ff-497cd3f62f3d",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "UDEN",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 503,
+        "albumId": 20,
+        "foreignReleaseId": "a9974083-251e-4aaf-a550-6763c7fa2ed4",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2642625,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Chile"],
+        "label": ["Capitol Records"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 504,
+        "albumId": 20,
+        "foreignReleaseId": "ddbfd454-badc-4aad-a4f4-b3a018e4800a",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Cassette"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "Cassette",
+        "monitored": false
+      },
+      {
+        "id": 505,
+        "albumId": 20,
+        "foreignReleaseId": "fd29f8d9-e1ea-4ca9-a241-ed9998d661fe",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2641199,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United States", "Europe"],
+        "label": ["XL Recordings"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 506,
+        "albumId": 20,
+        "foreignReleaseId": "3c623574-f027-3b61-b232-4fa99ef0e8ee",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "10\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "10\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone"],
+        "format": "2x10\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 507,
+        "albumId": 20,
+        "foreignReleaseId": "232b882e-444d-4d7c-8cd5-f4fce87fc033",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 6397378,
+        "trackCount": 26,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "Amnesiac",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "Bonus CD",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "collector’s edition",
+        "country": ["Japan"],
+        "label": ["EMI", "Parlophone"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 508,
+        "albumId": 20,
+        "foreignReleaseId": "6853e107-8ce1-4274-b30b-ff1023a49409",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "EMI UK",
+        "country": ["United Kingdom"],
+        "label": ["Parlophone", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 509,
+        "albumId": 20,
+        "foreignReleaseId": "0fac08b9-24b6-4346-9550-92948ef14a24",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 6395000,
+        "trackCount": 26,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "collector’s edition",
+        "country": ["United States"],
+        "label": ["Capitol Records"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 510,
+        "albumId": 20,
+        "foreignReleaseId": "2d46a116-bba8-45a2-b43f-23ecc0ef4266",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "limited edition, book",
+        "country": ["Europe"],
+        "label": ["Parlophone", "Parlophone"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 511,
+        "albumId": 20,
+        "foreignReleaseId": "8cd878df-da85-4630-bcdc-46fccb1c7b31",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["South Africa"],
+        "label": ["EMI"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 512,
+        "albumId": 20,
+        "foreignReleaseId": "1ed107d4-d02b-4cf6-9b76-f6b15c391f4e",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2637329,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Europe"],
+        "label": ["XL Recordings"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 513,
+        "albumId": 20,
+        "foreignReleaseId": "431761e6-ebda-4f98-9566-3edda2ae595e",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2635997,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["EMI", "Parlophone", "東芝EMI 株式会社"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 514,
+        "albumId": 20,
+        "foreignReleaseId": "8013d9eb-2128-364b-809a-5d3802b7a7e1",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 6395378,
+        "trackCount": 26,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "Amnesiac",
+            "mediumFormat": "CD"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "Pyramid Song",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "special collector’s edition",
+        "country": ["Europe"],
+        "label": ["EMI", "EMI"],
+        "format": "2xCD",
+        "monitored": false
+      },
+      {
+        "id": 515,
+        "albumId": 20,
+        "foreignReleaseId": "63c0549e-f6e4-41f0-88b1-9f57057f0d30",
+        "title": "Amnesiac",
+        "status": "Official",
+        "duration": 2654706,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["China"],
+        "label": ["EMI百代"],
+        "format": "CD",
+        "monitored": false
+      }
+    ],
+    "genres": [
+      "Alternative Rock",
+      "Rock",
+      "Art Rock",
+      "Experimental Rock",
+      "Electronic",
+      "Jazz Rock",
+      "Leftfield"
+    ],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "CD"
+      },
+      {
+        "mediumNumber": 2,
+        "mediumName": "bonus disc",
+        "mediumFormat": "CD"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Radiohead",
+      "foreignArtistId": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Group",
+      "disambiguation": "",
+      "links": [
+        {
+          "url": "http://www.radiohead.com/",
+          "name": "radiohead"
+        },
+        {
+          "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/",
+          "name": "musicmoz"
+        },
+        {
+          "url": "https://www.discogs.com/artist/3840",
+          "name": "discogs"
+        },
+        {
+          "url": "https://myspace.com/radiohead",
+          "name": "myspace"
+        },
+        {
+          "url": "http://www.purevolume.com/radiohead",
+          "name": "purevolume"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm1955602/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/a74b1b7f-71a5-4011-9441-d0b5e4122711",
+          "name": "bbc"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000326249",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://www.facebook.com/radiohead",
+          "name": "facebook"
+        },
+        {
+          "url": "https://soundcloud.com/radiohead",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://secondhandsongs.com/artist/2279",
+          "name": "secondhandsongs"
+        },
+        {
+          "url": "https://www.last.fm/music/Radiohead",
+          "name": "last"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/radiohead",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://twitter.com/radiohead",
+          "name": "twitter"
+        },
+        {
+          "url": "http://viaf.org/viaf/141028845",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q44190",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-3909/radiohead/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+          "name": "spotify"
+        },
+        {
+          "url": "https://genius.com/artists/Radiohead",
+          "name": "genius"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/radiohead/",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.songkick.com/artists/253846",
+          "name": "songkick"
+        },
+        {
+          "url": "https://www.setlist.fm/setlists/radiohead-bd6bd12.html",
+          "name": "setlist"
+        },
+        {
+          "url": "https://www.deezer.com/artist/399",
+          "name": "deezer"
+        },
+        {
+          "url": "https://imvdb.com/n/radiohead",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://ra.co/dj/radiohead",
+          "name": "ra"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=A3qpbllyfot4yhqo7isoomtctli",
+          "name": "google"
+        },
+        {
+          "url": "https://www.musik-sammler.de/artist/3211/",
+          "name": "musik-sammler"
+        },
+        {
+          "url": "https://www.bandsintown.com/a/25874",
+          "name": "bandsintown"
+        },
+        {
+          "url": "https://www.whosampled.com/Radiohead/",
+          "name": "whosampled"
+        },
+        {
+          "url": "http://www.spirit-of-rock.com/groupe-groupe-Radiohead-l-en.html",
+          "name": "spirit-of-rock"
+        },
+        {
+          "url": "https://www.45cat.com/artist/radiohead",
+          "name": "45cat"
+        },
+        {
+          "url": "https://www.dailymotion.com/Radiohead-vevo",
+          "name": "dailymotion"
+        },
+        {
+          "url": "https://plus.google.com/118195887388913664436",
+          "name": "google"
+        },
+        {
+          "url": "https://www.instagram.com/radiohead/",
+          "name": "instagram"
+        },
+        {
+          "url": "https://radiohead.tumblr.com/",
+          "name": "tumblr"
+        },
+        {
+          "url": "https://d-nb.info/gnd/1707341-8",
+          "name": "d-nb"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no97045991",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no97045991",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb139551041",
+          "name": "bnf"
+        },
+        {
+          "url": "https://vgmdb.net/artist/13395",
+          "name": "vgmdb"
+        },
+        {
+          "url": "https://radiohead.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://tidal.com/artist/64518",
+          "name": "tidal"
+        },
+        {
+          "url": "https://www.tiktok.com/@radiohead",
+          "name": "tiktok"
+        },
+        {
+          "url": "http://www.btinternet.com/~r.j.arthur/rh/rhdisc.htm",
+          "name": "btinternet"
+        },
+        {
+          "url": "https://www.progarchives.com/artist.asp?id=1492",
+          "name": "progarchives"
+        },
+        {
+          "url": "https://music.youtube.com/channel/UCr_iyUANcn9OX_yy9piYoLw",
+          "name": "youtube"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://citizeninsane.eu/",
+          "name": "citizeninsane"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/657515",
+          "name": "apple"
+        },
+        {
+          "url": "https://www.beatport.com/artist/radiohead/112220",
+          "name": "beatport"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA",
+          "name": "youtube"
+        },
+        {
+          "url": "https://music.amazon.co.uk/artists/B000QJXOGC",
+          "name": "amazon"
+        },
+        {
+          "url": "https://www.idref.fr/069877327",
+          "name": "idref"
+        },
+        {
+          "url": "https://jaxsta.com/profile/0e8bd208-ea18-4a75-853d-7391f4c715b2",
+          "name": "jaxsta"
+        },
+        {
+          "url": "https://www.deezer.com/artist/323887691",
+          "name": "deezer"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/43840",
+          "name": "qobuz"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Radiohead",
+      "qualityProfileId": 3,
+      "metadataProfileId": 1,
+      "monitored": true,
+      "monitorNewItems": "all",
+      "genres": [
+        "Alternative Rock",
+        "Art Rock",
+        "Rock",
+        "Experimental Rock",
+        "Electronic",
+        "Indie Rock",
+        "Experimental",
+        "Art Pop",
+        "Post-Britpop",
+        "Electronica",
+        "Britpop",
+        "Chamber Pop",
+        "Indietronica",
+        "Post-Grunge",
+        "Crossover Prog",
+        "Electronic Rock",
+        "Ambient Pop",
+        "Idm"
+      ],
+      "cleanName": "radiohead",
+      "sortName": "radiohead",
+      "tags": [],
+      "added": "2026-10-14T11:13:45Z",
+      "ratings": {
+        "votes": 80,
+        "value": 9.0
+      },
+      "id": 3
+    },
+    "images": [
+      {
+        "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/910c1006-887c-3044-b13c-34f906f15ea7/2336491200-1200.jpg",
+        "coverType": "cover",
+        "extension": ".jpg"
+      },
+      {
+        "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/910c1006-887c-3044-b13c-34f906f15ea7/2336645295-1200.jpg",
+        "coverType": "disc",
+        "extension": ".jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/Discography/Amnesiac/",
+        "name": "musicmoz"
+      },
+      {
+        "url": "https://www.discogs.com/master/2507",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/reviews/bv3n",
+        "name": "bbc"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q223650",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0000001712",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/radiohead/amnesiac/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.musik-sammler.de/album/30842/",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://genius.com/albums/Radiohead/Amnesiac",
+        "name": "genius"
+      },
+      {
+        "url": "https://www.spirit-of-rock.com/en/album/Amnesiac/3117",
+        "name": "spirit-of-rock"
+      },
+      {
+        "url": "https://www.progarchives.com/album.asp?id=7094",
+        "name": "progarchives"
+      }
+    ],
+    "id": 20
+  },
+  "images": [
+    {
+      "url": "/MediaCover/3/clearlogo.png?lastWrite=639275732310278783",
+      "coverType": "clearlogo",
+      "extension": ".png",
+      "remoteUrl": "/config/MediaCover/3/clearlogo.png"
+    },
+    {
+      "url": "/MediaCover/3/poster.jpg?lastWrite=639275732308775993",
+      "coverType": "poster",
+      "extension": ".jpg",
+      "remoteUrl": "/config/MediaCover/3/poster.jpg"
+    },
+    {
+      "url": "/MediaCover/3/fanart.jpg?lastWrite=639275732309322360",
+      "coverType": "fanart",
+      "extension": ".jpg",
+      "remoteUrl": "/config/MediaCover/3/fanart.jpg"
+    },
+    {
+      "url": "/MediaCover/3/banner.jpg?lastWrite=639275732309833185",
+      "coverType": "banner",
+      "extension": ".jpg",
+      "remoteUrl": "/config/MediaCover/3/banner.jpg"
+    }
+  ],
+  "path": "/music/Radiohead",
+  "qualityProfileId": 3,
+  "metadataProfileId": 1,
+  "monitored": true,
+  "monitorNewItems": "all",
+  "rootFolderPath": "/music",
+  "genres": [
+    "Alternative Rock",
+    "Art Rock",
+    "Rock",
+    "Experimental Rock",
+    "Electronic",
+    "Indie Rock",
+    "Experimental",
+    "Art Pop",
+    "Post-Britpop",
+    "Electronica",
+    "Britpop",
+    "Chamber Pop",
+    "Indietronica",
+    "Post-Grunge",
+    "Crossover Prog",
+    "Electronic Rock",
+    "Ambient Pop",
+    "Idm"
+  ],
+  "cleanName": "radiohead",
+  "sortName": "radiohead",
+  "tags": [],
+  "added": "2026-10-14T11:13:45Z",
+  "ratings": {
+    "votes": 80,
+    "value": 9.0
+  },
+  "statistics": {
+    "albumCount": 9,
+    "trackFileCount": 0,
+    "trackCount": 140,
+    "totalTrackCount": 302,
+    "sizeOnDisk": 0,
+    "percentOfTracks": 0
+  },
+  "id": 3
+}

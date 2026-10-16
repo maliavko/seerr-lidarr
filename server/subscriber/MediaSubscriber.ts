@@ -76,6 +76,10 @@ export class MediaSubscriber implements EntitySubscriberInterface<Media> {
           event.mediaType === MediaType.MOVIE
         ) {
           shouldComplete = true;
+        } else if (event.mediaType === MediaType.MUSIC) {
+          // an album or an artist completes its own requests once its row is
+          // available (D-342); partially available completes none
+          shouldComplete = event.status === MediaStatus.AVAILABLE;
         } else if (event.mediaType === 'tv') {
           const allSeasonResults: boolean[] = [];
 

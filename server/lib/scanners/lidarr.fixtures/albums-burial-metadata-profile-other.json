@@ -1,0 +1,5830 @@
+[
+  {
+    "title": "Burial",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "2c28f0ee-bab8-30e1-94bb-399e1916d039",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 3660236,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 8,
+      "value": 7.5
+    },
+    "releaseDate": "2006-05-15T00:00:00Z",
+    "releases": [
+      {
+        "id": 3313,
+        "albumId": 447,
+        "foreignReleaseId": "cb5e68da-bf42-32e6-ae35-29d99f931960",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087597,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Rough Trade Japan"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 3314,
+        "albumId": 447,
+        "foreignReleaseId": "cd9d2aec-2696-3156-be03-0038efdbb9f8",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087597,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3315,
+        "albumId": 447,
+        "foreignReleaseId": "fe3ebfa3-85b6-4cfa-a58b-4a78d27d47f0",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3660236,
+        "trackCount": 15,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Beat Records"],
+        "format": "CD",
+        "monitored": true
+      },
+      {
+        "id": 3316,
+        "albumId": 447,
+        "foreignReleaseId": "47a1de14-067a-4438-b456-d3eedc6eeac9",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 2949000,
+        "trackCount": 11,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3317,
+        "albumId": 447,
+        "foreignReleaseId": "ba542e47-4720-416c-8184-f9024fb39a25",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087597,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 3318,
+        "albumId": 447,
+        "foreignReleaseId": "52a9da6a-a254-4271-86e6-610a6a1baae7",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087000,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3319,
+        "albumId": 447,
+        "foreignReleaseId": "004381e6-c7b7-4315-9825-b7d25bd5b03f",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3051397,
+        "trackCount": 12,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Argentina",
+          "Bolivia",
+          "Brazil",
+          "Canada",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Dominican Republic",
+          "Ecuador",
+          "El Salvador",
+          "Guatemala",
+          "Honduras",
+          "Mexico",
+          "Nicaragua",
+          "Panama",
+          "Paraguay",
+          "Peru",
+          "United States",
+          "Uruguay"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3320,
+        "albumId": 447,
+        "foreignReleaseId": "0579c0bc-796a-48a6-99be-e1b0deb0647f",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3660236,
+        "trackCount": 15,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "bonus tracks version",
+        "country": ["Japan"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3321,
+        "albumId": 447,
+        "foreignReleaseId": "aab3ced9-9f63-437a-ae22-e49cc0227880",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3080838,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Algeria",
+          "Andorra",
+          "Australia",
+          "Austria",
+          "Bahrain",
+          "Belgium",
+          "Bulgaria",
+          "Cyprus",
+          "Czechia",
+          "Denmark",
+          "Egypt",
+          "Estonia",
+          "Finland",
+          "France",
+          "Germany",
+          "Greece",
+          "Hong Kong",
+          "Hungary",
+          "Iceland",
+          "India",
+          "Indonesia",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Jordan",
+          "Kuwait",
+          "Latvia",
+          "Lebanon",
+          "Liechtenstein",
+          "Lithuania",
+          "Luxembourg",
+          "Malaysia",
+          "Malta",
+          "Mexico",
+          "Monaco",
+          "Morocco",
+          "Netherlands",
+          "New Zealand",
+          "Norway",
+          "Oman",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Qatar",
+          "Romania",
+          "Saudi Arabia",
+          "Singapore",
+          "Slovakia",
+          "South Africa",
+          "Spain",
+          "Sweden",
+          "Switzerland",
+          "Taiwan",
+          "Thailand",
+          "Tunisia",
+          "T\u00fcrkiye",
+          "United Arab Emirates",
+          "United Kingdom",
+          "Vietnam",
+          "Palestine"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3322,
+        "albumId": 447,
+        "foreignReleaseId": "84d26a67-aefb-4fe7-ab02-248bcf59d613",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087597,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3323,
+        "albumId": 447,
+        "foreignReleaseId": "fea74ed6-657d-46e3-af7b-58f34e197950",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087597,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Argentina",
+          "Bolivia",
+          "Brazil",
+          "Canada",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Dominican Republic",
+          "Ecuador",
+          "El Salvador",
+          "Guatemala",
+          "Honduras",
+          "Mexico",
+          "Nicaragua",
+          "Panama",
+          "Paraguay",
+          "Peru",
+          "United States",
+          "Uruguay"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3324,
+        "albumId": 447,
+        "foreignReleaseId": "b288f7a7-96ad-4be0-be84-1d660414ff86",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087597,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "Bandcamp",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3325,
+        "albumId": 447,
+        "foreignReleaseId": "7461fae9-7ab3-45e4-b855-b5cd63036281",
+        "title": "Burial",
+        "status": "Official",
+        "duration": 3087597,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "CD",
+        "monitored": false
+      }
+    ],
+    "genres": [
+      "Dubstep",
+      "Electronic",
+      "Future Garage",
+      "Uk Garage",
+      "Hauntology",
+      "Ambient",
+      "2-Step",
+      "Downtempo",
+      "Grime"
+    ],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "CD"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/447/cover.jpg?lastWrite=639276550980702136",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/52a9da6a-a254-4271-86e6-610a6a1baae7/13379201322-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/447/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/ba542e47-4720-416c-8184-f9024fb39a25/12140242567-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/11767",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q550551",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/burial_f1/burial/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0000451070",
+        "name": "allmusic"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 15,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 447
+  },
+  {
+    "title": "South London Boroughs",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "ed042ef7-bf76-3d86-a77e-7e0b9577581f",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 1163000,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 2,
+      "value": 8.0
+    },
+    "releaseDate": "2005-05-16T00:00:00Z",
+    "releases": [
+      {
+        "id": 3326,
+        "albumId": 448,
+        "foreignReleaseId": "a4011b83-ef0d-42c7-ac27-78050f25a150",
+        "title": "South London Boroughs",
+        "status": "Official",
+        "duration": 1163000,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": true
+      },
+      {
+        "id": 3327,
+        "albumId": 448,
+        "foreignReleaseId": "612f7793-a7ba-3b26-af39-c246689453ff",
+        "title": "South London Boroughs",
+        "status": "Official",
+        "duration": 1168000,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Dubstep", "Electronic", "Ambient", "Experimental"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "12\" Vinyl"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/448/cover.jpg?lastWrite=639276550986507117",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/612f7793-a7ba-3b26-af39-c246689453ff/32087675632-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/102146",
+        "name": "discogs"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/ep/burial/south-london-boroughs/",
+        "name": "rateyourmusic"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 4,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 448
+  },
+  {
+    "title": "Ghost Hardware",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "2bb9f69b-8090-3bd9-bb09-5c44268e3f7d",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 947000,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 1,
+      "value": 10.0
+    },
+    "releaseDate": "2007-06-15T00:00:00Z",
+    "releases": [
+      {
+        "id": 3328,
+        "albumId": 449,
+        "foreignReleaseId": "eea83d06-44f7-4511-afd0-40d4b3ac03de",
+        "title": "Ghost Hardware",
+        "status": "Official",
+        "duration": 947000,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": true
+      },
+      {
+        "id": 3329,
+        "albumId": 449,
+        "foreignReleaseId": "673751e1-1085-3471-a6aa-2c2010033d9d",
+        "title": "Ghost Hardware",
+        "status": "Official",
+        "duration": 947000,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3330,
+        "albumId": 449,
+        "foreignReleaseId": "b13cde3c-764b-44fc-b147-ebb5e866797a",
+        "title": "Ghost Hardware",
+        "status": "Official",
+        "duration": 943403,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "Bandcamp",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Dubstep", "Electronic", "Grime", "Uk Garage"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "12\" Vinyl"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/449/cover.jpg?lastWrite=639276550988728513",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/673751e1-1085-3471-a6aa-2c2010033d9d/1570463121-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/102183",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q5557083",
+        "name": "wikidata"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 3,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 449
+  },
+  {
+    "title": "Kindred",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "1c288979-ce2f-4e4b-90e4-845908cf7ffc",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 1839000,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 5,
+      "value": 8.0
+    },
+    "releaseDate": "2012-02-12T00:00:00Z",
+    "releases": [
+      {
+        "id": 3331,
+        "albumId": 450,
+        "foreignReleaseId": "187387e3-f728-45f5-a0fa-a7120a32cd99",
+        "title": "Kindred EP",
+        "status": "Official",
+        "duration": 1839000,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": true
+      },
+      {
+        "id": 3332,
+        "albumId": 450,
+        "foreignReleaseId": "2b19f713-fd86-480f-aa71-84ca6f90f86d",
+        "title": "Kindred",
+        "status": "Official",
+        "duration": 1838000,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub", "Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Dubstep", "Future Garage"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "12\" Vinyl"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/450/cover.jpg?lastWrite=639276550991157518",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/2b19f713-fd86-480f-aa71-84ca6f90f86d/32290396175-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/450/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/187387e3-f728-45f5-a0fa-a7120a32cd99/12142420794-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/409566",
+        "name": "discogs"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/ep/burial_f1/kindred_ep/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q6410638",
+        "name": "wikidata"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 3,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 450
+  },
+  {
+    "title": "Distant Lights",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "e93d0235-d2d0-3920-bf63-113eca572daa",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 1253000,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 1,
+      "value": 10.0
+    },
+    "releaseDate": "2006-08-28T00:00:00Z",
+    "releases": [
+      {
+        "id": 3333,
+        "albumId": 451,
+        "foreignReleaseId": "776b5321-6397-30a2-970b-46ae1e3cdf7e",
+        "title": "Distant Lights",
+        "status": "Official",
+        "duration": 1253000,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 3334,
+        "albumId": 451,
+        "foreignReleaseId": "09850914-5d01-41d8-a799-076cc43e4487",
+        "title": "Distant Lights",
+        "status": "Official",
+        "duration": 1253000,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3335,
+        "albumId": 451,
+        "foreignReleaseId": "54285e3f-7c37-4832-815b-89fc37c43b99",
+        "title": "Distant Lights",
+        "status": "Official",
+        "duration": 1250645,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "Bandcamp",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Dubstep", "Electronic", "Grime", "Uk Garage"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/451/cover.jpg?lastWrite=639276550993406382",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/776b5321-6397-30a2-970b-46ae1e3cdf7e/1348745418-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/102172",
+        "name": "discogs"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 4,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 451
+  },
+  {
+    "title": "Street Halo",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "eaec87a0-03a1-4363-bbb1-362826995309",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 1241000,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 4,
+      "value": 7.0
+    },
+    "releaseDate": "2011-03-23T00:00:00Z",
+    "releases": [
+      {
+        "id": 3336,
+        "albumId": 452,
+        "foreignReleaseId": "165ac34b-6b79-48cb-9d14-cb92775cdef9",
+        "title": "Street Halo",
+        "status": "Official",
+        "duration": 1241000,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub", "Hyperdub"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 3337,
+        "albumId": 452,
+        "foreignReleaseId": "cd51afde-d985-46b2-9c7e-8b7d05766c16",
+        "title": "Street Halo",
+        "status": "Official",
+        "duration": 1241000,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3338,
+        "albumId": 452,
+        "foreignReleaseId": "b079a1d9-fc75-4f70-9d41-867b3a1bf51b",
+        "title": "Street Halo",
+        "status": "Official",
+        "duration": 1242594,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "Bandcamp",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub", "Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Dubstep", "Future Garage"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/452/cover.jpg?lastWrite=639276550995673682",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/b079a1d9-fc75-4f70-9d41-867b3a1bf51b/32087808893-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/452/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/cd51afde-d985-46b2-9c7e-8b7d05766c16/12140318108-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/323648",
+        "name": "discogs"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/ep/burial_f1/street_halo/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q7622855",
+        "name": "wikidata"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 3,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 452
+  },
+  {
+    "title": "Rival Dealer",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "c93200c0-b1fa-4fd8-beff-036fad9509fa",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 1714079,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 2,
+      "value": 8.0
+    },
+    "releaseDate": "2013-12-11T00:00:00Z",
+    "releases": [
+      {
+        "id": 3339,
+        "albumId": 453,
+        "foreignReleaseId": "8574ecdb-8ab6-4aad-851f-b5bb62d8f55f",
+        "title": "Rival Dealer",
+        "status": "Official",
+        "duration": 1714079,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": true
+      },
+      {
+        "id": 3340,
+        "albumId": 453,
+        "foreignReleaseId": "09ac1d17-26d5-43b5-88a5-17d0edbad9d5",
+        "title": "Rival Dealer",
+        "status": "Official",
+        "duration": 1713000,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3341,
+        "albumId": 453,
+        "foreignReleaseId": "8326e801-0b79-4a4d-8f92-f6f0f28e9ebf",
+        "title": "Rival Dealer",
+        "status": "Official",
+        "duration": 1714079,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 3342,
+        "albumId": 453,
+        "foreignReleaseId": "13d03a25-8436-4916-a5c1-1aad2e727ecc",
+        "title": "Rival Dealer",
+        "status": "Official",
+        "duration": 1714479,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Beat Records"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 3343,
+        "albumId": 453,
+        "foreignReleaseId": "83e47d44-b978-46a7-a0df-c9cad3080bf2",
+        "title": "Rival Dealer",
+        "status": "Official",
+        "duration": 1715191,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Argentina",
+          "Bolivia",
+          "Brazil",
+          "Canada",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Dominican Republic",
+          "Ecuador",
+          "El Salvador",
+          "Guatemala",
+          "Honduras",
+          "Mexico",
+          "Nicaragua",
+          "Panama",
+          "Paraguay",
+          "Peru",
+          "United States",
+          "Uruguay"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Ambient", "Electronic", "Future Garage", "Post-Dubstep"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "12\" Vinyl"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/453/cover.jpg?lastWrite=639276550998542253",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/09ac1d17-26d5-43b5-88a5-17d0edbad9d5/5922924284-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/453/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/8574ecdb-8ab6-4aad-851f-b5bb62d8f55f/12142503756-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/629681",
+        "name": "discogs"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/ep/burial_f1/rival_dealer_f1/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q17019003",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0002603573",
+        "name": "allmusic"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 3,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 453
+  },
+  {
+    "title": "Untrue",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "fddedc4f-7a2e-3d7d-9ec5-1705c416f3f4",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 3689528,
+    "albumType": "Album",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 18,
+      "value": 9.3
+    },
+    "releaseDate": "2007-11-05T00:00:00Z",
+    "releases": [
+      {
+        "id": 3344,
+        "albumId": 454,
+        "foreignReleaseId": "715d4a00-2ad5-4882-b1be-24853344315e",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 2389000,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3345,
+        "albumId": 454,
+        "foreignReleaseId": "6d3e269c-a5b3-4fed-89dd-a862a5200bb6",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3689528,
+        "trackCount": 15,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Beat Records"],
+        "format": "CD",
+        "monitored": true
+      },
+      {
+        "id": 3346,
+        "albumId": 454,
+        "foreignReleaseId": "85e7a4a1-0ebd-4248-b9d8-7677dd2b3ad5",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3038000,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Octave"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 3347,
+        "albumId": 454,
+        "foreignReleaseId": "e08c3db9-fc33-4d4e-b8b7-818d34228bef",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3033382,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 3348,
+        "albumId": 454,
+        "foreignReleaseId": "d84892a9-0b1d-3694-a2a1-f19ddb7d0c53",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3081840,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3349,
+        "albumId": 454,
+        "foreignReleaseId": "3b78aca5-18da-4183-a5dc-51626d39e8ff",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3033368,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Anguilla",
+          "Antigua and Barbuda",
+          "Argentina",
+          "Armenia",
+          "Australia",
+          "Austria",
+          "Azerbaijan",
+          "Bahamas",
+          "Bahrain",
+          "Barbados",
+          "Belarus",
+          "Belgium",
+          "Belize",
+          "Bermuda",
+          "Bolivia",
+          "Botswana",
+          "Brazil",
+          "Brunei",
+          "Bulgaria",
+          "Burkina Faso",
+          "Cambodia",
+          "Canada",
+          "Cape Verde",
+          "Cayman Islands",
+          "Chile",
+          "China",
+          "Colombia",
+          "Costa Rica",
+          "Cyprus",
+          "Czechia",
+          "Denmark",
+          "Dominica",
+          "Dominican Republic",
+          "Ecuador",
+          "Egypt",
+          "El Salvador",
+          "Estonia",
+          "Fiji",
+          "Finland",
+          "France",
+          "Gambia",
+          "Germany",
+          "Ghana",
+          "Greece",
+          "Grenada",
+          "Guatemala",
+          "Guinea-Bissau",
+          "Honduras",
+          "Hong Kong",
+          "Hungary",
+          "India",
+          "Indonesia",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Jordan",
+          "Kazakhstan",
+          "Kenya",
+          "South Korea",
+          "Kyrgyzstan",
+          "Laos",
+          "Latvia",
+          "Lebanon",
+          "Lithuania",
+          "Luxembourg",
+          "Macao",
+          "Malaysia",
+          "Malta",
+          "Mauritius",
+          "Mexico",
+          "Federated States of Micronesia",
+          "Moldova",
+          "Mongolia",
+          "Mozambique",
+          "Namibia",
+          "Nepal",
+          "Netherlands",
+          "New Zealand",
+          "Nicaragua",
+          "Niger",
+          "Nigeria",
+          "Norway",
+          "Oman",
+          "Panama",
+          "Papua New Guinea",
+          "Paraguay",
+          "Peru",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Qatar",
+          "Romania",
+          "Russia",
+          "Saint Kitts and Nevis",
+          "Saudi Arabia",
+          "Singapore",
+          "Slovakia",
+          "Slovenia",
+          "South Africa",
+          "Spain",
+          "Sri Lanka",
+          "Eswatini",
+          "Sweden",
+          "Switzerland",
+          "Taiwan",
+          "Tajikistan",
+          "Thailand",
+          "Trinidad and Tobago",
+          "T\u00fcrkiye",
+          "Turkmenistan",
+          "Uganda",
+          "Ukraine",
+          "United Arab Emirates",
+          "United Kingdom",
+          "United States",
+          "Uruguay",
+          "Uzbekistan",
+          "Venezuela",
+          "Vietnam",
+          "British Virgin Islands",
+          "Zimbabwe"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3350,
+        "albumId": 454,
+        "foreignReleaseId": "02aa03a5-001b-4e5a-b3ad-23ad0fadb49c",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3054473,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3351,
+        "albumId": 454,
+        "foreignReleaseId": "e685c54d-196c-47bd-9a75-74dafe4c43b7",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3033368,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3352,
+        "albumId": 454,
+        "foreignReleaseId": "bdbe524e-dc62-4d74-b1a2-2e25046286c2",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3689528,
+        "trackCount": 15,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "bonus tracks version",
+        "country": ["Japan"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3353,
+        "albumId": 454,
+        "foreignReleaseId": "3f7aa110-3290-4a25-99de-d360445d3a74",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3033373,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "Bandcamp",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3354,
+        "albumId": 454,
+        "foreignReleaseId": "76d4d6f5-bca8-40e1-9299-1278517ce024",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 2377000,
+        "trackCount": 9,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3355,
+        "albumId": 454,
+        "foreignReleaseId": "513f30f0-36a4-4c77-b645-ded21cdf6e08",
+        "title": "Untrue",
+        "status": "Bootleg",
+        "duration": 3033382,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Russia"],
+        "label": ["Cargo Records", "Hyperdub"],
+        "format": "CD",
+        "monitored": false
+      },
+      {
+        "id": 3356,
+        "albumId": 454,
+        "foreignReleaseId": "69e9fe77-89e3-4f0e-982a-ab657d9118ff",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3033382,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "180 gram",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3357,
+        "albumId": 454,
+        "foreignReleaseId": "24021f7b-fcfb-43f3-8211-a610a3e30167",
+        "title": "Untrue",
+        "status": "Official",
+        "duration": 3034000,
+        "trackCount": 13,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          },
+          {
+            "mediumNumber": 2,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 2,
+        "disambiguation": "clear",
+        "country": ["Netherlands"],
+        "label": ["Hyperdub"],
+        "format": "2x12\" Vinyl",
+        "monitored": false
+      }
+    ],
+    "genres": [
+      "Dubstep",
+      "Future Garage",
+      "Electronic",
+      "Hauntology",
+      "Ambient",
+      "2-Step",
+      "Trip Hop",
+      "Uk Garage"
+    ],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "CD"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/454/cover.jpg?lastWrite=639276551001887507",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/e685c54d-196c-47bd-9a75-74dafe4c43b7/24820081496-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/454/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/24021f7b-fcfb-43f3-8211-a610a3e30167/45243886442-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/11772",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/reviews/c2w6",
+        "name": "bbc"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q2445090",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://rateyourmusic.com/release/album/burial_f1/untrue_f1/",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.allmusic.com/album/mw0000497266",
+        "name": "allmusic"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 15,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 454
+  },
+  {
+    "title": "Antidawn EP",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "f6e7835c-c3f6-4379-8988-517aa48329ee",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 2607000,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 3,
+      "value": 7.3
+    },
+    "releaseDate": "2022-01-06T00:00:00Z",
+    "releases": [
+      {
+        "id": 3358,
+        "albumId": 455,
+        "foreignReleaseId": "519fbf51-d575-4273-9c33-34616e22b540",
+        "title": "Antidawn EP",
+        "status": "Official",
+        "duration": 2607000,
+        "trackCount": 5,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 3359,
+        "albumId": 455,
+        "foreignReleaseId": "59bb6860-8a12-4114-abac-e31950c054c0",
+        "title": "Antidawn EP",
+        "status": "Official",
+        "duration": 2607000,
+        "trackCount": 5,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3360,
+        "albumId": 455,
+        "foreignReleaseId": "a82efe4a-7958-41bf-a45a-7f40b35e6909",
+        "title": "Antidawn EP",
+        "status": "Official",
+        "duration": 2610184,
+        "trackCount": 5,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Afghanistan",
+          "Albania",
+          "Algeria",
+          "Angola",
+          "Antigua and Barbuda",
+          "Argentina",
+          "Armenia",
+          "Australia",
+          "Austria",
+          "Azerbaijan",
+          "Bahamas",
+          "Bahrain",
+          "Bangladesh",
+          "Barbados",
+          "Belarus",
+          "Belgium",
+          "Belize",
+          "Benin",
+          "Bhutan",
+          "Bolivia",
+          "Bosnia and Herzegovina",
+          "Botswana",
+          "Brazil",
+          "British Indian Ocean Territory",
+          "Brunei",
+          "Bulgaria",
+          "Burkina Faso",
+          "Burundi",
+          "Cambodia",
+          "Cameroon",
+          "Canada",
+          "Cape Verde",
+          "Central African Republic",
+          "Chad",
+          "Chile",
+          "Christmas Island",
+          "Cocos (Keeling) Islands",
+          "Colombia",
+          "Comoros",
+          "Congo",
+          "Cook Islands",
+          "Costa Rica",
+          "C\u00f4te d'Ivoire",
+          "Croatia",
+          "Cyprus",
+          "Czechia",
+          "Denmark",
+          "Djibouti",
+          "Dominica",
+          "Dominican Republic",
+          "Timor-Leste",
+          "Ecuador",
+          "Egypt",
+          "El Salvador",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Estonia",
+          "Ethiopia",
+          "Fiji",
+          "Finland",
+          "France",
+          "Gabon",
+          "Gambia",
+          "Georgia",
+          "Germany",
+          "Ghana",
+          "Greece",
+          "Grenada",
+          "Guatemala",
+          "Guinea",
+          "Guinea-Bissau",
+          "Guyana",
+          "Haiti",
+          "Honduras",
+          "Hungary",
+          "Iceland",
+          "Indonesia",
+          "Iraq",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Jamaica",
+          "Jordan",
+          "Kazakhstan",
+          "Kenya",
+          "Kiribati",
+          "Kuwait",
+          "Kyrgyzstan",
+          "Laos",
+          "Latvia",
+          "Lebanon",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Lithuania",
+          "Luxembourg",
+          "North Macedonia",
+          "Madagascar",
+          "Malawi",
+          "Malaysia",
+          "Maldives",
+          "Mali",
+          "Malta",
+          "Marshall Islands",
+          "Mauritania",
+          "Mauritius",
+          "Mexico",
+          "Federated States of Micronesia",
+          "Moldova",
+          "Mongolia",
+          "Morocco",
+          "Mozambique",
+          "Namibia",
+          "Nauru",
+          "Nepal",
+          "Netherlands",
+          "New Zealand",
+          "Nicaragua",
+          "Niger",
+          "Nigeria",
+          "Niue",
+          "Norfolk Island",
+          "Norway",
+          "Oman",
+          "Pakistan",
+          "Palau",
+          "Panama",
+          "Papua New Guinea",
+          "Paraguay",
+          "Peru",
+          "Philippines",
+          "Pitcairn",
+          "Poland",
+          "Portugal",
+          "Qatar",
+          "Romania",
+          "Russia",
+          "Rwanda",
+          "Saint Kitts and Nevis",
+          "Saint Lucia",
+          "Saint Vincent and The Grenadines",
+          "Samoa",
+          "Sao Tome and Principe",
+          "Saudi Arabia",
+          "Senegal",
+          "Seychelles",
+          "Sierra Leone",
+          "Singapore",
+          "Slovakia",
+          "Slovenia",
+          "Solomon Islands",
+          "Somalia",
+          "South Africa",
+          "Spain",
+          "Sri Lanka",
+          "Suriname",
+          "Svalbard and Jan Mayen",
+          "Eswatini",
+          "Sweden",
+          "Switzerland",
+          "Tajikistan",
+          "Tanzania",
+          "Thailand",
+          "Togo",
+          "Tokelau",
+          "Tonga",
+          "Trinidad and Tobago",
+          "Tunisia",
+          "T\u00fcrkiye",
+          "Turkmenistan",
+          "Tuvalu",
+          "Uganda",
+          "Ukraine",
+          "United Arab Emirates",
+          "United Kingdom",
+          "United States",
+          "Uruguay",
+          "Uzbekistan",
+          "Vanuatu",
+          "Venezuela",
+          "Vietnam",
+          "Yemen",
+          "Democratic Republic of the Congo",
+          "Zambia",
+          "Zimbabwe",
+          "Montenegro",
+          "Serbia",
+          "Cura\u00e7ao"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3361,
+        "albumId": 455,
+        "foreignReleaseId": "8d9f4838-2455-45a4-a659-70ee3e1b6cac",
+        "title": "Antidawn EP",
+        "status": "Official",
+        "duration": 2610184,
+        "trackCount": 5,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["Japan"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3362,
+        "albumId": 455,
+        "foreignReleaseId": "f39407d2-a74c-42d7-a042-079d728b93fa",
+        "title": "Antidawn",
+        "status": "Official",
+        "duration": 2610184,
+        "trackCount": 5,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "CD"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "CD",
+        "monitored": false
+      }
+    ],
+    "genres": ["Ambient", "Electronic", "Future Garage"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/455/cover.jpg?lastWrite=639276551007489959",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/a82efe4a-7958-41bf-a45a-7f40b35e6909/31446192999-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/455/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/f39407d2-a74c-42d7-a042-079d728b93fa/31964977127-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.offiziellecharts.de/charts/album-details-491527",
+        "name": "offiziellecharts"
+      },
+      {
+        "url": "https://www.discogs.com/master/2451535",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q111097798",
+        "name": "wikidata"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 5,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 455
+  },
+  {
+    "title": "Streetlands",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "153d377b-75fa-4417-a5d7-d5ee1bf97481",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 2068238,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 1,
+      "value": 6.0
+    },
+    "releaseDate": "2022-10-21T00:00:00Z",
+    "releases": [
+      {
+        "id": 3363,
+        "albumId": 456,
+        "foreignReleaseId": "9898c080-e026-462a-aba1-4fa4fcd63953",
+        "title": "Streetlands EP",
+        "status": "Official",
+        "duration": 2068238,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 3364,
+        "albumId": 456,
+        "foreignReleaseId": "651a6bb0-6bc9-4d5c-a120-2f77f6ced4d4",
+        "title": "Streetlands",
+        "status": "Official",
+        "duration": 2068238,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3365,
+        "albumId": 456,
+        "foreignReleaseId": "ec60ea34-e3c4-44cc-9fdc-bc60ae3806e2",
+        "title": "Streetlands",
+        "status": "Official",
+        "duration": 0,
+        "trackCount": 3,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "Vinyl",
+        "monitored": false
+      }
+    ],
+    "genres": ["Ambient", "Electronic", "Dark Ambient"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/456/cover.jpg?lastWrite=639276551011065628",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/9898c080-e026-462a-aba1-4fa4fcd63953/33882488189-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/456/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/ec60ea34-e3c4-44cc-9fdc-bc60ae3806e2/44369512218-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/2831675",
+        "name": "discogs"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 3,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 456
+  },
+  {
+    "title": "Dreamfear / Boy Sent From Above",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "80f7eac2-0d37-4685-bb8f-cc97b1e507fa",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 0,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 1,
+      "value": 4.0
+    },
+    "releaseDate": "2024-01-16T00:00:00Z",
+    "releases": [
+      {
+        "id": 3366,
+        "albumId": 457,
+        "foreignReleaseId": "3a04ee4f-892b-429f-9da9-5c778e2c15c4",
+        "title": "Dreamfear / Boy Sent From Above",
+        "status": "Official",
+        "duration": 0,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["XL Recordings"],
+        "format": "12\" Vinyl",
+        "monitored": true
+      },
+      {
+        "id": 3367,
+        "albumId": 457,
+        "foreignReleaseId": "c78b4f26-8902-42a1-bc04-262ee4bbe2ed",
+        "title": "Dreamfear / Boy Sent From Above",
+        "status": "Official",
+        "duration": 1576585,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3368,
+        "albumId": 457,
+        "foreignReleaseId": "53c0d8e2-f8f2-4d54-ad24-4c6c2d94cd34",
+        "title": "Dreamfear / Boy Sent From Above",
+        "status": "Official",
+        "duration": 1576586,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3369,
+        "albumId": 457,
+        "foreignReleaseId": "04d0f95a-f7dd-4cae-bd98-53d68b0f01b1",
+        "title": "Dreamfear / Boy Sent From Above",
+        "status": "Official",
+        "duration": 1576586,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["XL Recordings"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3370,
+        "albumId": 457,
+        "foreignReleaseId": "d88a4a1c-9b4a-41a7-b558-9eae18ff3884",
+        "title": "Dreamfear",
+        "status": "Promotion",
+        "duration": 0,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["XL Recordings"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3371,
+        "albumId": 457,
+        "foreignReleaseId": "61d18122-6b48-4692-856e-9bc3354ff92c",
+        "title": "Dreamfear / Boy Sent From Above",
+        "status": "Official",
+        "duration": 0,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United States"],
+        "label": ["XL Recordings"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      }
+    ],
+    "genres": ["Ambient", "Electronic", "Dubstep"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "12\" Vinyl"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/457/cover.jpg?lastWrite=639276551013748037",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/d88a4a1c-9b4a-41a7-b558-9eae18ff3884/37796275425-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/457/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/61d18122-6b48-4692-856e-9bc3354ff92c/37806180159-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/3369703",
+        "name": "discogs"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 2,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 457
+  },
+  {
+    "title": "Comafields / Imaginary Festival",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "844936b8-85ce-4ce0-9f32-31130d07c538",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 1368479,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 2,
+      "value": 5.0
+    },
+    "releaseDate": "2025-08-01T00:00:00Z",
+    "releases": [
+      {
+        "id": 3372,
+        "albumId": 458,
+        "foreignReleaseId": "43b9f054-a078-4682-b8f5-f61c6e1abf10",
+        "title": "Comafields / Imaginary Festival",
+        "status": "Official",
+        "duration": 1368479,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Antigua and Barbuda",
+          "Argentina",
+          "Australia",
+          "Bahamas",
+          "Barbados",
+          "Belize",
+          "Bhutan",
+          "Bolivia",
+          "Brazil",
+          "Brunei",
+          "Cambodia",
+          "Canada",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Dominica",
+          "Dominican Republic",
+          "Ecuador",
+          "El Salvador",
+          "Grenada",
+          "Guatemala",
+          "Guyana",
+          "Haiti",
+          "Honduras",
+          "Hong Kong",
+          "Indonesia",
+          "Jamaica",
+          "South Korea",
+          "Laos",
+          "Macao",
+          "Malaysia",
+          "Mexico",
+          "New Zealand",
+          "Nicaragua",
+          "Panama",
+          "Paraguay",
+          "Peru",
+          "Philippines",
+          "Puerto Rico",
+          "Saint Kitts and Nevis",
+          "Saint Lucia",
+          "Saint Vincent and The Grenadines",
+          "Singapore",
+          "Suriname",
+          "Taiwan",
+          "Thailand",
+          "Trinidad and Tobago",
+          "United States",
+          "Uruguay",
+          "Venezuela",
+          "Vietnam",
+          "Cura\u00e7ao"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 3373,
+        "albumId": 458,
+        "foreignReleaseId": "a8c2a3c2-7389-4c1e-99ce-4071011e2ff6",
+        "title": "Comafields / Imaginary Festival",
+        "status": "Official",
+        "duration": 1368479,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3374,
+        "albumId": 458,
+        "foreignReleaseId": "2ea8b421-783f-4d5a-9aa2-e797a9e8d049",
+        "title": "Comafields / Imaginary Festival",
+        "status": "Official",
+        "duration": 1368479,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": [
+          "Afghanistan",
+          "Albania",
+          "Algeria",
+          "Andorra",
+          "Angola",
+          "Armenia",
+          "Austria",
+          "Azerbaijan",
+          "Bahrain",
+          "Bangladesh",
+          "Belarus",
+          "Belgium",
+          "Benin",
+          "Bosnia and Herzegovina",
+          "Botswana",
+          "British Indian Ocean Territory",
+          "Bulgaria",
+          "Burkina Faso",
+          "Burundi",
+          "Cameroon",
+          "Cape Verde",
+          "Central African Republic",
+          "Chad",
+          "China",
+          "Christmas Island",
+          "Cocos (Keeling) Islands",
+          "Comoros",
+          "Congo",
+          "Cook Islands",
+          "C\u00f4te d'Ivoire",
+          "Croatia",
+          "Cyprus",
+          "Czechia",
+          "Denmark",
+          "Djibouti",
+          "Timor-Leste",
+          "Egypt",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Estonia",
+          "Ethiopia",
+          "Fiji",
+          "Finland",
+          "France",
+          "Gabon",
+          "Gambia",
+          "Georgia",
+          "Germany",
+          "Ghana",
+          "Greece",
+          "Guinea",
+          "Guinea-Bissau",
+          "Hungary",
+          "Iceland",
+          "India",
+          "Iraq",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Jordan",
+          "Kazakhstan",
+          "Kenya",
+          "Kiribati",
+          "Kuwait",
+          "Kyrgyzstan",
+          "Latvia",
+          "Lebanon",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Liechtenstein",
+          "Lithuania",
+          "Luxembourg",
+          "North Macedonia",
+          "Madagascar",
+          "Malawi",
+          "Maldives",
+          "Mali",
+          "Malta",
+          "Marshall Islands",
+          "Mauritania",
+          "Mauritius",
+          "Federated States of Micronesia",
+          "Moldova",
+          "Monaco",
+          "Mongolia",
+          "Morocco",
+          "Mozambique",
+          "Namibia",
+          "Nauru",
+          "Nepal",
+          "Netherlands",
+          "Niger",
+          "Nigeria",
+          "Niue",
+          "Norfolk Island",
+          "Norway",
+          "Oman",
+          "Pakistan",
+          "Palau",
+          "Papua New Guinea",
+          "Pitcairn",
+          "Poland",
+          "Portugal",
+          "Qatar",
+          "Romania",
+          "Russia",
+          "Rwanda",
+          "Samoa",
+          "San Marino",
+          "Sao Tome and Principe",
+          "Saudi Arabia",
+          "Senegal",
+          "Seychelles",
+          "Sierra Leone",
+          "Slovakia",
+          "Slovenia",
+          "Solomon Islands",
+          "Somalia",
+          "South Africa",
+          "Spain",
+          "Sri Lanka",
+          "Svalbard and Jan Mayen",
+          "Eswatini",
+          "Sweden",
+          "Switzerland",
+          "Tajikistan",
+          "Tanzania",
+          "Togo",
+          "Tokelau",
+          "Tonga",
+          "Tunisia",
+          "T\u00fcrkiye",
+          "Turkmenistan",
+          "Tuvalu",
+          "Uganda",
+          "Ukraine",
+          "United Arab Emirates",
+          "United Kingdom",
+          "Uzbekistan",
+          "Vanuatu",
+          "Yemen",
+          "Democratic Republic of the Congo",
+          "Zambia",
+          "Zimbabwe",
+          "Montenegro",
+          "Palestine",
+          "Serbia",
+          "Cura\u00e7ao",
+          "Kosovo"
+        ],
+        "label": ["Hyperdub"],
+        "format": "Digital Media",
+        "monitored": false
+      },
+      {
+        "id": 3375,
+        "albumId": 458,
+        "foreignReleaseId": "b7afdada-a298-4434-8d3f-b41e0462470a",
+        "title": "Comafields / Imaginary Festival",
+        "status": "Official",
+        "duration": 1368479,
+        "trackCount": 2,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Hyperdub"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      }
+    ],
+    "genres": ["Ambient", "Electronic", "Dub", "Dubstep"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/458/cover.jpg?lastWrite=639276551017081967",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/2ea8b421-783f-4d5a-9aa2-e797a9e8d049/42652487313-1200.jpg"
+      }
+    ],
+    "links": [],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 2,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 458
+  },
+  {
+    "title": "Shock Power of Love E.P.",
+    "disambiguation": "",
+    "overview": "",
+    "artistId": 39,
+    "foreignAlbumId": "a633ef07-7614-4966-81a8-e3a52eedb85f",
+    "monitored": false,
+    "anyReleaseOk": true,
+    "profileId": 1,
+    "duration": 1655807,
+    "albumType": "EP",
+    "secondaryTypes": [],
+    "mediumCount": 1,
+    "ratings": {
+      "votes": 1,
+      "value": 8.0
+    },
+    "releaseDate": "2021-04-29T00:00:00Z",
+    "releases": [
+      {
+        "id": 3376,
+        "albumId": 459,
+        "foreignReleaseId": "9c16f911-6756-4624-ac7f-7e142403d992",
+        "title": "Shock Power of Love EP",
+        "status": "Official",
+        "duration": 1655807,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Keysound Recordings"],
+        "format": "Digital Media",
+        "monitored": true
+      },
+      {
+        "id": 3377,
+        "albumId": 459,
+        "foreignReleaseId": "997757b8-80ad-4769-96ef-0aef066f9e98",
+        "title": "Shock Power of Love E.P.",
+        "status": "Official",
+        "duration": 0,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "12\" Vinyl"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["United Kingdom"],
+        "label": ["Keysound Recordings"],
+        "format": "12\" Vinyl",
+        "monitored": false
+      },
+      {
+        "id": 3378,
+        "albumId": 459,
+        "foreignReleaseId": "0521a4b0-69bc-470b-ad2c-d44d0ccbbf8c",
+        "title": "Shock Power of Love EP",
+        "status": "Official",
+        "duration": 1653000,
+        "trackCount": 4,
+        "media": [
+          {
+            "mediumNumber": 1,
+            "mediumName": "",
+            "mediumFormat": "Digital Media"
+          }
+        ],
+        "mediumCount": 1,
+        "disambiguation": "",
+        "country": ["[Worldwide]"],
+        "label": ["Keysound Recordings"],
+        "format": "Digital Media",
+        "monitored": false
+      }
+    ],
+    "genres": ["Dubstep", "Electronic", "Techno", "Uk Garage"],
+    "media": [
+      {
+        "mediumNumber": 1,
+        "mediumName": "",
+        "mediumFormat": "Digital Media"
+      }
+    ],
+    "artist": {
+      "status": "continuing",
+      "ended": false,
+      "artistName": "Burial",
+      "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+      "tadbId": 0,
+      "discogsId": 0,
+      "artistType": "Person",
+      "disambiguation": "UK dubstep",
+      "links": [
+        {
+          "url": "https://myspace.com/burialuk",
+          "name": "myspace"
+        },
+        {
+          "url": "https://www.discogs.com/artist/306157",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+          "name": "bbc"
+        },
+        {
+          "url": "https://twitter.com/BurialUK",
+          "name": "twitter"
+        },
+        {
+          "url": "https://www.discogs.com/artist/1975486",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.last.fm/music/Burial",
+          "name": "last"
+        },
+        {
+          "url": "http://viaf.org/viaf/34252320",
+          "name": "viaf"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q552245",
+          "name": "wikidata"
+        },
+        {
+          "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+          "name": "muzikum"
+        },
+        {
+          "url": "https://soundcloud.com/burial",
+          "name": "soundcloud"
+        },
+        {
+          "url": "https://www.allmusic.com/artist/mn0000643682",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/artist/burial_f1",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://burial.bandcamp.com/",
+          "name": "bandcamp"
+        },
+        {
+          "url": "https://www.beatport.com/artist/burial/32331",
+          "name": "beatport"
+        },
+        {
+          "url": "https://itunes.apple.com/us/artist/id468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+          "name": "google"
+        },
+        {
+          "url": "https://www.junodownload.com/artists/Burial/",
+          "name": "junodownload"
+        },
+        {
+          "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+          "name": "spotify"
+        },
+        {
+          "url": "https://uk.7digital.com/artist/burial",
+          "name": "7digital"
+        },
+        {
+          "url": "https://www.deezer.com/artist/6281",
+          "name": "deezer"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://boomkat.com/artists/burial",
+          "name": "boomkat"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://bleep.com/artist/2085",
+          "name": "bleep"
+        },
+        {
+          "url": "https://www.whosampled.com/Burial/",
+          "name": "whosampled"
+        },
+        {
+          "url": "https://tidal.com/artist/3583803",
+          "name": "tidal"
+        },
+        {
+          "url": "http://id.loc.gov/authorities/names/no2007151091",
+          "name": "loc"
+        },
+        {
+          "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+          "name": "worldcat"
+        },
+        {
+          "url": "https://nla.gov.au/nla.party-1459061",
+          "name": "gov"
+        },
+        {
+          "url": "https://www.imdb.com/name/nm6153670/",
+          "name": "imdb"
+        },
+        {
+          "url": "https://www.songkick.com/artists/326163",
+          "name": "songkick"
+        },
+        {
+          "url": "https://imvdb.com/n/burial",
+          "name": "imvdb"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://music.apple.com/us/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/mx/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://music.apple.com/gb/artist/468355684",
+          "name": "apple"
+        },
+        {
+          "url": "https://open.qobuz.com/artist/291276",
+          "name": "qobuz"
+        },
+        {
+          "url": "https://tidal.com/artist/14917319",
+          "name": "tidal"
+        },
+        {
+          "url": "https://tidal.com/artist/14894453",
+          "name": "tidal"
+        }
+      ],
+      "nextAlbum": null,
+      "lastAlbum": null,
+      "images": [],
+      "path": "/music/Burial",
+      "qualityProfileId": 1,
+      "metadataProfileId": 3,
+      "monitored": false,
+      "monitorNewItems": "none",
+      "genres": [
+        "Future Garage",
+        "Dubstep",
+        "Ambient",
+        "Electronic",
+        "2-Step",
+        "Uk Garage",
+        "Dance",
+        "Dark Ambient",
+        "Death Metal",
+        "Death-Doom Metal",
+        "Doom Metal",
+        "Drone",
+        "Dub",
+        "Electronica",
+        "Experimental",
+        "Grime",
+        "House",
+        "Idm",
+        "Instrumental",
+        "Metal",
+        "Pop",
+        "Rock",
+        "Shoegaze",
+        "Techno",
+        "Slowcore",
+        "Witch House",
+        "Bassline",
+        "Organic House",
+        "Black Metal",
+        "Blackened Death Metal",
+        "Breakbeat",
+        "Breaks",
+        "Club"
+      ],
+      "cleanName": "burial",
+      "sortName": "burial",
+      "tags": [],
+      "added": "2026-10-15T09:58:17Z",
+      "ratings": {
+        "votes": 8,
+        "value": 9.8
+      },
+      "id": 39
+    },
+    "images": [
+      {
+        "url": "/MediaCover/Albums/459/cover.jpg?lastWrite=639276551019854353",
+        "coverType": "cover",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/9c16f911-6756-4624-ac7f-7e142403d992/29224028909-1200.jpg"
+      },
+      {
+        "url": "/MediaCover/Albums/459/disc.jpg",
+        "coverType": "disc",
+        "extension": ".jpg",
+        "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/997757b8-80ad-4769-96ef-0aef066f9e98/29491303777-1200.jpg"
+      }
+    ],
+    "links": [
+      {
+        "url": "https://www.discogs.com/master/2103436",
+        "name": "discogs"
+      }
+    ],
+    "statistics": {
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 4,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 459
+  }
+]

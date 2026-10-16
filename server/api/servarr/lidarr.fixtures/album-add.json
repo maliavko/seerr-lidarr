@@ -1,0 +1,360 @@
+{
+  "title": "Airbag / How Am I Driving?",
+  "disambiguation": "",
+  "overview": "",
+  "artistId": 7,
+  "foreignAlbumId": "7b39ccb5-b49c-37e1-80ec-5ac0b2a89fe4",
+  "monitored": true,
+  "anyReleaseOk": true,
+  "profileId": 0,
+  "duration": 0,
+  "albumType": "EP",
+  "secondaryTypes": [],
+  "mediumCount": 0,
+  "ratings": {
+    "votes": 2,
+    "value": 7.0
+  },
+  "releaseDate": "1998-04-21T00:00:00Z",
+  "releases": [],
+  "genres": ["Alternative Rock", "Rock", "Indie Rock", "Blues"],
+  "media": [],
+  "artist": {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "Radiohead",
+    "foreignArtistId": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Group",
+    "disambiguation": "",
+    "links": [
+      {
+        "url": "http://www.radiohead.com/",
+        "name": "radiohead"
+      },
+      {
+        "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/",
+        "name": "musicmoz"
+      },
+      {
+        "url": "https://www.discogs.com/artist/3840",
+        "name": "discogs"
+      },
+      {
+        "url": "https://myspace.com/radiohead",
+        "name": "myspace"
+      },
+      {
+        "url": "http://www.purevolume.com/radiohead",
+        "name": "purevolume"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm1955602/",
+        "name": "imdb"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/artists/a74b1b7f-71a5-4011-9441-d0b5e4122711",
+        "name": "bbc"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000326249",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.facebook.com/radiohead",
+        "name": "facebook"
+      },
+      {
+        "url": "https://soundcloud.com/radiohead",
+        "name": "soundcloud"
+      },
+      {
+        "url": "https://secondhandsongs.com/artist/2279",
+        "name": "secondhandsongs"
+      },
+      {
+        "url": "https://www.last.fm/music/Radiohead",
+        "name": "last"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/radiohead",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://twitter.com/radiohead",
+        "name": "twitter"
+      },
+      {
+        "url": "http://viaf.org/viaf/141028845",
+        "name": "viaf"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q44190",
+        "name": "wikidata"
+      },
+      {
+        "url": "http://muzikum.eu/en/122-3909/radiohead/lyrics.html",
+        "name": "muzikum"
+      },
+      {
+        "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+        "name": "spotify"
+      },
+      {
+        "url": "https://genius.com/artists/Radiohead",
+        "name": "genius"
+      },
+      {
+        "url": "https://uk.7digital.com/artist/radiohead/",
+        "name": "7digital"
+      },
+      {
+        "url": "https://www.songkick.com/artists/253846",
+        "name": "songkick"
+      },
+      {
+        "url": "https://www.setlist.fm/setlists/radiohead-bd6bd12.html",
+        "name": "setlist"
+      },
+      {
+        "url": "https://www.deezer.com/artist/399",
+        "name": "deezer"
+      },
+      {
+        "url": "https://imvdb.com/n/radiohead",
+        "name": "imvdb"
+      },
+      {
+        "url": "https://ra.co/dj/radiohead",
+        "name": "ra"
+      },
+      {
+        "url": "https://play.google.com/store/music/artist?id=A3qpbllyfot4yhqo7isoomtctli",
+        "name": "google"
+      },
+      {
+        "url": "https://www.musik-sammler.de/artist/3211/",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://www.bandsintown.com/a/25874",
+        "name": "bandsintown"
+      },
+      {
+        "url": "https://www.whosampled.com/Radiohead/",
+        "name": "whosampled"
+      },
+      {
+        "url": "http://www.spirit-of-rock.com/groupe-groupe-Radiohead-l-en.html",
+        "name": "spirit-of-rock"
+      },
+      {
+        "url": "https://www.45cat.com/artist/radiohead",
+        "name": "45cat"
+      },
+      {
+        "url": "https://www.dailymotion.com/Radiohead-vevo",
+        "name": "dailymotion"
+      },
+      {
+        "url": "https://plus.google.com/118195887388913664436",
+        "name": "google"
+      },
+      {
+        "url": "https://www.instagram.com/radiohead/",
+        "name": "instagram"
+      },
+      {
+        "url": "https://radiohead.tumblr.com/",
+        "name": "tumblr"
+      },
+      {
+        "url": "https://d-nb.info/gnd/1707341-8",
+        "name": "d-nb"
+      },
+      {
+        "url": "http://id.loc.gov/authorities/names/no97045991",
+        "name": "loc"
+      },
+      {
+        "url": "https://www.worldcat.org/identities/lccn-no97045991",
+        "name": "worldcat"
+      },
+      {
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb139551041",
+        "name": "bnf"
+      },
+      {
+        "url": "https://vgmdb.net/artist/13395",
+        "name": "vgmdb"
+      },
+      {
+        "url": "https://radiohead.bandcamp.com/",
+        "name": "bandcamp"
+      },
+      {
+        "url": "https://tidal.com/artist/64518",
+        "name": "tidal"
+      },
+      {
+        "url": "https://www.tiktok.com/@radiohead",
+        "name": "tiktok"
+      },
+      {
+        "url": "http://www.btinternet.com/~r.j.arthur/rh/rhdisc.htm",
+        "name": "btinternet"
+      },
+      {
+        "url": "https://www.progarchives.com/artist.asp?id=1492",
+        "name": "progarchives"
+      },
+      {
+        "url": "https://music.youtube.com/channel/UCr_iyUANcn9OX_yy9piYoLw",
+        "name": "youtube"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/radiohead/43840",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://citizeninsane.eu/",
+        "name": "citizeninsane"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/657515",
+        "name": "apple"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/657515",
+        "name": "apple"
+      },
+      {
+        "url": "https://www.beatport.com/artist/radiohead/112220",
+        "name": "beatport"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA",
+        "name": "youtube"
+      },
+      {
+        "url": "https://music.amazon.co.uk/artists/B000QJXOGC",
+        "name": "amazon"
+      },
+      {
+        "url": "https://www.idref.fr/069877327",
+        "name": "idref"
+      },
+      {
+        "url": "https://jaxsta.com/profile/0e8bd208-ea18-4a75-853d-7391f4c715b2",
+        "name": "jaxsta"
+      },
+      {
+        "url": "https://www.deezer.com/artist/323887691",
+        "name": "deezer"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/43840",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/43840",
+        "name": "qobuz"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": null,
+    "images": [],
+    "path": "/music/Radiohead",
+    "qualityProfileId": 3,
+    "metadataProfileId": 1,
+    "monitored": true,
+    "monitorNewItems": "none",
+    "genres": [
+      "Alternative Rock",
+      "Art Rock",
+      "Rock",
+      "Experimental Rock",
+      "Electronic",
+      "Indie Rock",
+      "Experimental",
+      "Art Pop",
+      "Post-Britpop",
+      "Electronica",
+      "Britpop",
+      "Chamber Pop",
+      "Indietronica",
+      "Post-Grunge",
+      "Crossover Prog",
+      "Electronic Rock",
+      "Ambient Pop",
+      "Idm"
+    ],
+    "cleanName": "radiohead",
+    "sortName": "radiohead",
+    "tags": [],
+    "added": "2026-10-15T00:15:21Z",
+    "ratings": {
+      "votes": 80,
+      "value": 9.0
+    },
+    "id": 7
+  },
+  "images": [
+    {
+      "url": "/MediaCover/Albums/61/cover.jpg",
+      "coverType": "cover",
+      "extension": ".jpg",
+      "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/9b69cc24-f015-4e5f-bef1-3518c46611ca/8119666422-1200.jpg"
+    },
+    {
+      "url": "/MediaCover/Albums/61/disc.jpg",
+      "coverType": "disc",
+      "extension": ".jpg",
+      "remoteUrl": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/4c9115c1-263f-4bb8-bc9c-94ad6c9881bf/37525527717-1200.jpg"
+    }
+  ],
+  "links": [
+    {
+      "url": "http://musicmoz.org/Bands_and_Artists/R/Radiohead/Discography/AirbagHow_Am_I_Driving_EP/",
+      "name": "musicmoz"
+    },
+    {
+      "url": "https://www.discogs.com/master/326153",
+      "name": "discogs"
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q1931230",
+      "name": "wikidata"
+    },
+    {
+      "url": "https://rateyourmusic.com/release/ep/radiohead/airbag___how_am_i_driving_/",
+      "name": "rateyourmusic"
+    },
+    {
+      "url": "https://www.allmusic.com/album/mw0000036085",
+      "name": "allmusic"
+    },
+    {
+      "url": "https://genius.com/albums/Radiohead/Airbag-how-am-i-driving-ep",
+      "name": "genius"
+    },
+    {
+      "url": "https://www.spirit-of-rock.com/en/album/Airbag_-_How_Am_I_Driving/13845",
+      "name": "spirit-of-rock"
+    },
+    {
+      "url": "https://www.progarchives.com/album.asp?id=7708",
+      "name": "progarchives"
+    },
+    {
+      "url": "https://www.musik-sammler.de/album/30840/",
+      "name": "musik-sammler"
+    }
+  ],
+  "id": 61
+}

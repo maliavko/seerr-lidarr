@@ -10,7 +10,11 @@ import type {
   TmdbTvDetails,
   TmdbTvScanDetails,
 } from '@server/api/themoviedb/interfaces';
-import { MediaRequestStatus, MediaStatus } from '@server/constants/media';
+import {
+  MediaRequestStatus,
+  MediaStatus,
+  MediaType,
+} from '@server/constants/media';
 import { MediaServerType } from '@server/constants/server';
 import { getRepository } from '@server/datasource';
 import Media from '@server/entity/Media';
@@ -21,6 +25,7 @@ import type { RadarrSettings, SonarrSettings } from '@server/lib/settings';
 import { getSettings } from '@server/lib/settings';
 import logger from '@server/logger';
 import { getHostname } from '@server/utils/getHostname';
+import { In } from 'typeorm';
 
 class AvailabilitySync {
   public running = false;
@@ -479,15 +484,17 @@ class AvailabilitySync {
   private async *loadAvailableMediaPaginated(pageSize: number) {
     let offset = 0;
     const mediaRepository = getRepository(Media);
+    // music rows are Lidarr's alone (D-371): the sync checks movies and TV only
+    const mediaType = In([MediaType.MOVIE, MediaType.TV]);
     const whereOptions = [
-      { status: MediaStatus.AVAILABLE },
-      { status: MediaStatus.PARTIALLY_AVAILABLE },
-      { status4k: MediaStatus.AVAILABLE },
-      { status4k: MediaStatus.PARTIALLY_AVAILABLE },
-      { seasons: { status: MediaStatus.AVAILABLE } },
-      { seasons: { status: MediaStatus.PARTIALLY_AVAILABLE } },
-      { seasons: { status4k: MediaStatus.AVAILABLE } },
-      { seasons: { status4k: MediaStatus.PARTIALLY_AVAILABLE } },
+      { mediaType, status: MediaStatus.AVAILABLE },
+      { mediaType, status: MediaStatus.PARTIALLY_AVAILABLE },
+      { mediaType, status4k: MediaStatus.AVAILABLE },
+      { mediaType, status4k: MediaStatus.PARTIALLY_AVAILABLE },
+      { mediaType, seasons: { status: MediaStatus.AVAILABLE } },
+      { mediaType, seasons: { status: MediaStatus.PARTIALLY_AVAILABLE } },
+      { mediaType, seasons: { status4k: MediaStatus.AVAILABLE } },
+      { mediaType, seasons: { status4k: MediaStatus.PARTIALLY_AVAILABLE } },
     ];
 
     let mediaPage: Media[];

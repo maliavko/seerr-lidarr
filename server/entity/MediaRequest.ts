@@ -57,8 +57,7 @@ export class MediaRequest {
 
     // Only a caller allowed to set the request user may queue on their lock
     const lockUserId =
-      body.userId &&
-      user.hasPermission([Permission.MANAGE_USERS, Permission.MANAGE_REQUESTS])
+      body.userId && MediaRequest.canSetRequestUser(user)
         ? body.userId
         : user.id;
 
@@ -71,6 +70,34 @@ export class MediaRequest {
     );
   }
 
+  // Whether the caller may name another user as the requester, by the body's
+  // userId: the request routes and the music request read it the same way
+  public static canSetRequestUser(user: User): boolean {
+    return user.hasPermission([
+      Permission.MANAGE_USERS,
+      Permission.MANAGE_REQUESTS,
+    ]);
+  }
+
+  // The user a request is made for: the caller, or the user the body's userId
+  // names where the caller may name one
+  public static async getRequestUser(
+    user: User,
+    userId?: number | null
+  ): Promise<User> {
+    if (userId && !MediaRequest.canSetRequestUser(user)) {
+      throw new RequestPermissionError(
+        'You do not have permission to modify the request user.'
+      );
+    } else if (userId) {
+      return getRepository(User).findOneOrFail({
+        where: { id: userId },
+      });
+    }
+
+    return user;
+  }
+
   private static async createRequest(
     requestBody: MediaRequestBody,
     user: User,
@@ -79,26 +106,12 @@ export class MediaRequest {
     const tmdb = new TheMovieDb();
     const mediaRepository = getRepository(Media);
     const requestRepository = getRepository(MediaRequest);
-    const userRepository = getRepository(User);
     const settings = getSettings();
 
-    let requestUser = user;
-
-    if (
-      requestBody.userId &&
-      !requestUser.hasPermission([
-        Permission.MANAGE_USERS,
-        Permission.MANAGE_REQUESTS,
-      ])
-    ) {
-      throw new RequestPermissionError(
-        'You do not have permission to modify the request user.'
-      );
-    } else if (requestBody.userId) {
-      requestUser = await userRepository.findOneOrFail({
-        where: { id: requestBody.userId },
-      });
-    }
+    const requestUser = await MediaRequest.getRequestUser(
+      user,
+      requestBody.userId
+    );
 
     if (!requestUser) {
       throw new Error('User missing from request context.');
@@ -599,6 +612,11 @@ export class MediaRequest {
 
   @AfterInsert()
   public async notifyNewRequest(): Promise<void> {
+    // a music request sends no notification (D-311)
+    if (this.type === MediaType.MUSIC) {
+      return;
+    }
+
     if (this.status === MediaRequestStatus.PENDING) {
       const mediaRepository = getRepository(Media);
       const media = await mediaRepository.findOne({
@@ -633,6 +651,11 @@ export class MediaRequest {
    */
   @AfterUpdate()
   public async notifyApprovedOrDeclined(autoApproved = false): Promise<void> {
+    // a music request sends no notification (D-311)
+    if (this.type === MediaType.MUSIC) {
+      return;
+    }
+
     if (
       this.status === MediaRequestStatus.APPROVED ||
       this.status === MediaRequestStatus.DECLINED

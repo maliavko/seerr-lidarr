@@ -1,0 +1,1006 @@
+{
+  "release-group-count": 388,
+  "release-group-offset": 100,
+  "release-groups": [
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "029dedfd-aed0-3dc8-8c4b-4e1cee59f33d",
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "1992‐11‐14: University of Essex, Colchester, UK",
+      "secondary-types": ["Live"],
+      "primary-type": "Album"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2000-09-08",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "2000‐09‐08: Valbyhallen, Copenhagen, Denmark",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "02c5fa8c-1ea0-431a-a4cd-39af6c49d4ae"
+    },
+    {
+      "title": "Kid Eh?",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "first-release-date": "2001",
+      "disambiguation": "",
+      "id": "083d02aa-2770-4d84-8c2c-e70e012fa90e",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2+2=5, Are You Listening?",
+      "primary-type": "Album",
+      "first-release-date": "",
+      "disambiguation": "",
+      "id": "091136b3-1e5b-4820-a859-38eeb3323f38",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "1996-08-19",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "1996‐08‐19: Continental Airlines Arena, East Rutherford, NJ, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "1118b879-b8f0-4f25-9db9-3df2a7fe5c99"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2011-04-11",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "Live at the HP Pavillion, San Jose",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "117728c4-a937-41bc-9b51-15d818de5345"
+    },
+    {
+      "title": "2003‐12‐04: Point Theatre, Dublin, Ireland",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2003-12-04",
+      "id": "131154ee-b46a-446b-87ef-8e2cd7752124",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "15506c43-7bdb-3018-8d26-75f2d5bdbb6f",
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1994-02-12: Melkweg, Amsterdam, Netherlands",
+      "primary-type": "Album"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "",
+      "title": "1993‐10‐15: Riviera Theatre, Chicago, IL, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "15d9bd04-56cb-3fb3-9bdb-11375797e453"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2011-09-29: Roseland Ballroom, New York City, NY, USA",
+      "disambiguation": "",
+      "first-release-date": "2011-09-29",
+      "id": "18ebbadc-1b22-4ca3-8fac-5786233cfdff",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "1996",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "Pop Is Dead",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "1afa76fe-26bc-3dbe-9d5c-45a02bd8f75e"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "1bafdf8d-81b6-47a0-a787-7183e00488c5",
+      "first-release-date": "2009-08-05",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "Poznan for Earth (25/08/2009, Poland)",
+      "secondary-types": ["Live"],
+      "primary-type": "Album"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "32037716-3ef9-4ec1-8d5d-af454e2738bb",
+      "disambiguation": "",
+      "first-release-date": "1998-04-17",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "1998‐04‐17: Radio City Music Hall, New York, NY, USA"
+    },
+    {
+      "id": "340dd217-2ebe-412b-8910-efc77a3d50f4",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "2011‐06‐24: Glastonbury Festival, Pilton, UK",
+      "disambiguation": "",
+      "first-release-date": "2011-06-24"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2011‐09‐28: Roseland Ballroom, New York, NY, USA",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2011-09-28",
+      "id": "3a2701d4-a0df-48cd-8826-8227776badb2",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "title": "2018‐07‐07: United Center, Chicago, IL, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2018-07-07",
+      "id": "3a7b7453-2752-4093-91d6-ccf27e8be618",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2012-03-13",
+      "disambiguation": "",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2012-03-13: 1st Bank Center, Broomfield, CO, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "3c67bda1-9eda-4517-933d-8d790d925702"
+    },
+    {
+      "id": "3ec4f0df-73c8-466f-97e4-6008ecd6f453",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Rocks Germany 2001",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2008"
+    },
+    {
+      "title": "2018‐07‐31: Wells Fargo Center, Philadelphia, PA, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2018-08-11",
+      "id": "3f8b2893-8882-4a3b-8670-aaeb359d55d0",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2003",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "Sail to Montreux",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "407aa2b5-b48b-434e-881f-072ea6690860"
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "1992: Unknown Venue",
+      "first-release-date": "",
+      "disambiguation": "",
+      "id": "40910436-5fed-4061-a8c1-ab1cd4d993c4",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "457cd28b-de76-41b2-85e1-d4a0bb9f3253",
+      "first-release-date": "1998-01-24",
+      "disambiguation": "",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1998‐01‐24: Akasaka Blitz, Tokyo, Japan"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "475d452c-a8c1-3b4f-9cf9-299f93fa01e2",
+      "disambiguation": "",
+      "first-release-date": "2001",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "NPA Live",
+      "secondary-types": ["Live"],
+      "primary-type": "Album"
+    },
+    {
+      "id": "4afea28b-0149-4ba7-846f-9b3624a06bbb",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "1993‐05‐05: Bevrijdingspop, Haarlem, Netherlands",
+      "first-release-date": "",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "4b69ebc4-1219-342a-b364-8a4a6194954e",
+      "first-release-date": "2000",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2000-10-17: Street Spirits: Sears Theatre, Toronto, ON, Canada"
+    },
+    {
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2001‐08‐14: Suffolk Downs, Boston, MA, USA",
+      "disambiguation": "",
+      "first-release-date": "2001-08-14",
+      "id": "4e4e560f-2b48-425d-93be-bf5b99035e60",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "50693656-2f17-3246-9a9a-f0c69266b286",
+      "disambiguation": "",
+      "first-release-date": "2004-05-01",
+      "title": "2004‐05‐01: Coachella Festival, Empire Polo Field, Indio, CA, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album"
+    },
+    {
+      "first-release-date": "2020-01",
+      "disambiguation": "",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2016‐05‐28: Roundhouse, London, UK",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "535d14f6-3dbe-4655-b037-6203b419a701"
+    },
+    {
+      "id": "53f59e5b-adc9-4c36-a724-cf3aeab69b38",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "Computer K.O.",
+      "disambiguation": "",
+      "first-release-date": "1997"
+    },
+    {
+      "id": "57af012a-443b-3a41-a875-a6c1870cfcc5",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2000-10-02: Victoria Park, Cheshire, Warrington, UK",
+      "primary-type": "Album",
+      "first-release-date": "2000",
+      "disambiguation": ""
+    },
+    {
+      "id": "5b37c05f-dcec-471c-9639-ef3e27b74412",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2009‐08‐23: Výstavište, Prague, Czechia",
+      "primary-type": "Album",
+      "first-release-date": "2009-08-23",
+      "disambiguation": ""
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "Music Planet 2nite",
+      "primary-type": "Album",
+      "first-release-date": "2003",
+      "disambiguation": "",
+      "id": "605f7f6d-0790-4c70-90ef-6680661fdcbf",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "68a05bba-9e6b-4d71-b588-3262dd46291a",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2003‐05‐17: Olympia Theatre, Dublin, Ireland",
+      "first-release-date": "2003-05-17",
+      "disambiguation": ""
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "2006‐06‐17: What Stage, Bonnaroo Festival, Manchester, TN, USA",
+      "disambiguation": "",
+      "first-release-date": "2006-06-17",
+      "id": "6a7e474c-46ad-3e5c-a4cd-49834a3aa740",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2000-07-01",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "2000‐07‐01: Meltdown Festival, Royal Festival Hall, London, England, UK",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "6be1f03a-3148-494e-b370-99b452cf45b2"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2000",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "Kid Alive",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "6ce5deab-be1a-4599-9e23-c21ea2ab10e8"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "70891f48-c078-4a84-8296-a57b9d0192b7",
+      "disambiguation": "",
+      "first-release-date": "2003",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "Metreon, San Francisco CA, September 22, 2003"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2001-08-16",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "2001‐08‐16: Liberty State Park, Jersey City, NJ, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "72a87f54-b800-3fa2-81c1-eae0633b7eaf"
+    },
+    {
+      "id": "763d7884-3839-4246-9483-313c3db69dfd",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "Rounding The Bends",
+      "disambiguation": "",
+      "first-release-date": "1998-06-28"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "7aa0683d-a68c-3db4-b50c-619ce2ddeff7",
+      "disambiguation": "",
+      "first-release-date": "2003-10-06",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2003‐10‐06: Hi‐Fi Buys Amphitheatre, Atlanta, GA, USA"
+    },
+    {
+      "id": "7ebaa6b2-f766-33a3-b7f8-0a23e54c737b",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2003‐07‐03: Acoustic at Le Réservoir, Paris, France",
+      "primary-type": "Album",
+      "first-release-date": "2003-07-03",
+      "disambiguation": ""
+    },
+    {
+      "id": "8000fdf9-1238-33ef-926e-f924fa23e2b8",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2008‐07‐08: Kindl‐Bühne Wuhlheide, Berlin, Germany",
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "first-release-date": "2008-07-08",
+      "disambiguation": ""
+    },
+    {
+      "id": "802b7f93-111d-4264-9ca4-7c1d1c26589e",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "1997‐12‐19: MTV’s Live at the 10 Spot, Hammerstein Ballroom, New York City, NY, USA",
+      "first-release-date": "1997-12-19",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "82b5bb0b-c57c-447c-8f7c-195206690f55",
+      "disambiguation": "",
+      "first-release-date": "1996",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "Live From Planet Earth"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "84890322-0fa3-4fd8-b838-9155206a4d2c",
+      "first-release-date": "1998-04-02",
+      "disambiguation": "",
+      "title": "1998‐04‐02: Bill Graham Civic Auditorium, San Francisco, CA, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album"
+    },
+    {
+      "title": "Capitol Records Promo DVD",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2000",
+      "id": "8dbb48a5-0883-4a7a-b0a5-ba9ee0588aa3",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "9334e571-656e-4cd5-9c14-f9241e5f8681",
+      "disambiguation": "",
+      "first-release-date": "2012",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "At the Beacon Theatre, NYC 2003",
+      "primary-type": "Album"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2002‐08‐06: Palacio de Congresos, Salamanca, Spain",
+      "first-release-date": "2002-06-08",
+      "disambiguation": "",
+      "id": "940eaad8-517f-39d7-8e3b-55d3652fbf1f",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "97d58ada-2409-49da-964f-d8067666f1d3",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2006‐06‐20: Auditorium Theatre, Chicago, IL, USA",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2006-06-20"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "99a28705-a3e5-477f-b364-ef41800620d5",
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "1993‐07‐12: Whiskey‐a‐Go‐Go, Los Angeles, CA, USA",
+      "primary-type": "Album"
+    },
+    {
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2016‐07‐27: Madison Square Garden, NY, USA",
+      "disambiguation": "",
+      "first-release-date": "2016",
+      "id": "9b46dc8b-623e-47c9-b3aa-1612f199d517",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "title": "2002-08-07: Palacio de Congresos, Salamanca, Spain",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2002-08-07",
+      "id": "9bea627f-15a9-3d91-9853-865d053a77f7",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "9c247800-b4d4-3204-8309-f3b32aa1858e",
+      "first-release-date": "1998",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "1998‐12‐10: Amnesty International Concert, Palais Omisport de Paris Bercy, Paris, France"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "South Park: Complete, Live & Uncut",
+      "disambiguation": "",
+      "first-release-date": "2001",
+      "id": "9c5e29ea-b148-4bbb-95a6-ad043025d94c",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2000-10-20",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2000‐10‐20: Greek Theatre, Los Angeles, CA, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "9ed59aec-effe-4e1b-b77e-dd42be4b1e46"
+    },
+    {
+      "first-release-date": "2006-08-18",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2006-05-18: Hammersmith Apollo, London, UK",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "a2dc03d5-4338-4c75-8a56-020213e96e0d"
+    },
+    {
+      "first-release-date": "2008-05-10",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2008‐05‐06: Ford Amphitheatre, Tampa, FL, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "a5e22a60-9300-4cfd-9609-9b688cad444d"
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2001‐06‐23: The Gorge Amphitheatre, George, WA, USA",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2001-06-23",
+      "id": "a7448d43-e69d-3c7b-94cb-e18b8b66dc29",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2001-05-28",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2001‐05‐28: Vaison‐la‐Romaine, France",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "a78ca658-86f3-3415-b2d1-da502ff8e213"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2002",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "Unplugged Again",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "aa3bd5a8-61c8-3823-90e9-06cd914c2ffe"
+    },
+    {
+      "first-release-date": "1997",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "OK MTV",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "afe72a58-1de1-4ebf-a671-97a7b5069003"
+    },
+    {
+      "id": "b2d5a782-f942-4a17-b6e3-efa19e43fa78",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2012‐02‐29: Tampa Bay Times Forum, Tampa, FL, USA",
+      "first-release-date": "2012-02-29",
+      "disambiguation": ""
+    },
+    {
+      "first-release-date": "",
+      "disambiguation": "",
+      "primary-type": "Album",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "1993-02-23: Black Session #21: Paris, France",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "b3e7051a-a312-3681-8c78-37dcb9764fc0"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2008‐05‐14: Verizon Wireless Amphitheater, Maryland Heights, MO, USA",
+      "first-release-date": "2008-05-14",
+      "disambiguation": "",
+      "id": "b6041118-02c0-47c7-bc46-fe9dc87a9f00",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "title": "1993‐11‐12: Live Music Hall, Cologne, Germany",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "first-release-date": "",
+      "disambiguation": "",
+      "id": "b7ed3727-8647-4408-a99a-c9c7d28572e1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2008-08-01",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2008‐08‐01: XM Radio Broadcast, Live at Lollapalooza, Chicago, IL, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "b886d253-0c71-4567-8e7d-c42fd43bbf46"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "bb10f1d5-c85d-4c97-8e5c-75ede46130d3",
+      "disambiguation": "",
+      "first-release-date": "2004-04-14",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "Aprils Showers"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "1993‐09‐23: Florida Cameo Theatre, FL, USA",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "bbb91ea4-b822-33ef-8836-80199dd70e7d"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2000‐09‐24: Victoria Park, London, UK",
+      "disambiguation": "",
+      "first-release-date": "2000-09-24",
+      "id": "bc6f3ac2-de99-46ce-b61f-28412510ae04",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "bdb989b1-d05c-485e-88d9-80eacd494eb5",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "Updated Experimentation",
+      "first-release-date": "2001-06-01",
+      "disambiguation": ""
+    },
+    {
+      "title": "2003‐09‐29: Capitol Records Studio, Hollywood, CA, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2003-09-29",
+      "id": "bdc59014-97be-3a31-bd6e-8ece1124170e",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "be2ea7c6-1b86-4090-ae13-d7f041261093",
+      "disambiguation": "",
+      "first-release-date": "2012",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2012‐04‐12: Santa Barbara Bowl, Santa Barbara, CA, USA",
+      "primary-type": "Album"
+    },
+    {
+      "id": "bfd3541c-2ea6-3c85-acb7-d5501c3b45be",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "not my fault.",
+      "first-release-date": "2003-06-04",
+      "disambiguation": ""
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "Thieves in New York",
+      "disambiguation": "",
+      "first-release-date": "2003",
+      "id": "c1e81ea1-5dc9-4175-a537-71006c8d44ba",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "c374b03d-97a3-34df-8863-44aba7cbdc65",
+      "disambiguation": "",
+      "first-release-date": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "1993-07-12: Creepshow: The Whiskey, Hollywood, CA, USA",
+      "secondary-types": ["Live"],
+      "primary-type": "Album"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "c6ea1369-bce9-46aa-af17-19c140df4f4f",
+      "first-release-date": "2008-06-20",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "2008-06-20: Southside Festival, Neuhausen ob Eck, Germany"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "1997‐08‐26: Hammerstein Ballroom, New York, NY, USA",
+      "first-release-date": "1997-08-26",
+      "disambiguation": "",
+      "id": "cdfa212c-3a46-49b6-8041-9adb49d72f13",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "cfcc0382-8a43-4faf-99fb-3de282760235",
+      "first-release-date": "2000-11-28",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "Capitol Records VHS"
+    },
+    {
+      "first-release-date": "2000",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "2000‐06‐17: Arènes de Frejus, Fréjus, France",
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "d3429506-771a-4621-b9f3-7120b8cbcc56"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "d3e76a24-d1a7-3823-9f99-e4117d5fe532",
+      "first-release-date": "2003-11-27",
+      "disambiguation": "",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2003‐11‐27: Earls Court, London, UK"
+    },
+    {
+      "first-release-date": "2003-06-03",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2003‐06‐28: Glastonbury Festival, Pilton, UK (BBC Radio 1)",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "d40a2d79-5fb6-321a-a8bb-65ada7f51160"
+    },
+    {
+      "id": "d64274c2-827e-4e15-9446-194af6002d56",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2018‐08‐01: Wells Fargo Center, Philadelphia, PA, USA",
+      "primary-type": "Album",
+      "first-release-date": "2018-08-01",
+      "disambiguation": ""
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "d740874c-81ab-4fbc-b6fa-6bf6c3aefe78",
+      "first-release-date": "2006-05-12",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2006‐05‐12: Empress Ballroom, Blackpool, UK"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2003-05-19",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2003‐05‐19: Waterfront Hall, Belfast, UK",
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "d944a7ba-e463-42d2-9097-e4184523977e"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2002-07-27",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2002‐07‐27: Coliseu dos Recreios de Lisboa, Lisbon, Portugal",
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "db47de38-6c31-495f-9023-9c8050067091"
+    },
+    {
+      "id": "dd667d25-74e8-4420-822d-36f795d54f97",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "2000‐06‐15: Teatre Tivoli, Barcelona, Spain",
+      "first-release-date": "2000",
+      "disambiguation": ""
+    },
+    {
+      "id": "de43d39b-fc89-4d93-9a22-32634ccbc6bc",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "title": "2006-06-08: Hummingbird Centre, Toronto, ON, Canada",
+      "disambiguation": "",
+      "first-release-date": "2006-06-08"
+    },
+    {
+      "disambiguation": "",
+      "first-release-date": "2001-07-30",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2001‐07‐30: Stone Mountain Park, Stone Mountain, GA",
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "df82eb59-b4a1-4b8f-ac5f-be25b3318aeb"
+    },
+    {
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2006‐08‐17: Pukkelpop Festival, Kiewit, Belgium",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2006-08-17",
+      "id": "e0a25d1b-a439-4029-b43a-f8b9c3251c35",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2017-06-23",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "Live at Glastonbury Festival, England",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "e14057b1-b73e-4cc4-bf90-5e4cb478b605"
+    },
+    {
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2000‐07‐04: Großer Sendesaal des SFB, Berlin, Germany",
+      "disambiguation": "",
+      "first-release-date": "2000-07-04",
+      "id": "e1bf4b7e-a895-395d-9ae9-2362b400a0ef",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "e3182576-9b4b-4e38-b524-490e1fc20e81",
+      "disambiguation": "",
+      "first-release-date": "2008-06-03",
+      "secondary-types": ["Live"],
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "2008‐05‐17: Woodlands Pavilion, Houston, TX, USA",
+      "primary-type": "Album"
+    },
+    {
+      "id": "e726321f-78f5-4ae9-92a3-8062e112d4e1",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "title": "2008-07-01: Westergasfabriek, Amsterdam, Netherlands",
+      "disambiguation": "",
+      "first-release-date": "2008"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "e9341ea6-73e3-4849-af41-d2fb0fea6477",
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "1993‐06‐30: Cabaret Metro, Chicago, IL, USA"
+    },
+    {
+      "title": "2010‐01‐24: Music Box Theater @ Fonda, Los Angeles, CA, USA",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "first-release-date": "2010-01-24",
+      "disambiguation": "",
+      "id": "eb4b754c-7a77-4b54-8d6e-7adbf8d29088",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "ec943f17-c8cd-39a2-b523-11f4f7f19e73",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "title": "1996-07-28: Big Day Out, Galway, Ireland",
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2023-08-11"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "f279ac4f-7ea9-3b25-8ec4-94bd7d2b7316",
+      "disambiguation": "",
+      "first-release-date": "1997-06-24",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "1997‐06‐24: Interactive: Muziekcentrum Vredenburg, Utrecht, Netherlands"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "f4b8f066-a9f2-428d-b962-982fe90ab52a",
+      "first-release-date": "2003",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "title": "Go to Sleep",
+      "primary-type": "Album"
+    },
+    {
+      "id": "f4eff0d1-d561-4bd1-9fc4-ed1b4e0441de",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "title": "Live in Rainbows",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "secondary-types": ["Live"],
+      "primary-type": "Album",
+      "disambiguation": "",
+      "first-release-date": "2008"
+    },
+    {
+      "first-release-date": "",
+      "disambiguation": "",
+      "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"],
+      "primary-type": "Album",
+      "secondary-types": ["Live"],
+      "title": "1993‐12‐01: The Barrowlands, Glasgow, UK",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "id": "f7e3becb-ce91-3c31-8d5c-5f93987e0816"
+    }
+  ]
+}

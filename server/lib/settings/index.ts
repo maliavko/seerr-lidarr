@@ -90,6 +90,22 @@ export interface RadarrSettings extends DVRSettings {
   minimumAvailability: string;
 }
 
+export interface LidarrSettings {
+  id: number;
+  name: string;
+  hostname: string;
+  port: number;
+  apiKey: string;
+  useSsl: boolean;
+  baseUrl?: string;
+  activeProfileId: number;
+  activeProfileName: string;
+  activeMetadataProfileId: number;
+  activeMetadataProfileName: string;
+  activeDirectory: string;
+  isDefault: boolean;
+}
+
 export interface SonarrSettings extends DVRSettings {
   seriesType: 'standard' | 'daily' | 'anime';
   animeSeriesType: 'standard' | 'daily' | 'anime';
@@ -366,6 +382,7 @@ export type JobId =
   | 'plex-refresh-token'
   | 'radarr-scan'
   | 'sonarr-scan'
+  | 'lidarr-scan'
   | 'download-sync'
   | 'download-sync-reset'
   | 'jellyfin-recently-added-scan'
@@ -385,6 +402,7 @@ export interface AllSettings {
   tautulli: TautulliSettings;
   radarr: RadarrSettings[];
   sonarr: SonarrSettings[];
+  lidarr: LidarrSettings[];
   public: PublicSettings;
   notifications: NotificationSettings;
   jobs: Record<JobId, JobSettings>;
@@ -463,6 +481,7 @@ class Settings {
       },
       radarr: [],
       sonarr: [],
+      lidarr: [],
       public: {
         initialized: false,
       },
@@ -593,6 +612,9 @@ class Settings {
         'sonarr-scan': {
           schedule: '0 30 4 * * *',
         },
+        'lidarr-scan': {
+          schedule: '0 0 5 * * *',
+        },
         'availability-sync': {
           schedule: '0 0 5 * * *',
         },
@@ -700,6 +722,14 @@ class Settings {
 
   set sonarr(data: SonarrSettings[]) {
     this.data.sonarr = data;
+  }
+
+  get lidarr(): LidarrSettings[] {
+    return this.data.lidarr;
+  }
+
+  set lidarr(data: LidarrSettings[]) {
+    this.data.lidarr = data;
   }
 
   get public(): PublicSettings {

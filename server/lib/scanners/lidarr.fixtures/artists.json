@@ -1,0 +1,4255 @@
+[
+  {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "Jon Hopkins",
+    "foreignArtistId": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Person",
+    "disambiguation": "",
+    "links": [
+      {
+        "url": "http://www.jonhopkins.co.uk/",
+        "name": "jonhopkins"
+      },
+      {
+        "url": "https://myspace.com/jonhopkins",
+        "name": "myspace"
+      },
+      {
+        "url": "https://www.discogs.com/artist/24056",
+        "name": "discogs"
+      },
+      {
+        "url": "https://twitter.com/Jon_Hopkins_",
+        "name": "twitter"
+      },
+      {
+        "url": "https://www.facebook.com/jonhopkinsmusic",
+        "name": "facebook"
+      },
+      {
+        "url": "https://soundcloud.com/jonhopkins",
+        "name": "soundcloud"
+      },
+      {
+        "url": "https://www.facebook.com/King.Creosote.and.Jon.Hopkins",
+        "name": "facebook"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q903592",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm2096445/",
+        "name": "imdb"
+      },
+      {
+        "url": "https://www.youtube.com/user/JonHopkinsVEVO",
+        "name": "youtube"
+      },
+      {
+        "url": "https://www.beatport.com/artist/jon-hopkins/5752",
+        "name": "beatport"
+      },
+      {
+        "url": "https://open.spotify.com/artist/7yxi31szvlbwvKq9dYOmFI",
+        "name": "spotify"
+      },
+      {
+        "url": "http://muzikum.eu/en/122-13295/jon-hopkins/lyrics.html",
+        "name": "muzikum"
+      },
+      {
+        "url": "https://ra.co/dj/jonhopkins",
+        "name": "ra"
+      },
+      {
+        "url": "https://itunes.apple.com/gb/artist/id15040325",
+        "name": "apple"
+      },
+      {
+        "url": "https://imvdb.com/n/jon-hopkins",
+        "name": "imvdb"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000822040",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/jon-hopkins",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.instagram.com/mrjonhopkins/",
+        "name": "instagram"
+      },
+      {
+        "url": "https://jonhopkins.bandcamp.com/",
+        "name": "bandcamp"
+      },
+      {
+        "url": "https://www.last.fm/music/Jon+Hopkins",
+        "name": "last"
+      },
+      {
+        "url": "https://boomkat.com/artists/jon-hopkins",
+        "name": "boomkat"
+      },
+      {
+        "url": "http://viaf.org/viaf/160279823",
+        "name": "viaf"
+      },
+      {
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb150626723",
+        "name": "bnf"
+      },
+      {
+        "url": "https://bleep.com/artist/12151",
+        "name": "bleep"
+      },
+      {
+        "url": "https://www.songkick.com/artists/298044",
+        "name": "songkick"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCiwgazsh4EbM04FIQuyDVYw",
+        "name": "youtube"
+      },
+      {
+        "url": "http://id.loc.gov/authorities/names/no2010180875",
+        "name": "loc"
+      },
+      {
+        "url": "https://www.worldcat.org/identities/lccn-no2010180875",
+        "name": "worldcat"
+      },
+      {
+        "url": "https://www.deezer.com/artist/258846",
+        "name": "deezer"
+      },
+      {
+        "url": "https://tidal.com/artist/3529073",
+        "name": "tidal"
+      },
+      {
+        "url": "https://d-nb.info/gnd/1058347241",
+        "name": "d-nb"
+      },
+      {
+        "url": "https://www.bandsintown.com/a/37334",
+        "name": "bandsintown"
+      },
+      {
+        "url": "https://www.musik-sammler.de/artist/163315/",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://www.muziekweb.nl/Link/M00000152532/POPULAR/",
+        "name": "muziekweb"
+      },
+      {
+        "url": "https://www.whosampled.com/Jon-Hopkins/",
+        "name": "whosampled"
+      },
+      {
+        "url": "https://genius.com/artists/Jon-hopkins",
+        "name": "genius"
+      },
+      {
+        "url": "http://www.maniadb.com/artist/201517",
+        "name": "maniadb"
+      },
+      {
+        "url": "https://secondhandsongs.com/artist/46773",
+        "name": "secondhandsongs"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/15040325",
+        "name": "apple"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Jon_Hopkins_Rockefeller_2018_213943.jpg",
+        "name": "wikimedia"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/jon-hopkins/384387",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/jon-hopkins/384387",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/384387",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/384387",
+        "name": "qobuz"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": {
+      "title": "Immunity",
+      "disambiguation": "",
+      "overview": "",
+      "artistId": 33,
+      "foreignAlbumId": "1c58a37a-24dc-493d-a40e-227ba1523d35",
+      "monitored": true,
+      "anyReleaseOk": true,
+      "profileId": 1,
+      "duration": 6623060,
+      "albumType": "Album",
+      "secondaryTypes": [],
+      "mediumCount": 1,
+      "ratings": {
+        "votes": 5,
+        "value": 8.8
+      },
+      "releaseDate": "2013-06-03T00:00:00Z",
+      "releases": [
+        {
+          "id": 2697,
+          "albumId": 317,
+          "foreignReleaseId": "a331d58a-7fc2-4634-bb56-a9f864d96648",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 5027000,
+          "trackCount": 12,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "iTunes bonus track version",
+          "country": ["United Kingdom"],
+          "label": ["Domino"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2698,
+          "albumId": 317,
+          "foreignReleaseId": "128b6ea3-5ca0-4db3-be9c-1a1d535da845",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 6623060,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "extended edition",
+          "country": ["[Worldwide]"],
+          "label": [],
+          "format": "Digital Media",
+          "monitored": true
+        },
+        {
+          "id": 2699,
+          "albumId": 317,
+          "foreignReleaseId": "2fda5b53-a9d7-4ca7-bcd6-fb6fdde5cfa1",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 6623060,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "expanded edition",
+          "country": ["Australia"],
+          "label": [],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2700,
+          "albumId": 317,
+          "foreignReleaseId": "59a24376-7bef-4c75-b48c-acbf6ede5233",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 5696060,
+          "trackCount": 14,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "extended edition",
+          "country": ["[Worldwide]"],
+          "label": [],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2701,
+          "albumId": 317,
+          "foreignReleaseId": "f7e3af8a-ce61-4388-9f68-ff73882203ad",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 5278000,
+          "trackCount": 13,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "Rough Trade exclusive",
+          "country": ["United Kingdom"],
+          "label": ["Domino"],
+          "format": "2xCD",
+          "monitored": false
+        },
+        {
+          "id": 2702,
+          "albumId": 317,
+          "foreignReleaseId": "a9b6f61e-1927-4c58-85fc-5f540349e304",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 0,
+          "trackCount": 8,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Domino"],
+          "format": "2x12\" Vinyl",
+          "monitored": false
+        },
+        {
+          "id": 2703,
+          "albumId": 317,
+          "foreignReleaseId": "2729009c-afc9-4917-9c19-1a082d768122",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 3602700,
+          "trackCount": 8,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["[Worldwide]"],
+          "label": ["Domino"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2704,
+          "albumId": 317,
+          "foreignReleaseId": "cb951077-2788-4631-b0f6-f166f48226c8",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 5091000,
+          "trackCount": 12,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "Asleep Versions",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "with Asleep Versions EP",
+          "country": ["United Kingdom"],
+          "label": ["Domino"],
+          "format": "2xCD",
+          "monitored": false
+        },
+        {
+          "id": 2705,
+          "albumId": 317,
+          "foreignReleaseId": "e6f78760-60fd-4b13-8b79-b8a86fbe3d2f",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 6776425,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "Remaster 2023",
+              "mediumFormat": "Digital Media"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "remaster",
+          "country": ["[Worldwide]"],
+          "label": ["Domino"],
+          "format": "2xDigital Media",
+          "monitored": false
+        },
+        {
+          "id": 2706,
+          "albumId": 317,
+          "foreignReleaseId": "63f478a7-ea73-4adf-8534-dac9839629bc",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 6776431,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "2023 remaster",
+          "country": ["[Worldwide]"],
+          "label": ["Domino"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2707,
+          "albumId": 317,
+          "foreignReleaseId": "cdbf52a3-8fa1-4874-be4d-15ad4ad01e32",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 6776425,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "Immunity",
+              "mediumFormat": "CD"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "Asleep Versions, Collaborations + Remixes",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "remaster",
+          "country": ["[Worldwide]"],
+          "label": ["Domino"],
+          "format": "2xCD",
+          "monitored": false
+        },
+        {
+          "id": 2708,
+          "albumId": 317,
+          "foreignReleaseId": "9b93c88b-b939-4206-af30-b3a3e7f1ab8d",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 3603730,
+          "trackCount": 8,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Domino"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 2709,
+          "albumId": 317,
+          "foreignReleaseId": "8e931307-8fef-456e-8edc-6968408b1058",
+          "title": "Immunity",
+          "status": "Official",
+          "duration": 3604000,
+          "trackCount": 8,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "Remastered, Re-press, Purple Vinyl",
+          "country": ["United Kingdom"],
+          "label": ["Domino"],
+          "format": "2x12\" Vinyl",
+          "monitored": false
+        }
+      ],
+      "genres": [
+        "Idm",
+        "Electronic",
+        "Tech House",
+        "Ambient",
+        "Experimental",
+        "Microhouse",
+        "Techno",
+        "Downtempo",
+        "Electro",
+        "Electronica"
+      ],
+      "media": [
+        {
+          "mediumNumber": 1,
+          "mediumName": "",
+          "mediumFormat": "Digital Media"
+        }
+      ],
+      "artist": {
+        "status": "continuing",
+        "ended": false,
+        "artistName": "Jon Hopkins",
+        "foreignArtistId": "0b0c25f4-f31c-46a5-a4fb-ccbf53d663bd",
+        "tadbId": 0,
+        "discogsId": 0,
+        "artistType": "Person",
+        "disambiguation": "",
+        "links": [
+          {
+            "url": "http://www.jonhopkins.co.uk/",
+            "name": "jonhopkins"
+          },
+          {
+            "url": "https://myspace.com/jonhopkins",
+            "name": "myspace"
+          },
+          {
+            "url": "https://www.discogs.com/artist/24056",
+            "name": "discogs"
+          },
+          {
+            "url": "https://twitter.com/Jon_Hopkins_",
+            "name": "twitter"
+          },
+          {
+            "url": "https://www.facebook.com/jonhopkinsmusic",
+            "name": "facebook"
+          },
+          {
+            "url": "https://soundcloud.com/jonhopkins",
+            "name": "soundcloud"
+          },
+          {
+            "url": "https://www.facebook.com/King.Creosote.and.Jon.Hopkins",
+            "name": "facebook"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q903592",
+            "name": "wikidata"
+          },
+          {
+            "url": "https://www.imdb.com/name/nm2096445/",
+            "name": "imdb"
+          },
+          {
+            "url": "https://www.youtube.com/user/JonHopkinsVEVO",
+            "name": "youtube"
+          },
+          {
+            "url": "https://www.beatport.com/artist/jon-hopkins/5752",
+            "name": "beatport"
+          },
+          {
+            "url": "https://open.spotify.com/artist/7yxi31szvlbwvKq9dYOmFI",
+            "name": "spotify"
+          },
+          {
+            "url": "http://muzikum.eu/en/122-13295/jon-hopkins/lyrics.html",
+            "name": "muzikum"
+          },
+          {
+            "url": "https://ra.co/dj/jonhopkins",
+            "name": "ra"
+          },
+          {
+            "url": "https://itunes.apple.com/gb/artist/id15040325",
+            "name": "apple"
+          },
+          {
+            "url": "https://imvdb.com/n/jon-hopkins",
+            "name": "imvdb"
+          },
+          {
+            "url": "https://www.allmusic.com/artist/mn0000822040",
+            "name": "allmusic"
+          },
+          {
+            "url": "https://rateyourmusic.com/artist/jon-hopkins",
+            "name": "rateyourmusic"
+          },
+          {
+            "url": "https://www.instagram.com/mrjonhopkins/",
+            "name": "instagram"
+          },
+          {
+            "url": "https://jonhopkins.bandcamp.com/",
+            "name": "bandcamp"
+          },
+          {
+            "url": "https://www.last.fm/music/Jon+Hopkins",
+            "name": "last"
+          },
+          {
+            "url": "https://boomkat.com/artists/jon-hopkins",
+            "name": "boomkat"
+          },
+          {
+            "url": "http://viaf.org/viaf/160279823",
+            "name": "viaf"
+          },
+          {
+            "url": "https://catalogue.bnf.fr/ark:/12148/cb150626723",
+            "name": "bnf"
+          },
+          {
+            "url": "https://bleep.com/artist/12151",
+            "name": "bleep"
+          },
+          {
+            "url": "https://www.songkick.com/artists/298044",
+            "name": "songkick"
+          },
+          {
+            "url": "https://www.youtube.com/channel/UCiwgazsh4EbM04FIQuyDVYw",
+            "name": "youtube"
+          },
+          {
+            "url": "http://id.loc.gov/authorities/names/no2010180875",
+            "name": "loc"
+          },
+          {
+            "url": "https://www.worldcat.org/identities/lccn-no2010180875",
+            "name": "worldcat"
+          },
+          {
+            "url": "https://www.deezer.com/artist/258846",
+            "name": "deezer"
+          },
+          {
+            "url": "https://tidal.com/artist/3529073",
+            "name": "tidal"
+          },
+          {
+            "url": "https://d-nb.info/gnd/1058347241",
+            "name": "d-nb"
+          },
+          {
+            "url": "https://www.bandsintown.com/a/37334",
+            "name": "bandsintown"
+          },
+          {
+            "url": "https://www.musik-sammler.de/artist/163315/",
+            "name": "musik-sammler"
+          },
+          {
+            "url": "https://www.muziekweb.nl/Link/M00000152532/POPULAR/",
+            "name": "muziekweb"
+          },
+          {
+            "url": "https://www.whosampled.com/Jon-Hopkins/",
+            "name": "whosampled"
+          },
+          {
+            "url": "https://genius.com/artists/Jon-hopkins",
+            "name": "genius"
+          },
+          {
+            "url": "http://www.maniadb.com/artist/201517",
+            "name": "maniadb"
+          },
+          {
+            "url": "https://secondhandsongs.com/artist/46773",
+            "name": "secondhandsongs"
+          },
+          {
+            "url": "https://music.apple.com/gb/artist/15040325",
+            "name": "apple"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:Jon_Hopkins_Rockefeller_2018_213943.jpg",
+            "name": "wikimedia"
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/interpreter/jon-hopkins/384387",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/interpreter/jon-hopkins/384387",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/384387",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/384387",
+            "name": "qobuz"
+          }
+        ],
+        "nextAlbum": null,
+        "lastAlbum": null,
+        "images": [],
+        "path": "/music/Jon Hopkins",
+        "qualityProfileId": 1,
+        "metadataProfileId": 1,
+        "monitored": true,
+        "monitorNewItems": "none",
+        "genres": [
+          "Electronic",
+          "Idm",
+          "Ambient",
+          "Techno",
+          "Electronica",
+          "Contemporary Classical",
+          "Tech House"
+        ],
+        "cleanName": "jonhopkins",
+        "sortName": "jon hopkins",
+        "tags": [],
+        "added": "2026-10-15T09:10:12Z",
+        "ratings": {
+          "votes": 2,
+          "value": 10.0
+        },
+        "id": 33
+      },
+      "images": [
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/9b93c88b-b939-4206-af30-b3a3e7f1ab8d/19868220640-1200.jpg",
+          "coverType": "cover",
+          "extension": ".jpg"
+        },
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/9b93c88b-b939-4206-af30-b3a3e7f1ab8d/42441945865-1200.jpg",
+          "coverType": "disc",
+          "extension": ".jpg"
+        }
+      ],
+      "links": [
+        {
+          "url": "http://pitchfork.com/reviews/albums/18090-jon-hopkins-immunity/",
+          "name": "pitchfork"
+        },
+        {
+          "url": "https://www.discogs.com/master/562454",
+          "name": "discogs"
+        },
+        {
+          "url": "https://rateyourmusic.com/release/album/jon_hopkins/immunity/",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://ra.co/reviews/13100",
+          "name": "ra"
+        },
+        {
+          "url": "https://www.allmusic.com/album/mw0002506311",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://genius.com/albums/Jon-hopkins/Immunity",
+          "name": "genius"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q16994754",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.last.fm/music/Jon+Hopkins/Immunity",
+          "name": "last"
+        }
+      ],
+      "id": 317
+    },
+    "images": [
+      {
+        "url": "/MediaCover/33/clearlogo.png?lastWrite=639276522155159739",
+        "coverType": "clearlogo",
+        "extension": ".png",
+        "remoteUrl": "/config/MediaCover/33/clearlogo.png"
+      },
+      {
+        "url": "/MediaCover/33/poster.jpg?lastWrite=639276522153734270",
+        "coverType": "poster",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/33/poster.jpg"
+      },
+      {
+        "url": "/MediaCover/33/fanart.jpg?lastWrite=639276522150684951",
+        "coverType": "fanart",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/33/fanart.jpg"
+      },
+      {
+        "url": "/MediaCover/33/banner.jpg?lastWrite=639276522152342141",
+        "coverType": "banner",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/33/banner.jpg"
+      }
+    ],
+    "path": "/music/Jon Hopkins",
+    "qualityProfileId": 1,
+    "metadataProfileId": 1,
+    "monitored": true,
+    "monitorNewItems": "none",
+    "rootFolderPath": "/music",
+    "genres": [
+      "Electronic",
+      "Idm",
+      "Ambient",
+      "Techno",
+      "Electronica",
+      "Contemporary Classical",
+      "Tech House"
+    ],
+    "cleanName": "jonhopkins",
+    "sortName": "jon hopkins",
+    "tags": [],
+    "added": "2026-10-15T09:10:12Z",
+    "ratings": {
+      "votes": 2,
+      "value": 10.0
+    },
+    "statistics": {
+      "albumCount": 7,
+      "trackFileCount": 0,
+      "trackCount": 53,
+      "totalTrackCount": 84,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 33
+  },
+  {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "King Creosote",
+    "foreignArtistId": "142dd7b6-6466-4839-84f6-0edfaaff0d97",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Person",
+    "disambiguation": "",
+    "links": [
+      {
+        "url": "http://www.kingcreosote.com/",
+        "name": "kingcreosote"
+      },
+      {
+        "url": "http://www.fencerecords.com/artists/king-creosote/",
+        "name": "fencerecords"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/artists/142dd7b6-6466-4839-84f6-0edfaaff0d97",
+        "name": "bbc"
+      },
+      {
+        "url": "https://myspace.com/kingcreosote",
+        "name": "myspace"
+      },
+      {
+        "url": "https://www.discogs.com/artist/360659",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.facebook.com/King.Creosote.and.Jon.Hopkins",
+        "name": "facebook"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q6411404",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000075582",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/king_creosote",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://open.spotify.com/artist/5SP6T04F8Ic9oftMVfdKkp",
+        "name": "spotify"
+      },
+      {
+        "url": "https://www.deezer.com/artist/10632",
+        "name": "deezer"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/251568522",
+        "name": "apple"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/251568522",
+        "name": "apple"
+      },
+      {
+        "url": "https://tidal.com/artist/12349",
+        "name": "tidal"
+      },
+      {
+        "url": "https://www.last.fm/music/King+Creosote",
+        "name": "last"
+      },
+      {
+        "url": "http://viaf.org/viaf/176111068",
+        "name": "viaf"
+      },
+      {
+        "url": "http://id.loc.gov/authorities/names/no2011129660",
+        "name": "loc"
+      },
+      {
+        "url": "https://id.oclc.org/worldcat/entity/E39PBJxMgBWqgmgXkTgcK4jXBP",
+        "name": "oclc"
+      },
+      {
+        "url": "https://www.discogs.com/artist/429371",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.facebook.com/kingcreosote",
+        "name": "facebook"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm3040578/",
+        "name": "imdb"
+      },
+      {
+        "url": "https://kingcreosote.bandcamp.com/",
+        "name": "bandcamp"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/384681",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/384681",
+        "name": "qobuz"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": {
+      "title": "Diamond Mine",
+      "disambiguation": "",
+      "overview": "",
+      "artistId": 34,
+      "foreignAlbumId": "345d451b-0144-48e4-8b8a-18a3a12f2d9b",
+      "monitored": true,
+      "anyReleaseOk": true,
+      "profileId": 1,
+      "duration": 3308637,
+      "albumType": "Album",
+      "secondaryTypes": [],
+      "mediumCount": 1,
+      "ratings": {
+        "votes": 1,
+        "value": 10.0
+      },
+      "releaseDate": "2011-03-28T00:00:00Z",
+      "releases": [
+        {
+          "id": 2783,
+          "albumId": 363,
+          "foreignReleaseId": "4894af28-e933-3629-9900-3437505a2295",
+          "title": "Diamond Mine",
+          "status": "Official",
+          "duration": 1928000,
+          "trackCount": 7,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Double Six Records"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 2784,
+          "albumId": 363,
+          "foreignReleaseId": "bbfdcb8d-96f1-35bd-a205-29abe92077aa",
+          "title": "Diamond Mine",
+          "status": "Official",
+          "duration": 1928000,
+          "trackCount": 7,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Double Six Records"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2785,
+          "albumId": 363,
+          "foreignReleaseId": "5cba590d-61a0-4b3d-b5a0-5c5fd1b2a0b4",
+          "title": "Diamond Mine: Jubilee Edition",
+          "status": "Official",
+          "duration": 3308637,
+          "trackCount": 13,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Double Six Records"],
+          "format": "CD",
+          "monitored": true
+        },
+        {
+          "id": 2786,
+          "albumId": 363,
+          "foreignReleaseId": "ebd071ba-671d-4172-b5d4-3d660137de7c",
+          "title": "Diamond Mine: Jubilee Edition",
+          "status": "Official",
+          "duration": 3301706,
+          "trackCount": 13,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["[Worldwide]"],
+          "label": ["Double Six Records"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2787,
+          "albumId": 363,
+          "foreignReleaseId": "cabea0b3-97fe-4c5d-8961-914ffa83d34a",
+          "title": "Diamond Mine",
+          "status": "Official",
+          "duration": 1931000,
+          "trackCount": 7,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": [],
+          "label": ["Domino"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 2788,
+          "albumId": 363,
+          "foreignReleaseId": "1e419e8e-f5a6-4e52-aa67-be8fd2aaeb6d",
+          "title": "Diamond Mine",
+          "status": "Official",
+          "duration": 1928000,
+          "trackCount": 7,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Double Six Records"],
+          "format": "12\" Vinyl",
+          "monitored": false
+        }
+      ],
+      "genres": [
+        "Downtempo",
+        "Electronic",
+        "Folk",
+        "Indie Folk",
+        "Rock",
+        "Folktronica"
+      ],
+      "media": [
+        {
+          "mediumNumber": 1,
+          "mediumName": "",
+          "mediumFormat": "CD"
+        }
+      ],
+      "artist": {
+        "status": "continuing",
+        "ended": false,
+        "artistName": "King Creosote",
+        "foreignArtistId": "142dd7b6-6466-4839-84f6-0edfaaff0d97",
+        "tadbId": 0,
+        "discogsId": 0,
+        "artistType": "Person",
+        "disambiguation": "",
+        "links": [
+          {
+            "url": "http://www.kingcreosote.com/",
+            "name": "kingcreosote"
+          },
+          {
+            "url": "http://www.fencerecords.com/artists/king-creosote/",
+            "name": "fencerecords"
+          },
+          {
+            "url": "https://www.bbc.co.uk/music/artists/142dd7b6-6466-4839-84f6-0edfaaff0d97",
+            "name": "bbc"
+          },
+          {
+            "url": "https://myspace.com/kingcreosote",
+            "name": "myspace"
+          },
+          {
+            "url": "https://www.discogs.com/artist/360659",
+            "name": "discogs"
+          },
+          {
+            "url": "https://www.facebook.com/King.Creosote.and.Jon.Hopkins",
+            "name": "facebook"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q6411404",
+            "name": "wikidata"
+          },
+          {
+            "url": "https://www.allmusic.com/artist/mn0000075582",
+            "name": "allmusic"
+          },
+          {
+            "url": "https://rateyourmusic.com/artist/king_creosote",
+            "name": "rateyourmusic"
+          },
+          {
+            "url": "https://open.spotify.com/artist/5SP6T04F8Ic9oftMVfdKkp",
+            "name": "spotify"
+          },
+          {
+            "url": "https://www.deezer.com/artist/10632",
+            "name": "deezer"
+          },
+          {
+            "url": "https://music.apple.com/gb/artist/251568522",
+            "name": "apple"
+          },
+          {
+            "url": "https://music.apple.com/gb/artist/251568522",
+            "name": "apple"
+          },
+          {
+            "url": "https://tidal.com/artist/12349",
+            "name": "tidal"
+          },
+          {
+            "url": "https://www.last.fm/music/King+Creosote",
+            "name": "last"
+          },
+          {
+            "url": "http://viaf.org/viaf/176111068",
+            "name": "viaf"
+          },
+          {
+            "url": "http://id.loc.gov/authorities/names/no2011129660",
+            "name": "loc"
+          },
+          {
+            "url": "https://id.oclc.org/worldcat/entity/E39PBJxMgBWqgmgXkTgcK4jXBP",
+            "name": "oclc"
+          },
+          {
+            "url": "https://www.discogs.com/artist/429371",
+            "name": "discogs"
+          },
+          {
+            "url": "https://www.facebook.com/kingcreosote",
+            "name": "facebook"
+          },
+          {
+            "url": "https://www.imdb.com/name/nm3040578/",
+            "name": "imdb"
+          },
+          {
+            "url": "https://kingcreosote.bandcamp.com/",
+            "name": "bandcamp"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/384681",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/384681",
+            "name": "qobuz"
+          }
+        ],
+        "nextAlbum": null,
+        "lastAlbum": null,
+        "images": [],
+        "path": "/music/King Creosote",
+        "qualityProfileId": 1,
+        "metadataProfileId": 1,
+        "monitored": true,
+        "monitorNewItems": "none",
+        "genres": ["Folk", "Indie Pop", "Singer-Songwriter"],
+        "cleanName": "kingcreosote",
+        "sortName": "king creosote",
+        "tags": [],
+        "added": "2026-10-15T09:10:15Z",
+        "ratings": {
+          "votes": 1,
+          "value": 10.0
+        },
+        "id": 34
+      },
+      "images": [
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/1e419e8e-f5a6-4e52-aa67-be8fd2aaeb6d/6785803593-1200.jpg",
+          "coverType": "cover",
+          "extension": ".jpg"
+        }
+      ],
+      "links": [
+        {
+          "url": "http://www.theguardian.com/music/2011/mar/27/king-creosote-jon-hopkins-diamond-review",
+          "name": "theguardian"
+        },
+        {
+          "url": "http://soundblab.com/content/content/view/id/3455",
+          "name": "soundblab"
+        },
+        {
+          "url": "http://www.theskinny.co.uk/article/101670-king-creosote-jon-hopkins-diamond-mine",
+          "name": "theskinny"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/reviews/nphf",
+          "name": "bbc"
+        },
+        {
+          "url": "https://www.discogs.com/master/335882",
+          "name": "discogs"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Diamond_Mine_(King_Creosote_and_Jon_Hopkins_album)",
+          "name": "wikipedia"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q5270871",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.allmusic.com/album/mw0002112965",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/release/album/king-creosote-jon-hopkins/diamond-mine/",
+          "name": "rateyourmusic"
+        }
+      ],
+      "id": 363
+    },
+    "images": [
+      {
+        "url": "/MediaCover/34/clearlogo.png?lastWrite=639276522271970372",
+        "coverType": "clearlogo",
+        "extension": ".png",
+        "remoteUrl": "/config/MediaCover/34/clearlogo.png"
+      },
+      {
+        "url": "/MediaCover/34/poster.jpg?lastWrite=639276522273285574",
+        "coverType": "poster",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/34/poster.jpg"
+      },
+      {
+        "url": "/MediaCover/34/fanart.jpg?lastWrite=639276522268882978",
+        "coverType": "fanart",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/34/fanart.jpg"
+      },
+      {
+        "url": "/MediaCover/34/banner.jpg?lastWrite=639276522270470819",
+        "coverType": "banner",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/34/banner.jpg"
+      }
+    ],
+    "path": "/music/King Creosote",
+    "qualityProfileId": 1,
+    "metadataProfileId": 1,
+    "monitored": true,
+    "monitorNewItems": "none",
+    "rootFolderPath": "/music",
+    "genres": ["Folk", "Indie Pop", "Singer-Songwriter"],
+    "cleanName": "kingcreosote",
+    "sortName": "king creosote",
+    "tags": [],
+    "added": "2026-10-15T09:10:15Z",
+    "ratings": {
+      "votes": 1,
+      "value": 10.0
+    },
+    "statistics": {
+      "albumCount": 49,
+      "trackFileCount": 0,
+      "trackCount": 13,
+      "totalTrackCount": 620,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 34
+  },
+  {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "Caribou",
+    "foreignArtistId": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Person",
+    "disambiguation": "electronic act from Dan Snaith",
+    "links": [
+      {
+        "url": "http://www.caribou.fm/",
+        "name": "caribou"
+      },
+      {
+        "url": "https://www.discogs.com/artist/517",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.discogs.com/artist/275841",
+        "name": "discogs"
+      },
+      {
+        "url": "https://myspace.com/cariboumanitoba",
+        "name": "myspace"
+      },
+      {
+        "url": "https://www.youtube.com/user/CaribouVideos",
+        "name": "youtube"
+      },
+      {
+        "url": "http://www.caribou.fm/index.php/releases/",
+        "name": "caribou"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000609590",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000572114",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/artists/735e3514-a8ae-401f-af3b-6300df1b8d2c",
+        "name": "bbc"
+      },
+      {
+        "url": "https://soundcloud.com/caribouband",
+        "name": "soundcloud"
+      },
+      {
+        "url": "https://twitter.com/caribouband",
+        "name": "twitter"
+      },
+      {
+        "url": "https://www.facebook.com/caribouband",
+        "name": "facebook"
+      },
+      {
+        "url": "https://www.last.fm/music/Caribou",
+        "name": "last"
+      },
+      {
+        "url": "http://www.musik-sammler.de/artist/66430",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/caribou",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "http://viaf.org/viaf/106458137",
+        "name": "viaf"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q1036131",
+        "name": "wikidata"
+      },
+      {
+        "url": "http://muzikum.eu/en/122-11277/caribou/lyrics.html",
+        "name": "muzikum"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Daniel_Victor_Snaith_2005.jpg",
+        "name": "wikimedia"
+      },
+      {
+        "url": "https://caribouband.bandcamp.com/",
+        "name": "bandcamp"
+      },
+      {
+        "url": "https://ra.co/dj/caribou",
+        "name": "ra"
+      },
+      {
+        "url": "https://www.beatport.com/artist/caribou/37805",
+        "name": "beatport"
+      },
+      {
+        "url": "https://play.google.com/store/music/artist?id=Autv2xesumwjjgnbyfqyvb2dzjq",
+        "name": "google"
+      },
+      {
+        "url": "https://www.junodownload.com/artists/Caribou/",
+        "name": "junodownload"
+      },
+      {
+        "url": "https://ca.7digital.com/artist/caribou",
+        "name": "7digital"
+      },
+      {
+        "url": "https://www.onkyomusic.com/artist/caribou",
+        "name": "onkyomusic"
+      },
+      {
+        "url": "https://open.spotify.com/artist/4aEnNH9PuU1HF3TsZTru54",
+        "name": "spotify"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/manitoba",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.instagram.com/cariboumusic/",
+        "name": "instagram"
+      },
+      {
+        "url": "https://www.deezer.com/artist/3892",
+        "name": "deezer"
+      },
+      {
+        "url": "https://imvdb.com/n/caribou",
+        "name": "imvdb"
+      },
+      {
+        "url": "https://tidal.com/artist/67593",
+        "name": "tidal"
+      },
+      {
+        "url": "https://open.spotify.com/artist/7nFj31QiQll8sRmWagex1M",
+        "name": "spotify"
+      },
+      {
+        "url": "https://www.traxsource.com/artist/18572",
+        "name": "traxsource"
+      },
+      {
+        "url": "https://www.songkick.com/artists/130447",
+        "name": "songkick"
+      },
+      {
+        "url": "https://music.apple.com/ca/artist/45464574",
+        "name": "apple"
+      },
+      {
+        "url": "https://www.tiktok.com/@cariboumusic",
+        "name": "tiktok"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/-/35090",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/-/35090",
+        "name": "qobuz"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": {
+      "title": "Honey",
+      "disambiguation": "",
+      "overview": "",
+      "artistId": 35,
+      "foreignAlbumId": "224850e8-6a9d-4351-8401-1ec2d3585219",
+      "monitored": true,
+      "anyReleaseOk": true,
+      "profileId": 1,
+      "duration": 5103275,
+      "albumType": "Album",
+      "secondaryTypes": [],
+      "mediumCount": 2,
+      "ratings": {
+        "votes": 3,
+        "value": 6.0
+      },
+      "releaseDate": "2024-10-04T00:00:00Z",
+      "releases": [
+        {
+          "id": 2838,
+          "albumId": 375,
+          "foreignReleaseId": "169bc15a-0607-41f2-86d2-9852923f3e21",
+          "title": "Honey",
+          "status": "Official",
+          "duration": 5103275,
+          "trackCount": 13,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "Honey",
+              "mediumFormat": "CD"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "Mixtape 2024",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "",
+          "country": [],
+          "label": ["City Slang"],
+          "format": "2xCD",
+          "monitored": true
+        },
+        {
+          "id": 2839,
+          "albumId": 375,
+          "foreignReleaseId": "ac3e55bc-58f7-4883-bfd5-5e3df906b9de",
+          "title": "Honey",
+          "status": "Official",
+          "duration": 2434576,
+          "trackCount": 12,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["City Slang"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 2840,
+          "albumId": 375,
+          "foreignReleaseId": "d488f7f7-784c-4876-9d3e-e11d2f5c73ab",
+          "title": "Honey",
+          "status": "Official",
+          "duration": 0,
+          "trackCount": 12,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "Peak Vinyl",
+          "country": ["United States"],
+          "label": ["Merge Records"],
+          "format": "12\" Vinyl",
+          "monitored": false
+        },
+        {
+          "id": 2841,
+          "albumId": 375,
+          "foreignReleaseId": "bd229996-b32d-4abc-ad0d-fec64625fde5",
+          "title": "Honey",
+          "status": "Official",
+          "duration": 2434576,
+          "trackCount": 12,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United States", "[Worldwide]"],
+          "label": ["City Slang", "Merge Records"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2842,
+          "albumId": 375,
+          "foreignReleaseId": "cf197bc4-9898-456a-88ee-c98ea09747c2",
+          "title": "Honey",
+          "status": "Official",
+          "duration": 5103275,
+          "trackCount": 13,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "Honey",
+              "mediumFormat": "CD"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "Mixtape 2024",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["City Slang"],
+          "format": "2xCD",
+          "monitored": false
+        },
+        {
+          "id": 2843,
+          "albumId": 375,
+          "foreignReleaseId": "9e4201ca-f54e-4668-bb4b-d32dd72ee8f5",
+          "title": "Honey",
+          "status": "Official",
+          "duration": 2437649,
+          "trackCount": 12,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United States"],
+          "label": ["Merge Records"],
+          "format": "CD",
+          "monitored": false
+        }
+      ],
+      "genres": ["Electronic", "House"],
+      "media": [
+        {
+          "mediumNumber": 1,
+          "mediumName": "Honey",
+          "mediumFormat": "CD"
+        },
+        {
+          "mediumNumber": 2,
+          "mediumName": "Mixtape 2024",
+          "mediumFormat": "CD"
+        }
+      ],
+      "artist": {
+        "status": "continuing",
+        "ended": false,
+        "artistName": "Caribou",
+        "foreignArtistId": "735e3514-a8ae-401f-af3b-6300df1b8d2c",
+        "tadbId": 0,
+        "discogsId": 0,
+        "artistType": "Person",
+        "disambiguation": "electronic act from Dan Snaith",
+        "links": [
+          {
+            "url": "http://www.caribou.fm/",
+            "name": "caribou"
+          },
+          {
+            "url": "https://www.discogs.com/artist/517",
+            "name": "discogs"
+          },
+          {
+            "url": "https://www.discogs.com/artist/275841",
+            "name": "discogs"
+          },
+          {
+            "url": "https://myspace.com/cariboumanitoba",
+            "name": "myspace"
+          },
+          {
+            "url": "https://www.youtube.com/user/CaribouVideos",
+            "name": "youtube"
+          },
+          {
+            "url": "http://www.caribou.fm/index.php/releases/",
+            "name": "caribou"
+          },
+          {
+            "url": "https://www.allmusic.com/artist/mn0000609590",
+            "name": "allmusic"
+          },
+          {
+            "url": "https://www.allmusic.com/artist/mn0000572114",
+            "name": "allmusic"
+          },
+          {
+            "url": "https://www.bbc.co.uk/music/artists/735e3514-a8ae-401f-af3b-6300df1b8d2c",
+            "name": "bbc"
+          },
+          {
+            "url": "https://soundcloud.com/caribouband",
+            "name": "soundcloud"
+          },
+          {
+            "url": "https://twitter.com/caribouband",
+            "name": "twitter"
+          },
+          {
+            "url": "https://www.facebook.com/caribouband",
+            "name": "facebook"
+          },
+          {
+            "url": "https://www.last.fm/music/Caribou",
+            "name": "last"
+          },
+          {
+            "url": "http://www.musik-sammler.de/artist/66430",
+            "name": "musik-sammler"
+          },
+          {
+            "url": "https://rateyourmusic.com/artist/caribou",
+            "name": "rateyourmusic"
+          },
+          {
+            "url": "http://viaf.org/viaf/106458137",
+            "name": "viaf"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q1036131",
+            "name": "wikidata"
+          },
+          {
+            "url": "http://muzikum.eu/en/122-11277/caribou/lyrics.html",
+            "name": "muzikum"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:Daniel_Victor_Snaith_2005.jpg",
+            "name": "wikimedia"
+          },
+          {
+            "url": "https://caribouband.bandcamp.com/",
+            "name": "bandcamp"
+          },
+          {
+            "url": "https://ra.co/dj/caribou",
+            "name": "ra"
+          },
+          {
+            "url": "https://www.beatport.com/artist/caribou/37805",
+            "name": "beatport"
+          },
+          {
+            "url": "https://play.google.com/store/music/artist?id=Autv2xesumwjjgnbyfqyvb2dzjq",
+            "name": "google"
+          },
+          {
+            "url": "https://www.junodownload.com/artists/Caribou/",
+            "name": "junodownload"
+          },
+          {
+            "url": "https://ca.7digital.com/artist/caribou",
+            "name": "7digital"
+          },
+          {
+            "url": "https://www.onkyomusic.com/artist/caribou",
+            "name": "onkyomusic"
+          },
+          {
+            "url": "https://open.spotify.com/artist/4aEnNH9PuU1HF3TsZTru54",
+            "name": "spotify"
+          },
+          {
+            "url": "https://rateyourmusic.com/artist/manitoba",
+            "name": "rateyourmusic"
+          },
+          {
+            "url": "https://www.instagram.com/cariboumusic/",
+            "name": "instagram"
+          },
+          {
+            "url": "https://www.deezer.com/artist/3892",
+            "name": "deezer"
+          },
+          {
+            "url": "https://imvdb.com/n/caribou",
+            "name": "imvdb"
+          },
+          {
+            "url": "https://tidal.com/artist/67593",
+            "name": "tidal"
+          },
+          {
+            "url": "https://open.spotify.com/artist/7nFj31QiQll8sRmWagex1M",
+            "name": "spotify"
+          },
+          {
+            "url": "https://www.traxsource.com/artist/18572",
+            "name": "traxsource"
+          },
+          {
+            "url": "https://www.songkick.com/artists/130447",
+            "name": "songkick"
+          },
+          {
+            "url": "https://music.apple.com/ca/artist/45464574",
+            "name": "apple"
+          },
+          {
+            "url": "https://www.tiktok.com/@cariboumusic",
+            "name": "tiktok"
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/interpreter/-/35090",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/interpreter/-/35090",
+            "name": "qobuz"
+          }
+        ],
+        "nextAlbum": null,
+        "lastAlbum": null,
+        "images": [],
+        "path": "/music/Caribou",
+        "qualityProfileId": 1,
+        "metadataProfileId": 1,
+        "monitored": true,
+        "monitorNewItems": "all",
+        "genres": [
+          "Electronic",
+          "Folktronica",
+          "House",
+          "Indietronica",
+          "Dream Pop",
+          "Neo-Psychedelia"
+        ],
+        "cleanName": "caribou",
+        "sortName": "caribou",
+        "tags": [],
+        "added": "2026-10-15T09:11:06Z",
+        "ratings": {
+          "votes": 3,
+          "value": 9.3
+        },
+        "id": 35
+      },
+      "images": [
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/bd229996-b32d-4abc-ad0d-fec64625fde5/39735906551-1200.jpg",
+          "coverType": "cover",
+          "extension": ".jpg"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://www.plattentests.de/rezi.php?show=20347",
+          "name": "plattentests"
+        },
+        {
+          "url": "https://www.allmusic.com/album/mw0004363440",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://www.discogs.com/master/3614536",
+          "name": "discogs"
+        },
+        {
+          "url": "https://rateyourmusic.com/release/album/caribou/honey/",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://laut.de/Caribou/Alben/Honey-124105",
+          "name": "laut"
+        },
+        {
+          "url": "https://www.last.fm/music/Caribou/Honey",
+          "name": "last"
+        }
+      ],
+      "id": 375
+    },
+    "images": [
+      {
+        "url": "/MediaCover/35/clearlogo.png?lastWrite=639276522704187623",
+        "coverType": "clearlogo",
+        "extension": ".png",
+        "remoteUrl": "/config/MediaCover/35/clearlogo.png"
+      },
+      {
+        "url": "/MediaCover/35/poster.jpg?lastWrite=639276522702608050",
+        "coverType": "poster",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/35/poster.jpg"
+      },
+      {
+        "url": "/MediaCover/35/fanart.jpg?lastWrite=639276522697002058",
+        "coverType": "fanart",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/35/fanart.jpg"
+      },
+      {
+        "url": "/MediaCover/35/banner.jpg?lastWrite=639276522701135736",
+        "coverType": "banner",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/35/banner.jpg"
+      }
+    ],
+    "path": "/music/Caribou",
+    "qualityProfileId": 1,
+    "metadataProfileId": 1,
+    "monitored": true,
+    "monitorNewItems": "all",
+    "rootFolderPath": "/music",
+    "genres": [
+      "Electronic",
+      "Folktronica",
+      "House",
+      "Indietronica",
+      "Dream Pop",
+      "Neo-Psychedelia"
+    ],
+    "cleanName": "caribou",
+    "sortName": "caribou",
+    "tags": [],
+    "added": "2026-10-15T09:11:06Z",
+    "ratings": {
+      "votes": 3,
+      "value": 9.3
+    },
+    "statistics": {
+      "albumCount": 8,
+      "trackFileCount": 0,
+      "trackCount": 107,
+      "totalTrackCount": 107,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 35
+  },
+  {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "Floating Points",
+    "foreignArtistId": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Person",
+    "disambiguation": "",
+    "links": [
+      {
+        "url": "https://myspace.com/floatingpoints",
+        "name": "myspace"
+      },
+      {
+        "url": "https://www.discogs.com/artist/1385084",
+        "name": "discogs"
+      },
+      {
+        "url": "https://twitter.com/floatingpoints",
+        "name": "twitter"
+      },
+      {
+        "url": "https://floatingpoints.co.uk/",
+        "name": "floatingpoints"
+      },
+      {
+        "url": "https://soundcloud.com/floatingpoints",
+        "name": "soundcloud"
+      },
+      {
+        "url": "https://www.facebook.com/floatingpoints",
+        "name": "facebook"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q22277802",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://www.instagram.com/floatingpoints/",
+        "name": "instagram"
+      },
+      {
+        "url": "https://www.songkick.com/artists/2486306",
+        "name": "songkick"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UC5NbPNPbdLwAPPwWTJw0EbQ",
+        "name": "youtube"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/floating-points",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://ra.co/dj/floatingpoints",
+        "name": "ra"
+      },
+      {
+        "url": "https://www.last.fm/music/Floating+Points",
+        "name": "last"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0002132247",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L",
+        "name": "spotify"
+      },
+      {
+        "url": "https://floatingpoints.bandcamp.com/",
+        "name": "bandcamp"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm8262567/",
+        "name": "imdb"
+      },
+      {
+        "url": "https://www.discogs.com/artist/1544337",
+        "name": "discogs"
+      },
+      {
+        "url": "http://id.loc.gov/authorities/names/no2016002860",
+        "name": "loc"
+      },
+      {
+        "url": "http://viaf.org/viaf/242145542576196641311",
+        "name": "viaf"
+      },
+      {
+        "url": "https://www.beatport.com/artist/floating-points/104114",
+        "name": "beatport"
+      },
+      {
+        "url": "https://tidal.com/artist/3714298",
+        "name": "tidal"
+      },
+      {
+        "url": "https://www.deezer.com/artist/336440",
+        "name": "deezer"
+      },
+      {
+        "url": "https://www.tiktok.com/@floatingpoints",
+        "name": "tiktok"
+      },
+      {
+        "url": "https://d-nb.info/gnd/1237828597",
+        "name": "d-nb"
+      },
+      {
+        "url": "https://www.worldcat.org/identities/lccn-no2016003112/",
+        "name": "worldcat"
+      },
+      {
+        "url": "https://play.qobuz.com/artist/574593",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Floating_Points_(2011).jpg",
+        "name": "wikimedia"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/311514259",
+        "name": "apple"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/311514259",
+        "name": "apple"
+      },
+      {
+        "url": "https://itunes.apple.com/gb/artist/id311514259",
+        "name": "apple"
+      },
+      {
+        "url": "https://ototoy.jp/_/default/a/60996",
+        "name": "ototoy"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/574593",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/574593",
+        "name": "qobuz"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": {
+      "title": "Mere Mortals",
+      "disambiguation": "",
+      "overview": "",
+      "artistId": 36,
+      "foreignAlbumId": "5bfcf374-b5c7-4e65-ab82-d1deb15efadd",
+      "monitored": true,
+      "anyReleaseOk": true,
+      "profileId": 1,
+      "duration": 3683219,
+      "albumType": "Album",
+      "secondaryTypes": [],
+      "mediumCount": 1,
+      "ratings": {
+        "votes": 1,
+        "value": 8.0
+      },
+      "releaseDate": "2026-08-28T00:00:00Z",
+      "releases": [
+        {
+          "id": 2887,
+          "albumId": 382,
+          "foreignReleaseId": "258796d2-ebb5-4d7f-b784-5ff00ddf5918",
+          "title": "Mere Mortals",
+          "status": "Official",
+          "duration": 3683219,
+          "trackCount": 14,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["[Worldwide]"],
+          "label": ["Deutsche Grammophon"],
+          "format": "Digital Media",
+          "monitored": true
+        },
+        {
+          "id": 2888,
+          "albumId": 382,
+          "foreignReleaseId": "a576209f-7d6d-4870-abc0-f43918c2c2e3",
+          "title": "Mere Mortals",
+          "status": "Official",
+          "duration": 3684000,
+          "trackCount": 14,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": [],
+          "label": ["Deutsche Grammophon"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 2889,
+          "albumId": 382,
+          "foreignReleaseId": "cc65d475-2ccd-458a-9dc5-646a6428d03a",
+          "title": "Mere Mortals",
+          "status": "Official",
+          "duration": 3683219,
+          "trackCount": 14,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["[Worldwide]"],
+          "label": ["Deutsche Grammophon"],
+          "format": "CD",
+          "monitored": false
+        }
+      ],
+      "genres": ["Downtempo", "Electronic", "House", "Jazz"],
+      "media": [
+        {
+          "mediumNumber": 1,
+          "mediumName": "",
+          "mediumFormat": "Digital Media"
+        }
+      ],
+      "artist": {
+        "status": "continuing",
+        "ended": false,
+        "artistName": "Floating Points",
+        "foreignArtistId": "69d9c5ba-7bba-4cb7-ab32-8ccc48ad4f97",
+        "tadbId": 0,
+        "discogsId": 0,
+        "artistType": "Person",
+        "disambiguation": "",
+        "links": [
+          {
+            "url": "https://myspace.com/floatingpoints",
+            "name": "myspace"
+          },
+          {
+            "url": "https://www.discogs.com/artist/1385084",
+            "name": "discogs"
+          },
+          {
+            "url": "https://twitter.com/floatingpoints",
+            "name": "twitter"
+          },
+          {
+            "url": "https://floatingpoints.co.uk/",
+            "name": "floatingpoints"
+          },
+          {
+            "url": "https://soundcloud.com/floatingpoints",
+            "name": "soundcloud"
+          },
+          {
+            "url": "https://www.facebook.com/floatingpoints",
+            "name": "facebook"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q22277802",
+            "name": "wikidata"
+          },
+          {
+            "url": "https://www.instagram.com/floatingpoints/",
+            "name": "instagram"
+          },
+          {
+            "url": "https://www.songkick.com/artists/2486306",
+            "name": "songkick"
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC5NbPNPbdLwAPPwWTJw0EbQ",
+            "name": "youtube"
+          },
+          {
+            "url": "https://rateyourmusic.com/artist/floating-points",
+            "name": "rateyourmusic"
+          },
+          {
+            "url": "https://ra.co/dj/floatingpoints",
+            "name": "ra"
+          },
+          {
+            "url": "https://www.last.fm/music/Floating+Points",
+            "name": "last"
+          },
+          {
+            "url": "https://www.allmusic.com/artist/mn0002132247",
+            "name": "allmusic"
+          },
+          {
+            "url": "https://open.spotify.com/artist/2AR42Ur9PcchQDtEdwkv4L",
+            "name": "spotify"
+          },
+          {
+            "url": "https://floatingpoints.bandcamp.com/",
+            "name": "bandcamp"
+          },
+          {
+            "url": "https://www.imdb.com/name/nm8262567/",
+            "name": "imdb"
+          },
+          {
+            "url": "https://www.discogs.com/artist/1544337",
+            "name": "discogs"
+          },
+          {
+            "url": "http://id.loc.gov/authorities/names/no2016002860",
+            "name": "loc"
+          },
+          {
+            "url": "http://viaf.org/viaf/242145542576196641311",
+            "name": "viaf"
+          },
+          {
+            "url": "https://www.beatport.com/artist/floating-points/104114",
+            "name": "beatport"
+          },
+          {
+            "url": "https://tidal.com/artist/3714298",
+            "name": "tidal"
+          },
+          {
+            "url": "https://www.deezer.com/artist/336440",
+            "name": "deezer"
+          },
+          {
+            "url": "https://www.tiktok.com/@floatingpoints",
+            "name": "tiktok"
+          },
+          {
+            "url": "https://d-nb.info/gnd/1237828597",
+            "name": "d-nb"
+          },
+          {
+            "url": "https://www.worldcat.org/identities/lccn-no2016003112/",
+            "name": "worldcat"
+          },
+          {
+            "url": "https://play.qobuz.com/artist/574593",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:Floating_Points_(2011).jpg",
+            "name": "wikimedia"
+          },
+          {
+            "url": "https://music.apple.com/gb/artist/311514259",
+            "name": "apple"
+          },
+          {
+            "url": "https://music.apple.com/gb/artist/311514259",
+            "name": "apple"
+          },
+          {
+            "url": "https://itunes.apple.com/gb/artist/id311514259",
+            "name": "apple"
+          },
+          {
+            "url": "https://ototoy.jp/_/default/a/60996",
+            "name": "ototoy"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/574593",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/574593",
+            "name": "qobuz"
+          }
+        ],
+        "nextAlbum": null,
+        "lastAlbum": null,
+        "images": [],
+        "path": "/music/Floating Points",
+        "qualityProfileId": 1,
+        "metadataProfileId": 1,
+        "monitored": true,
+        "monitorNewItems": "all",
+        "genres": [
+          "Electronic",
+          "House",
+          "Dubstep",
+          "Progressive House",
+          "Tech House",
+          "Post-Dubstep",
+          "Microhouse"
+        ],
+        "cleanName": "floatingpoints",
+        "sortName": "floating points",
+        "tags": [],
+        "added": "2026-10-15T09:11:58Z",
+        "ratings": {
+          "votes": 1,
+          "value": 10.0
+        },
+        "id": 36
+      },
+      "images": [
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/a576209f-7d6d-4870-abc0-f43918c2c2e3/45328658383-1200.jpg",
+          "coverType": "cover",
+          "extension": ".jpg"
+        }
+      ],
+      "links": [],
+      "id": 382
+    },
+    "images": [
+      {
+        "url": "/MediaCover/36/clearlogo.png?lastWrite=639276523204497166",
+        "coverType": "clearlogo",
+        "extension": ".png",
+        "remoteUrl": "/config/MediaCover/36/clearlogo.png"
+      },
+      {
+        "url": "/MediaCover/36/poster.jpg?lastWrite=639276523202546545",
+        "coverType": "poster",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/36/poster.jpg"
+      },
+      {
+        "url": "/MediaCover/36/fanart.jpg?lastWrite=639276523203031921",
+        "coverType": "fanart",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/36/fanart.jpg"
+      },
+      {
+        "url": "/MediaCover/36/banner.jpg?lastWrite=639276523204853557",
+        "coverType": "banner",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/36/banner.jpg"
+      }
+    ],
+    "path": "/music/Floating Points",
+    "qualityProfileId": 1,
+    "metadataProfileId": 1,
+    "monitored": true,
+    "monitorNewItems": "all",
+    "rootFolderPath": "/music",
+    "genres": [
+      "Electronic",
+      "House",
+      "Dubstep",
+      "Progressive House",
+      "Tech House",
+      "Post-Dubstep",
+      "Microhouse"
+    ],
+    "cleanName": "floatingpoints",
+    "sortName": "floating points",
+    "tags": [],
+    "added": "2026-10-15T09:11:58Z",
+    "ratings": {
+      "votes": 1,
+      "value": 10.0
+    },
+    "statistics": {
+      "albumCount": 5,
+      "trackFileCount": 12,
+      "trackCount": 54,
+      "totalTrackCount": 54,
+      "sizeOnDisk": 199838,
+      "percentOfTracks": 22.22222222222222
+    },
+    "id": 36
+  },
+  {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "Brian Eno",
+    "foreignArtistId": "ff95eb47-41c4-4f7f-a104-cdc30f02e872",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Person",
+    "disambiguation": "",
+    "links": [
+      {
+        "url": "http://www.enoweb.co.uk/",
+        "name": "enoweb"
+      },
+      {
+        "url": "https://www.discogs.com/artist/634",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm0006061/",
+        "name": "imdb"
+      },
+      {
+        "url": "https://myspace.com/enobrian",
+        "name": "myspace"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/artists/ff95eb47-41c4-4f7f-a104-cdc30f02e872",
+        "name": "bbc"
+      },
+      {
+        "url": "https://www.last.fm/music/Brian+Eno",
+        "name": "last"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000617196",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.facebook.com/brianenomusic",
+        "name": "facebook"
+      },
+      {
+        "url": "http://music.hyperreal.org/artists/brian_eno/discog.html",
+        "name": "hyperreal"
+      },
+      {
+        "url": "https://secondhandsongs.com/artist/3214",
+        "name": "secondhandsongs"
+      },
+      {
+        "url": "http://viaf.org/viaf/2638470",
+        "name": "viaf"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q569003",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/brian-eno",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://open.spotify.com/artist/7MSUfLeTdDEoZiJPDSBXgi",
+        "name": "spotify"
+      },
+      {
+        "url": "https://d-nb.info/gnd/118955691",
+        "name": "d-nb"
+      },
+      {
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb13568282b",
+        "name": "bnf"
+      },
+      {
+        "url": "http://id.loc.gov/authorities/names/n85135915",
+        "name": "loc"
+      },
+      {
+        "url": "https://ibdb.com/person.php?id=516821",
+        "name": "ibdb"
+      },
+      {
+        "url": "http://snaccooperative.org/ark:/99166/w6x06gvg",
+        "name": "snaccooperative"
+      },
+      {
+        "url": "https://twitter.com/dark_shark",
+        "name": "twitter"
+      },
+      {
+        "url": "https://www.songkick.com/artists/41530",
+        "name": "songkick"
+      },
+      {
+        "url": "https://bookbrainz.org/author/8020af40-5783-41c0-961d-1e3356ed756e",
+        "name": "bookbrainz"
+      },
+      {
+        "url": "https://www.deezer.com/artist/2042",
+        "name": "deezer"
+      },
+      {
+        "url": "https://itunes.apple.com/gb/artist/id38124",
+        "name": "apple"
+      },
+      {
+        "url": "https://soundcloud.com/brian-eno-official",
+        "name": "soundcloud"
+      },
+      {
+        "url": "https://tidal.com/artist/9230",
+        "name": "tidal"
+      },
+      {
+        "url": "https://imvdb.com/n/brian-eno",
+        "name": "imvdb"
+      },
+      {
+        "url": "https://www.instagram.com/brianeno/",
+        "name": "instagram"
+      },
+      {
+        "url": "https://www.idref.fr/052608727",
+        "name": "idref"
+      },
+      {
+        "url": "https://www.musik-sammler.de/artist/5405/",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://openlibrary.org/authors/OL63875A",
+        "name": "openlibrary"
+      },
+      {
+        "url": "https://open.spotify.com/artist/5nRTsSxPNnsySXsuJ6UHGq",
+        "name": "spotify"
+      },
+      {
+        "url": "https://nla.gov.au/nla.party-1105781",
+        "name": "gov"
+      },
+      {
+        "url": "https://genius.com/artists/Brian-eno",
+        "name": "genius"
+      },
+      {
+        "url": "https://vgmdb.net/artist/19238",
+        "name": "vgmdb"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCDDJRnc_LsRm-_CAfRcKCZA",
+        "name": "youtube"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Brian_Eno_Profile_Long_Now_Foundation_2006.jpg",
+        "name": "wikimedia"
+      },
+      {
+        "url": "https://www.brian-eno.net/",
+        "name": "brian-eno"
+      },
+      {
+        "url": "https://musicmoz.org/Bands_and_Artists/E/Eno,_Brian/",
+        "name": "musicmoz"
+      },
+      {
+        "url": "https://id.oclc.org/worldcat/entity/E39PBJjXfgWcpgYKywP89746rq",
+        "name": "oclc"
+      },
+      {
+        "url": "https://music.amazon.co.uk/artists/B000QJP582",
+        "name": "amazon"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/38124",
+        "name": "apple"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/38124",
+        "name": "apple"
+      },
+      {
+        "url": "https://www.qobuz.com/gb-en/interpreter/brian-eno/7711",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://uk.7digital.com/artist/brian-eno",
+        "name": "7digital"
+      },
+      {
+        "url": "https://www.melon.com/artist/detail.htm?artistId=33902",
+        "name": "melon"
+      },
+      {
+        "url": "https://www.melon.com/artist/detail.htm?artistId=33902",
+        "name": "melon"
+      },
+      {
+        "url": "https://mora.jp/artist/317128/",
+        "name": "mora"
+      },
+      {
+        "url": "https://ototoy.jp/_/default/a/1471",
+        "name": "ototoy"
+      },
+      {
+        "url": "https://music.youtube.com/channel/UCDDJRnc_LsRm-_CAfRcKCZA",
+        "name": "youtube"
+      },
+      {
+        "url": "https://www.tiktok.com/@brianeno",
+        "name": "tiktok"
+      },
+      {
+        "url": "https://bsky.app/profile/dark-shark.bsky.social",
+        "name": "bsky"
+      },
+      {
+        "url": "https://www.whosampled.com/Brian-Eno/",
+        "name": "whosampled"
+      },
+      {
+        "url": "https://www.progarchives.com/artist.asp?id=1639",
+        "name": "progarchives"
+      },
+      {
+        "url": "https://www.spirit-of-rock.com/en/band/Brian_Eno",
+        "name": "spirit-of-rock"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/7711",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://brianeno.bandcamp.com/",
+        "name": "bandcamp"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": {
+      "title": "Small Craft on a Milk Sea",
+      "disambiguation": "",
+      "overview": "",
+      "artistId": 37,
+      "foreignAlbumId": "0d0c7a79-39e0-4ccd-a776-cd4b7b75ca59",
+      "monitored": true,
+      "anyReleaseOk": true,
+      "profileId": 1,
+      "duration": 6593239,
+      "albumType": "Album",
+      "secondaryTypes": [],
+      "mediumCount": 4,
+      "ratings": {
+        "votes": 1,
+        "value": 10.0
+      },
+      "releaseDate": "2010-10-20T00:00:00Z",
+      "releases": [
+        {
+          "id": 3121,
+          "albumId": 422,
+          "foreignReleaseId": "23d0c659-8c9c-445b-a2d7-044cd8771349",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 3267503,
+          "trackCount": 16,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["Japan"],
+          "label": ["Beat Records"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 3122,
+          "albumId": 422,
+          "foreignReleaseId": "1878f0a9-0514-30b8-80b7-fab6c6c5edfb",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 2943169,
+          "trackCount": 15,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United States"],
+          "label": ["Warp"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 3123,
+          "albumId": 422,
+          "foreignReleaseId": "03c91e6d-5d91-46aa-97ee-a9de95f42898",
+          "title": "Small Craft on a Milk Sea (bonus disc)",
+          "status": "Official",
+          "duration": 713239,
+          "trackCount": 4,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Warp"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 3124,
+          "albumId": 422,
+          "foreignReleaseId": "2768c0be-e317-3453-826f-3d037ee3a212",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 2940000,
+          "trackCount": 15,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Warp"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 3125,
+          "albumId": 422,
+          "foreignReleaseId": "a8e580e7-6cff-44f5-b9e1-15d4ab5b3563",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 2940000,
+          "trackCount": 15,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["Japan", "United Kingdom", "United States"],
+          "label": ["Universal UMC", "Warp", "Warp"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 3126,
+          "albumId": 422,
+          "foreignReleaseId": "48092f72-9289-41d4-825d-cc58b0ee41df",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 3137000,
+          "trackCount": 16,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United States"],
+          "label": ["Warp"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 3127,
+          "albumId": 422,
+          "foreignReleaseId": "b2aec0a6-92d5-4dde-b450-aee199bbdaca",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 3132000,
+          "trackCount": 16,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["[Worldwide]"],
+          "label": ["UMC"],
+          "format": "Digital Media",
+          "monitored": false
+        },
+        {
+          "id": 3128,
+          "albumId": 422,
+          "foreignReleaseId": "22737216-ae18-48b7-a303-9dc8d4d3a511",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 0,
+          "trackCount": 27,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "",
+          "country": ["United Kingdom"],
+          "label": ["Opal Records", "Universal Music Recordings"],
+          "format": "2x12\" Vinyl",
+          "monitored": false
+        },
+        {
+          "id": 3129,
+          "albumId": 422,
+          "foreignReleaseId": "6431f09f-ab9a-337d-b30c-d3f0675e89c4",
+          "title": "Small Craft on a Milk Sea",
+          "status": "Official",
+          "duration": 6593239,
+          "trackCount": 34,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            },
+            {
+              "mediumNumber": 3,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            },
+            {
+              "mediumNumber": 4,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            }
+          ],
+          "mediumCount": 4,
+          "disambiguation": "",
+          "country": ["Germany", "United Kingdom"],
+          "label": ["Warp"],
+          "format": "2xCD, 2x12\" Vinyl",
+          "monitored": true
+        }
+      ],
+      "genres": ["Electronic", "Ambient", "Downtempo", "Rock"],
+      "media": [
+        {
+          "mediumNumber": 1,
+          "mediumName": "",
+          "mediumFormat": "CD"
+        },
+        {
+          "mediumNumber": 2,
+          "mediumName": "",
+          "mediumFormat": "CD"
+        },
+        {
+          "mediumNumber": 3,
+          "mediumName": "",
+          "mediumFormat": "12\" Vinyl"
+        },
+        {
+          "mediumNumber": 4,
+          "mediumName": "",
+          "mediumFormat": "12\" Vinyl"
+        }
+      ],
+      "artist": {
+        "status": "continuing",
+        "ended": false,
+        "artistName": "Brian Eno",
+        "foreignArtistId": "ff95eb47-41c4-4f7f-a104-cdc30f02e872",
+        "tadbId": 0,
+        "discogsId": 0,
+        "artistType": "Person",
+        "disambiguation": "",
+        "links": [
+          {
+            "url": "http://www.enoweb.co.uk/",
+            "name": "enoweb"
+          },
+          {
+            "url": "https://www.discogs.com/artist/634",
+            "name": "discogs"
+          },
+          {
+            "url": "https://www.imdb.com/name/nm0006061/",
+            "name": "imdb"
+          },
+          {
+            "url": "https://myspace.com/enobrian",
+            "name": "myspace"
+          },
+          {
+            "url": "https://www.bbc.co.uk/music/artists/ff95eb47-41c4-4f7f-a104-cdc30f02e872",
+            "name": "bbc"
+          },
+          {
+            "url": "https://www.last.fm/music/Brian+Eno",
+            "name": "last"
+          },
+          {
+            "url": "https://www.allmusic.com/artist/mn0000617196",
+            "name": "allmusic"
+          },
+          {
+            "url": "https://www.facebook.com/brianenomusic",
+            "name": "facebook"
+          },
+          {
+            "url": "http://music.hyperreal.org/artists/brian_eno/discog.html",
+            "name": "hyperreal"
+          },
+          {
+            "url": "https://secondhandsongs.com/artist/3214",
+            "name": "secondhandsongs"
+          },
+          {
+            "url": "http://viaf.org/viaf/2638470",
+            "name": "viaf"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q569003",
+            "name": "wikidata"
+          },
+          {
+            "url": "https://rateyourmusic.com/artist/brian-eno",
+            "name": "rateyourmusic"
+          },
+          {
+            "url": "https://open.spotify.com/artist/7MSUfLeTdDEoZiJPDSBXgi",
+            "name": "spotify"
+          },
+          {
+            "url": "https://d-nb.info/gnd/118955691",
+            "name": "d-nb"
+          },
+          {
+            "url": "https://catalogue.bnf.fr/ark:/12148/cb13568282b",
+            "name": "bnf"
+          },
+          {
+            "url": "http://id.loc.gov/authorities/names/n85135915",
+            "name": "loc"
+          },
+          {
+            "url": "https://ibdb.com/person.php?id=516821",
+            "name": "ibdb"
+          },
+          {
+            "url": "http://snaccooperative.org/ark:/99166/w6x06gvg",
+            "name": "snaccooperative"
+          },
+          {
+            "url": "https://twitter.com/dark_shark",
+            "name": "twitter"
+          },
+          {
+            "url": "https://www.songkick.com/artists/41530",
+            "name": "songkick"
+          },
+          {
+            "url": "https://bookbrainz.org/author/8020af40-5783-41c0-961d-1e3356ed756e",
+            "name": "bookbrainz"
+          },
+          {
+            "url": "https://www.deezer.com/artist/2042",
+            "name": "deezer"
+          },
+          {
+            "url": "https://itunes.apple.com/gb/artist/id38124",
+            "name": "apple"
+          },
+          {
+            "url": "https://soundcloud.com/brian-eno-official",
+            "name": "soundcloud"
+          },
+          {
+            "url": "https://tidal.com/artist/9230",
+            "name": "tidal"
+          },
+          {
+            "url": "https://imvdb.com/n/brian-eno",
+            "name": "imvdb"
+          },
+          {
+            "url": "https://www.instagram.com/brianeno/",
+            "name": "instagram"
+          },
+          {
+            "url": "https://www.idref.fr/052608727",
+            "name": "idref"
+          },
+          {
+            "url": "https://www.musik-sammler.de/artist/5405/",
+            "name": "musik-sammler"
+          },
+          {
+            "url": "https://openlibrary.org/authors/OL63875A",
+            "name": "openlibrary"
+          },
+          {
+            "url": "https://open.spotify.com/artist/5nRTsSxPNnsySXsuJ6UHGq",
+            "name": "spotify"
+          },
+          {
+            "url": "https://nla.gov.au/nla.party-1105781",
+            "name": "gov"
+          },
+          {
+            "url": "https://genius.com/artists/Brian-eno",
+            "name": "genius"
+          },
+          {
+            "url": "https://vgmdb.net/artist/19238",
+            "name": "vgmdb"
+          },
+          {
+            "url": "https://www.youtube.com/channel/UCDDJRnc_LsRm-_CAfRcKCZA",
+            "name": "youtube"
+          },
+          {
+            "url": "https://commons.wikimedia.org/wiki/File:Brian_Eno_Profile_Long_Now_Foundation_2006.jpg",
+            "name": "wikimedia"
+          },
+          {
+            "url": "https://www.brian-eno.net/",
+            "name": "brian-eno"
+          },
+          {
+            "url": "https://musicmoz.org/Bands_and_Artists/E/Eno,_Brian/",
+            "name": "musicmoz"
+          },
+          {
+            "url": "https://id.oclc.org/worldcat/entity/E39PBJjXfgWcpgYKywP89746rq",
+            "name": "oclc"
+          },
+          {
+            "url": "https://music.amazon.co.uk/artists/B000QJP582",
+            "name": "amazon"
+          },
+          {
+            "url": "https://music.apple.com/gb/artist/38124",
+            "name": "apple"
+          },
+          {
+            "url": "https://music.apple.com/gb/artist/38124",
+            "name": "apple"
+          },
+          {
+            "url": "https://www.qobuz.com/gb-en/interpreter/brian-eno/7711",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://uk.7digital.com/artist/brian-eno",
+            "name": "7digital"
+          },
+          {
+            "url": "https://www.melon.com/artist/detail.htm?artistId=33902",
+            "name": "melon"
+          },
+          {
+            "url": "https://www.melon.com/artist/detail.htm?artistId=33902",
+            "name": "melon"
+          },
+          {
+            "url": "https://mora.jp/artist/317128/",
+            "name": "mora"
+          },
+          {
+            "url": "https://ototoy.jp/_/default/a/1471",
+            "name": "ototoy"
+          },
+          {
+            "url": "https://music.youtube.com/channel/UCDDJRnc_LsRm-_CAfRcKCZA",
+            "name": "youtube"
+          },
+          {
+            "url": "https://www.tiktok.com/@brianeno",
+            "name": "tiktok"
+          },
+          {
+            "url": "https://bsky.app/profile/dark-shark.bsky.social",
+            "name": "bsky"
+          },
+          {
+            "url": "https://www.whosampled.com/Brian-Eno/",
+            "name": "whosampled"
+          },
+          {
+            "url": "https://www.progarchives.com/artist.asp?id=1639",
+            "name": "progarchives"
+          },
+          {
+            "url": "https://www.spirit-of-rock.com/en/band/Brian_Eno",
+            "name": "spirit-of-rock"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/7711",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://brianeno.bandcamp.com/",
+            "name": "bandcamp"
+          }
+        ],
+        "nextAlbum": null,
+        "lastAlbum": null,
+        "images": [],
+        "path": "/music/Brian Eno",
+        "qualityProfileId": 1,
+        "metadataProfileId": 1,
+        "monitored": true,
+        "monitorNewItems": "none",
+        "genres": [
+          "Ambient",
+          "Electronic",
+          "Experimental Rock",
+          "Art Rock",
+          "Drone",
+          "Glam Rock",
+          "Rock",
+          "Art Pop"
+        ],
+        "cleanName": "brianeno",
+        "sortName": "brian eno",
+        "tags": [],
+        "added": "2026-10-15T09:12:29Z",
+        "ratings": {
+          "votes": 11,
+          "value": 9.6
+        },
+        "id": 37
+      },
+      "images": [
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/a8e580e7-6cff-44f5-b9e1-15d4ab5b3563/7936105183-1200.jpg",
+          "coverType": "cover",
+          "extension": ".jpg"
+        },
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/2768c0be-e317-3453-826f-3d037ee3a212/35553108390-1200.jpg",
+          "coverType": "disc",
+          "extension": ".jpg"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://www.discogs.com/master/285840",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/music/reviews/93rj",
+          "name": "bbc"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q7542750",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.allmusic.com/album/mw0002041188",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/release/album/brian-eno-with-jon-hopkins-and-leo-abrahams/small-craft-on-a-milk-sea/",
+          "name": "rateyourmusic"
+        }
+      ],
+      "id": 422
+    },
+    "images": [
+      {
+        "url": "/MediaCover/37/clearlogo.png?lastWrite=639276523622688057",
+        "coverType": "clearlogo",
+        "extension": ".png",
+        "remoteUrl": "/config/MediaCover/37/clearlogo.png"
+      },
+      {
+        "url": "/MediaCover/37/poster.jpg?lastWrite=639276523624161007",
+        "coverType": "poster",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/37/poster.jpg"
+      },
+      {
+        "url": "/MediaCover/37/fanart.jpg?lastWrite=639276523625644717",
+        "coverType": "fanart",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/37/fanart.jpg"
+      },
+      {
+        "url": "/MediaCover/37/banner.jpg?lastWrite=639276523621185683",
+        "coverType": "banner",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/37/banner.jpg"
+      }
+    ],
+    "path": "/music/Brian Eno",
+    "qualityProfileId": 1,
+    "metadataProfileId": 1,
+    "monitored": true,
+    "monitorNewItems": "none",
+    "rootFolderPath": "/music",
+    "genres": [
+      "Ambient",
+      "Electronic",
+      "Experimental Rock",
+      "Art Rock",
+      "Drone",
+      "Glam Rock",
+      "Rock",
+      "Art Pop"
+    ],
+    "cleanName": "brianeno",
+    "sortName": "brian eno",
+    "tags": [],
+    "added": "2026-10-15T09:12:29Z",
+    "ratings": {
+      "votes": 11,
+      "value": 9.6
+    },
+    "statistics": {
+      "albumCount": 50,
+      "trackFileCount": 0,
+      "trackCount": 34,
+      "totalTrackCount": 563,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 37
+  },
+  {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "Sufjan Stevens",
+    "foreignArtistId": "01d3c51b-9b98-418a-8d8e-37f6fab59d8c",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Person",
+    "disambiguation": "",
+    "links": [
+      {
+        "url": "https://www.discogs.com/artist/202598",
+        "name": "discogs"
+      },
+      {
+        "url": "https://myspace.com/sufjanstevens",
+        "name": "myspace"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/artists/01d3c51b-9b98-418a-8d8e-37f6fab59d8c",
+        "name": "bbc"
+      },
+      {
+        "url": "https://sufjanstevens.bandcamp.com/",
+        "name": "bandcamp"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000580300",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://www.facebook.com/176272745762091",
+        "name": "facebook"
+      },
+      {
+        "url": "http://viaf.org/viaf/39693090",
+        "name": "viaf"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q319502",
+        "name": "wikidata"
+      },
+      {
+        "url": "https://secondhandsongs.com/artist/17892",
+        "name": "secondhandsongs"
+      },
+      {
+        "url": "http://muzikum.eu/en/122-6399/sufjan-stevens/lyrics.html",
+        "name": "muzikum"
+      },
+      {
+        "url": "https://genius.com/artists/Sufjan-stevens",
+        "name": "genius"
+      },
+      {
+        "url": "https://imvdb.com/n/sufjan-stevens",
+        "name": "imvdb"
+      },
+      {
+        "url": "https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c",
+        "name": "spotify"
+      },
+      {
+        "url": "https://itunes.apple.com/us/artist/id4273404",
+        "name": "apple"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/sufjan-stevens",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://www.tumblr.com/s-u-f-j-a-n-s-t-e-v-e-n-s",
+        "name": "tumblr"
+      },
+      {
+        "url": "https://www.last.fm/music/Sufjan+Stevens",
+        "name": "last"
+      },
+      {
+        "url": "https://sufjan.com/",
+        "name": "sufjan"
+      },
+      {
+        "url": "https://sufjan.com/",
+        "name": "sufjan"
+      },
+      {
+        "url": "https://d-nb.info/gnd/135476798",
+        "name": "d-nb"
+      },
+      {
+        "url": "http://id.loc.gov/authorities/names/no2005018275",
+        "name": "loc"
+      },
+      {
+        "url": "https://www.worldcat.org/identities/lccn-no2005018275",
+        "name": "worldcat"
+      },
+      {
+        "url": "https://catalogue.bnf.fr/ark:/12148/cb15562605t",
+        "name": "bnf"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm2014294/",
+        "name": "imdb"
+      },
+      {
+        "url": "https://www.songkick.com/artists/118509",
+        "name": "songkick"
+      },
+      {
+        "url": "https://www.instagram.com/sufjan/",
+        "name": "instagram"
+      },
+      {
+        "url": "https://bleep.com/artist/342",
+        "name": "bleep"
+      },
+      {
+        "url": "https://boomkat.com/artists/sufjan-stevens",
+        "name": "boomkat"
+      },
+      {
+        "url": "https://boomkat.com/artists/sufjan-stevens",
+        "name": "boomkat"
+      },
+      {
+        "url": "https://www.deezer.com/artist/1999",
+        "name": "deezer"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCMi8tQF_L7rd6YcmSt7MXrQ",
+        "name": "youtube"
+      },
+      {
+        "url": "https://www.beatport.com/artist/-/536817",
+        "name": "beatport"
+      },
+      {
+        "url": "https://tidal.com/artist/64638",
+        "name": "tidal"
+      },
+      {
+        "url": "https://www.facebook.com/100044324805216",
+        "name": "facebook"
+      },
+      {
+        "url": "https://soundcloud.com/sufjan-stevens",
+        "name": "soundcloud"
+      },
+      {
+        "url": "https://www.setlist.fm/setlists/sufjan-stevens-73d6ae91.html",
+        "name": "setlist"
+      },
+      {
+        "url": "https://www.tiktok.com/@sufjan001",
+        "name": "tiktok"
+      },
+      {
+        "url": "https://www.spirit-of-rock.com/en/band/Sufjan_Stevens",
+        "name": "spirit-of-rock"
+      },
+      {
+        "url": "https://www.whosampled.com/Sufjan-Stevens/",
+        "name": "whosampled"
+      },
+      {
+        "url": "https://www.bandsintown.com/a/1525",
+        "name": "bandsintown"
+      },
+      {
+        "url": "https://www.threads.com/@sufjan",
+        "name": "threads"
+      },
+      {
+        "url": "https://music.apple.com/us/artist/4273404",
+        "name": "apple"
+      },
+      {
+        "url": "https://www.musik-sammler.de/artist/sufjan-stevens/",
+        "name": "musik-sammler"
+      },
+      {
+        "url": "https://music.youtube.com/channel/UC5sOhxfts379lOCXaIAinyw",
+        "name": "youtube"
+      },
+      {
+        "url": "https://asthmatickitty.com/artists/sufjan-stevens/",
+        "name": "asthmatickitty"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/sufjan-stevens/256652",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/sufjan-stevens/256652",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://tidal.com/artist/71848571",
+        "name": "tidal"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/256652",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/256652",
+        "name": "qobuz"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": {
+      "title": "Planetarium",
+      "disambiguation": "",
+      "overview": "",
+      "artistId": 38,
+      "foreignAlbumId": "339ee657-7aa0-485e-b294-30a481bafc82",
+      "monitored": true,
+      "anyReleaseOk": true,
+      "profileId": 1,
+      "duration": 4566526,
+      "albumType": "Album",
+      "secondaryTypes": [],
+      "mediumCount": 1,
+      "ratings": {
+        "votes": 4,
+        "value": 7.3
+      },
+      "releaseDate": "2017-06-09T00:00:00Z",
+      "releases": [
+        {
+          "id": 3299,
+          "albumId": 444,
+          "foreignReleaseId": "6d5f9efe-918d-441e-92cd-3d3a7155c368",
+          "title": "Planetarium",
+          "status": "Official",
+          "duration": 4566526,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["United States"],
+          "label": ["4AD"],
+          "format": "CD",
+          "monitored": true
+        },
+        {
+          "id": 3300,
+          "albumId": 444,
+          "foreignReleaseId": "ac3893ab-7ccb-4612-a8de-e53b15c7209d",
+          "title": "Planetarium",
+          "status": "Official",
+          "duration": 4566538,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "CD"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["Europe"],
+          "label": ["4AD"],
+          "format": "CD",
+          "monitored": false
+        },
+        {
+          "id": 3301,
+          "albumId": 444,
+          "foreignReleaseId": "29fbc9db-01a3-4f9f-8bed-ba8f2702ab3b",
+          "title": "Planetarium",
+          "status": "Official",
+          "duration": 0,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            },
+            {
+              "mediumNumber": 2,
+              "mediumName": "",
+              "mediumFormat": "12\" Vinyl"
+            }
+          ],
+          "mediumCount": 2,
+          "disambiguation": "",
+          "country": ["Canada", "United States", "Europe"],
+          "label": ["4AD"],
+          "format": "2x12\" Vinyl",
+          "monitored": false
+        },
+        {
+          "id": 3302,
+          "albumId": 444,
+          "foreignReleaseId": "99465449-9e89-41c4-8c6f-3661e9a35908",
+          "title": "Planetarium",
+          "status": "Official",
+          "duration": 4566538,
+          "trackCount": 17,
+          "media": [
+            {
+              "mediumNumber": 1,
+              "mediumName": "",
+              "mediumFormat": "Digital Media"
+            }
+          ],
+          "mediumCount": 1,
+          "disambiguation": "",
+          "country": ["[Worldwide]"],
+          "label": ["4AD"],
+          "format": "Digital Media",
+          "monitored": false
+        }
+      ],
+      "genres": [
+        "Ambient",
+        "Indie Rock",
+        "Indietronica",
+        "Modern Classical",
+        "Rock",
+        "Art Pop"
+      ],
+      "media": [
+        {
+          "mediumNumber": 1,
+          "mediumName": "",
+          "mediumFormat": "CD"
+        }
+      ],
+      "artist": {
+        "status": "continuing",
+        "ended": false,
+        "artistName": "Sufjan Stevens",
+        "foreignArtistId": "01d3c51b-9b98-418a-8d8e-37f6fab59d8c",
+        "tadbId": 0,
+        "discogsId": 0,
+        "artistType": "Person",
+        "disambiguation": "",
+        "links": [
+          {
+            "url": "https://www.discogs.com/artist/202598",
+            "name": "discogs"
+          },
+          {
+            "url": "https://myspace.com/sufjanstevens",
+            "name": "myspace"
+          },
+          {
+            "url": "https://www.bbc.co.uk/music/artists/01d3c51b-9b98-418a-8d8e-37f6fab59d8c",
+            "name": "bbc"
+          },
+          {
+            "url": "https://sufjanstevens.bandcamp.com/",
+            "name": "bandcamp"
+          },
+          {
+            "url": "https://www.allmusic.com/artist/mn0000580300",
+            "name": "allmusic"
+          },
+          {
+            "url": "https://www.facebook.com/176272745762091",
+            "name": "facebook"
+          },
+          {
+            "url": "http://viaf.org/viaf/39693090",
+            "name": "viaf"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q319502",
+            "name": "wikidata"
+          },
+          {
+            "url": "https://secondhandsongs.com/artist/17892",
+            "name": "secondhandsongs"
+          },
+          {
+            "url": "http://muzikum.eu/en/122-6399/sufjan-stevens/lyrics.html",
+            "name": "muzikum"
+          },
+          {
+            "url": "https://genius.com/artists/Sufjan-stevens",
+            "name": "genius"
+          },
+          {
+            "url": "https://imvdb.com/n/sufjan-stevens",
+            "name": "imvdb"
+          },
+          {
+            "url": "https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c",
+            "name": "spotify"
+          },
+          {
+            "url": "https://itunes.apple.com/us/artist/id4273404",
+            "name": "apple"
+          },
+          {
+            "url": "https://rateyourmusic.com/artist/sufjan-stevens",
+            "name": "rateyourmusic"
+          },
+          {
+            "url": "https://www.tumblr.com/s-u-f-j-a-n-s-t-e-v-e-n-s",
+            "name": "tumblr"
+          },
+          {
+            "url": "https://www.last.fm/music/Sufjan+Stevens",
+            "name": "last"
+          },
+          {
+            "url": "https://sufjan.com/",
+            "name": "sufjan"
+          },
+          {
+            "url": "https://sufjan.com/",
+            "name": "sufjan"
+          },
+          {
+            "url": "https://d-nb.info/gnd/135476798",
+            "name": "d-nb"
+          },
+          {
+            "url": "http://id.loc.gov/authorities/names/no2005018275",
+            "name": "loc"
+          },
+          {
+            "url": "https://www.worldcat.org/identities/lccn-no2005018275",
+            "name": "worldcat"
+          },
+          {
+            "url": "https://catalogue.bnf.fr/ark:/12148/cb15562605t",
+            "name": "bnf"
+          },
+          {
+            "url": "https://www.imdb.com/name/nm2014294/",
+            "name": "imdb"
+          },
+          {
+            "url": "https://www.songkick.com/artists/118509",
+            "name": "songkick"
+          },
+          {
+            "url": "https://www.instagram.com/sufjan/",
+            "name": "instagram"
+          },
+          {
+            "url": "https://bleep.com/artist/342",
+            "name": "bleep"
+          },
+          {
+            "url": "https://boomkat.com/artists/sufjan-stevens",
+            "name": "boomkat"
+          },
+          {
+            "url": "https://boomkat.com/artists/sufjan-stevens",
+            "name": "boomkat"
+          },
+          {
+            "url": "https://www.deezer.com/artist/1999",
+            "name": "deezer"
+          },
+          {
+            "url": "https://www.youtube.com/channel/UCMi8tQF_L7rd6YcmSt7MXrQ",
+            "name": "youtube"
+          },
+          {
+            "url": "https://www.beatport.com/artist/-/536817",
+            "name": "beatport"
+          },
+          {
+            "url": "https://tidal.com/artist/64638",
+            "name": "tidal"
+          },
+          {
+            "url": "https://www.facebook.com/100044324805216",
+            "name": "facebook"
+          },
+          {
+            "url": "https://soundcloud.com/sufjan-stevens",
+            "name": "soundcloud"
+          },
+          {
+            "url": "https://www.setlist.fm/setlists/sufjan-stevens-73d6ae91.html",
+            "name": "setlist"
+          },
+          {
+            "url": "https://www.tiktok.com/@sufjan001",
+            "name": "tiktok"
+          },
+          {
+            "url": "https://www.spirit-of-rock.com/en/band/Sufjan_Stevens",
+            "name": "spirit-of-rock"
+          },
+          {
+            "url": "https://www.whosampled.com/Sufjan-Stevens/",
+            "name": "whosampled"
+          },
+          {
+            "url": "https://www.bandsintown.com/a/1525",
+            "name": "bandsintown"
+          },
+          {
+            "url": "https://www.threads.com/@sufjan",
+            "name": "threads"
+          },
+          {
+            "url": "https://music.apple.com/us/artist/4273404",
+            "name": "apple"
+          },
+          {
+            "url": "https://www.musik-sammler.de/artist/sufjan-stevens/",
+            "name": "musik-sammler"
+          },
+          {
+            "url": "https://music.youtube.com/channel/UC5sOhxfts379lOCXaIAinyw",
+            "name": "youtube"
+          },
+          {
+            "url": "https://asthmatickitty.com/artists/sufjan-stevens/",
+            "name": "asthmatickitty"
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/interpreter/sufjan-stevens/256652",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/interpreter/sufjan-stevens/256652",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://tidal.com/artist/71848571",
+            "name": "tidal"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/256652",
+            "name": "qobuz"
+          },
+          {
+            "url": "https://open.qobuz.com/artist/256652",
+            "name": "qobuz"
+          }
+        ],
+        "nextAlbum": null,
+        "lastAlbum": null,
+        "images": [],
+        "path": "/music/Sufjan Stevens",
+        "qualityProfileId": 1,
+        "metadataProfileId": 1,
+        "monitored": true,
+        "monitorNewItems": "none",
+        "genres": [
+          "Indie Folk",
+          "Art Pop",
+          "Chamber Pop",
+          "Indietronica",
+          "Singer-Songwriter",
+          "Folktronica",
+          "Chamber Folk",
+          "Contemporary Folk",
+          "Electronica",
+          "Indie Pop",
+          "Indie Rock"
+        ],
+        "cleanName": "sufjanstevens",
+        "sortName": "sufjan stevens",
+        "tags": [],
+        "added": "2026-10-15T09:13:08Z",
+        "ratings": {
+          "votes": 14,
+          "value": 9.6
+        },
+        "id": 38
+      },
+      "images": [
+        {
+          "url": "https://images.lidarr.audio/cache/https://coverartarchive.org/release/99465449-9e89-41c4-8c6f-3661e9a35908/40927327128-1200.jpg",
+          "coverType": "cover",
+          "extension": ".jpg"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://genius.com/albums/Sufjan-stevens-bryce-dessner-nico-muhly-james-mcalister/Planetarium",
+          "name": "genius"
+        },
+        {
+          "url": "https://www.discogs.com/master/1192417",
+          "name": "discogs"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q30602402",
+          "name": "wikidata"
+        },
+        {
+          "url": "https://www.allmusic.com/album/mw0003042785",
+          "name": "allmusic"
+        },
+        {
+          "url": "https://rateyourmusic.com/release/album/sufjan-stevens-nico-muhly-bryce-dessner-james-mcalister/planetarium/",
+          "name": "rateyourmusic"
+        },
+        {
+          "url": "https://planetariumalbum.com/",
+          "name": "planetariumalbum"
+        },
+        {
+          "url": "https://www.musik-sammler.de/album/848703/",
+          "name": "musik-sammler"
+        }
+      ],
+      "id": 444
+    },
+    "images": [
+      {
+        "url": "/MediaCover/38/clearlogo.png?lastWrite=639276523926250714",
+        "coverType": "clearlogo",
+        "extension": ".png",
+        "remoteUrl": "/config/MediaCover/38/clearlogo.png"
+      },
+      {
+        "url": "/MediaCover/38/poster.jpg?lastWrite=639276523927366713",
+        "coverType": "poster",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/38/poster.jpg"
+      },
+      {
+        "url": "/MediaCover/38/fanart.jpg?lastWrite=639276523926793482",
+        "coverType": "fanart",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/38/fanart.jpg"
+      }
+    ],
+    "path": "/music/Sufjan Stevens",
+    "qualityProfileId": 1,
+    "metadataProfileId": 1,
+    "monitored": true,
+    "monitorNewItems": "none",
+    "rootFolderPath": "/music",
+    "genres": [
+      "Indie Folk",
+      "Art Pop",
+      "Chamber Pop",
+      "Indietronica",
+      "Singer-Songwriter",
+      "Folktronica",
+      "Chamber Folk",
+      "Contemporary Folk",
+      "Electronica",
+      "Indie Pop",
+      "Indie Rock"
+    ],
+    "cleanName": "sufjanstevens",
+    "sortName": "sufjan stevens",
+    "tags": [],
+    "added": "2026-10-15T09:13:08Z",
+    "ratings": {
+      "votes": 14,
+      "value": 9.6
+    },
+    "statistics": {
+      "albumCount": 13,
+      "trackFileCount": 0,
+      "trackCount": 61,
+      "totalTrackCount": 258,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 38
+  },
+  {
+    "status": "continuing",
+    "ended": false,
+    "artistName": "Burial",
+    "foreignArtistId": "9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+    "tadbId": 0,
+    "discogsId": 0,
+    "artistType": "Person",
+    "disambiguation": "UK dubstep",
+    "links": [
+      {
+        "url": "https://myspace.com/burialuk",
+        "name": "myspace"
+      },
+      {
+        "url": "https://www.discogs.com/artist/306157",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.bbc.co.uk/music/artists/9ddce51c-2b75-4b3e-ac8c-1db09e7c89c6",
+        "name": "bbc"
+      },
+      {
+        "url": "https://twitter.com/BurialUK",
+        "name": "twitter"
+      },
+      {
+        "url": "https://www.discogs.com/artist/1975486",
+        "name": "discogs"
+      },
+      {
+        "url": "https://www.last.fm/music/Burial",
+        "name": "last"
+      },
+      {
+        "url": "http://viaf.org/viaf/34252320",
+        "name": "viaf"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q552245",
+        "name": "wikidata"
+      },
+      {
+        "url": "http://muzikum.eu/en/122-9867/burial/lyrics.html",
+        "name": "muzikum"
+      },
+      {
+        "url": "https://soundcloud.com/burial",
+        "name": "soundcloud"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/mn0000643682",
+        "name": "allmusic"
+      },
+      {
+        "url": "https://rateyourmusic.com/artist/burial_f1",
+        "name": "rateyourmusic"
+      },
+      {
+        "url": "https://burial.bandcamp.com/",
+        "name": "bandcamp"
+      },
+      {
+        "url": "https://www.beatport.com/artist/burial/32331",
+        "name": "beatport"
+      },
+      {
+        "url": "https://itunes.apple.com/us/artist/id468355684",
+        "name": "apple"
+      },
+      {
+        "url": "https://play.google.com/store/music/artist?id=Ajtpibq7lcyz62ow6x4dtv7s6zu",
+        "name": "google"
+      },
+      {
+        "url": "https://www.junodownload.com/artists/Burial/",
+        "name": "junodownload"
+      },
+      {
+        "url": "https://open.spotify.com/artist/0uCCBpmg6MrPb1KY2msceF",
+        "name": "spotify"
+      },
+      {
+        "url": "https://uk.7digital.com/artist/burial",
+        "name": "7digital"
+      },
+      {
+        "url": "https://www.deezer.com/artist/6281",
+        "name": "deezer"
+      },
+      {
+        "url": "https://boomkat.com/artists/burial",
+        "name": "boomkat"
+      },
+      {
+        "url": "https://boomkat.com/artists/burial",
+        "name": "boomkat"
+      },
+      {
+        "url": "https://bleep.com/artist/2085",
+        "name": "bleep"
+      },
+      {
+        "url": "https://bleep.com/artist/2085",
+        "name": "bleep"
+      },
+      {
+        "url": "https://www.whosampled.com/Burial/",
+        "name": "whosampled"
+      },
+      {
+        "url": "https://tidal.com/artist/3583803",
+        "name": "tidal"
+      },
+      {
+        "url": "http://id.loc.gov/authorities/names/no2007151091",
+        "name": "loc"
+      },
+      {
+        "url": "https://www.worldcat.org/identities/lccn-no2007151091/",
+        "name": "worldcat"
+      },
+      {
+        "url": "https://nla.gov.au/nla.party-1459061",
+        "name": "gov"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm6153670/",
+        "name": "imdb"
+      },
+      {
+        "url": "https://www.songkick.com/artists/326163",
+        "name": "songkick"
+      },
+      {
+        "url": "https://imvdb.com/n/burial",
+        "name": "imvdb"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://www.qobuz.com/us-en/interpreter/burial/291276",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://music.apple.com/us/artist/468355684",
+        "name": "apple"
+      },
+      {
+        "url": "https://music.apple.com/mx/artist/468355684",
+        "name": "apple"
+      },
+      {
+        "url": "https://music.apple.com/gb/artist/468355684",
+        "name": "apple"
+      },
+      {
+        "url": "https://open.qobuz.com/artist/291276",
+        "name": "qobuz"
+      },
+      {
+        "url": "https://tidal.com/artist/14917319",
+        "name": "tidal"
+      },
+      {
+        "url": "https://tidal.com/artist/14894453",
+        "name": "tidal"
+      }
+    ],
+    "nextAlbum": null,
+    "lastAlbum": null,
+    "images": [
+      {
+        "url": "/MediaCover/39/clearlogo.png?lastWrite=639276551021847646",
+        "coverType": "clearlogo",
+        "extension": ".png",
+        "remoteUrl": "/config/MediaCover/39/clearlogo.png"
+      },
+      {
+        "url": "/MediaCover/39/poster.jpg?lastWrite=639276551022212080",
+        "coverType": "poster",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/39/poster.jpg"
+      },
+      {
+        "url": "/MediaCover/39/fanart.jpg?lastWrite=639276551021378801",
+        "coverType": "fanart",
+        "extension": ".jpg",
+        "remoteUrl": "/config/MediaCover/39/fanart.jpg"
+      }
+    ],
+    "path": "/music/Burial",
+    "qualityProfileId": 1,
+    "metadataProfileId": 1,
+    "monitored": false,
+    "monitorNewItems": "none",
+    "rootFolderPath": "/music",
+    "genres": [
+      "Future Garage",
+      "Dubstep",
+      "Ambient",
+      "Electronic",
+      "2-Step",
+      "Uk Garage",
+      "Dub"
+    ],
+    "cleanName": "burial",
+    "sortName": "burial",
+    "tags": [],
+    "added": "2026-10-15T09:58:17Z",
+    "ratings": {
+      "votes": 8,
+      "value": 9.8
+    },
+    "statistics": {
+      "albumCount": 2,
+      "trackFileCount": 0,
+      "trackCount": 0,
+      "totalTrackCount": 30,
+      "sizeOnDisk": 0,
+      "percentOfTracks": 0
+    },
+    "id": 39
+  }
+]

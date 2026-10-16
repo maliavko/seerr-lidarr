@@ -9,6 +9,7 @@ import type {
 } from '@server/api/themoviedb/interfaces';
 import { MediaType as MainMediaType } from '@server/constants/media';
 import type Media from '@server/entity/Media';
+import type { MusicAlbumSummary, MusicArtistSummary } from '@server/lib/music';
 
 export type MediaType = 'tv' | 'movie' | 'person' | 'collection';
 
@@ -66,7 +67,59 @@ export interface PersonResult {
   knownFor: (MovieResult | TvResult)[];
 }
 
+export interface ArtistResult {
+  // the artist's MusicBrainz id
+  id: string;
+  mediaType: 'artist';
+  name: string;
+  overview?: string;
+  imageUrl?: string;
+  mediaInfo?: Media;
+}
+
+export interface AlbumResult {
+  // the album's MusicBrainz release-group id
+  id: string;
+  mediaType: 'album';
+  title: string;
+  artistId?: string;
+  artistName?: string;
+  releaseDate?: string;
+  albumType?: string;
+  coverUrl?: string;
+  mediaInfo?: Media;
+}
+
+export type MusicResults = ArtistResult | AlbumResult;
+
 export type Results = MovieResult | TvResult | PersonResult | CollectionResult;
+
+export const mapArtistResult = (
+  artist: MusicArtistSummary & { overview?: string },
+  media?: Media
+): ArtistResult => ({
+  id: artist.id,
+  mediaType: 'artist',
+  name: artist.name,
+  overview: artist.overview,
+  imageUrl: artist.imageUrl,
+  mediaInfo: media,
+});
+
+export const mapAlbumResult = (
+  album: MusicAlbumSummary,
+  media?: Media
+): AlbumResult => ({
+  id: album.id,
+  mediaType: 'album',
+  title: album.title,
+  artistId: album.artist?.id,
+  artistName: album.artist?.name,
+  releaseDate: album.releaseDate,
+  albumType: album.albumType,
+  coverUrl: album.coverUrl,
+  mediaInfo: media,
+});
 
 export const mapMovieResult = (
   movieResult: TmdbMovieResult,

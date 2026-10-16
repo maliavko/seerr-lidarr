@@ -1,4 +1,4 @@
-import type { MediaType } from '@server/constants/media';
+import type { MediaType, MusicKind } from '@server/constants/media';
 import type { MediaRequest } from '@server/entity/MediaRequest';
 import type { NonFunctionProperties, PaginatedResponse } from './common';
 
@@ -27,4 +27,14 @@ export type MediaRequestBody = {
   userId?: number;
   tags?: number[];
   ignoreQuota?: boolean;
+};
+
+// The body of POST /api/v1/request for music (D-311): the item's MusicBrainz id
+// and its kind, and the existing userId. The fields of a movie or TV body have no
+// place in it. As it arrives it may carry any of them, which the route refuses.
+export type MusicRequestBody = {
+  mediaType: MediaType.MUSIC;
+  musicBrainzId: string;
+  musicKind: MusicKind;
+  userId?: number | null;
 };

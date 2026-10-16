@@ -43,7 +43,7 @@ const RecentlyAddedSlider = () => {
             id={item.id}
             tmdbId={item.tmdbId}
             tvdbId={item.tvdbId}
-            type={item.mediaType}
+            type={item.mediaType as 'movie' | 'tv'}
           />
         ))}
       />

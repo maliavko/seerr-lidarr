@@ -19,8 +19,16 @@ import SeasonRequest from '@server/entity/SeasonRequest';
 import { User } from '@server/entity/User';
 import type {
   MediaRequestBody,
+  MusicRequestBody,
   RequestResultsResponse,
 } from '@server/interfaces/api/requestInterfaces';
+import {
+  InvalidMusicRequestError,
+  MusicItemNotFoundError,
+  parseMusicRequestEdit,
+  requestMusic,
+} from '@server/lib/musicRequest';
+import { requestsWithMusicStatus } from '@server/lib/musicStatus';
 import { Permission } from '@server/lib/permissions';
 import { getSettings } from '@server/lib/settings';
 import logger from '@server/logger';
@@ -182,14 +190,22 @@ requestRoutes.get<Record<string, unknown>, RequestResultsResponse>(
             type: MediaType.TV,
           });
           break;
+        case 'music':
+          query = query.andWhere('request.type = :type', {
+            type: MediaType.MUSIC,
+          });
+          break;
       }
 
-      const [requests, requestCount] = await query
+      const [found, requestCount] = await query
         .orderBy(sortFilter, sortDirection)
         .addOrderBy('request.id', sortDirection)
         .take(pageSize)
         .skip(skip)
         .getManyAndCount();
+
+      // a music request's media carries the status of D-362, not the stored one
+      const requests = await requestsWithMusicStatus(found);
 
       const settings = getSettings();
 
@@ -244,6 +260,10 @@ requestRoutes.get<Record<string, unknown>, RequestResultsResponse>(
                 ?.profiles?.find((profile) => profile.id === r.profileId)?.name,
             };
           }
+          // a music request has no Radarr or Sonarr profile to name
+          case MediaType.MUSIC: {
+            return { ...r, profileName: undefined };
+          }
         }
       });
 
@@ -272,6 +292,10 @@ requestRoutes.get<Record<string, unknown>, RequestResultsResponse>(
                     (r.is4k ? r.media.serviceId4k : r.media.serviceId)
                 ),
               };
+            }
+            // a music request is not sent to a Radarr or Sonarr server
+            case MediaType.MUSIC: {
+              return r;
             }
           }
         });
@@ -310,7 +334,7 @@ requestRoutes.get<Record<string, unknown>, RequestResultsResponse>(
   }
 );
 
-requestRoutes.post<never, MediaRequest, MediaRequestBody>(
+requestRoutes.post<never, MediaRequest, MediaRequestBody | MusicRequestBody>(
   '/',
   async (req, res, next) => {
     try {
@@ -320,6 +344,28 @@ requestRoutes.post<never, MediaRequest, MediaRequestBody>(
           message: 'You must be logged in to request media.',
         });
       }
+
+      if (req.body.mediaType === MediaType.MUSIC) {
+        const request = await requestMusic(req.body, req.user);
+
+        return res.status(201).json(request);
+      }
+
+      // the validator took mediaId as required of every body but a music one
+      if (req.body.mediaId === undefined) {
+        return next({
+          status: 400,
+          message: "request/body must have required property 'mediaId'",
+          errors: [
+            {
+              path: '/body/mediaId',
+              message: "must have required property 'mediaId'",
+              errorCode: 'required.openapi.validation',
+            },
+          ],
+        });
+      }
+
       const request = await MediaRequest.request(req.body, req.user);
 
       return res.status(201).json(request);
@@ -332,6 +378,10 @@ requestRoutes.post<never, MediaRequest, MediaRequestBody>(
         case RequestPermissionError:
         case QuotaRestrictedError:
           return next({ status: 403, message: error.message });
+        case InvalidMusicRequestError:
+          return next({ status: 400, message: error.message });
+        case MusicItemNotFoundError:
+          return next({ status: 404, message: error.message });
         case DuplicateMediaRequestError:
           return next({ status: 409, message: error.message });
         case NoSeasonsAvailableError:
@@ -484,6 +534,21 @@ requestRoutes.put<{ requestId: string }>(
 
         if (!request) {
           return next({ status: 404, message: 'Request not found.' });
+        }
+
+        // a music request has the one field of the body that every request has,
+        // its requester; a field it lacks changes nothing and is answered 400
+        if (request.type === MediaType.MUSIC) {
+          try {
+            parseMusicRequestEdit(req.body);
+          } catch (e) {
+            return next({ status: 400, message: e.message });
+          }
+        } else if (req.body.mediaType === MediaType.MUSIC) {
+          return next({
+            status: 400,
+            message: 'The request is not a music request.',
+          });
         }
 
         if (
@@ -696,6 +761,13 @@ requestRoutes.put<{ requestId: string }>(
                 return res.status(200).json(request);
               }
             );
+          }
+
+          if (request.type === MediaType.MUSIC) {
+            // nothing is sent to Lidarr by an edit
+            request.requestedBy = requestUser as User;
+
+            await requestRepository.save(request);
           }
 
           return res.status(200).json(request);

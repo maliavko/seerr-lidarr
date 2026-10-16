@@ -26,6 +26,8 @@ tags:
     description: Endpoints related to retrieving movies and their details.
   - name: tv
     description: Endpoints related to retrieving TV series and their details.
+  - name: music
+    description: Endpoints related to retrieving artists and albums and their details.
   - name: other
     description: Endpoints related to other TMDB data
   - name: person
@@ -697,6 +699,60 @@ components:
         - is4k
         - enableSeasonFolders
         - isDefault
+    LidarrSettings:
+      type: object
+      properties:
+        id:
+          type: number
+          example: 0
+          readOnly: true
+        name:
+          type: string
+          example: 'Lidarr Main'
+        hostname:
+          type: string
+          example: '127.0.0.1'
+        port:
+          type: number
+          example: 8686
+        apiKey:
+          type: string
+          example: 'exampleapikey'
+        useSsl:
+          type: boolean
+          example: false
+        baseUrl:
+          type: string
+        activeProfileId:
+          type: number
+          example: 1
+        activeProfileName:
+          type: string
+          example: Any
+        activeMetadataProfileId:
+          type: number
+          example: 1
+        activeMetadataProfileName:
+          type: string
+          example: Standard
+        activeDirectory:
+          type: string
+          example: '/music'
+        isDefault:
+          type: boolean
+          example: false
+      required:
+        - name
+        - hostname
+        - port
+        - apiKey
+        - useSsl
+        - activeProfileId
+        - activeProfileName
+        - activeMetadataProfileId
+        - activeMetadataProfileName
+        - activeDirectory
+        - isDefault
     ServarrTag:
       type: object
       properties:
@@ -832,6 +888,227 @@ components:
             oneOf:
               - $ref: '#/components/schemas/MovieResult'
               - $ref: '#/components/schemas/TvResult'
+    ArtistResult:
+      type: object
+      required:
+        - id
+        - mediaType
+        - name
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: The artist's MusicBrainz id
+          example: 'a74b1b7f-71a5-4011-9441-d0b5e4122711'
+        mediaType:
+          type: string
+          example: artist
+        name:
+          type: string
+          example: Radiohead
+        overview:
+          type: string
+        imageUrl:
+          type: string
+          description: An http(s) URL of the artist's image; left out where there is none
+        mediaInfo:
+          $ref: '#/components/schemas/MediaInfo'
+    AlbumResult:
+      type: object
+      required:
+        - id
+        - mediaType
+        - title
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: The album's MusicBrainz release-group id
+          example: 'b1392450-e666-3926-a536-22c65f834433'
+        mediaType:
+          type: string
+          example: album
+        title:
+          type: string
+          example: OK Computer
+        artistId:
+          type: string
+          format: uuid
+          description: The artist's MusicBrainz id
+        artistName:
+          type: string
+          example: Radiohead
+        releaseDate:
+          type: string
+          example: '1997-05-21T00:00:00Z'
+        albumType:
+          type: string
+          example: Album
+        coverUrl:
+          type: string
+          description: An http(s) URL of the album's cover; left out where there is none
+        mediaInfo:
+          $ref: '#/components/schemas/MediaInfo'
+    MusicAlbumListItem:
+      type: object
+      required:
+        - id
+        - title
+        - secondaryTypes
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: The album's MusicBrainz release-group id
+        title:
+          type: string
+          example: OK Computer
+        releaseDate:
+          type: string
+          example: '1997-05-21T00:00:00Z'
+        albumType:
+          type: string
+          example: Album
+        secondaryTypes:
+          type: array
+          items:
+            type: string
+        coverUrl:
+          type: string
+        mediaInfo:
+          $ref: '#/components/schemas/MediaInfo'
+    MusicError:
+      type: object
+      properties:
+        message:
+          type: string
+          example: Artist not found.
+    MusicArtistDetails:
+      type: object
+      required:
+        - id
+        - name
+        - genres
+        - inLidarr
+        - albums
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: The artist's MusicBrainz id
+          example: 'a74b1b7f-71a5-4011-9441-d0b5e4122711'
+        name:
+          type: string
+          example: Radiohead
+        overview:
+          type: string
+        imageUrl:
+          type: string
+        backdropUrl:
+          type: string
+        artistType:
+          type: string
+          example: Group
+        disambiguation:
+          type: string
+        genres:
+          type: array
+          items:
+            type: string
+        inLidarr:
+          type: boolean
+          description: Whether the default Lidarr server holds the artist
+        albums:
+          type: array
+          items:
+            $ref: '#/components/schemas/MusicAlbumListItem'
+        mediaInfo:
+          $ref: '#/components/schemas/MediaInfo'
+    MusicTrack:
+      type: object
+      required:
+        - disc
+        - position
+        - number
+        - title
+      properties:
+        disc:
+          type: number
+          example: 1
+        position:
+          type: number
+          example: 1
+        number:
+          type: string
+          description: The track's number as the source gives it
+          example: '1'
+        title:
+          type: string
+          example: Airbag
+        length:
+          type: number
+          description: The track's length in milliseconds, where known
+          example: 284000
+    MusicAlbumDetails:
+      type: object
+      required:
+        - id
+        - title
+        - artist
+        - secondaryTypes
+        - genres
+        - inLidarr
+        - tracks
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: The album's MusicBrainz release-group id
+          example: 'b1392450-e666-3926-a536-22c65f834433'
+        title:
+          type: string
+          example: OK Computer
+        disambiguation:
+          type: string
+        artist:
+          type: object
+          required:
+            - id
+            - name
+          properties:
+            id:
+              type: string
+              description: The artist's MusicBrainz id
+            name:
+              type: string
+              example: Radiohead
+        releaseDate:
+          type: string
+          example: '1997-05-21T00:00:00Z'
+        albumType:
+          type: string
+          example: Album
+        secondaryTypes:
+          type: array
+          items:
+            type: string
+        coverUrl:
+          type: string
+        overview:
+          type: string
+        genres:
+          type: array
+          items:
+            type: string
+        inLidarr:
+          type: boolean
+          description: Whether the default Lidarr server holds the album
+        tracks:
+          type: array
+          items:
+            $ref: '#/components/schemas/MusicTrack'
+        mediaInfo:
+          $ref: '#/components/schemas/MediaInfo'
     Genre:
       type: object
       properties:
@@ -1247,6 +1524,11 @@ components:
           example: 0
           description: Status of the request. 1 = PENDING APPROVAL, 2 = APPROVED, 3 = DECLINED
           readOnly: true
+        type:
+          type: string
+          enum: [movie, tv, music]
+          readOnly: true
+          description: What the request is of. A `music` request is of an album or an artist, as its `media` row's `musicKind` says, and has no seasons, `is4k` false and no server, profile or root folder.
         media:
           $ref: '#/components/schemas/MediaInfo'
         createdAt:
@@ -1289,14 +1571,32 @@ components:
         tmdbId:
           type: number
           readOnly: true
+          nullable: true
+          description: Null on music rows only
         tvdbId:
           type: number
           readOnly: true
           nullable: true
+        musicBrainzId:
+          type: string
+          readOnly: true
+          nullable: true
+          description: The MusicBrainz id of the artist, or the release-group id of the album. Present on music rows only.
+        musicKind:
+          type: string
+          enum: [artist, album]
+          readOnly: true
+          nullable: true
+          description: Whether a music row is an artist or an album. Present on music rows only.
+        artistMusicBrainzId:
+          type: string
+          readOnly: true
+          nullable: true
+          description: The MusicBrainz id of an album's artist. Present on album rows only.
         status:
           type: number
           example: 0
-          description: Availability of the media. 1 = `UNKNOWN`, 2 = `PENDING`, 3 = `PROCESSING`, 4 = `PARTIALLY_AVAILABLE`, 5 = `AVAILABLE`, 6 = `DELETED`
+          description: Availability of the media. 1 = `UNKNOWN`, 2 = `PENDING`, 3 = `PROCESSING`, 4 = `PARTIALLY_AVAILABLE`, 5 = `AVAILABLE`, 6 = `DELETED`. On a music row it is computed, not stored; the first that holds - an album, `AVAILABLE` as its row records (set only by the Lidarr scan), else `PENDING` while a pending request covers it, else `PROCESSING` while an approved or failed one covers it, else `UNKNOWN`; an artist, `AVAILABLE` or `PARTIALLY_AVAILABLE` as its row records, else `PENDING` or `PROCESSING` from its own whole-artist requests the same way, else `UNKNOWN`. A request covers while it is pending, approved or failed; a whole-artist request also covers the albums among its artist's albums - once Lidarr holds the artist, those Lidarr lists for it that fall under the default server's saved metadata profile, before, those its page shows. A music item with no row has a mediaInfo (without id) only where a covering request gives it a status other than `UNKNOWN`.
         requests:
           type: array
           readOnly: true
@@ -3051,6 +3351,151 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SonarrSettings'
+  /settings/lidarr:
+    get:
+      summary: Get Lidarr settings
+      description: Returns all Lidarr settings in a JSON array.
+      tags:
+        - settings
+      responses:
+        '200':
+          description: 'Values were returned'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LidarrSettings'
+    post:
+      summary: Create Lidarr instance
+      description: Creates a new Lidarr instance from the request body. Marking it as the default clears the default flag of the other Lidarr instances.
+      tags:
+        - settings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LidarrSettings'
+      responses:
+        '201':
+          description: 'New Lidarr instance created'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LidarrSettings'
+  /settings/lidarr/test:
+    post:
+      summary: Test Lidarr configuration
+      description: Tests if the Lidarr configuration is valid. Returns the quality profiles, metadata profiles and root folders of the Lidarr instance on success; saves nothing.
+      tags:
+        - settings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                hostname:
+                  type: string
+                  example: '127.0.0.1'
+                port:
+                  type: number
+                  example: 8686
+                apiKey:
+                  type: string
+                  example: yourapikey
+                useSsl:
+                  type: boolean
+                  example: false
+                baseUrl:
+                  type: string
+              required:
+                - hostname
+                - port
+                - apiKey
+                - useSsl
+      responses:
+        '200':
+          description: Successfully connected to Lidarr instance
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  profiles:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ServiceProfile'
+                  metadataProfiles:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ServiceProfile'
+                  rootFolders:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          example: 1
+                        path:
+                          type: string
+                          example: '/music'
+                  urlBase:
+                    type: string
+        '500':
+          description: Could not connect to Lidarr, or Lidarr refused the API key
+  /settings/lidarr/{lidarrId}:
+    put:
+      summary: Update Lidarr instance
+      description: Updates an existing Lidarr instance with the provided values. Marking it as the default clears the default flag of the other Lidarr instances.
+      tags:
+        - settings
+      parameters:
+        - in: path
+          name: lidarrId
+          required: true
+          schema:
+            type: integer
+          description: Lidarr instance ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LidarrSettings'
+      responses:
+        '200':
+          description: 'Lidarr instance updated'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LidarrSettings'
+        '404':
+          description: No Lidarr instance has that ID
+    delete:
+      summary: Delete Lidarr instance
+      description: Deletes an existing Lidarr instance based on the lidarrId parameter.
+      tags:
+        - settings
+      parameters:
+        - in: path
+          name: lidarrId
+          required: true
+          schema:
+            type: integer
+          description: Lidarr instance ID
+      responses:
+        '200':
+          description: 'Lidarr instance deleted'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LidarrSettings'
+        '404':
+          description: No Lidarr instance has that ID
   /settings/public:
     get:
       summary: Get public settings
@@ -4672,9 +5117,17 @@ paths:
             type: number
             nullable: true
             example: 0
+        - in: query
+          name: mediaType
+          description: Only the requests of this kind; `music` returns the requests of albums and artists, each with its media row, whose `status` is computed as MediaInfo describes
+          schema:
+            type: string
+            enum: [movie, tv, music, all]
+            nullable: true
+            default: all
       responses:
         '200':
-          description: User's requests returned
+          description: User's requests returned. Music requests are among them, each with the `media` row of its album or artist.
           content:
             application/json:
               schema:
@@ -5494,8 +5947,8 @@ paths:
                     type: number
   /search:
     get:
-      summary: Search for movies, TV shows, or people
-      description: Returns a list of movies, TV shows, or people a JSON object.
+      summary: Search for movies, TV shows, people, artists, or albums
+      description: Returns a list of movies, TV shows, people, artists and albums in a JSON object. Artists and then albums (as found by the default Lidarr server) follow TMDB's results on the first page only, are counted in totalResults, and are never found by an id search; with no default Lidarr server, or Lidarr failing, the answer has no music. The status of a music result's mediaInfo is computed as MediaInfo describes; an album is left out of the results where a whole-artist request of its artist stands and the artist's albums or the saved metadata profile cannot be read, the other results standing.
       tags:
         - search
       parameters:
@@ -5540,6 +5993,8 @@ paths:
                         - $ref: '#/components/schemas/MovieResult'
                         - $ref: '#/components/schemas/TvResult'
                         - $ref: '#/components/schemas/PersonResult'
+                        - $ref: '#/components/schemas/ArtistResult'
+                        - $ref: '#/components/schemas/AlbumResult'
   /search/keyword:
     get:
       summary: Search for keywords
@@ -6545,14 +7000,15 @@ paths:
             example: 1
         - in: query
           name: mediaType
+          description: Only the requests of this kind; `music` returns the requests of albums and artists, each with its media row, whose `status` is computed as MediaInfo describes
           schema:
             type: string
-            enum: [movie, tv, all]
+            enum: [movie, tv, music, all]
             nullable: true
             default: all
       responses:
         '200':
-          description: Requests returned
+          description: Requests returned. Music requests are among them, each with the `media` row of its album or artist.
           content:
             application/json:
               schema:
@@ -6570,6 +7026,8 @@ paths:
         Creates a new request with the provided media ID and type. The `REQUEST` permission is required.
 
         If the user has the `ADMIN` or `AUTO_APPROVE` permissions, their request will be auomatically approved.
+
+        A music request (`mediaType` `music`) takes the MusicBrainz id of the artist, or of the album's release group, as `musicBrainzId` and its kind as `musicKind`, and none of `mediaId`, `tvdbId`, `seasons`, `is4k` (true), `serverId`, `profileId`, `rootFolder`, `languageProfileId`, `tags` or `ignoreQuota` (true), which are answered 400. The `REQUEST` or `REQUEST_MUSIC` permission (or `ADMIN`) is required of the user the request is made for: the caller, or, where the caller may name another (`ADMIN`, or `MANAGE_USERS` and `MANAGE_REQUESTS`), the user `userId` names. The request is created approved, with the caller as `modifiedBy`, where the caller has `ADMIN`, `AUTO_APPROVE`, `AUTO_APPROVE_MUSIC` or `MANAGE_REQUESTS`, and pending otherwise. It is made for a media row found or created by the item's MusicBrainz id and kind, and counts against no quota, applies no override rule and sends no notification. It answers 404 for an item the music source does not know or where there is no default Lidarr server, 409 for an album that a standing request covers (its own, or its artist's whole-artist request) or that is available, and for an artist whose whole-artist request stands or that is available, and 500 with a message where the music source fails or where whether an album is covered by its artist's request cannot be decided.
       tags:
         - request
       requestBody:
@@ -6581,11 +7039,21 @@ paths:
               properties:
                 mediaType:
                   type: string
-                  enum: [movie, tv]
+                  enum: [movie, tv, music]
                   example: movie
                 mediaId:
                   type: number
                   example: 123
+                  description: Required of a movie or TV request; a music request has none
+                musicBrainzId:
+                  type: string
+                  format: uuid
+                  description: Music requests only. The artist's MusicBrainz id, or the album's release-group id
+                  example: 'a74b1b7f-71a5-4011-9441-d0b5e4122711'
+                musicKind:
+                  type: string
+                  enum: [artist, album]
+                  description: Music requests only. Whether `musicBrainzId` is an artist's or an album's
                 tvdbId:
                   type: number
                   example: 123
@@ -6617,7 +7085,6 @@ paths:
                   description: If true, this request will not count against the user's quota. Requires MANAGE_REQUESTS permission.
               required:
                 - mediaType
-                - mediaId
       responses:
         '201':
           description: Succesfully created the request
@@ -6625,6 +7092,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MediaRequest'
+        '400':
+          description: The body is malformed, or a music request carries a field it lacks
+        '403':
+          description: The user the request is made for has no permission to make it, or the caller may not name another user
+        '404':
+          description: A music item the source does not know, or no default Lidarr server
+        '409':
+          description: The media is already requested, covered by a standing request, or available
+        '500':
+          description: The music source failed, or whether an album is covered by its artist's request cannot be decided (the artist's albums or the saved metadata profile cannot be read)
   /request/count:
     get:
       summary: Gets request counts
@@ -6681,7 +7158,10 @@ paths:
                 $ref: '#/components/schemas/MediaRequest'
     put:
       summary: Update MediaRequest
-      description: Updates a specific media request and returns the request in a JSON object. Requires the `MANAGE_REQUESTS` permission.
+      description: |
+        Updates a specific media request and returns the request in a JSON object. Requires the `MANAGE_REQUESTS` permission.
+
+        A music request (`mediaType` `music`) has one field to change, `userId`, its requester, changed by whom a movie's requester may be changed; nothing is sent to Lidarr by it. A body that carries a field a music request lacks (`seasons`, `is4k` true, `serverId`, `profileId`, `rootFolder`, `languageProfileId`, `tags`, `musicBrainzId`, `musicKind`) or another `mediaType` is answered 400 and changes nothing, and so is a `mediaType` `music` for a request that is not a music request.
       tags:
         - request
       parameters:
@@ -6701,7 +7181,7 @@ paths:
               properties:
                 mediaType:
                   type: string
-                  enum: [movie, tv]
+                  enum: [movie, tv, music]
                 seasons:
                   type: array
                   items:
@@ -6730,11 +7210,13 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MediaRequest'
+        '400':
+          description: A music request's body carries a field a music request lacks, or the request is not of the body's mediaType music
         '409':
           description: Only pending requests can be modified
     delete:
       summary: Delete request
-      description: Removes a request. If the user has the `MANAGE_REQUESTS` permission, any request can be removed. Otherwise, only pending requests can be removed.
+      description: Removes a request. If the user has the `MANAGE_REQUESTS` permission, any request can be removed. Otherwise, only pending requests can be removed. Removing a music request changes nothing in Lidarr.
       tags:
         - request
       parameters:
@@ -6752,7 +7234,7 @@ paths:
     post:
       summary: Retry failed request
       description: |
-        Retries a request by resending requests to Sonarr or Radarr.
+        Retries a request by resending requests to Sonarr or Radarr. A music request is retried the same way: it is approved again and handed to the subscriber that sends it to Lidarr.
 
         Requires the `MANAGE_REQUESTS` permission or `ADMIN`.
       tags:
@@ -6778,7 +7260,7 @@ paths:
     post:
       summary: Update a request's status
       description: |
-        Updates a request's status to approved or declined. Also returns the request in a JSON object.
+        Updates a request's status to approved or declined. Also returns the request in a JSON object. A music request is approved or declined as a movie's is; declining sends nothing to Lidarr.
 
         Requires the `MANAGE_REQUESTS` permission or `ADMIN`.
       tags:
@@ -6809,6 +7291,72 @@ paths:
           description: Status must be approve or decline
         '409':
           description: Only pending requests can be approved or declined
+  /music/artist/{mbid}:
+    get:
+      summary: Get artist details
+      description: Returns the artist's metadata and its mediaInfo in a JSON object; the status of mediaInfo, and of the mediaInfo of each album of the list, is computed as MediaInfo describes, each album by its own covering (a whole-artist request of a held artist covers only the albums under the default server's saved metadata profile). Answers 404 for an id the source does not know, or where no default Lidarr server is set, and 500 where the source fails or where a whole-artist request of the artist stands and the artist's albums or the saved metadata profile cannot be read (which albums it covers is then undecided).
+      tags:
+        - music
+      parameters:
+        - in: path
+          name: mbid
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: 'a74b1b7f-71a5-4011-9441-d0b5e4122711'
+      responses:
+        '200':
+          description: Artist details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicArtistDetails'
+        '404':
+          description: Artist not found, or no default Lidarr server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
+        '500':
+          description: The source failed, or a whole-artist request of the artist stands and the artist's albums or the saved metadata profile cannot be read
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
+  /music/album/{mbid}:
+    get:
+      summary: Get album details
+      description: Returns the album's metadata and its mediaInfo in a JSON object; the status of mediaInfo is computed as MediaInfo describes. Answers 404 for an id the source does not know, or where no default Lidarr server is set, and 500 where the source fails or where a whole-artist request of the album's artist stands and the artist's albums or the saved metadata profile cannot be read (whether the request covers the album is then undecided).
+      tags:
+        - music
+      parameters:
+        - in: path
+          name: mbid
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: 'b1392450-e666-3926-a536-22c65f834433'
+      responses:
+        '200':
+          description: Album details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicAlbumDetails'
+        '404':
+          description: Album not found, or no default Lidarr server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
+        '500':
+          description: The source failed, or a whole-artist request of the album's artist stands and the artist's albums or the saved metadata profile cannot be read
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
   /movie/{movieId}:
     get:
       summary: Get movie details

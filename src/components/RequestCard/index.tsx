@@ -3,6 +3,7 @@ import Badge from '@app/components/Common/Badge';
 import Button from '@app/components/Common/Button';
 import CachedImage from '@app/components/Common/CachedImage';
 import Tooltip from '@app/components/Common/Tooltip';
+import MusicRequestCard from '@app/components/RequestCard/MusicRequestCard';
 import RequestModal from '@app/components/RequestModal';
 import StatusBadge from '@app/components/StatusBadge';
 import useDeepLinks from '@app/hooks/useDeepLinks';
@@ -22,7 +23,11 @@ import {
   TrashIcon,
   XMarkIcon,
 } from '@heroicons/react/24/solid';
-import { MediaRequestStatus, MediaStatus } from '@server/constants/media';
+import {
+  MediaRequestStatus,
+  MediaStatus,
+  MediaType,
+} from '@server/constants/media';
 import type { MediaRequest } from '@server/entity/MediaRequest';
 import type { NonFunctionProperties } from '@server/interfaces/api/common';
 import type { MovieDetails } from '@server/models/Movie';
@@ -165,7 +170,7 @@ const RequestCardError = ({ requestData }: RequestCardErrorProps) => {
                       title={intl.formatMessage(messages.unknowntitle)}
                       inProgress={requestDownloadStatus.length > 0}
                       is4k={requestData.is4k}
-                      mediaType={requestData.type}
+                      mediaType={requestData.type as 'movie' | 'tv'}
                       plexUrl={requestData.is4k ? plexUrl4k : plexUrl}
                       serviceUrl={
                         requestData.is4k
@@ -337,7 +342,7 @@ const RequestCard = ({ request, onTitleData }: RequestCardProps) => {
       <RequestModal
         show={showEditModal}
         tmdbId={request.media.tmdbId}
-        type={request.type}
+        type={request.type as 'movie' | 'tv'}
         is4k={request.is4k}
         editRequest={request}
         onCancel={() => setShowEditModal(false)}
@@ -467,7 +472,7 @@ const RequestCard = ({ request, onTitleData }: RequestCardProps) => {
                 inProgress={requestDownloadStatus.length > 0}
                 is4k={requestData.is4k}
                 tmdbId={requestData.media.tmdbId}
-                mediaType={requestData.type}
+                mediaType={requestData.type as 'movie' | 'tv'}
                 plexUrl={requestData.is4k ? plexUrl4k : plexUrl}
                 serviceUrl={
                   requestData.is4k
@@ -643,6 +648,14 @@ const RequestCard = ({ request, onTitleData }: RequestCardProps) => {
   );
 };
 
-export default withProperties(RequestCard, {
+// A music request has its own card (R-12): its metadata is not TMDB's.
+const RequestCardOfAnyKind = (props: RequestCardProps) =>
+  props.request.type === MediaType.MUSIC ? (
+    <MusicRequestCard request={props.request} />
+  ) : (
+    <RequestCard {...props} />
+  );
+
+export default withProperties(RequestCardOfAnyKind, {
   Placeholder: RequestCardPlaceholder,
 });

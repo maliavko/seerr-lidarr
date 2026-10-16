@@ -17,6 +17,7 @@ import type {
   UserResultsResponse,
   UserWatchDataResponse,
 } from '@server/interfaces/api/userInterfaces';
+import { requestsWithMusicStatus } from '@server/lib/musicStatus';
 import { Permission, hasPermission } from '@server/lib/permissions';
 import { getSettings } from '@server/lib/settings';
 import logger from '@server/logger';
@@ -472,7 +473,7 @@ router.get<{ id: string }, UserRequestsResponse>(
         });
       }
 
-      const [requests, requestCount] = await getRepository(MediaRequest)
+      let query = getRepository(MediaRequest)
         .createQueryBuilder('request')
         .leftJoinAndSelect('request.media', 'media')
         .leftJoinAndSelect('request.seasons', 'seasons')
@@ -480,11 +481,27 @@ router.get<{ id: string }, UserRequestsResponse>(
         .leftJoinAndSelect('request.requestedBy', 'requestedBy')
         .andWhere('requestedBy.id = :id', {
           id: user.id,
-        })
+        });
+
+      // the kind of request: movie, tv or music, or all of them (the default)
+      switch (req.query.mediaType) {
+        case MediaType.MOVIE:
+        case MediaType.TV:
+        case MediaType.MUSIC:
+          query = query.andWhere('request.type = :type', {
+            type: req.query.mediaType,
+          });
+          break;
+      }
+
+      const [found, requestCount] = await query
         .orderBy('request.id', 'DESC')
         .take(pageSize)
         .skip(skip)
         .getManyAndCount();
+
+      // a music request's media carries the status of D-362, not the stored one
+      const requests = await requestsWithMusicStatus(found);
 
       return res.status(200).json({
         pageInfo: {

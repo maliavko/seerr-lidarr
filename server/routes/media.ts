@@ -16,7 +16,7 @@ import { getSettings } from '@server/lib/settings';
 import logger from '@server/logger';
 import { isAuthenticated } from '@server/middleware/auth';
 import { Router } from 'express';
-import type { FindOneOptions } from 'typeorm';
+import type { FindOneOptions, FindOptionsWhere } from 'typeorm';
 import { EntityNotFoundError, In, IsNull, Not } from 'typeorm';
 
 const mediaRoutes = Router();
@@ -66,13 +66,13 @@ mediaRoutes.get('/', async (req, res, next) => {
       };
   }
 
-  let whereClause: FindOneOptions<Media>['where'];
-  if (statusFilter || req.query.sort === 'mediaAdded') {
-    whereClause = {};
-    if (statusFilter) whereClause.status = statusFilter;
-    if (req.query.sort === 'mediaAdded')
-      whereClause.mediaAddedAt = Not(IsNull());
-  }
+  // music rows are not listed: the media list and the recently added slider
+  // would ask TMDB for them (D-84)
+  const whereClause: FindOptionsWhere<Media> = {
+    mediaType: Not(MediaType.MUSIC),
+  };
+  if (statusFilter) whereClause.status = statusFilter;
+  if (req.query.sort === 'mediaAdded') whereClause.mediaAddedAt = Not(IsNull());
 
   try {
     const [media, mediaCount] = await mediaRepository.findAndCount({
@@ -211,6 +211,11 @@ mediaRoutes.delete(
         where: { id: Number(req.params.id) },
       });
 
+      // a music row has no file of Radarr's or Sonarr's to delete
+      if (media.mediaType === MediaType.MUSIC) {
+        return next({ status: 404, message: 'Media not found' });
+      }
+
       const is4k = String(req.query.is4k) === 'true';
       const isMovie = media.mediaType === MediaType.MOVIE;
 
@@ -322,7 +327,7 @@ mediaRoutes.get<{ id: string }, MediaWatchDataResponse>(
       where: { id: Number(req.params.id) },
     });
 
-    if (!media) {
+    if (!media || media.mediaType === MediaType.MUSIC) {
       return next({ status: 404, message: 'Media does not exist.' });
     }
 
