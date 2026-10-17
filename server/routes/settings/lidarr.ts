@@ -1,4 +1,5 @@
 import LidarrAPI from '@server/api/servarr/lidarr';
+import { lidarrScanner } from '@server/lib/scanners/lidarr';
 import type { LidarrSettings } from '@server/lib/settings';
 import { getSettings } from '@server/lib/settings';
 import logger from '@server/logger';
@@ -45,6 +46,9 @@ lidarrRoutes.post('/', async (req, res) => {
 
   settings.lidarr = [...settings.lidarr, newLidarr];
   await settings.save();
+
+  // the scan runs in the background; the answer does not wait for it
+  lidarrScanner.requestRun();
 
   return res.status(201).json(newLidarr);
 });
@@ -107,6 +111,9 @@ lidarrRoutes.put<{ id: string }>('/:id', async (req, res) => {
     id: Number(req.params.id),
   } as LidarrSettings;
   await settings.save();
+
+  // the scan runs in the background; the answer does not wait for it
+  lidarrScanner.requestRun();
 
   return res.status(200).json(settings.lidarr[lidarrIndex]);
 });

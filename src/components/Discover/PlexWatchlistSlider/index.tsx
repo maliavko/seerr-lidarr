@@ -1,7 +1,9 @@
 import Slider from '@app/components/Slider';
 import TmdbTitleCard from '@app/components/TitleCard/TmdbTitleCard';
+import useSettings from '@app/hooks/useSettings';
 import { useUser } from '@app/hooks/useUser';
 import defineMessages from '@app/utils/defineMessages';
+import { isLeftOutByKinds, keepShownKinds } from '@app/utils/sliderKinds';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import type { WatchlistItem } from '@server/interfaces/api/discoverInterfaces';
 import Link from 'next/link';
@@ -17,6 +19,7 @@ const messages = defineMessages('components.Discover.PlexWatchlistSlider', {
 const PlexWatchlistSlider = () => {
   const intl = useIntl();
   const { user } = useUser();
+  const { currentSettings } = useSettings();
 
   const { data: watchlistItems, error: watchlistError } = useSWR<{
     page: number;
@@ -27,7 +30,16 @@ const PlexWatchlistSlider = () => {
     revalidateOnMount: true,
   });
 
+  // drop the items of kinds not shown (F2-D-211)
+  const items = keepShownKinds(
+    watchlistItems?.results ?? [],
+    currentSettings.kindsShown,
+    (item) => item.mediaType
+  );
+
   if (
+    (watchlistItems &&
+      isLeftOutByKinds(watchlistItems.results.length, items.length)) ||
     (watchlistItems &&
       watchlistItems.results.length === 0 &&
       !user?.settings?.watchlistSyncMovies &&
@@ -61,7 +73,7 @@ const PlexWatchlistSlider = () => {
             </a>
           ),
         })}
-        items={watchlistItems?.results.map((item) => (
+        items={items.map((item) => (
           <TmdbTitleCard
             id={item.tmdbId}
             key={`watchlist-slider-item-${item.ratingKey}`}

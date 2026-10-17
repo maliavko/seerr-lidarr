@@ -880,3 +880,139 @@ describe('Lidarr scan: movies and TV', () => {
     );
   });
 });
+
+// F2-D-41: a save asks for a run (requestRun); one scan runs at a time and a
+// further run, marked by asks made during a scan, starts as that scan ends.
+describe('Lidarr scan: requestRun', () => {
+  // a scan whose read of the held artists waits until it is released
+  const gates: (() => void)[] = [];
+  const gated = () => {
+    artistsImpl = () =>
+      new Promise<LidarrArtist[]>((resolve) => {
+        gates.push(() => resolve([]));
+      });
+  };
+  const until = async (done: () => boolean) => {
+    for (let i = 0; i < 200 && !done(); i++) {
+      await new Promise((resolve) => setImmediate(resolve));
+    }
+    assert.ok(done(), 'the awaited state was not reached');
+  };
+  const release = async (count: number) => {
+    await until(() => gates.length >= count);
+    gates[count - 1]();
+  };
+
+  beforeEach(() => {
+    gates.length = 0;
+  });
+
+  it('starts a run, without awaiting it, where no scan runs', async () => {
+    gated();
+
+    assert.strictEqual(lidarrScanner.requestRun(), undefined);
+    assert.strictEqual(lidarrScanner.status().running, true);
+    assert.strictEqual(getArtistsCalls, 1);
+
+    await release(1);
+    await until(() => !lidarrScanner.status().running);
+    assert.strictEqual(getArtistsCalls, 1);
+  });
+
+  it('marks one further run for a save during a scan, and starts none beside the running one', async () => {
+    gated();
+    lidarrScanner.requestRun();
+    lidarrScanner.requestRun();
+
+    assert.strictEqual(getArtistsCalls, 1);
+    assert.strictEqual(gates.length, 1);
+
+    await release(1);
+    await until(() => gates.length === 2);
+    // the further run is the only one running now
+    assert.strictEqual(getArtistsCalls, 2);
+    assert.strictEqual(lidarrScanner.status().running, true);
+
+    await release(2);
+    await until(() => !lidarrScanner.status().running);
+    await new Promise((resolve) => setImmediate(resolve));
+    assert.strictEqual(getArtistsCalls, 2);
+  });
+
+  it('marks one further run however many saves came during the scan', async () => {
+    gated();
+    lidarrScanner.requestRun();
+    for (let i = 0; i < 5; i++) {
+      lidarrScanner.requestRun();
+    }
+
+    await release(1);
+    await until(() => gates.length === 2);
+    await release(2);
+    await until(() => !lidarrScanner.status().running);
+    await new Promise((resolve) => setImmediate(resolve));
+
+    assert.strictEqual(getArtistsCalls, 2);
+  });
+
+  it('starts the further run as the scan ends, reading the settings as they then stand', async () => {
+    gated();
+    const servers: string[] = [];
+    mock.method(LidarrAPI, 'buildUrl', (s: { hostname: string }) => {
+      servers.push(s.hostname);
+      return `http://${s.hostname}/api/v1`;
+    });
+    const settings = getSettings();
+    lidarrScanner.requestRun();
+    await until(() => gates.length === 1);
+
+    // a save during the scan: the settings change, a run is asked
+    settings.lidarr[0].hostname = 'saved-meanwhile';
+    lidarrScanner.requestRun();
+    assert.deepStrictEqual(servers, ['127.0.0.1']);
+
+    await release(1);
+    await until(() => gates.length === 2);
+    assert.deepStrictEqual(servers, ['127.0.0.1', 'saved-meanwhile']);
+    await release(2);
+    await until(() => !lidarrScanner.status().running);
+  });
+
+  it('asks nothing of a scan that ends with no ask made: no further run starts', async () => {
+    gated();
+    lidarrScanner.requestRun();
+    await release(1);
+    await until(() => !lidarrScanner.status().running);
+    await new Promise((resolve) => setImmediate(resolve));
+
+    assert.strictEqual(getArtistsCalls, 1);
+    assert.strictEqual(gates.length, 1);
+  });
+
+  it('leaves the mark to the end of another scan that started meanwhile', async () => {
+    gated();
+    lidarrScanner.requestRun();
+    await until(() => gates.length === 1);
+    lidarrScanner.requestRun(); // marks
+
+    // Run Now style: a run started beside the first takes over the session
+    const second = lidarrScanner.run();
+    await until(() => gates.length === 2);
+    assert.strictEqual(getArtistsCalls, 2);
+
+    // the first ends while the second runs: the mark stays
+    gates[0]();
+    await new Promise((resolve) => setImmediate(resolve));
+    await new Promise((resolve) => setImmediate(resolve));
+    assert.strictEqual(getArtistsCalls, 2);
+    assert.strictEqual(lidarrScanner.status().running, true);
+
+    // the second's end takes it
+    gates[1]();
+    await second;
+    await until(() => gates.length === 3);
+    assert.strictEqual(getArtistsCalls, 3);
+    gates[2]();
+    await until(() => !lidarrScanner.status().running);
+  });
+});

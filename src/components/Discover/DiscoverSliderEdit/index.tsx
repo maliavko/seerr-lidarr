@@ -169,6 +169,12 @@ const DiscoverSliderEdit = ({
         return intl.formatMessage(sliderTitles.tmdbmoviestreamingservices);
       case DiscoverSliderType.TMDB_TV_STREAMING_SERVICES:
         return intl.formatMessage(sliderTitles.tmdbtvstreamingservices);
+      case DiscoverSliderType.RECENTLY_ADDED_MUSIC:
+        return intl.formatMessage(sliderTitles.recentlyaddedmusic);
+      case DiscoverSliderType.RECENT_MUSIC_REQUESTS:
+        return intl.formatMessage(sliderTitles.recentmusicrequests);
+      case DiscoverSliderType.POPULAR_ALBUMS:
+        return intl.formatMessage(sliderTitles.popularalbums);
       default:
         return 'Unknown Slider';
     }

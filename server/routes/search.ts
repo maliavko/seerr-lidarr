@@ -1,17 +1,14 @@
 import TheMovieDb from '@server/api/themoviedb';
 import type { TmdbSearchMultiResponse } from '@server/api/themoviedb/interfaces';
-import { MusicKind } from '@server/constants/media';
 import Media from '@server/entity/Media';
+import type { KindShown } from '@server/lib/kindsShown';
+import { getKindsShown } from '@server/lib/kindsShown';
 import { searchMusic } from '@server/lib/music';
-import { musicMediaInfo, resolveMusicItems } from '@server/lib/musicStatus';
+import { buildMusicResults } from '@server/lib/musicResults';
 import { findSearchProvider } from '@server/lib/search';
 import logger from '@server/logger';
 import type { MusicResults } from '@server/models/Search';
-import {
-  mapAlbumResult,
-  mapArtistResult,
-  mapSearchResults,
-} from '@server/models/Search';
+import { mapSearchResults } from '@server/models/Search';
 import { Router } from 'express';
 
 const searchRoutes = Router();
@@ -24,54 +21,7 @@ const searchRoutes = Router();
 async function findMusicResults(query: string): Promise<MusicResults[]> {
   try {
     const music = await searchMusic(query);
-    const media = await Media.getRelatedMusicMedia([
-      ...music.artists.map((artist) => ({
-        mbid: artist.id,
-        kind: MusicKind.ARTIST,
-      })),
-      ...music.albums.map((album) => ({
-        mbid: album.id,
-        kind: MusicKind.ALBUM,
-      })),
-    ]);
-    const resolutions = await resolveMusicItems([
-      ...music.artists.map((artist) => ({
-        mbid: artist.id,
-        kind: MusicKind.ARTIST,
-      })),
-      ...music.albums.map((album) => ({
-        mbid: album.id,
-        kind: MusicKind.ALBUM,
-        artistMbid: album.artist?.id,
-      })),
-    ]);
-    const rowOf = (mbid: string, kind: MusicKind) =>
-      media.find((row) => row.musicBrainzId === mbid && row.musicKind === kind);
-
-    return [
-      ...music.artists.map((artist, index) => {
-        const resolved = resolutions[index];
-
-        return mapArtistResult(
-          artist,
-          resolved.decided
-            ? musicMediaInfo(resolved, rowOf(artist.id, MusicKind.ARTIST))
-            : rowOf(artist.id, MusicKind.ARTIST)
-        );
-      }),
-      ...music.albums.flatMap((album, index) => {
-        const resolved = resolutions[music.artists.length + index];
-
-        return resolved.decided
-          ? [
-              mapAlbumResult(
-                album,
-                musicMediaInfo(resolved, rowOf(album.id, MusicKind.ALBUM))
-              ),
-            ]
-          : [];
-      }),
-    ];
+    return await buildMusicResults(music.artists, music.albums);
   } catch (e) {
     logger.debug('Something went wrong retrieving music search results', {
       label: 'API',
@@ -82,29 +32,126 @@ async function findMusicResults(query: string): Promise<MusicResults[]> {
   }
 }
 
+// The kind a search result is of, for the kinds shown (F2-D-31): artists and
+// albums are music; a result of no kind (a collection) is of none.
+const kindOfResult = (mediaType: string): KindShown | undefined => {
+  switch (mediaType) {
+    case 'movie':
+    case 'tv':
+    case 'person':
+      return mediaType;
+    case 'artist':
+    case 'album':
+      return 'music';
+    default:
+      return undefined;
+  }
+};
+
+const isKindShown = (value: unknown): value is KindShown =>
+  value === 'movie' ||
+  value === 'tv' ||
+  value === 'music' ||
+  value === 'person';
+
 searchRoutes.get('/', async (req, res, next) => {
   const queryString = req.query.query as string;
+  const language = (req.query.language as string) ?? req.locale;
+  const kindsShown = getKindsShown();
+  // a type whose kind is not shown is read as no type (F2-D-31)
+  let type = isKindShown(req.query.type) ? req.query.type : undefined;
+  if (type && !kindsShown.includes(type)) {
+    type = undefined;
+  }
   const searchProvider = findSearchProvider(queryString.toLowerCase());
   let results: TmdbSearchMultiResponse;
 
   try {
+    if (!type && !kindsShown.includes('movie') && !kindsShown.includes('tv')) {
+      // every TMDB result would be of a kind not shown: TMDB and the id
+      // providers are not read (F2-D-21)
+      if (kindsShown.includes('music')) {
+        type = 'music';
+      } else {
+        return res
+          .status(200)
+          .json({ page: 1, totalPages: 1, totalResults: 0, results: [] });
+      }
+    }
+
+    if (type === 'music') {
+      // Lidarr's lookup is not paged: its whole answer is page 1 of 1, a
+      // later page answers no results of 1 page
+      const requestedPage = Number(req.query.page);
+      const later = requestedPage > 1;
+      const music = later ? [] : await findMusicResults(queryString);
+
+      return res.status(200).json({
+        page: later ? requestedPage : 1,
+        totalPages: 1,
+        totalResults: music.length,
+        results: music.filter((result) =>
+          kindsShown.includes(kindOfResult(result.mediaType) as KindShown)
+        ),
+      });
+    }
+
     if (searchProvider) {
       const [id] = queryString
         .toLowerCase()
         .match(searchProvider.pattern) as RegExpMatchArray;
       results = await searchProvider.search({
         id,
-        language: (req.query.language as string) ?? req.locale,
+        language,
         query: queryString,
       });
+
+      if (type) {
+        results = {
+          ...results,
+          results: results.results.filter(
+            (result) => result.media_type === type
+          ),
+        };
+      }
     } else {
       const tmdb = new TheMovieDb();
-
-      results = await tmdb.searchMulti({
+      const options = {
         query: queryString,
         page: Number(req.query.page),
-        language: (req.query.language as string) ?? req.locale,
-      });
+        language,
+      };
+
+      if (type === 'movie') {
+        const movies = await tmdb.searchMovies(options);
+        results = {
+          ...movies,
+          results: movies.results.map((result) => ({
+            ...result,
+            media_type: 'movie' as const,
+          })),
+        };
+      } else if (type === 'tv') {
+        const shows = await tmdb.searchTvShows(options);
+        results = {
+          ...shows,
+          results: shows.results.map((result) => ({
+            ...result,
+            media_type: 'tv' as const,
+          })),
+        };
+      } else if (type === 'person') {
+        const people = await tmdb.searchPerson(options);
+        results = {
+          ...people,
+          results: people.results.map((result) => ({
+            ...result,
+            media_type: 'person' as const,
+          })),
+        };
+      } else {
+        results = await tmdb.searchMulti(options);
+      }
     }
 
     const media = await Media.getRelatedMedia(
@@ -118,9 +165,19 @@ searchRoutes.get('/', async (req, res, next) => {
     // music stands on the first page only, after TMDB's results, and is never
     // found through an id search (D-101)
     const music =
-      !searchProvider && results.page === 1
+      !type && !searchProvider && results.page === 1
         ? await findMusicResults(queryString)
         : [];
+
+    // every result of a kind not shown is left out, the page and the page
+    // count of the source read staying however few results are left
+    const shown = [
+      ...mapSearchResults(results.results, media),
+      ...music,
+    ].filter((result) => {
+      const kind = kindOfResult(result.mediaType);
+      return kind === undefined || kindsShown.includes(kind);
+    });
 
     return res.status(200).json({
       page: results.page,
@@ -129,7 +186,7 @@ searchRoutes.get('/', async (req, res, next) => {
           ? Math.max(results.total_pages, 1)
           : results.total_pages,
       totalResults: results.total_results + music.length,
-      results: [...mapSearchResults(results.results, media), ...music],
+      results: shown,
     });
   } catch (e) {
     logger.debug('Something went wrong retrieving search results', {

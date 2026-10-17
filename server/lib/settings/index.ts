@@ -1,4 +1,6 @@
 import { MediaServerType } from '@server/constants/server';
+import type { KindShown } from '@server/lib/kindsShown';
+import { getKindsShown } from '@server/lib/kindsShown';
 import { Permission } from '@server/lib/permissions';
 import { runMigrations } from '@server/lib/settings/migrator';
 import type { AvailableLocale } from '@server/types/languages';
@@ -235,6 +237,7 @@ interface FullPublicSettings extends PublicSettings {
   youtubeUrl: string;
   versionCheck: boolean;
   plexClientIdentifier: string;
+  kindsShown: KindShown[];
 }
 
 export interface NotificationAgentConfig {
@@ -613,7 +616,7 @@ class Settings {
           schedule: '0 30 4 * * *',
         },
         'lidarr-scan': {
-          schedule: '0 0 5 * * *',
+          schedule: '0 */30 * * * *',
         },
         'availability-sync': {
           schedule: '0 0 5 * * *',
@@ -775,6 +778,7 @@ class Settings {
       youtubeUrl: this.data.main.youtubeUrl,
       versionCheck: this.data.main.versionCheck,
       plexClientIdentifier: this.data.clientId,
+      kindsShown: getKindsShown(this),
     };
   }
 

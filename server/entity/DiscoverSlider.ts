@@ -1,5 +1,5 @@
 import type { DiscoverSliderType } from '@server/constants/discover';
-import { defaultSliders } from '@server/constants/discover';
+import { defaultSliders, musicSliderTypes } from '@server/constants/discover';
 import { getRepository } from '@server/datasource';
 import logger from '@server/logger';
 import { DbAwareColumn, resolveDbType } from '@server/utils/DbColumnHelper';
@@ -27,6 +27,23 @@ class DiscoverSlider {
           label: 'Discover Slider',
           slider,
         });
+
+        if (
+          slider.type !== undefined &&
+          musicSliderTypes.includes(slider.type)
+        ) {
+          // The music sliders go after the last slider saved, disabled (F2-D-211)
+          const highest = await sliderRepository.maximum('order');
+          await sliderRepository.save(
+            new DiscoverSlider({
+              ...slider,
+              enabled: false,
+              order: (highest ?? -1) + 1,
+            })
+          );
+          continue;
+        }
+
         await sliderRepository.save(new DiscoverSlider(slider));
       }
     }

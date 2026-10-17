@@ -61,4 +61,24 @@ describe('the music routes in the API router', () => {
       assert.match(res.body.message, new RegExp(`${kind} not found`, 'i'));
     });
   }
+
+  for (const path of [
+    '/api/v1/music/recentlyadded',
+    '/api/v1/music/popular',
+    `/api/v1/music/artist/${MBID}/similar`,
+  ]) {
+    it(`refuses an unauthenticated GET ${path} with 403`, async () => {
+      const res = await request(app).get(path);
+
+      assert.strictEqual(res.status, 403);
+    });
+
+    it(`serves GET ${path} to a signed-in user, answering an empty list where no Lidarr server is the default`, async () => {
+      const agent = await loginAs(app);
+      const res = await agent.get(path);
+
+      assert.strictEqual(res.status, 200);
+      assert.deepStrictEqual(res.body, { results: [] });
+    });
+  }
 });

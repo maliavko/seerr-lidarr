@@ -1,12 +1,74 @@
 import { MusicKind } from '@server/constants/media';
 import Media from '@server/entity/Media';
-import { getAlbum, getArtist, getArtistAlbumIds } from '@server/lib/music';
+import {
+  getAlbum,
+  getArtist,
+  getArtistAlbumIds,
+  isMusicConfigured,
+} from '@server/lib/music';
+import { buildMusicResults } from '@server/lib/musicResults';
+import {
+  getPopularAlbumSummaries,
+  getRecentlyAddedAlbums,
+  getSimilarArtistSummaries,
+} from '@server/lib/musicSliders';
 import type { MusicResolved } from '@server/lib/musicStatus';
 import { musicMediaInfo, resolveMusicItems } from '@server/lib/musicStatus';
 import logger from '@server/logger';
+import type { MusicResults } from '@server/models/Search';
+import type { Request, RequestHandler } from 'express';
 import { Router } from 'express';
 
 const musicRoutes = Router();
+
+// The music sliders' routes (F2-D-92): at most 20 music items as search
+// answers them, with the status the server computes; no default Lidarr server,
+// or a source failing, is an empty list and the failure logged.
+const sliderRoute = (
+  name: string,
+  read: (req: Request) => Promise<MusicResults[]>
+): RequestHandler => {
+  return async (req, res) => {
+    if (!isMusicConfigured()) {
+      return res.status(200).json({ results: [] });
+    }
+
+    try {
+      return res.status(200).json({ results: await read(req) });
+    } catch (e) {
+      logger.error(`Failed to read the ${name} music slider`, {
+        label: 'Music',
+        errorMessage: e.message,
+      });
+
+      return res.status(200).json({ results: [] });
+    }
+  };
+};
+
+musicRoutes.get(
+  '/recentlyadded',
+  sliderRoute('recently added', async () =>
+    buildMusicResults([], await getRecentlyAddedAlbums())
+  )
+);
+
+musicRoutes.get(
+  '/popular',
+  sliderRoute('popular albums', async () =>
+    buildMusicResults([], await getPopularAlbumSummaries())
+  )
+);
+
+musicRoutes.get(
+  '/artist/:mbid/similar',
+  sliderRoute('similar artists', async (req) =>
+    buildMusicResults(
+      await getSimilarArtistSummaries(String(req.params.mbid)),
+      []
+    )
+  )
+);
 
 musicRoutes.get('/artist/:mbid', async (req, res, next) => {
   try {

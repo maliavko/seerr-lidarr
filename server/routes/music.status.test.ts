@@ -27,6 +27,7 @@ import cacheManager from '@server/lib/cache';
 import { getSettings } from '@server/lib/settings';
 import { MediaRequestSubscriber } from '@server/subscriber/MediaRequestSubscriber';
 import { setupTestDb } from '@server/test/db';
+import { radarrServer, sonarrServer } from '@server/test/servers';
 import {
   burialUnderOtherProfile,
   listedAlbum,
@@ -132,6 +133,8 @@ setupTestDb();
 
 beforeEach(() => {
   metadataCalls = [];
+  getSettings().radarr = [radarrServer()];
+  getSettings().sonarr = [sonarrServer()];
   getSettings().lidarr = [{ ...server }];
   cacheManager.getCache('lidarr').flush();
   cacheManager.getCache('musicbrainz').flush();

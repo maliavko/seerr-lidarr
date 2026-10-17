@@ -1,15 +1,25 @@
 import useSearchInput from '@app/hooks/useSearchInput';
+import useSettings from '@app/hooks/useSettings';
 import defineMessages from '@app/utils/defineMessages';
+import { getSearchPlaceholderKey } from '@app/utils/searchPlaceholder';
 import { XCircleIcon } from '@heroicons/react/24/outline';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
 import { useIntl } from 'react-intl';
 
 const messages = defineMessages('components.Layout.SearchInput', {
   searchPlaceholder: 'Search Movies & Series',
+  searchPlaceholderAll: 'Search Movies, Series & Music',
+  searchPlaceholderMoviesMusic: 'Search Movies & Music',
+  searchPlaceholderSeriesMusic: 'Search Series & Music',
+  searchPlaceholderMovies: 'Search Movies',
+  searchPlaceholderSeries: 'Search Series',
+  searchPlaceholderMusic: 'Search Music',
+  searchPlaceholderNone: 'Search',
 });
 
 const SearchInput = () => {
   const intl = useIntl();
+  const { currentSettings } = useSettings();
   const { searchValue, setSearchValue, setIsOpen, clear } = useSearchInput();
   return (
     <div className="flex flex-1">
@@ -25,7 +35,9 @@ const SearchInput = () => {
             id="search_field"
             style={{ paddingRight: searchValue.length > 0 ? '1.75rem' : '' }}
             className="block w-full rounded-full border border-gray-600 bg-gray-900/80 py-2 pl-10 text-white placeholder-gray-300 hover:border-gray-500 focus:border-gray-500 focus:bg-gray-900 focus:placeholder-gray-400 focus:outline-none focus:ring-0 sm:text-base"
-            placeholder={intl.formatMessage(messages.searchPlaceholder)}
+            placeholder={intl.formatMessage(
+              messages[getSearchPlaceholderKey(currentSettings.kindsShown)]
+            )}
             type="search"
             autoComplete="off"
             value={searchValue}

@@ -39,6 +39,8 @@ class LidarrScanner
   private currentServer?: LidarrSettings;
   private lidarrApi: LidarrAPI;
   private savedProfile: MetadataProfile;
+  // one further run is marked, however many asks marked it (F2-D-41)
+  private furtherRunMarked = false;
 
   constructor() {
     super('Lidarr Scan', { bundleSize: 10 });
@@ -51,6 +53,31 @@ class LidarrScanner
       total: this.items.length,
       currentServer: this.currentServer,
     };
+  }
+
+  /**
+   * Asks for a run: starts one where no scan runs, and otherwise marks one
+   * further run, which the end of the running scan starts (F2-D-41).
+   */
+  public requestRun(): void {
+    if (!this.running) {
+      this.startFurtherRun();
+      return;
+    }
+
+    this.furtherRunMarked = true;
+    this.log(
+      'A Lidarr scan is running. One further run is marked for when it ends.',
+      'info'
+    );
+  }
+
+  private startFurtherRun(): void {
+    this.run().catch((e) => {
+      this.log('Failed to start the Lidarr scan', 'error', {
+        errorMessage: e.message,
+      });
+    });
   }
 
   public async run(): Promise<void> {
@@ -92,6 +119,14 @@ class LidarrScanner
       this.log('Scan interrupted', 'error', { errorMessage: e.message });
     } finally {
       this.endRun(sessionId);
+
+      // every run takes the mark as it ends; where another scan runs, that
+      // scan's end takes it
+      if (this.furtherRunMarked && !this.running) {
+        this.furtherRunMarked = false;
+        this.log('Starting the further Lidarr scan that was marked', 'info');
+        this.startFurtherRun();
+      }
     }
   }
 

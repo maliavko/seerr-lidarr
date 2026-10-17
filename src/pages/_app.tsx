@@ -264,6 +264,7 @@ CoreApp.getInitialProps = async (initialProps) => {
     youtubeUrl: '',
     versionCheck: true,
     plexClientIdentifier: '',
+    kindsShown: [],
   };
 
   if (ctx.res) {

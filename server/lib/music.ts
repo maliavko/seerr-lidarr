@@ -96,7 +96,7 @@ export const getDefaultLidarr = (): LidarrSettings | undefined =>
 export const isMusicConfigured = (): boolean =>
   getDefaultLidarr() !== undefined;
 
-const buildLidarr = (server: LidarrSettings): LidarrAPI =>
+export const buildLidarr = (server: LidarrSettings): LidarrAPI =>
   new LidarrAPI({
     url: LidarrAPI.buildUrl(server, '/api/v1'),
     apiKey: server.apiKey,
@@ -129,7 +129,7 @@ async function cached<T>(
   return value;
 }
 
-const logFailure = (message: string, e: Error): void => {
+export const logFailure = (message: string, e: Error): void => {
   logger.error(message, { label: 'Music', errorMessage: e.message });
 };
 
@@ -160,7 +160,7 @@ function artistBackdrop(images: LidarrImage[] = []): string | undefined {
 
 // What Lidarr's metadata service gives of an artist, by its CoverType and only
 // as an http(s) URL.
-function metadataImage(
+export function metadataImage(
   images: LidarrMetadataImage[] = [],
   coverType: 'Poster' | 'Fanart'
 ): string | undefined {
@@ -196,7 +196,7 @@ const toArtistSummary = (artist: LidarrArtist): MusicArtistSummary => ({
   inLidarr: Boolean(artist.id),
 });
 
-const toAlbumSummary = (album: LidarrAlbum): MusicAlbumSummary => ({
+export const toAlbumSummary = (album: LidarrAlbum): MusicAlbumSummary => ({
   id: album.foreignAlbumId,
   title: album.title,
   disambiguation: nonEmpty(album.disambiguation),

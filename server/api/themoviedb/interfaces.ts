@@ -69,6 +69,10 @@ export interface TmdbSearchMovieResponse extends TmdbPaginatedResponse {
   results: TmdbMovieResult[];
 }
 
+export interface TmdbSearchPersonResponse extends TmdbPaginatedResponse {
+  results: TmdbPersonResult[];
+}
+
 export interface TmdbSearchTvResponse extends TmdbPaginatedResponse {
   results: TmdbTvResult[];
 }

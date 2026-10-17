@@ -1,6 +1,7 @@
 import CachedImage from '@app/components/Common/CachedImage';
 import LoadingSpinner from '@app/components/Common/LoadingSpinner';
 import PageTitle from '@app/components/Common/PageTitle';
+import SimilarArtistsSlider from '@app/components/Discover/SimilarArtistsSlider';
 import AlbumCard from '@app/components/MusicCard/AlbumCard';
 import MusicRequestButton from '@app/components/MusicRequestButton';
 import StatusBadge from '@app/components/StatusBadge';
@@ -167,6 +168,7 @@ const ArtistDetails = ({ artist, statusCode }: ArtistDetailsProps) => {
           </ul>
         </>
       )}
+      <SimilarArtistsSlider mbid={data.id} />
     </div>
   );
 };

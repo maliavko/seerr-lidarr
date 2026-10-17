@@ -1,3 +1,4 @@
+import type { KindShown } from '@server/lib/kindsShown';
 import type { DnsEntries, DnsStats } from 'dns-caching';
 import type { PaginatedResponse } from './common';
 
@@ -51,6 +52,7 @@ export interface PublicSettingsResponse {
   youtubeUrl: string;
   versionCheck: boolean;
   plexClientIdentifier: string;
+  kindsShown: KindShown[];
 }
 
 export interface CacheItem {

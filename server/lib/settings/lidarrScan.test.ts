@@ -38,7 +38,7 @@ after(async () => {
 describe('the lidarr-scan job of settings.jobs', () => {
   it('has its default schedule on new settings', () => {
     assert.deepStrictEqual(new SettingsClass().jobs['lidarr-scan'], {
-      schedule: '0 0 5 * * *',
+      schedule: '0 */30 * * * *',
     });
   });
 
@@ -55,7 +55,7 @@ describe('the lidarr-scan job of settings.jobs', () => {
     const loaded = await new SettingsClass().load();
 
     assert.deepStrictEqual(loaded.jobs['lidarr-scan'], {
-      schedule: '0 0 5 * * *',
+      schedule: '0 */30 * * * *',
     });
     assert.deepStrictEqual(loaded.jobs['radarr-scan'], {
       schedule: '0 0 2 * * *',
@@ -64,7 +64,7 @@ describe('the lidarr-scan job of settings.jobs', () => {
     // saved on load, then edited and loaded again: the edit is kept
     const saved = JSON.parse(await fs.readFile(file, 'utf-8'));
     assert.deepStrictEqual(saved.jobs['lidarr-scan'], {
-      schedule: '0 0 5 * * *',
+      schedule: '0 */30 * * * *',
     });
     saved.jobs['lidarr-scan'] = { schedule: '0 0 7 * * *' };
     await fs.writeFile(

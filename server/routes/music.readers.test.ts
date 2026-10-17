@@ -5,7 +5,9 @@ import TheMovieDb from '@server/api/themoviedb';
 import { MediaStatus, MediaType } from '@server/constants/media';
 import { getRepository } from '@server/datasource';
 import Media from '@server/entity/Media';
+import { getSettings } from '@server/lib/settings';
 import { setupTestDb } from '@server/test/db';
+import { radarrServer, sonarrServer } from '@server/test/servers';
 import {
   MethodStubs,
   authenticated,
@@ -408,6 +410,8 @@ function hasMediaInfo(body: unknown, tmdbId: number): boolean {
 describe('Routes that read the media table by TMDB id, with music rows in it', () => {
   beforeEach(() => {
     stubs.restore();
+    getSettings().radarr = [radarrServer()];
+    getSettings().sonarr = [sonarrServer()];
   });
 
   afterEach(() => {

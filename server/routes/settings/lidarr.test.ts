@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { afterEach, before, beforeEach, describe, it, mock } from 'node:test';
 
 import cacheManager from '@server/lib/cache';
+import { lidarrScanner } from '@server/lib/scanners/lidarr';
 import type { LidarrSettings } from '@server/lib/settings';
 import { getSettings } from '@server/lib/settings';
 import { checkUser } from '@server/middleware/auth';
@@ -60,6 +61,12 @@ mock.method(axios, 'create', (config?: AxiosRequestConfig) =>
 );
 
 const saveMock = mock.method(getSettings(), 'save', async () => undefined).mock;
+// a save asks the scanner for a run (F2-D-41); no scan runs in these tests
+const requestRunMock = mock.method(
+  lidarrScanner,
+  'requestRun',
+  () => undefined
+).mock;
 
 const goodLidarr: FakeLidarr = (config) => {
   assert.strictEqual(config.params?.apikey, 'good-key');
@@ -137,6 +144,7 @@ setupTestDb();
 beforeEach(() => {
   getSettings().lidarr = [];
   saveMock.resetCalls();
+  requestRunMock.resetCalls();
   lidarrCalls.length = 0;
   fakeLidarr = goodLidarr;
   cacheManager.getCache('lidarr').flush();
@@ -496,5 +504,73 @@ describe('POST /settings/lidarr/test', () => {
 
     assert.strictEqual(res.status, 500);
     assert.strictEqual(res.body.profiles, undefined);
+  });
+});
+
+describe('a save of a Lidarr server asks the scanner for a run (F2-D-41)', () => {
+  it('asks once after a successful POST, once the settings are saved, and answers without waiting', async () => {
+    const admin = await loginAs('admin@seerr.dev');
+    let savedAtAsk: unknown;
+    requestRunMock.mockImplementationOnce(() => {
+      savedAtAsk = saveMock.callCount();
+      // a scan that never ends does not hold the answer
+      return new Promise<void>(() => undefined) as never;
+    });
+
+    const res = await admin.post('/settings/lidarr').send(server());
+
+    assert.strictEqual(res.status, 201);
+    assert.strictEqual(requestRunMock.callCount(), 1);
+    assert.strictEqual(savedAtAsk, 1);
+  });
+
+  it('asks once after a successful PUT, and answers without waiting', async () => {
+    const admin = await loginAs('admin@seerr.dev');
+    await admin.post('/settings/lidarr').send(server());
+    requestRunMock.resetCalls();
+    requestRunMock.mockImplementationOnce(
+      () => new Promise<void>(() => undefined) as never
+    );
+
+    const res = await admin.put('/settings/lidarr/0').send(server());
+
+    assert.strictEqual(res.status, 200);
+    assert.strictEqual(requestRunMock.callCount(), 1);
+  });
+
+  it('asks nothing on a 404, a delete or a test', async () => {
+    const admin = await loginAs('admin@seerr.dev');
+    await admin.post('/settings/lidarr').send(server());
+    requestRunMock.resetCalls();
+
+    assert.strictEqual(
+      (await admin.put('/settings/lidarr/5').send(server())).status,
+      404
+    );
+    assert.strictEqual((await admin.delete('/settings/lidarr/5')).status, 404);
+    assert.strictEqual((await admin.delete('/settings/lidarr/0')).status, 200);
+    await admin
+      .post('/settings/lidarr/test')
+      .send({ ...server(), baseUrl: '/lidarr' });
+
+    assert.strictEqual(requestRunMock.callCount(), 0);
+  });
+
+  it('asks nothing where the save throws', async () => {
+    const admin = await loginAs('admin@seerr.dev');
+    await admin.post('/settings/lidarr').send(server());
+    requestRunMock.resetCalls();
+    saveMock.mockImplementationOnce(async () => {
+      throw new Error('disk full');
+    });
+    const post = await admin.post('/settings/lidarr').send(server());
+    saveMock.mockImplementationOnce(async () => {
+      throw new Error('disk full');
+    });
+    const put = await admin.put('/settings/lidarr/0').send(server());
+
+    assert.strictEqual(post.status, 500);
+    assert.strictEqual(put.status, 500);
+    assert.strictEqual(requestRunMock.callCount(), 0);
   });
 });

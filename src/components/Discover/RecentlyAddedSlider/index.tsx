@@ -1,7 +1,9 @@
 import Slider from '@app/components/Slider';
 import TmdbTitleCard from '@app/components/TitleCard/TmdbTitleCard';
+import useSettings from '@app/hooks/useSettings';
 import { Permission, useUser } from '@app/hooks/useUser';
 import defineMessages from '@app/utils/defineMessages';
+import { isLeftOutByKinds, keepShownKinds } from '@app/utils/sliderKinds';
 import type { MediaResultsResponse } from '@server/interfaces/api/mediaInterfaces';
 import { useIntl } from 'react-intl';
 import useSWR from 'swr';
@@ -13,13 +15,22 @@ const messages = defineMessages('components.Discover.RecentlyAddedSlider', {
 const RecentlyAddedSlider = () => {
   const intl = useIntl();
   const { hasPermission } = useUser();
+  const { currentSettings } = useSettings();
   const { data: media, error: mediaError } = useSWR<MediaResultsResponse>(
     '/api/v1/media?filter=allavailable&take=20&sort=mediaAdded',
     { revalidateOnMount: true }
   );
 
+  // drop the items of kinds not shown (F2-D-211)
+  const results = keepShownKinds(
+    media?.results ?? [],
+    currentSettings.kindsShown,
+    (item) => item.mediaType
+  );
+
   if (
     (media && !media.results.length && !mediaError) ||
+    (media && isLeftOutByKinds(media.results.length, results.length)) ||
     !hasPermission([Permission.MANAGE_REQUESTS, Permission.RECENT_VIEW], {
       type: 'or',
     })
@@ -37,7 +48,7 @@ const RecentlyAddedSlider = () => {
       <Slider
         sliderKey="media"
         isLoading={!media}
-        items={(media?.results ?? []).map((item) => (
+        items={results.map((item) => (
           <TmdbTitleCard
             key={`media-slider-item-${item.id}`}
             id={item.id}

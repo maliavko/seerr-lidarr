@@ -1,7 +1,9 @@
 import Badge from '@app/components/Common/Badge';
 import { menuMessages } from '@app/components/Layout/Sidebar';
 import useClickOutside from '@app/hooks/useClickOutside';
+import useSettings from '@app/hooks/useSettings';
 import { Permission, useUser } from '@app/hooks/useUser';
+import { isMenuKindShown } from '@app/utils/sliderKinds';
 import { Transition } from '@headlessui/react';
 import {
   ClockIcon,
@@ -10,6 +12,7 @@ import {
   ExclamationTriangleIcon,
   EyeSlashIcon,
   FilmIcon,
+  MusicalNoteIcon,
   SparklesIcon,
   TvIcon,
   UsersIcon,
@@ -20,11 +23,13 @@ import {
   ExclamationTriangleIcon as FilledExclamationTriangleIcon,
   EyeSlashIcon as FilledEyeSlashIcon,
   FilmIcon as FilledFilmIcon,
+  MusicalNoteIcon as FilledMusicalNoteIcon,
   SparklesIcon as FilledSparklesIcon,
   TvIcon as FilledTvIcon,
   UsersIcon as FilledUsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/solid';
+import type { KindShown } from '@server/lib/kindsShown';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { cloneElement, useEffect, useRef, useState, type JSX } from 'react';
@@ -47,6 +52,8 @@ interface MenuLink {
   requiredPermission?: Permission | Permission[];
   permissionType?: 'and' | 'or';
   dataTestId?: string;
+  // the menu item is shown only while its kind is (F2-D-211)
+  kind?: KindShown;
 }
 
 const MobileMenu = ({
@@ -59,6 +66,7 @@ const MobileMenu = ({
   const intl = useIntl();
   const [isOpen, setIsOpen] = useState(false);
   const { hasPermission } = useUser();
+  const { currentSettings } = useSettings();
   const router = useRouter();
   useClickOutside(ref, () => {
     setTimeout(() => {
@@ -84,6 +92,7 @@ const MobileMenu = ({
       svgIcon: <FilmIcon className="h-6 w-6" />,
       svgIconSelected: <FilledFilmIcon className="h-6 w-6" />,
       activeRegExp: /^\/discover\/movies$/,
+      kind: 'movie',
     },
     {
       href: '/discover/tv',
@@ -91,6 +100,15 @@ const MobileMenu = ({
       svgIcon: <TvIcon className="h-6 w-6" />,
       svgIconSelected: <FilledTvIcon className="h-6 w-6" />,
       activeRegExp: /^\/discover\/tv$/,
+      kind: 'tv',
+    },
+    {
+      href: '/discover/music',
+      content: intl.formatMessage(menuMessages.browsemusic),
+      svgIcon: <MusicalNoteIcon className="h-6 w-6" />,
+      svgIconSelected: <FilledMusicalNoteIcon className="h-6 w-6" />,
+      activeRegExp: /^\/discover\/music$/,
+      kind: 'music',
     },
     {
       href: '/requests',
@@ -146,10 +164,11 @@ const MobileMenu = ({
 
   const filteredLinks = menuLinks.filter(
     (link) =>
-      !link.requiredPermission ||
-      hasPermission(link.requiredPermission, {
-        type: link.permissionType ?? 'and',
-      })
+      isMenuKindShown(link.kind, currentSettings.kindsShown) &&
+      (!link.requiredPermission ||
+        hasPermission(link.requiredPermission, {
+          type: link.permissionType ?? 'and',
+        }))
   );
 
   useEffect(() => {

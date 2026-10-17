@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { newSearchAddress } from '@app/utils/searchLoading';
 import type { Nullable } from '@app/utils/typeHelpers';
 import { useRouter } from 'next/router';
 import type { Dispatch, SetStateAction } from 'react';
@@ -34,13 +35,13 @@ const useSearchInput = (): SearchObject => {
   useEffect(() => {
     if (debouncedValue !== '' && searchOpen) {
       if (router.pathname.startsWith('/search')) {
-        router.replace({
-          pathname: router.pathname,
-          query: {
-            ...router.query,
-            query: debouncedValue,
-          },
-        });
+        // a new query starts on All: the type is left out
+        router.replace(
+          newSearchAddress(
+            { pathname: router.pathname, query: router.query },
+            debouncedValue
+          )
+        );
       } else {
         setLastRoute(router.asPath);
         router

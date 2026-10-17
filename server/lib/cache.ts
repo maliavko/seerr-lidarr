@@ -13,7 +13,8 @@ export type AvailableCacheIds =
   | 'tvdb'
   | 'lidarr'
   | 'musicbrainz'
-  | 'lidarrmetadata';
+  | 'lidarrmetadata'
+  | 'listenbrainz';
 
 const DEFAULT_TTL = 300;
 
@@ -42,6 +43,10 @@ const MUSICBRAINZ_MAX_KEYS = 500;
 // One key per artist Lidarr holds whose record lacks an image, a backdrop or an
 // overview.
 const LIDARRMETADATA_MAX_KEYS = 500;
+
+// One key for the popular albums and one per artist whose similar artists were
+// read.
+const LISTENBRAINZ_MAX_KEYS = 500;
 
 // One key per searched title, each holding twenty search hits.
 const RT_MAX_KEYS = 500;
@@ -249,6 +254,10 @@ class CacheManager {
     lidarrmetadata: new Cache('lidarrmetadata', 'Lidarr Metadata API', {
       stdTtl: 86400,
       max: LIDARRMETADATA_MAX_KEYS,
+    }),
+    listenbrainz: new Cache('listenbrainz', 'ListenBrainz API', {
+      stdTtl: 21600,
+      max: LISTENBRAINZ_MAX_KEYS,
     }),
     rt: new Cache('rt', 'Rotten Tomatoes API', {
       stdTtl: 43200,

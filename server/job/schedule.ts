@@ -178,7 +178,7 @@ export const startJobs = (): void => {
     cancelFn: () => sonarrScanner.cancel(),
   });
 
-  // Run full lidarr scan every 24 hours
+  // Run full lidarr scan every 30 minutes by default
   scheduledJobs.push({
     id: 'lidarr-scan',
     name: 'Lidarr Scan',
@@ -186,6 +186,16 @@ export const startJobs = (): void => {
     interval: 'hours',
     cronSchedule: jobs['lidarr-scan'].schedule,
     job: schedule.scheduleJob(jobs['lidarr-scan'].schedule, () => {
+      // one Lidarr scan at a time: a start by the schedule or by Run Now while
+      // a scan runs starts nothing (F2-D-41)
+      if (lidarrScanner.status().running) {
+        logger.info(
+          'The Lidarr Scan is already running. This start is skipped.',
+          { label: 'Jobs' }
+        );
+        return;
+      }
+
       logger.info('Starting scheduled job: Lidarr Scan', { label: 'Jobs' });
       lidarrScanner.run();
     }),

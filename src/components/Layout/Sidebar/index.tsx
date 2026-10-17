@@ -1,8 +1,10 @@
 import Badge from '@app/components/Common/Badge';
 import VersionStatus from '@app/components/Layout/VersionStatus';
 import useClickOutside from '@app/hooks/useClickOutside';
+import useSettings from '@app/hooks/useSettings';
 import { Permission, useUser } from '@app/hooks/useUser';
 import defineMessages from '@app/utils/defineMessages';
+import { isMenuKindShown } from '@app/utils/sliderKinds';
 import { Transition, TransitionChild } from '@headlessui/react';
 import {
   ClockIcon,
@@ -10,11 +12,13 @@ import {
   ExclamationTriangleIcon,
   EyeSlashIcon,
   FilmIcon,
+  MusicalNoteIcon,
   SparklesIcon,
   TvIcon,
   UsersIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
+import type { KindShown } from '@server/lib/kindsShown';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -25,6 +29,7 @@ export const menuMessages = defineMessages('components.Layout.Sidebar', {
   dashboard: 'Discover',
   browsemovies: 'Movies',
   browsetv: 'Series',
+  browsemusic: 'Music',
   requests: 'Requests',
   blocklist: 'Blocklist',
   issues: 'Issues',
@@ -50,6 +55,8 @@ interface SidebarLinkProps {
   requiredPermission?: Permission | Permission[];
   permissionType?: 'and' | 'or';
   dataTestId?: string;
+  // the menu item is shown only while its kind is (F2-D-211)
+  kind?: KindShown;
 }
 
 const SidebarLinks: SidebarLinkProps[] = [
@@ -64,12 +71,21 @@ const SidebarLinks: SidebarLinkProps[] = [
     messagesKey: 'browsemovies',
     svgIcon: <FilmIcon className="mr-3 h-6 w-6" />,
     activeRegExp: /^\/discover\/movies$/,
+    kind: 'movie',
   },
   {
     href: '/discover/tv',
     messagesKey: 'browsetv',
     svgIcon: <TvIcon className="mr-3 h-6 w-6" />,
     activeRegExp: /^\/discover\/tv$/,
+    kind: 'tv',
+  },
+  {
+    href: '/discover/music',
+    messagesKey: 'browsemusic',
+    svgIcon: <MusicalNoteIcon className="mr-3 h-6 w-6" />,
+    activeRegExp: /^\/discover\/music$/,
+    kind: 'music',
   },
   {
     href: '/requests',
@@ -130,6 +146,7 @@ const Sidebar = ({
   const router = useRouter();
   const intl = useIntl();
   const { hasPermission } = useUser();
+  const { currentSettings } = useSettings();
   useClickOutside(navRef, () => setClosed());
 
   useEffect(() => {
@@ -197,12 +214,17 @@ const Sidebar = ({
                       </span>
                     </div>
                     <nav className="mt-10 flex-1 space-y-4 px-4">
-                      {SidebarLinks.filter((link) =>
-                        link.requiredPermission
-                          ? hasPermission(link.requiredPermission, {
-                              type: link.permissionType ?? 'and',
-                            })
-                          : true
+                      {SidebarLinks.filter(
+                        (link) =>
+                          isMenuKindShown(
+                            link.kind,
+                            currentSettings.kindsShown
+                          ) &&
+                          (link.requiredPermission
+                            ? hasPermission(link.requiredPermission, {
+                                type: link.permissionType ?? 'and',
+                              })
+                            : true)
                       ).map((sidebarLink) => {
                         return (
                           <Link
@@ -265,12 +287,14 @@ const Sidebar = ({
                 </span>
               </div>
               <nav className="mt-8 flex-1 space-y-4 px-4">
-                {SidebarLinks.filter((link) =>
-                  link.requiredPermission
-                    ? hasPermission(link.requiredPermission, {
-                        type: link.permissionType ?? 'and',
-                      })
-                    : true
+                {SidebarLinks.filter(
+                  (link) =>
+                    isMenuKindShown(link.kind, currentSettings.kindsShown) &&
+                    (link.requiredPermission
+                      ? hasPermission(link.requiredPermission, {
+                          type: link.permissionType ?? 'and',
+                        })
+                      : true)
                 ).map((sidebarLink) => {
                   return (
                     <Link

@@ -776,6 +776,13 @@ components:
           format: uuid
           description: Instance Plex OAuth client identifier
           example: 6919275e-142a-48d8-be6b-93594cbd4626
+        kindsShown:
+          type: array
+          description: The kinds of media Seerr shows, computed from the configured servers at each call - movie while a Radarr server is configured, tv while a Sonarr server is, music while a Lidarr server is marked default, person while movie or tv is - in the order movie, tv, music, person
+          items:
+            type: string
+            enum: [movie, tv, music, person]
+          example: [movie, tv, music, person]
     MovieResult:
       type: object
       required:
@@ -3368,7 +3375,7 @@ paths:
                   $ref: '#/components/schemas/LidarrSettings'
     post:
       summary: Create Lidarr instance
-      description: Creates a new Lidarr instance from the request body. Marking it as the default clears the default flag of the other Lidarr instances.
+      description: Creates a new Lidarr instance from the request body. Marking it as the default clears the default flag of the other Lidarr instances. A successful save starts the Lidarr scan in the background (one at a time - a save during a scan leads to one further scan once it ends).
       tags:
         - settings
       requestBody:
@@ -3450,7 +3457,7 @@ paths:
   /settings/lidarr/{lidarrId}:
     put:
       summary: Update Lidarr instance
-      description: Updates an existing Lidarr instance with the provided values. Marking it as the default clears the default flag of the other Lidarr instances.
+      description: Updates an existing Lidarr instance with the provided values. Marking it as the default clears the default flag of the other Lidarr instances. A successful save starts the Lidarr scan in the background (one at a time - a save during a scan leads to one further scan once it ends).
       tags:
         - settings
       parameters:
@@ -5948,7 +5955,7 @@ paths:
   /search:
     get:
       summary: Search for movies, TV shows, people, artists, or albums
-      description: Returns a list of movies, TV shows, people, artists and albums in a JSON object. Artists and then albums (as found by the default Lidarr server) follow TMDB's results on the first page only, are counted in totalResults, and are never found by an id search; with no default Lidarr server, or Lidarr failing, the answer has no music. The status of a music result's mediaInfo is computed as MediaInfo describes; an album is left out of the results where a whole-artist request of its artist stands and the artist's albums or the saved metadata profile cannot be read, the other results standing.
+      description: Returns a list of movies, TV shows, people, artists and albums in a JSON object. Without a type, artists and then albums (as found by the default Lidarr server) follow TMDB's results on the first page only, are counted in totalResults, and are never found by an id search; with no default Lidarr server, or Lidarr failing, the answer has no music. With a type, only that type's results are answered, read from that type's own source (TMDB's search of movies, of TV or of people; the default Lidarr's search of artists and albums, as page 1 of 1, a later page answering no results of 1 page); a type whose kind is not shown (movie while no Radarr server is configured, tv while no Sonarr server is, music while no Lidarr server is default, person while neither movie nor tv is shown) is answered as no type. Where neither movie nor tv is shown, TMDB is not read - with music shown the answer is that of the type music, with no kind shown it is page 1 of 1 with no results. Every result of a kind not shown is left out, the page and totalPages of the source read and its totalResults kept however few results are left. The status of a music result's mediaInfo is computed as MediaInfo describes; an album is left out of the results where a whole-artist request of its artist stands and the artist's albums or the saved metadata profile cannot be read, the other results standing.
       tags:
         - search
       parameters:
@@ -5969,6 +5976,13 @@ paths:
           schema:
             type: string
             example: en
+        - in: query
+          name: type
+          description: Only the results of this type
+          schema:
+            type: string
+            enum: [movie, tv, music, person]
+            example: movie
       responses:
         '200':
           description: Results
@@ -7291,6 +7305,77 @@ paths:
           description: Status must be approve or decline
         '409':
           description: Only pending requests can be approved or declined
+  /music/recentlyadded:
+    get:
+      summary: Get the recently added albums
+      description: Returns up to 20 albums the default Lidarr server holds at least one track file of, as music results (mediaType `album`), the album whose newest track file Lidarr gained most recently first. Lidarr is read as it stands at each call. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
+      tags:
+        - music
+      responses:
+        '200':
+          description: The items, at most 20, in the order the description gives
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    maxItems: 20
+                    items:
+                      anyOf:
+                        - $ref: '#/components/schemas/ArtistResult'
+                        - $ref: '#/components/schemas/AlbumResult'
+  /music/popular:
+    get:
+      summary: Get the popular albums
+      description: Returns up to 20 of the albums (release groups) most listened to on ListenBrainz site-wide over its latest monthly statistics, read keyless, most listened first, as music results (mediaType `album`); an entry without a MusicBrainz release-group id is left out. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
+      tags:
+        - music
+      responses:
+        '200':
+          description: The items, at most 20, in the order the description gives
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    maxItems: 20
+                    items:
+                      anyOf:
+                        - $ref: '#/components/schemas/ArtistResult'
+                        - $ref: '#/components/schemas/AlbumResult'
+  /music/artist/{mbid}/similar:
+    get:
+      summary: Get the artists similar to an artist
+      description: Returns up to 20 artists ListenBrainz gives as similar to the artist, read keyless by its MusicBrainz id, most similar first, the artist itself never among them, as music results (mediaType `artist`), each with the image Lidarr's metadata service gives it, where it gives one. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
+      tags:
+        - music
+      parameters:
+        - in: path
+          name: mbid
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: 'a74b1b7f-71a5-4011-9441-d0b5e4122711'
+      responses:
+        '200':
+          description: The items, at most 20, in the order the description gives
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    maxItems: 20
+                    items:
+                      anyOf:
+                        - $ref: '#/components/schemas/ArtistResult'
+                        - $ref: '#/components/schemas/AlbumResult'
   /music/artist/{mbid}:
     get:
       summary: Get artist details

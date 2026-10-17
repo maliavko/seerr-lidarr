@@ -64,6 +64,20 @@ export interface LidarrTrack {
   hasFile: boolean;
 }
 
+// A file Lidarr holds of an album (GET /trackfile); only the fields Seerr reads
+// are typed.
+export interface LidarrTrackFile {
+  id: number;
+  albumId: number;
+  artistId?: number;
+  // when Lidarr gained the file (ISO 8601)
+  dateAdded: string;
+}
+
+// Lidarr answers a track-file read for as many albums as one request names;
+// the longer list is read in batches of this many.
+const TRACK_FILE_BATCH = 50;
+
 export type LidarrMonitor = 'none' | 'all';
 
 // what Lidarr monitors of the albums of an artist it adds: 'existing' monitors
@@ -297,6 +311,30 @@ class LidarrAPI extends ServarrBase<{ albumId: number }> {
       return response.data;
     } catch (e) {
       throw new Error(`[Lidarr] Failed to retrieve tracks: ${e.message}`, {
+        cause: e,
+      });
+    }
+  }
+
+  // The track files of the given albums (Lidarr's ids), asked 50 albums at a
+  // time; a batch failing fails the read.
+  public async getTrackFiles(albumIds: number[]): Promise<LidarrTrackFile[]> {
+    const files: LidarrTrackFile[] = [];
+
+    try {
+      for (let i = 0; i < albumIds.length; i += TRACK_FILE_BATCH) {
+        const response = await this.axios.get<LidarrTrackFile[]>('/trackfile', {
+          params: { albumId: albumIds.slice(i, i + TRACK_FILE_BATCH) },
+          // albumId=1&albumId=2, as Lidarr reads a list
+          paramsSerializer: { indexes: null },
+        });
+
+        files.push(...response.data);
+      }
+
+      return files;
+    } catch (e) {
+      throw new Error(`[Lidarr] Failed to retrieve track files: ${e.message}`, {
         cause: e,
       });
     }

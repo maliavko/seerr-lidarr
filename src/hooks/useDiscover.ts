@@ -1,7 +1,12 @@
 import useToasts from '@app/hooks/useToasts';
 import globalMessages from '@app/i18n/globalMessages';
+import {
+  isEndByPageCount,
+  newLoadMark,
+  searchLoadStep,
+} from '@app/utils/searchLoading';
 import { MediaStatus } from '@server/constants/media';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useIntl } from 'react-intl';
 import useSWRInfinite from 'swr/infinite';
 import useSettings from './useSettings';
@@ -60,7 +65,15 @@ const useDiscover = <
 >(
   endpoint: string,
   options?: O,
-  { hideAvailable = true, hideBlocklisted = true, hideRequested = true } = {}
+  {
+    hideAvailable = true,
+    hideBlocklisted = true,
+    hideRequested = true,
+    // The search page only (F2-D-71): the end of results is the last page by
+    // the page count, and a run that has added fewer than 20 titles is
+    // followed by the next page at once.
+    endByPageCount = false,
+  } = {}
 ): DiscoverResult<T, S> => {
   const settings = useSettings();
   const { hasPermission } = useUser();
@@ -154,12 +167,47 @@ const useDiscover = <
     });
   }
 
-  const isEmpty = !isLoadingInitialData && titles?.length === 0;
-  const isReachingEnd =
-    isEmpty ||
-    (!!data && (data[data?.length - 1]?.results.length ?? 0) < 20) ||
-    (!!data && (data[data?.length - 1]?.totalResults ?? 0) <= size * 20) ||
-    (!!data && (data[data?.length - 1]?.totalResults ?? 0) < 41);
+  const reachedLastPage = endByPageCount && isEndByPageCount(data);
+  const isEmpty = endByPageCount
+    ? !isLoadingInitialData && reachedLastPage && titles.length === 0
+    : !isLoadingInitialData && titles?.length === 0;
+  const isReachingEnd = endByPageCount
+    ? reachedLastPage
+    : isEmpty ||
+      (!!data && (data[data?.length - 1]?.results.length ?? 0) < 20) ||
+      (!!data && (data[data?.length - 1]?.totalResults ?? 0) <= size * 20) ||
+      (!!data && (data[data?.length - 1]?.totalResults ?? 0) < 41);
+
+  // The load-on's bookkeeping is the pure step in src/utils (F2-D-71): the
+  // effect keeps the mark it answers and sets the size it answers.
+  const loadMark = useRef(newLoadMark());
+  const listKey = JSON.stringify([endpoint, options]);
+
+  useEffect(() => {
+    if (!endByPageCount) {
+      return;
+    }
+
+    const answer = searchLoadStep({
+      key: listKey,
+      size,
+      pages: data,
+      titles: titles.length,
+      outstanding:
+        !!error ||
+        !data ||
+        isValidating ||
+        data.length < size ||
+        !data.every((page) => !!page),
+      mark: loadMark.current,
+    });
+
+    loadMark.current = answer.mark;
+
+    if (answer.size !== undefined) {
+      setSize(answer.size);
+    }
+  });
 
   useEffect(() => {
     if (error && titles.length) {

@@ -1,8 +1,10 @@
 import { sliderTitles } from '@app/components/Discover/constants';
 import RequestCard from '@app/components/RequestCard';
 import Slider from '@app/components/Slider';
+import useSettings from '@app/hooks/useSettings';
 import { Permission, useUser } from '@app/hooks/useUser';
 import defineMessages from '@app/utils/defineMessages';
+import { isLeftOutByKinds, keepShownKinds } from '@app/utils/sliderKinds';
 import {
   ArrowRightCircleIcon,
   ExclamationTriangleIcon,
@@ -20,6 +22,7 @@ const messages = defineMessages('components.Discover.RecentRequestsSlider', {
 const RecentRequestsSlider = () => {
   const intl = useIntl();
   const { hasPermission } = useUser();
+  const { currentSettings } = useSettings();
   const { data: requests, error: requestError } =
     useSWR<RequestResultsResponse>(
       '/api/v1/request?filter=all&take=10&sort=added&skip=0',
@@ -28,7 +31,18 @@ const RecentRequestsSlider = () => {
       }
     );
 
+  // drop the requests of kinds not shown (F2-D-211)
+  const results = keepShownKinds(
+    requests?.results ?? [],
+    currentSettings.kindsShown,
+    (request) => request.type
+  );
+
   if (requests && requests.results.length === 0 && !requestError) {
+    return null;
+  }
+
+  if (requests && isLeftOutByKinds(requests.results.length, results.length)) {
     return null;
   }
 
@@ -65,7 +79,7 @@ const RecentRequestsSlider = () => {
       <Slider
         sliderKey="requests"
         isLoading={!requests}
-        items={(requests?.results ?? []).map((request) => (
+        items={results.map((request) => (
           <RequestCard
             key={`request-slider-item-${request.id}`}
             request={request}

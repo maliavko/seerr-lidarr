@@ -11,6 +11,7 @@ import type {
   LidarrArtistOptions,
   LidarrCommand,
   LidarrTrack,
+  LidarrTrackFile,
   MetadataProfile,
 } from '@server/api/servarr/lidarr';
 import LidarrAPI from '@server/api/servarr/lidarr';
@@ -1007,6 +1008,124 @@ describe('LidarrAPI getTracks', () => {
       '[Lidarr] Failed to retrieve tracks: Request failed with status code 400'
     );
     assert.strictEqual(error.cause, cause);
+  });
+});
+
+describe('LidarrAPI getTrackFiles', () => {
+  afterEach(() => mock.restoreAll());
+
+  // the requests the client sends, as the URL axios builds for them, answered
+  // by the given function
+  function wire(
+    lidarr: LidarrAPI,
+    respond: (url: string) => { status?: number; data?: unknown }
+  ): string[] {
+    const urls: string[] = [];
+    getAxios(lidarr).defaults.adapter = async (config) => {
+      const url = getAxios(lidarr).getUri(config);
+      urls.push(url);
+      const { status = 200, data = [] } = respond(url);
+      const response = {
+        data,
+        status,
+        statusText: String(status),
+        headers: {},
+        config,
+      };
+
+      if (status >= 400) {
+        throw Object.assign(
+          new Error(`Request failed with status code ${status}`),
+          {
+            response,
+          }
+        );
+      }
+
+      return response;
+    };
+
+    return urls;
+  }
+
+  it('asks GET /trackfile with one albumId parameter for each album, and answers the files', async () => {
+    const lidarr = buildLidarr();
+    // recorded from the test Lidarr: GET /trackfile?albumId=1&albumId=2 (the
+    // first three files of Untrue, album 2)
+    const files = fixture<LidarrTrackFile[]>('trackfiles');
+    const urls = wire(lidarr, () => ({ data: files }));
+
+    const answer = await lidarr.getTrackFiles([1, 2]);
+
+    assert.deepStrictEqual(urls, [
+      'http://localhost:8686/lidarr' +
+        instance +
+        '/api/v1/trackfile?apikey=test&albumId=1&albumId=2',
+    ]);
+    assert.deepStrictEqual(answer, files);
+    assert.deepStrictEqual(
+      answer.map((file) => [file.albumId, file.dateAdded]),
+      [
+        [2, '2026-10-15T14:07:50Z'],
+        [2, '2026-10-15T14:07:50Z'],
+        [2, '2026-10-15T14:07:50Z'],
+      ]
+    );
+  });
+
+  it('asks nothing for no album', async () => {
+    const lidarr = buildLidarr();
+    const urls = wire(lidarr, () => ({}));
+
+    assert.deepStrictEqual(await lidarr.getTrackFiles([]), []);
+    assert.strictEqual(urls.length, 0);
+  });
+
+  it('asks 50 albums at a time and answers the files of every batch in order', async () => {
+    const lidarr = buildLidarr();
+    const ids = Array.from({ length: 120 }, (_, i) => i + 1);
+    const urls = wire(lidarr, (url) => {
+      const asked = new URL(url).searchParams.getAll('albumId').map(Number);
+
+      return {
+        data: asked.map((albumId) => ({
+          id: albumId * 10,
+          albumId,
+          dateAdded: '2026-01-01T00:00:00Z',
+        })),
+      };
+    });
+
+    const answer = await lidarr.getTrackFiles(ids);
+
+    assert.deepStrictEqual(
+      urls.map((url) => new URL(url).searchParams.getAll('albumId').length),
+      [50, 50, 20]
+    );
+    assert.deepStrictEqual(
+      answer.map((file) => file.albumId),
+      ids
+    );
+  });
+
+  it('throws a [Lidarr] error with the cause when a batch fails, answering no files', async () => {
+    const lidarr = buildLidarr();
+    const urls = wire(lidarr, (url) =>
+      new URL(url).searchParams.getAll('albumId').includes('51')
+        ? { status: 404 }
+        : { data: [] }
+    );
+
+    const error = await rejection(
+      lidarr.getTrackFiles(Array.from({ length: 120 }, (_, i) => i + 1))
+    );
+
+    assert.strictEqual(
+      error.message,
+      '[Lidarr] Failed to retrieve track files: Request failed with status code 404'
+    );
+    assert.ok(error.cause);
+    assert.strictEqual(urls.length, 2, 'the third batch is not asked');
   });
 });
 

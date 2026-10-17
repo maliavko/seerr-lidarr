@@ -4,6 +4,7 @@ import Slider from '@app/components/Slider';
 import TitleCard from '@app/components/TitleCard';
 import useSettings from '@app/hooks/useSettings';
 import { useUser } from '@app/hooks/useUser';
+import { isMediaSliderLeftOut, keepShownKinds } from '@app/utils/sliderKinds';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import { MediaStatus } from '@server/constants/media';
 import { Permission } from '@server/lib/permissions';
@@ -31,6 +32,11 @@ interface MediaSliderProps {
   hideWhenEmpty?: boolean;
   extraParams?: string;
   onNewTitles?: (titleCount: number) => void;
+  // Given only by the sliders whose results mix kinds (Trending, TMDB Search):
+  // drop the items of kinds not shown, and leave the slider out where it keeps
+  // no item it draws a card for and the kinds not shown had a hand in it
+  // (F2-D-211).
+  dropHiddenKinds?: boolean;
 }
 
 const MediaSlider = ({
@@ -41,6 +47,7 @@ const MediaSlider = ({
   sliderKey,
   hideWhenEmpty = false,
   onNewTitles,
+  dropHiddenKinds = false,
 }: MediaSliderProps) => {
   const settings = useSettings();
   const { hasPermission } = useUser();
@@ -64,6 +71,23 @@ const MediaSlider = ({
     (a, v) => [...a, ...v.results],
     [] as (MovieResult | TvResult | PersonResult)[]
   );
+
+  // Decided on the items as loaded, before the kinds and the hide filters
+  // (F2-D-211).
+  const leftOutByKinds =
+    dropHiddenKinds &&
+    isMediaSliderLeftOut(
+      titles.map((i) => i.mediaType),
+      settings.currentSettings.kindsShown
+    );
+
+  if (dropHiddenKinds) {
+    titles = keepShownKinds(
+      titles,
+      settings.currentSettings.kindsShown,
+      (i) => i.mediaType
+    );
+  }
 
   if (settings.currentSettings.hideAvailable) {
     titles = titles.filter(
@@ -109,6 +133,17 @@ const MediaSlider = ({
   }, [titles, setSize, size, data, onNewTitles]);
 
   if (hideWhenEmpty && (data?.[0].results ?? []).length === 0) {
+    return null;
+  }
+
+  // Left out once loaded: the pages the effect above still goes on loading
+  // are not yet loaded, and the slider shows as it does today meanwhile.
+  const lastPage = data?.[data.length - 1];
+  const loadsOn =
+    (!!lastPage && data.length < size && lastPage.page < lastPage.totalPages) ||
+    (size < 5 && (data?.[0]?.totalResults ?? 0) > size * 20);
+
+  if (leftOutByKinds && data && !loadsOn) {
     return null;
   }
 

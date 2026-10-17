@@ -8,17 +8,22 @@ import DiscoverSliderEdit from '@app/components/Discover/DiscoverSliderEdit';
 import MovieGenreSlider from '@app/components/Discover/MovieGenreSlider';
 import NetworkSlider from '@app/components/Discover/NetworkSlider';
 import PlexWatchlistSlider from '@app/components/Discover/PlexWatchlistSlider';
+import PopularAlbumsSlider from '@app/components/Discover/PopularAlbumsSlider';
+import RecentMusicRequestsSlider from '@app/components/Discover/RecentMusicRequestsSlider';
 import RecentRequestsSlider from '@app/components/Discover/RecentRequestsSlider';
+import RecentlyAddedMusicSlider from '@app/components/Discover/RecentlyAddedMusicSlider';
 import RecentlyAddedSlider from '@app/components/Discover/RecentlyAddedSlider';
 import StudioSlider from '@app/components/Discover/StudioSlider';
 import TvGenreSlider from '@app/components/Discover/TvGenreSlider';
 import { sliderTitles } from '@app/components/Discover/constants';
 import MediaSlider from '@app/components/MediaSlider';
 import { encodeURIExtraParams } from '@app/hooks/useDiscover';
+import useSettings from '@app/hooks/useSettings';
 import useToasts from '@app/hooks/useToasts';
 import { Permission, useUser } from '@app/hooks/useUser';
 import globalMessages from '@app/i18n/globalMessages';
 import defineMessages from '@app/utils/defineMessages';
+import { isSliderShown } from '@app/utils/sliderKinds';
 import { Transition } from '@headlessui/react';
 import {
   ArrowDownOnSquareIcon,
@@ -56,6 +61,7 @@ const Discover = () => {
   const intl = useIntl();
   const { hasPermission } = useUser();
   const { addToast } = useToasts();
+  const { currentSettings } = useSettings();
   const {
     data: discoverData,
     error: discoverError,
@@ -228,6 +234,7 @@ const Discover = () => {
                 title={intl.formatMessage(sliderTitles.trending)}
                 url="/api/v1/discover/trending"
                 linkUrl="/discover/trending"
+                dropHiddenKinds
               />
             );
             break;
@@ -365,6 +372,7 @@ const Discover = () => {
                 url="/api/v1/search"
                 extraParams={`query=${slider.data}`}
                 linkUrl={`/search?query=${slider.data}`}
+                dropHiddenKinds
               />
             );
             break;
@@ -398,6 +406,34 @@ const Discover = () => {
               />
             );
             break;
+          case DiscoverSliderType.RECENTLY_ADDED_MUSIC:
+            sliderComponent = (
+              <RecentlyAddedMusicSlider
+                title={intl.formatMessage(sliderTitles.recentlyaddedmusic)}
+              />
+            );
+            break;
+          case DiscoverSliderType.RECENT_MUSIC_REQUESTS:
+            sliderComponent = (
+              <RecentMusicRequestsSlider
+                title={intl.formatMessage(sliderTitles.recentmusicrequests)}
+              />
+            );
+            break;
+          case DiscoverSliderType.POPULAR_ALBUMS:
+            sliderComponent = (
+              <PopularAlbumsSlider
+                title={intl.formatMessage(sliderTitles.popularalbums)}
+              />
+            );
+            break;
+        }
+
+        // A slider none of whose kinds is shown is neither fetched nor shown on
+        // the home page, and shown in its edit frame without its content in
+        // Customize Discover, which still lists every slider (F2-D-12).
+        if (!isSliderShown(slider.type, currentSettings.kindsShown)) {
+          sliderComponent = null;
         }
 
         if (isEditing) {
@@ -452,7 +488,7 @@ const Discover = () => {
           );
         }
 
-        if (!slider.enabled) {
+        if (!slider.enabled || !sliderComponent) {
           return null;
         }
 
