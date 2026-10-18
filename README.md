@@ -1,3 +1,14 @@
+> [!NOTE]
+> **This fork (`main-music` branch) adds music to Seerr through [Lidarr](https://lidarr.audio/).**
+>
+> - Lidarr server in *Settings > Services*; artist and album search, artist/album pages
+> - Request an album or a whole artist, with *Request Music* / *Auto-Approve Music* permissions
+> - Availability synced from Lidarr (*Lidarr Scan*: on save and every 30 min)
+> - *Music* menu and *Discover Music* page: Recently Added, Recent Music Requests, Similar to Your Library ([ListenBrainz](https://listenbrainz.org/)); Similar Artists on artist pages
+> - Search type filter (All / Movies / Series / Music / People); kinds without a configured service are hidden
+>
+> Image: `ghcr.io/maliavko/seerr-lidarr:latest`, built from `main-music` by GitHub Actions. Upstream: [seerr-team/seerr](https://github.com/seerr-team/seerr).
+
 <p align="center">
 <img src="./public/logo_full.svg" alt="Seerr" style="margin: 20px 0;">
 </p>
