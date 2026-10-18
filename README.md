@@ -16,7 +16,9 @@
 
 ![Discover Music: Recently Added, Recent Music Requests, Similar to Your Library](.github/readme/music-page.jpg)
 
-![Artist page: albums with their status from Lidarr, Similar Artists](.github/readme/artist-page.jpg)
+![Artist page: genres, links, rating and facts, albums with their status from Lidarr](.github/readme/artist-page.jpg)
+
+![Album page: overview, genres, links, facts with the files Lidarr holds, tracks marked when held](.github/readme/album-page.jpg)
 
 ![Search with the type filter](.github/readme/search-results.jpg)
 
