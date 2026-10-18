@@ -47,6 +47,8 @@ export interface LidarrRelease {
   title?: string;
   status?: string;
   monitored: boolean;
+  // the number of tracks across its media
+  trackCount?: number;
 }
 
 export interface LidarrTrack {

@@ -150,6 +150,7 @@ musicRoutes.get('/artist/:mbid', async (req, res, next) => {
           title: album.title,
           releaseDate: album.releaseDate,
           albumType: album.albumType,
+          trackCount: album.trackCount,
           secondaryTypes: album.secondaryTypes,
           coverUrl: album.coverUrl,
           mediaInfo: musicMediaInfo(resolved, row),

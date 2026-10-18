@@ -1,6 +1,8 @@
 **This fork adds music to Seerr through [Lidarr](https://lidarr.audio/).** The list of all the major changes in comparison to the upstream:
 
 - Lidarr server in *Settings > Services*; artist and album search, artist/album pages
+- Artist page: albums newest first, as cards or as a sortable table (title, year, type, tracks, status; request on row hover)
+- Album page: the track list of the album's canonical edition (the most common Official one), not a box set
 - Request an album (only that album is monitored in Lidarr) or a whole artist (all its albums and future releases are monitored), with *Request Music* / *Auto-Approve Music* permissions
 - Music requests in the *Requests* list and user profiles beside movies and series: approve, decline, retry
 - Music statuses on cards and pages: Requested, Available, Partially Available (artist)

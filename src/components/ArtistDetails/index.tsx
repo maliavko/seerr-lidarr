@@ -1,3 +1,4 @@
+import AlbumTable from '@app/components/ArtistDetails/AlbumTable';
 import CachedImage from '@app/components/Common/CachedImage';
 import LoadingSpinner from '@app/components/Common/LoadingSpinner';
 import PageTitle from '@app/components/Common/PageTitle';
@@ -6,17 +7,23 @@ import AlbumCard from '@app/components/MusicCard/AlbumCard';
 import MusicRequestButton from '@app/components/MusicRequestButton';
 import StatusBadge from '@app/components/StatusBadge';
 import ErrorPage from '@app/pages/_error';
+import type { AlbumView } from '@app/utils/albumTable';
+import { readAlbumView, saveAlbumView } from '@app/utils/albumTable';
 import defineMessages from '@app/utils/defineMessages';
 import { shownStatus } from '@app/utils/musicHelpers';
+import { Squares2X2Icon, TableCellsIcon } from '@heroicons/react/24/outline';
 import type Media from '@server/entity/Media';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 import useSWR from 'swr';
 
 const messages = defineMessages('components.ArtistDetails', {
   overview: 'Overview',
   albums: 'Albums',
+  cardView: 'Show as cards',
+  tableView: 'Show as table',
 });
 
 export interface MusicAlbumListItem {
@@ -25,6 +32,7 @@ export interface MusicAlbumListItem {
   releaseDate?: string;
   albumType?: string;
   secondaryTypes?: string[];
+  trackCount?: number;
   coverUrl?: string;
   mediaInfo?: Media;
 }
@@ -52,6 +60,15 @@ interface ArtistDetailsProps {
 const ArtistDetails = ({ artist, statusCode }: ArtistDetailsProps) => {
   const router = useRouter();
   const intl = useIntl();
+  const [albumView, setAlbumView] = useState<AlbumView>('cards');
+
+  // the viewer's last choice, read once in the browser (never on the server)
+  useEffect(() => setAlbumView(readAlbumView()), []);
+
+  const chooseAlbumView = (view: AlbumView) => {
+    setAlbumView(view);
+    saveAlbumView(view);
+  };
 
   const { data, error, mutate } = useSWR<MusicArtistDetails>(
     `/api/v1/music/artist/${router.query.mbid}`,
@@ -151,21 +168,50 @@ const ArtistDetails = ({ artist, statusCode }: ArtistDetailsProps) => {
             <div className="slider-title">
               <span>{intl.formatMessage(messages.albums)}</span>
             </div>
+            <div className="ml-auto flex items-center gap-1 pl-4" role="group">
+              {(
+                [
+                  ['cards', Squares2X2Icon, messages.cardView],
+                  ['table', TableCellsIcon, messages.tableView],
+                ] as const
+              ).map(([view, Icon, label]) => (
+                <button
+                  key={view}
+                  type="button"
+                  title={intl.formatMessage(label)}
+                  aria-label={intl.formatMessage(label)}
+                  aria-pressed={albumView === view}
+                  data-testid={`artist-albums-view-${view}`}
+                  onClick={() => chooseAlbumView(view)}
+                  className={`rounded-md p-1.5 transition ${
+                    albumView === view
+                      ? 'bg-indigo-600 text-white'
+                      : 'text-gray-400 hover:bg-gray-700 hover:text-white'
+                  }`}
+                >
+                  <Icon className="h-5 w-5" />
+                </button>
+              ))}
+            </div>
           </div>
-          <ul className="cards-vertical" data-testid="artist-albums">
-            {data.albums.map((album) => (
-              <li key={album.id}>
-                <AlbumCard
-                  id={album.id}
-                  title={album.title}
-                  releaseDate={album.releaseDate}
-                  image={album.coverUrl}
-                  status={shownStatus(album.mediaInfo?.status)}
-                  canExpand
-                />
-              </li>
-            ))}
-          </ul>
+          {albumView === 'table' ? (
+            <AlbumTable albums={data.albums} onUpdate={() => mutate()} />
+          ) : (
+            <ul className="cards-vertical" data-testid="artist-albums">
+              {data.albums.map((album) => (
+                <li key={album.id}>
+                  <AlbumCard
+                    id={album.id}
+                    title={album.title}
+                    releaseDate={album.releaseDate}
+                    image={album.coverUrl}
+                    status={shownStatus(album.mediaInfo?.status)}
+                    canExpand
+                  />
+                </li>
+              ))}
+            </ul>
+          )}
         </>
       )}
       <SimilarArtistsSlider mbid={data.id} />

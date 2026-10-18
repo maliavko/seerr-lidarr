@@ -322,6 +322,7 @@ describe('GET /music/artist/:mbid', () => {
       genres: lookup.genres,
       inLidarr: false,
       albums: [
+        // the dated album first, an undated one last
         {
           id: OK_COMPUTER,
           title: 'OK Computer',
@@ -378,7 +379,14 @@ describe('GET /music/artist/:mbid', () => {
     assert.ok(!('disambiguation' in res.body), 'an empty one is left out');
     assert.deepStrictEqual(
       res.body.albums.map((a: { id: string }) => a.id),
-      albums.map((a) => a.foreignAlbumId)
+      // the latest release first
+      [...albums]
+        .sort(
+          (a, b) =>
+            (b.releaseDate ?? '').localeCompare(a.releaseDate ?? '') ||
+            a.title.localeCompare(b.title)
+        )
+        .map((a) => a.foreignAlbumId)
     );
     for (const album of res.body.albums) {
       assert.deepStrictEqual(
@@ -392,6 +400,7 @@ describe('GET /music/artist/:mbid', () => {
           'releaseDate',
           'secondaryTypes',
           'title',
+          'trackCount',
         ]
       );
     }
@@ -471,7 +480,9 @@ describe('GET /music/artist/:mbid', () => {
     const res = await agent.get(`/api/v1/music/artist/${RADIOHEAD}`);
 
     assert.strictEqual(res.status, 200);
-    const [first, second] = res.body.albums;
+    const byId = (id: string) =>
+      res.body.albums.find((a: { id: string }) => a.id === id);
+    const [first, second] = [byId(OK_COMPUTER), byId(KID_A)];
     assert.strictEqual(first.mediaInfo.id, album.id);
     assert.strictEqual(first.mediaInfo.status, MediaStatus.AVAILABLE);
     assert.strictEqual(first.mediaInfo.musicKind, 'album');

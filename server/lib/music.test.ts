@@ -19,6 +19,8 @@ import LidarrAPI from '@server/api/servarr/lidarr';
 import cacheManager from '@server/lib/cache';
 import {
   MusicSourceError,
+  byReleaseDateDesc,
+  canonicalRelease,
   getAlbum,
   getArtist,
   isMusicConfigured,
@@ -951,8 +953,17 @@ describe('getArtist where Lidarr holds the artist', () => {
     assert.strictEqual(artist.artistType, 'Group');
     assert.deepStrictEqual(
       artist.albums.map((album) => [album.id, album.title, album.inLidarr]),
-      heldAlbums().map((album) => [album.foreignAlbumId, album.title, true])
+      heldAlbums()
+        .sort(
+          (a, b) =>
+            (b.releaseDate ?? '').localeCompare(a.releaseDate ?? '') ||
+            a.title.localeCompare(b.title)
+        )
+        .map((album) => [album.foreignAlbumId, album.title, true])
     );
+    // the latest release first, each with the track count Lidarr keeps for it
+    assert.strictEqual(artist.albums[0].title, 'A Moon Shaped Pool');
+    assert.ok(artist.albums.every((album) => (album.trackCount ?? 0) > 0));
     // Lidarr's albums carry their own covers
     assert.match(
       artist.albums[0].coverUrl ?? '',
@@ -1307,7 +1318,11 @@ describe('getArtist where Lidarr does not hold the artist', () => {
         'The King of Limbs',
         'A Moon Shaped Pool',
       ]
+        .map((title) => artist.albums.find((album) => album.title === title))
+        .sort((a, b) => byReleaseDateDesc(a!, b!))
+        .map((album) => album?.title)
     );
+    assert.strictEqual(artist.albums[0].title, 'A Moon Shaped Pool');
     for (const album of artist.albums) {
       assert.strictEqual(album.albumType, 'Album');
       assert.deepStrictEqual(album.secondaryTypes, []);
@@ -1317,8 +1332,10 @@ describe('getArtist where Lidarr does not hold the artist', () => {
         `https://coverartarchive.org/release-group/${album.id}/front-250`
       );
     }
-    assert.strictEqual(artist.albums[3].id, OK_COMPUTER);
-    assert.strictEqual(artist.albums[3].releaseDate, '1997-05-21');
+    const okComputer = artist.albums.find((album) => album.id === OK_COMPUTER);
+    assert.strictEqual(okComputer?.releaseDate, '1997-05-21');
+    // MusicBrainz's list gives no track counts
+    assert.strictEqual(okComputer?.trackCount, undefined);
   });
 
   it('keeps the lookup 6 hours', async () => {
@@ -1500,7 +1517,7 @@ describe('getAlbum', () => {
   it('answers the title, artist, year, types and cover of the lookup', async () => {
     answerWith({
       lookupAlbumByMbid: lookedUpAlbum(),
-      releases: { [MONITORED_RELEASE]: release() },
+      releases: { [FIRST_OFFICIAL_RELEASE]: release() },
     });
 
     const album = await getAlbum(OK_COMPUTER);
@@ -1564,7 +1581,7 @@ describe('getAlbum', () => {
       answerWith({
         lookupAlbumByMbid: heldAlbumLookup(),
         getTracks: boom(),
-        releases: { [MONITORED_RELEASE]: release() },
+        releases: { [FIRST_OFFICIAL_RELEASE]: release() },
       });
 
       const album = await getAlbum(OK_COMPUTER);
@@ -1605,17 +1622,23 @@ describe('getAlbum', () => {
   });
 
   describe('where Lidarr does not hold the album', () => {
-    it('answers the tracks of the release the lookup marks monitored', async () => {
+    it('answers the tracks of the canonical release, not the box set the lookup marks monitored', async () => {
       const lookup = lookedUpAlbum();
+      // the lookup marks monitored its 91-track box; most of its Official
+      // releases have 12 tracks, the first of them FIRST_OFFICIAL_RELEASE
       assert.deepStrictEqual(
         lookup.releases
           ?.filter((r) => r.monitored)
-          .map((r) => r.foreignReleaseId),
-        [MONITORED_RELEASE]
+          .map((r) => [r.foreignReleaseId, r.trackCount]),
+        [[MONITORED_RELEASE, 91]]
       );
       answerWith({
         lookupAlbumByMbid: lookup,
-        releases: { [MONITORED_RELEASE]: release() },
+        releases: {
+          [FIRST_OFFICIAL_RELEASE]: musicBrainzFixture(
+            'release-first-official'
+          ),
+        },
       });
 
       const album = await getAlbum(OK_COMPUTER);
@@ -1624,41 +1647,19 @@ describe('getAlbum', () => {
         `lookupAlbumByMbid ${OK_COMPUTER}`,
       ]);
       assert.deepStrictEqual(calls.musicBrainz, [
-        `/release/${MONITORED_RELEASE}`,
+        `/release/${FIRST_OFFICIAL_RELEASE}`,
       ]);
-      assert.strictEqual(album?.tracks.length, 91);
-      assert.deepStrictEqual(album?.tracks[0], {
-        disc: 1,
-        position: 1,
-        number: 'A1',
-        title: 'Airbag',
-        length: 284000,
-      });
-      // the second medium counts from 1 again, its numbers as the release gives them
-      assert.deepStrictEqual(
-        album?.tracks.filter((t) => t.disc === 2).slice(0, 1),
-        [
-          {
-            disc: 2,
-            position: 1,
-            number: 'C1',
-            title: 'Fitter Happier',
-            length: 117000,
-          },
-        ]
-      );
-      assert.deepStrictEqual(
-        [...new Set(album?.tracks.map((t) => t.disc))],
-        [1, 2, 3, 4, 5, 6]
-      );
+      assert.strictEqual(album?.tracks[0].title, 'Airbag');
+      assert.strictEqual(album?.trackCount, 12);
     });
 
-    it('takes the first Official release where none is marked monitored', async () => {
+    it('takes the canonical release among the Official ones only', async () => {
       const lookup = lookedUpAlbum();
       lookup.releases = (lookup.releases ?? []).map((r, i) => ({
         ...r,
         monitored: false,
-        status: i === 0 ? 'Bootleg' : i === 1 ? 'Official' : r.status,
+        // every release but the second is a bootleg of the usual 12 tracks
+        status: i === 1 ? 'Official' : 'Bootleg',
       }));
       answerWith({
         lookupAlbumByMbid: lookup,
@@ -1669,15 +1670,14 @@ describe('getAlbum', () => {
         },
       });
 
-      const album = await getAlbum(OK_COMPUTER);
+      await getAlbum(OK_COMPUTER);
 
       assert.deepStrictEqual(calls.musicBrainz, [
         `/release/${lookup.releases[1].foreignReleaseId}`,
       ]);
-      assert.strictEqual(album?.tracks[0].title, 'Airbag');
     });
 
-    it('takes the first release where none is monitored or Official', async () => {
+    it('takes the canonical release among all where none is Official', async () => {
       const lookup = lookedUpAlbum();
       lookup.releases = (lookup.releases ?? []).map((r) => ({
         ...r,
@@ -1720,7 +1720,7 @@ describe('getAlbum', () => {
       };
       answerWith({
         lookupAlbumByMbid: lookedUpAlbum(),
-        releases: { [MONITORED_RELEASE]: recorded },
+        releases: { [FIRST_OFFICIAL_RELEASE]: recorded },
       });
 
       const album = await getAlbum(OK_COMPUTER);
@@ -1734,7 +1734,7 @@ describe('getAlbum', () => {
     it('answers no tracks, the rest standing, when MusicBrainz fails', async () => {
       answerWith({
         lookupAlbumByMbid: lookedUpAlbum(),
-        releases: { [MONITORED_RELEASE]: boom() },
+        releases: { [FIRST_OFFICIAL_RELEASE]: boom() },
       });
 
       const album = await getAlbum(OK_COMPUTER);
@@ -1787,5 +1787,84 @@ describe('getAlbum', () => {
     assert.deepStrictEqual(album?.tracks, []);
     assert.deepStrictEqual(album?.genres, []);
     assert.strictEqual(album?.releaseDate, undefined);
+  });
+});
+
+describe('canonicalRelease', () => {
+  const release = (
+    id: string,
+    trackCount: number | undefined,
+    status = 'Official'
+  ) => ({ foreignReleaseId: id, trackCount, status, monitored: false });
+
+  it("takes the track count most Official releases share: Appetite for Destruction's 12, not its 280-track box", () => {
+    const releases = [
+      { ...release('box', 280), monitored: true },
+      release('super-deluxe', 51),
+      release('cd-1', 12),
+      release('deluxe', 30),
+      release('cd-2', 12),
+      release('vinyl', 12),
+    ];
+
+    assert.strictEqual(canonicalRelease(releases)?.foreignReleaseId, 'cd-1');
+  });
+
+  it('takes the smaller count on a tie', () => {
+    const releases = [
+      release('long-1', 15),
+      release('short-1', 10),
+      release('long-2', 15),
+      release('short-2', 10),
+    ];
+
+    assert.strictEqual(canonicalRelease(releases)?.foreignReleaseId, 'short-1');
+  });
+
+  it('counts only Official releases where there are any', () => {
+    const releases = [
+      release('bootleg-1', 20, 'Bootleg'),
+      release('bootleg-2', 20, 'Bootleg'),
+      release('official', 9),
+    ];
+
+    assert.strictEqual(
+      canonicalRelease(releases)?.foreignReleaseId,
+      'official'
+    );
+  });
+
+  it('takes the first release where none gives a track count, and none where there is none', () => {
+    assert.strictEqual(
+      canonicalRelease([release('a', undefined), release('b', undefined)])
+        ?.foreignReleaseId,
+      'a'
+    );
+    assert.strictEqual(canonicalRelease([]), undefined);
+  });
+});
+
+describe('byReleaseDateDesc', () => {
+  const album = (title: string, releaseDate?: string) => ({
+    id: title,
+    title,
+    releaseDate,
+    secondaryTypes: [],
+    inLidarr: false,
+  });
+
+  it('lists the latest release first, undated albums last, by title among equals', () => {
+    const albums = [
+      album('Pablo Honey', '1993-02-22'),
+      album('Untitled'),
+      album('OK Computer', '1997-05-21'),
+      album('Kid A', '2000-10-02'),
+      album('Amnesiac', '2000-10-02'),
+    ];
+
+    assert.deepStrictEqual(
+      [...albums].sort(byReleaseDateDesc).map((a) => a.title),
+      ['Amnesiac', 'Kid A', 'OK Computer', 'Pablo Honey', 'Untitled']
+    );
   });
 });

@@ -9,6 +9,7 @@ import type {
   LidarrAlbum,
   LidarrArtist,
   LidarrImage,
+  LidarrRelease,
   LidarrTrack,
 } from '@server/api/servarr/lidarr';
 import LidarrAPI from '@server/api/servarr/lidarr';
@@ -51,6 +52,10 @@ export interface MusicAlbumSummary {
   secondaryTypes: string[];
   coverUrl?: string;
   inLidarr: boolean;
+  // the number of tracks of the album: of the edition Lidarr keeps where it
+  // holds the album, of its canonical release otherwise; unknown for an album
+  // only MusicBrainz lists
+  trackCount?: number;
 }
 
 export interface MusicSearchResults {
@@ -208,6 +213,9 @@ export const toAlbumSummary = (album: LidarrAlbum): MusicAlbumSummary => ({
   secondaryTypes: album.secondaryTypes ?? [],
   coverUrl: albumCover(album),
   inLidarr: Boolean(album.id),
+  trackCount: album.id
+    ? album.statistics?.totalTrackCount || undefined
+    : canonicalRelease(album.releases ?? [])?.trackCount,
 });
 
 const toMusicBrainzAlbum = (
@@ -389,10 +397,12 @@ async function readArtistAlbums(
       () => lidarr.getAlbums({ artistId })
     );
 
-    return heldAlbums.map(toAlbumSummary);
+    return heldAlbums.map(toAlbumSummary).sort(byReleaseDateDesc);
   }
 
-  return (await getMusicBrainz().getArtistAlbums(mbid)).map(toMusicBrainzAlbum);
+  return (await getMusicBrainz().getArtistAlbums(mbid))
+    .map(toMusicBrainzAlbum)
+    .sort(byReleaseDateDesc);
 }
 
 // The MusicBrainz ids of the albums a whole-artist request of an artist covers,
@@ -533,18 +543,51 @@ export async function getArtist(mbid: string): Promise<MusicArtist | null> {
   };
 }
 
-// The release whose tracks an album shows when Lidarr does not hold it: the
-// one Lidarr's lookup marks monitored, else its first Official one, else its
-// first (D-201).
-function pickRelease(album: LidarrAlbum): string | undefined {
-  const releases = album.releases ?? [];
+// An album's canonical release: among its Official releases (all of them where
+// none is Official), those with the track count most of them share - the
+// smaller count on a tie - and the first of those in Lidarr's order. Lidarr's
+// lookup marks monitored the release with the most tracks, often a box set
+// (Appetite for Destruction: a 280-track box beside 63 twelve-track editions),
+// so its mark is not followed. Releases with no track count are counted last.
+export function canonicalRelease(
+  releases: LidarrRelease[]
+): LidarrRelease | undefined {
+  const official = releases.filter((release) => release.status === 'Official');
+  const pool = official.length > 0 ? official : releases;
+  const counted = pool.filter((release) => (release.trackCount ?? 0) > 0);
 
-  return (
-    releases.find((release) => release.monitored) ??
-    releases.find((release) => release.status === 'Official') ??
-    releases[0]
-  )?.foreignReleaseId;
+  if (counted.length === 0) {
+    return pool[0];
+  }
+
+  const share = new Map<number, number>();
+  for (const release of counted) {
+    const count = release.trackCount as number;
+    share.set(count, (share.get(count) ?? 0) + 1);
+  }
+
+  const [canonicalCount] = [...share.entries()].sort(
+    ([countA, sharesA], [countB, sharesB]) =>
+      sharesB - sharesA || countA - countB
+  )[0];
+
+  return counted.find((release) => release.trackCount === canonicalCount);
 }
+
+// The release whose tracks an album shows when Lidarr does not hold it: its
+// canonical release.
+function pickRelease(album: LidarrAlbum): string | undefined {
+  return canonicalRelease(album.releases ?? [])?.foreignReleaseId;
+}
+
+// An artist's albums as its page lists them: the latest release first, albums
+// with no release date last, by title among equals.
+export const byReleaseDateDesc = (
+  a: MusicAlbumSummary,
+  b: MusicAlbumSummary
+): number =>
+  (b.releaseDate ?? '').localeCompare(a.releaseDate ?? '') ||
+  a.title.localeCompare(b.title);
 
 // An album (R-5) by its release-group id, answered as getArtist answers.
 export async function getAlbum(mbid: string): Promise<MusicAlbum | null> {

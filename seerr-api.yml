@@ -982,6 +982,10 @@ components:
             type: string
         coverUrl:
           type: string
+        trackCount:
+          type: number
+          example: 12
+          description: Tracks of the edition Lidarr keeps, or of the album's canonical release; absent where unknown
         mediaInfo:
           $ref: '#/components/schemas/MediaInfo'
     MusicError:
