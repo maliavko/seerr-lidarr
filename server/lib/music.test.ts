@@ -22,6 +22,7 @@ import {
   getAlbum,
   getArtist,
   isMusicConfigured,
+  readMusicSearch,
   searchMusic,
 } from '@server/lib/music';
 import { getSettings } from '@server/lib/settings';
@@ -537,6 +538,74 @@ describe('searchMusic', () => {
         10000
       );
     }
+  });
+});
+
+describe('readMusicSearch (F2-D-401)', () => {
+  it('tells each lookup failing from a lookup that answered nothing', async () => {
+    answerWith({ lookupArtists: boom(), lookupAlbums: [] });
+    const artistsFailed = await readMusicSearch('radiohead');
+
+    assert.ok(artistsFailed.failed.artists instanceof Error);
+    assert.strictEqual(artistsFailed.failed.albums, undefined);
+    assert.deepStrictEqual(
+      { artists: artistsFailed.artists, albums: artistsFailed.albums },
+      { artists: [], albums: [] }
+    );
+
+    mock.restoreAll();
+    lidarrCache().flush();
+    answerWith({
+      lookupArtists: [],
+      lookupAlbums: boom(),
+    });
+    const albumsFailed = await readMusicSearch('radiohead');
+
+    assert.strictEqual(albumsFailed.failed.artists, undefined);
+    assert.ok(albumsFailed.failed.albums instanceof Error);
+
+    mock.restoreAll();
+    lidarrCache().flush();
+    answerWith({ lookupArtists: [], lookupAlbums: [] });
+    const nothing = await readMusicSearch('zzzzqqqq');
+
+    assert.deepStrictEqual(nothing.failed, {});
+  });
+
+  it('keeps the results of the lookup that answered beside one that failed', async () => {
+    answerWith({
+      lookupArtists: lidarrFixture('artist-lookup-term'),
+      lookupAlbums: boom(),
+    });
+    const read = await readMusicSearch('radiohead');
+
+    assert.ok(read.artists.length > 0);
+    assert.deepStrictEqual(read.albums, []);
+    assert.ok(read.failed.albums instanceof Error);
+    assert.strictEqual(read.failed.artists, undefined);
+  });
+
+  it('has no failure where no default Lidarr server is set', async () => {
+    answerWith({});
+    getSettings().lidarr = [];
+
+    assert.deepStrictEqual(await readMusicSearch('radiohead'), {
+      artists: [],
+      albums: [],
+      failed: {},
+    });
+  });
+
+  it('leaves searchMusic answering the results alone, as it did', async () => {
+    answerWith({
+      lookupArtists: boom(),
+      lookupAlbums: lidarrFixture('album-lookup-term'),
+    });
+    const results = await searchMusic('radiohead');
+
+    assert.deepStrictEqual(Object.keys(results).sort(), ['albums', 'artists']);
+    assert.deepStrictEqual(results.artists, []);
+    assert.ok(results.albums.length > 0);
   });
 });
 

@@ -4,18 +4,12 @@ import cacheManager from '@server/lib/cache';
 import logger from '@server/logger';
 
 // Every outside call of the ListenBrainz client gives up after five seconds
-// (F2-D-91).
+// (F2-D-291).
 const REQUEST_TIMEOUT = 5000;
 
-// 6 hours, in seconds
-const CACHE_TTL = 21600;
-
-// The most a slider shows.
-const RESULT_LIMIT = 20;
-
-// The site-wide statistics repeat a release group under several releases and
-// carry entries without a release-group id, so more than the limit are asked.
-const STATS_COUNT = 100;
+// 24 hours, in seconds: the call's ttl and the 'listenbrainz' cache's stdTtl
+// alike (F2-D-291).
+const CACHE_TTL = 86400;
 
 const SIMILAR_ARTISTS_ALGORITHM =
   'session_based_days_7500_session_300_contribution_5_threshold_10_limit_100_filter_True_skip_30';
@@ -23,33 +17,12 @@ const SIMILAR_ARTISTS_ALGORITHM =
 const SIMILAR_ARTISTS_URL =
   'https://labs.api.listenbrainz.org/similar-artists/json';
 
-export interface ListenBrainzPopularAlbum {
-  // the release group's MusicBrainz id
-  mbid: string;
-  title: string;
-  artistMbid?: string;
-  artistName?: string;
-  coverUrl: string;
-}
-
 export interface ListenBrainzSimilarArtist {
   // the artist's MusicBrainz id
   mbid: string;
   name: string;
-}
-
-// Only the fields the client reads are typed.
-interface SitewideReleaseGroup {
-  release_group_mbid?: string | null;
-  release_group_name?: string | null;
-  artist_name?: string | null;
-  artist_mbids?: string[] | null;
-  caa_id?: number | null;
-  caa_release_mbid?: string | null;
-}
-
-interface SitewideReleaseGroupsResponse {
-  payload: { release_groups: SitewideReleaseGroup[] };
+  // ListenBrainz's own score, 0 where the entry gives none
+  score: number;
 }
 
 interface SimilarArtistEntry {
@@ -61,10 +34,12 @@ interface SimilarArtistEntry {
 const isNonEmptyString = (value: unknown): value is string =>
   typeof value === 'string' && value.length > 0;
 
-const coverArtUrl = (entry: SitewideReleaseGroup, mbid: string): string =>
-  entry.caa_id && isNonEmptyString(entry.caa_release_mbid)
-    ? `https://coverartarchive.org/release/${entry.caa_release_mbid}/${entry.caa_id}-250.jpg`
-    : `https://coverartarchive.org/release-group/${mbid}/front-250`;
+// an entry's score as a number, 0 where it gives none
+const scoreOf = (entry: SimilarArtistEntry): number => {
+  const score = Number(entry.score);
+
+  return Number.isFinite(score) ? score : 0;
+};
 
 // An answer ListenBrainz gave that is not of the shape the client reads.
 class UnreadableAnswerError extends Error {
@@ -111,7 +86,7 @@ const nestedCodes = (error: unknown, depth = 0): string[] => {
   return [...new Set(found)];
 };
 
-// The cause of a failed read, read from the error (F2-D-141): an axios
+// The cause of a failed read, read from the error (F2-D-292): an axios
 // connection failure on Node 22 has an empty message, its cause in its code.
 export const readFailureCause = (error: unknown): FailureCause => {
   if (error instanceof UnreadableAnswerError) {
@@ -159,9 +134,9 @@ export const readFailureCause = (error: unknown): FailureCause => {
   };
 };
 
-// ListenBrainz, keyless: the popular albums of its latest month and the artists
-// similar to an artist. Any failure, timeout or answer Seerr cannot read is
-// logged and answers an empty list, never an error (F2-D-5, F2-D-91).
+// ListenBrainz, keyless: the artists similar to an artist. Any failure, timeout
+// or answer Seerr cannot read is logged and answers an empty list, never an
+// error (F2-D-282, F2-D-291, F2-D-292).
 class ListenBrainzAPI extends ExternalAPI {
   constructor() {
     super(
@@ -175,78 +150,9 @@ class ListenBrainzAPI extends ExternalAPI {
     );
   }
 
-  // The albums most listened to site-wide over the latest month, most listened
-  // first: at most 20, each release group once.
-  public async getPopularAlbums(): Promise<ListenBrainzPopularAlbum[]> {
-    try {
-      const response = await this.get<SitewideReleaseGroupsResponse>(
-        '/stats/sitewide/release-groups',
-        { params: { range: 'month', count: STATS_COUNT } },
-        CACHE_TTL,
-        {
-          // an answer not of the shape is never kept
-          transform: (data) => {
-            if (!Array.isArray(data?.payload?.release_groups)) {
-              throw new UnreadableAnswerError(
-                'the answer holds no list of release groups'
-              );
-            }
-
-            return data;
-          },
-        }
-      );
-      const entries = response.payload.release_groups;
-
-      const seen = new Set<string>();
-      const albums: ListenBrainzPopularAlbum[] = [];
-
-      for (const entry of entries) {
-        const mbid = entry?.release_group_mbid;
-
-        if (!isNonEmptyString(mbid) || seen.has(mbid)) {
-          continue;
-        }
-
-        if (!isNonEmptyString(entry.release_group_name)) {
-          continue;
-        }
-
-        seen.add(mbid);
-
-        const [artistMbid] = Array.isArray(entry.artist_mbids)
-          ? entry.artist_mbids
-          : [];
-
-        albums.push({
-          mbid,
-          title: entry.release_group_name,
-          artistMbid: isNonEmptyString(artistMbid) ? artistMbid : undefined,
-          artistName: isNonEmptyString(entry.artist_name)
-            ? entry.artist_name
-            : undefined,
-          coverUrl: coverArtUrl(entry, mbid),
-        });
-
-        if (albums.length === RESULT_LIMIT) {
-          break;
-        }
-      }
-
-      return albums;
-    } catch (e) {
-      logger.error('Failed to read the popular albums from ListenBrainz', {
-        label: 'ListenBrainz',
-        errorMessage: e.message,
-        ...readFailureCause(e),
-      });
-
-      return [];
-    }
-  }
-
-  // The artists similar to an artist, most similar first: at most 20, never the
-  // artist itself.
+  // The artists similar to an artist, by score descending (ties in the answer's
+  // order), every entry left (up to the 100 the algorithm gives), never the
+  // artist itself and none without an id or a name.
   public async getSimilarArtists(
     mbid: string
   ): Promise<ListenBrainzSimilarArtist[]> {
@@ -280,14 +186,12 @@ class ListenBrainzAPI extends ExternalAPI {
         )
         .map((entry, index) => ({ entry, index }))
         .sort(
-          (a, b) =>
-            (Number(b.entry.score) || 0) - (Number(a.entry.score) || 0) ||
-            a.index - b.index
+          (a, b) => scoreOf(b.entry) - scoreOf(a.entry) || a.index - b.index
         )
-        .slice(0, RESULT_LIMIT)
         .map(({ entry }) => ({
           mbid: entry.artist_mbid as string,
           name: entry.name as string,
+          score: scoreOf(entry),
         }));
     } catch (e) {
       logger.error('Failed to read the similar artists from ListenBrainz', {

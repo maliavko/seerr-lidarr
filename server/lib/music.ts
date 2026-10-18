@@ -279,16 +279,23 @@ async function withMetadataService(
   }
 }
 
+// What a search of Lidarr's lookup gave and which of its two lookups failed
+// (F2-D-401): a lookup that answered nothing is told from one that failed.
+export interface MusicSearchRead extends MusicSearchResults {
+  failed: { artists?: Error; albums?: Error };
+}
+
 // Search (R-3): the first ten artists and the first ten albums of Lidarr's
 // lookup, in Lidarr's order. One lookup failing leaves the other's results,
 // both failing or no default Lidarr server give no music. The held artists
 // missing an image or an overview are asked of Lidarr's metadata service side
-// by side, each once.
-export async function searchMusic(term: string): Promise<MusicSearchResults> {
+// by side, each once. Each lookup that failed is logged and told apart in
+// `failed`.
+export async function readMusicSearch(term: string): Promise<MusicSearchRead> {
   const server = getDefaultLidarr();
 
   if (!server) {
-    return { artists: [], albums: [] };
+    return { artists: [], albums: [], failed: {} };
   }
 
   const lidarr = buildLidarr(server);
@@ -300,12 +307,15 @@ export async function searchMusic(term: string): Promise<MusicSearchResults> {
       lidarr.lookupAlbums(term)
     ),
   ]);
+  const failed: MusicSearchRead['failed'] = {};
 
   if (artists.status === 'rejected') {
     logFailure('Failed to search artists in Lidarr', artists.reason);
+    failed.artists = artists.reason;
   }
   if (albums.status === 'rejected') {
     logFailure('Failed to search albums in Lidarr', albums.reason);
+    failed.albums = albums.reason;
   }
 
   return {
@@ -323,7 +333,15 @@ export async function searchMusic(term: string): Promise<MusicSearchResults> {
       albums.status === 'fulfilled'
         ? albums.value.slice(0, SEARCH_LIMIT).map(toAlbumSummary)
         : [],
+    failed,
   };
+}
+
+// The same search for its other callers: the results alone.
+export async function searchMusic(term: string): Promise<MusicSearchResults> {
+  const { artists, albums } = await readMusicSearch(term);
+
+  return { artists, albums };
 }
 
 // The artists Lidarr holds, read through the cache; a failure throws.

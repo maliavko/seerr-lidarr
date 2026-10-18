@@ -21,6 +21,34 @@ import {
   isTvDetails,
 } from '@server/utils/typeHelpers';
 
+// A read of a source of several reads that failed (F2-D-401): the kind of
+// result it would have given.
+export interface SearchReadFailure {
+  kind: 'movie' | 'tv' | 'person';
+  error: unknown;
+}
+
+export type SearchProviderResult = TmdbSearchMultiResponse & {
+  failures?: SearchReadFailure[];
+};
+
+// TMDB answers an id it does not hold with 404, read from the error or from
+// the cause beneath it: that is a read that found nothing, never a failure.
+export const isNotFound = (error: unknown): boolean => {
+  let current = error as
+    | { response?: { status?: number }; cause?: unknown }
+    | undefined;
+
+  for (let depth = 0; current && depth < 5; depth++) {
+    if (current.response?.status === 404) {
+      return true;
+    }
+    current = current.cause as typeof current;
+  }
+
+  return false;
+};
+
 interface SearchProvider {
   pattern: RegExp;
   search: ({
@@ -31,7 +59,7 @@ interface SearchProvider {
     id: string;
     language?: string;
     query?: string;
-  }) => Promise<TmdbSearchMultiResponse>;
+  }) => Promise<SearchProviderResult>;
 }
 
 const searchProviders: SearchProvider[] = [];
@@ -66,6 +94,14 @@ searchProviders.push({
     )[];
 
     const results: (TmdbMovieResult | TmdbTvResult | TmdbPersonResult)[] = [];
+    const failures: SearchReadFailure[] = [];
+    (['movie', 'tv', 'person'] as const).forEach((kind, index) => {
+      const response = responses[index];
+
+      if (response.status === 'rejected' && !isNotFound(response.reason)) {
+        failures.push({ kind, error: response.reason });
+      }
+    });
 
     if (successfulResponses.length) {
       results.push(
@@ -86,6 +122,7 @@ searchProviders.push({
       total_pages: 1,
       total_results: results.length,
       results,
+      failures,
     };
   },
 });
@@ -174,13 +211,23 @@ searchProviders.push({
     const moviesPromise = tmdb.searchMovies({
       query: query?.replace(new RegExp(/year:\d{4}/), '') ?? '',
       year: parseInt(year),
+      failOnError: true,
     });
     const tvShowsPromise = tmdb.searchTvShows({
       query: query?.replace(new RegExp(/year:\d{4}/), '') ?? '',
       year: parseInt(year),
+      failOnError: true,
     });
 
     const responses = await Promise.allSettled([moviesPromise, tvShowsPromise]);
+    const failures: SearchReadFailure[] = [];
+    (['movie', 'tv'] as const).forEach((kind, index) => {
+      const response = responses[index];
+
+      if (response.status === 'rejected') {
+        failures.push({ kind, error: response.reason });
+      }
+    });
 
     const successfulResponses = responses.filter(
       (r) => r.status === 'fulfilled'
@@ -209,6 +256,7 @@ searchProviders.push({
       total_pages: 1,
       total_results: results.length,
       results,
+      failures,
     };
   },
 });

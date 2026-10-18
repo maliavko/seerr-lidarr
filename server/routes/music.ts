@@ -8,9 +8,9 @@ import {
 } from '@server/lib/music';
 import { buildMusicResults } from '@server/lib/musicResults';
 import {
-  getPopularAlbumSummaries,
   getRecentlyAddedAlbums,
   getSimilarArtistSummaries,
+  getSimilarToLibrarySummaries,
 } from '@server/lib/musicSliders';
 import type { MusicResolved } from '@server/lib/musicStatus';
 import { musicMediaInfo, resolveMusicItems } from '@server/lib/musicStatus';
@@ -54,9 +54,9 @@ musicRoutes.get(
 );
 
 musicRoutes.get(
-  '/popular',
-  sliderRoute('popular albums', async () =>
-    buildMusicResults([], await getPopularAlbumSummaries())
+  '/library/similar',
+  sliderRoute('similar to your library', async () =>
+    buildMusicResults(await getSimilarToLibrarySummaries(), [])
   )
 );
 

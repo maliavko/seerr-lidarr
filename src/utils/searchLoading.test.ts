@@ -118,6 +118,28 @@ describe('searchLoadStep', () => {
     assert.equal(step({ titles: 0 }).size, 4);
   });
 
+  it("asks nothing while the list's last read failed, whatever the titles and pages", () => {
+    assert.equal(step({ titles: 5, failed: true }).size, undefined);
+    assert.equal(step({ titles: 0, failed: true }).size, undefined);
+    assert.equal(
+      step({ pages: pagesTo(1, 9), size: 1, failed: true }).size,
+      undefined
+    );
+  });
+
+  it('loads on again once the failed read is read again and its page has landed', () => {
+    const failed = step({ pages: pagesTo(2, 10), titles: 5, failed: true });
+    const retried = step({
+      pages: pagesTo(3, 10),
+      titles: 8,
+      failed: false,
+      mark: failed.mark,
+    });
+
+    assert.equal(failed.size, undefined);
+    assert.equal(retried.size, 4);
+  });
+
   it('does not load on at the last page, short or empty', () => {
     assert.equal(step({ pages: pagesTo(3, 3), titles: 4 }).size, undefined);
     assert.equal(step({ pages: pagesTo(3, 3), titles: 0 }).size, undefined);
@@ -353,22 +375,54 @@ describe('searchTypeQuery', () => {
 });
 
 describe('newSearchAddress', () => {
-  const at = (query: Record<string, string>) => ({
-    pathname: '/search/x',
+  const at = (query: Record<string, string>, pathname = '/search') => ({
+    pathname,
     query,
   });
 
-  it('sets the new text and drops the type, so a new search starts on All', () => {
+  it('on /search sets the text and the kept type', () => {
+    assert.deepEqual(newSearchAddress(at({ query: 'abba' }), 'abb', 'music'), {
+      pathname: '/search',
+      query: { query: 'abb', type: 'music' },
+    });
+  });
+
+  it("on /search carries the kept type, never the address's own", () => {
     assert.deepEqual(
-      newSearchAddress(at({ query: 'abba', type: 'music' }), 'abb'),
-      { pathname: '/search/x', query: { query: 'abb' } }
+      newSearchAddress(at({ query: 'abba', type: 'movie' }), 'abb', 'music'),
+      { pathname: '/search', query: { query: 'abb', type: 'music' } }
     );
   });
 
-  it('keeps any other parameter of the address and its pathname', () => {
-    assert.deepEqual(newSearchAddress(at({ query: 'a', x: '1' }), 'ab'), {
-      pathname: '/search/x',
-      query: { query: 'ab', x: '1' },
+  it('on /search leaves the type out where none is kept, the address own type included', () => {
+    assert.deepEqual(
+      newSearchAddress(at({ query: 'abba', type: 'music' }), 'abb', undefined),
+      { pathname: '/search', query: { query: 'abb' } }
+    );
+  });
+
+  it('on /search keeps every other parameter and the pathname', () => {
+    assert.deepEqual(
+      newSearchAddress(at({ query: 'a', x: '1' }, '/search/x'), 'ab', 'tv'),
+      { pathname: '/search/x', query: { query: 'ab', x: '1', type: 'tv' } }
+    );
+  });
+
+  it('from another page goes to /search with the query and the kept type, nothing else', () => {
+    assert.deepEqual(
+      newSearchAddress(at({ id: '5', x: '1' }, '/movie/[id]'), 'abba', 'music'),
+      { pathname: '/search', query: { type: 'music', query: 'abba' } }
+    );
+    assert.deepEqual(
+      newSearchAddress(at({ id: '5' }, '/'), 'abba', undefined),
+      { pathname: '/search', query: { query: 'abba' } }
+    );
+  });
+
+  it('carries the kept type whatever the kinds shown, as kept', () => {
+    assert.deepEqual(newSearchAddress(at({}, '/'), 'abba', 'person'), {
+      pathname: '/search',
+      query: { type: 'person', query: 'abba' },
     });
   });
 });

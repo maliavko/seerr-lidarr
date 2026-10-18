@@ -24,16 +24,16 @@ export enum DiscoverSliderType {
   TMDB_TV_STREAMING_SERVICES,
   RECENTLY_ADDED_MUSIC = 22,
   RECENT_MUSIC_REQUESTS = 23,
-  POPULAR_ALBUMS = 24,
+  SIMILAR_TO_LIBRARY = 24,
 }
 
-// The built-in sliders of music (F2-D-7, F2-D-211): created after the last slider
+// The built-in sliders of music (F2-D-284, F2-D-295): created after the last slider
 // saved and disabled, so no existing home page changes until an administrator
 // enables them.
 export const musicSliderTypes: DiscoverSliderType[] = [
   DiscoverSliderType.RECENTLY_ADDED_MUSIC,
   DiscoverSliderType.RECENT_MUSIC_REQUESTS,
-  DiscoverSliderType.POPULAR_ALBUMS,
+  DiscoverSliderType.SIMILAR_TO_LIBRARY,
 ];
 
 export const defaultSliders: Partial<DiscoverSlider>[] = [
@@ -122,7 +122,7 @@ export const defaultSliders: Partial<DiscoverSlider>[] = [
     order: 13,
   },
   {
-    type: DiscoverSliderType.POPULAR_ALBUMS,
+    type: DiscoverSliderType.SIMILAR_TO_LIBRARY,
     enabled: false,
     isBuiltIn: true,
     order: 14,

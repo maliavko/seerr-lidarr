@@ -1,0 +1,95 @@
+[
+  {
+    "albumId": 5,
+    "artistId": 2,
+    "trackId": 461,
+    "sourceTitle": "b5",
+    "quality": {
+      "quality": {
+        "id": 26,
+        "name": "MP3-56"
+      },
+      "revision": {
+        "version": 1,
+        "real": 0,
+        "isRepack": false
+      }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-10-17T13:34:40Z",
+    "eventType": "trackFileImported",
+    "data": {
+      "fileId": "40",
+      "droppedPath": "/music/_import/b5.mp3",
+      "importedPath": "/music/Jon Hopkins/b5.mp3",
+      "downloadClient": null,
+      "releaseGroup": null,
+      "size": "600103",
+      "indexerFlags": "0"
+    },
+    "id": 8
+  },
+  {
+    "albumId": 5,
+    "artistId": 2,
+    "trackId": 461,
+    "sourceTitle": "/music/Jon Hopkins/a5.mp3",
+    "quality": {
+      "quality": {
+        "id": 26,
+        "name": "MP3-56"
+      },
+      "revision": {
+        "version": 1,
+        "real": 0,
+        "isRepack": false
+      }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-10-17T13:34:40Z",
+    "eventType": "trackFileDeleted",
+    "data": {
+      "reason": "Upgrade",
+      "releaseGroup": null,
+      "size": "600103",
+      "indexerFlags": "0"
+    },
+    "id": 7
+  },
+  {
+    "albumId": 5,
+    "artistId": 2,
+    "trackId": 461,
+    "sourceTitle": "a5",
+    "quality": {
+      "quality": {
+        "id": 26,
+        "name": "MP3-56"
+      },
+      "revision": {
+        "version": 1,
+        "real": 0,
+        "isRepack": false
+      }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-10-17T13:34:16Z",
+    "eventType": "trackFileImported",
+    "data": {
+      "fileId": "37",
+      "droppedPath": "/music/_import/a5.mp3",
+      "importedPath": "/music/Jon Hopkins/a5.mp3",
+      "downloadClient": null,
+      "releaseGroup": null,
+      "size": "600103",
+      "indexerFlags": "0"
+    },
+    "id": 3
+  }
+]

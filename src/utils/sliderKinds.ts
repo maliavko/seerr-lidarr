@@ -32,7 +32,7 @@ const sliderTypeKinds: Record<DiscoverSliderType, KindShown[]> = {
   [DiscoverSliderType.TMDB_SEARCH]: ['movie', 'tv', 'music', 'person'],
   [DiscoverSliderType.RECENTLY_ADDED_MUSIC]: ['music'],
   [DiscoverSliderType.RECENT_MUSIC_REQUESTS]: ['music'],
-  [DiscoverSliderType.POPULAR_ALBUMS]: ['music'],
+  [DiscoverSliderType.SIMILAR_TO_LIBRARY]: ['music'],
 };
 
 export const getSliderKinds = (type: DiscoverSliderType): KindShown[] =>

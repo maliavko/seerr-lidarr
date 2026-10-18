@@ -38,7 +38,7 @@ describe('the kinds each slider type declares (F2-D-211)', () => {
     [T.TMDB_SEARCH, ['movie', 'tv', 'music', 'person']],
     [T.RECENTLY_ADDED_MUSIC, ['music']],
     [T.RECENT_MUSIC_REQUESTS, ['music']],
-    [T.POPULAR_ALBUMS, ['music']],
+    [T.SIMILAR_TO_LIBRARY, ['music']],
   ];
 
   for (const [type, kinds] of declared) {
@@ -69,8 +69,8 @@ describe('whether a slider is rendered on the home page', () => {
     assert.equal(isSliderShown(T.POPULAR_MOVIES, ['tv', 'music']), false);
     assert.equal(isSliderShown(T.POPULAR_TV, ['movie', 'person']), false);
     assert.equal(isSliderShown(T.POPULAR_TV, ['tv']), true);
-    assert.equal(isSliderShown(T.POPULAR_ALBUMS, ['movie', 'tv']), false);
-    assert.equal(isSliderShown(T.POPULAR_ALBUMS, ['music']), true);
+    assert.equal(isSliderShown(T.SIMILAR_TO_LIBRARY, ['movie', 'tv']), false);
+    assert.equal(isSliderShown(T.SIMILAR_TO_LIBRARY, ['music']), true);
     assert.equal(isSliderShown(T.TRENDING, ['person']), true);
     assert.equal(isSliderShown(T.TRENDING, ['music']), false);
     assert.equal(isSliderShown(T.RECENT_REQUESTS, ['music']), true);

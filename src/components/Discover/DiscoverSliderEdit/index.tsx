@@ -173,8 +173,8 @@ const DiscoverSliderEdit = ({
         return intl.formatMessage(sliderTitles.recentlyaddedmusic);
       case DiscoverSliderType.RECENT_MUSIC_REQUESTS:
         return intl.formatMessage(sliderTitles.recentmusicrequests);
-      case DiscoverSliderType.POPULAR_ALBUMS:
-        return intl.formatMessage(sliderTitles.popularalbums);
+      case DiscoverSliderType.SIMILAR_TO_LIBRARY:
+        return intl.formatMessage(sliderTitles.similartolibrary);
       default:
         return 'Unknown Slider';
     }

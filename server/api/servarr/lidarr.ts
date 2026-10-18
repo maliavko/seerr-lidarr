@@ -62,6 +62,36 @@ export interface LidarrTrack {
   // milliseconds
   duration: number;
   hasFile: boolean;
+  // the file Lidarr holds of the track (0 or absent where it holds none)
+  trackFileId?: number;
+}
+
+// One event of Lidarr's history (GET /history, GET /history/artist); only the
+// fields Seerr reads are typed.
+export interface LidarrHistoryEvent {
+  id: number;
+  // when Lidarr recorded the event (ISO 8601)
+  date: string;
+  // trackFileImported, trackFileDeleted, grabbed, ...
+  eventType: string;
+  artistId?: number;
+  albumId?: number;
+  trackId?: number;
+  // the event's own data; a trackFileDeleted says why in reason (Upgrade,
+  // ManualOverride, MissingFromDisk, Manual, ...), a trackFileImported names
+  // the file it imported in fileId (Lidarr writes it as a string)
+  data?: { reason?: string; fileId?: string | number } & Record<
+    string,
+    unknown
+  >;
+}
+
+// one page of Lidarr's history, as GET /history answers it
+export interface LidarrHistoryPage {
+  page: number;
+  pageSize: number;
+  totalRecords: number;
+  records: LidarrHistoryEvent[];
 }
 
 // A file Lidarr holds of an album (GET /trackfile); only the fields Seerr reads
@@ -313,6 +343,54 @@ class LidarrAPI extends ServarrBase<{ albumId: number }> {
       throw new Error(`[Lidarr] Failed to retrieve tracks: ${e.message}`, {
         cause: e,
       });
+    }
+  }
+
+  // One album's history, every event type (GET /history/artist with the
+  // artist's and the album's Lidarr ids).
+  public async getAlbumHistory(
+    artistId: number,
+    albumId: number
+  ): Promise<LidarrHistoryEvent[]> {
+    try {
+      const response = await this.axios.get<LidarrHistoryEvent[]>(
+        '/history/artist',
+        { params: { artistId, albumId } }
+      );
+
+      return response.data;
+    } catch (e) {
+      throw new Error(
+        `[Lidarr] Failed to retrieve the history of an album: ${e.message}`,
+        { cause: e }
+      );
+    }
+  }
+
+  // One page (1-based) of Lidarr's imports of track files, the latest first
+  // (GET /history, trackFileImported only, by date descending).
+  public async getImportHistory(
+    page: number,
+    pageSize: number
+  ): Promise<LidarrHistoryPage> {
+    try {
+      const response = await this.axios.get<LidarrHistoryPage>('/history', {
+        params: {
+          page,
+          pageSize,
+          sortKey: 'date',
+          sortDirection: 'descending',
+          // Lidarr's EntityHistoryEventType.TrackFileImported
+          eventType: 3,
+        },
+      });
+
+      return response.data;
+    } catch (e) {
+      throw new Error(
+        `[Lidarr] Failed to retrieve the import history: ${e.message}`,
+        { cause: e }
+      );
     }
   }
 

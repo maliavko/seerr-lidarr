@@ -1,0 +1,172 @@
+{
+  "albumId": 25,
+  "events": [
+    {
+      "id": 11,
+      "date": "2026-10-17T20:29:00Z",
+      "eventType": "trackFileImported",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "fileId": "44"
+      }
+    },
+    {
+      "id": 19,
+      "date": "2026-10-17T20:32:21Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "reason": "Manual"
+      }
+    },
+    {
+      "id": 20,
+      "date": "2026-10-17T20:32:24Z",
+      "eventType": "trackFileImported",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "fileId": "49"
+      }
+    },
+    {
+      "id": 40,
+      "date": "2026-10-17T20:47:47Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "reason": "Manual"
+      }
+    },
+    {
+      "id": 93,
+      "date": "2026-10-18T07:52:50Z",
+      "eventType": "trackFileImported",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "fileId": "123"
+      }
+    },
+    {
+      "id": 94,
+      "date": "2026-10-18T07:52:52Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "reason": "Upgrade"
+      }
+    },
+    {
+      "id": 95,
+      "date": "2026-10-18T07:52:53Z",
+      "eventType": "trackFileImported",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "fileId": "124"
+      }
+    },
+    {
+      "id": 96,
+      "date": "2026-10-18T07:52:59Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "reason": "Upgrade"
+      }
+    },
+    {
+      "id": 97,
+      "date": "2026-10-18T07:52:59Z",
+      "eventType": "trackFileImported",
+      "trackId": 2483,
+      "albumId": 25,
+      "data": {
+        "fileId": "125"
+      }
+    },
+    {
+      "id": 98,
+      "date": "2026-10-18T07:53:08Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 2483,
+      "albumId": 25,
+      "data": {
+        "reason": "Manual"
+      }
+    },
+    {
+      "id": 100,
+      "date": "2026-10-18T07:53:13Z",
+      "eventType": "trackFileImported",
+      "trackId": 2482,
+      "albumId": 25,
+      "data": {
+        "fileId": "127"
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": 2482,
+      "trackFileId": 127
+    },
+    {
+      "id": 2483,
+      "trackFileId": 0
+    },
+    {
+      "id": 2484,
+      "trackFileId": 0
+    },
+    {
+      "id": 2485,
+      "trackFileId": 0
+    },
+    {
+      "id": 2486,
+      "trackFileId": 0
+    },
+    {
+      "id": 2487,
+      "trackFileId": 0
+    },
+    {
+      "id": 2488,
+      "trackFileId": 0
+    },
+    {
+      "id": 2489,
+      "trackFileId": 0
+    },
+    {
+      "id": 2490,
+      "trackFileId": 0
+    },
+    {
+      "id": 2491,
+      "trackFileId": 0
+    },
+    {
+      "id": 2492,
+      "trackFileId": 0
+    },
+    {
+      "id": 2493,
+      "trackFileId": 0
+    }
+  ],
+  "trackFiles": [
+    {
+      "id": 127,
+      "albumId": 25,
+      "dateAdded": "2026-10-18T07:53:13Z"
+    }
+  ]
+}

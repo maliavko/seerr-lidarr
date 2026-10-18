@@ -1,0 +1,21 @@
+[
+  {
+    "artistId": 2,
+    "foreignTrackId": "d31d7c72-1ba5-3592-8271-f10ae4fac2b9",
+    "foreignRecordingId": "790b7cf3-e7a0-4e64-9255-c38c21c9567e",
+    "trackFileId": 40,
+    "albumId": 5,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "1",
+    "title": "The Wider Sun",
+    "duration": 154000,
+    "mediumNumber": 1,
+    "hasFile": true,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 461
+  }
+]

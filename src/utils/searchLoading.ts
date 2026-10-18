@@ -58,8 +58,10 @@ interface LoadStepInput {
   pages: readonly (PageOfResults | undefined)[] | undefined;
   // the titles shown
   titles: number;
-  // whether a load is outstanding (or the list failed)
+  // whether a load is outstanding
   outstanding: boolean;
+  // whether the list's last read failed: nothing is asked until Retry reads it
+  failed?: boolean;
   mark: LoadMark;
 }
 
@@ -74,11 +76,13 @@ export const searchLoadStep = ({
   pages,
   titles,
   outstanding,
+  failed = false,
   mark,
 }: LoadStepInput): { mark: LoadMark; size?: number } => {
   const current = mark.key === key ? mark : newLoadMark(key);
 
   if (
+    failed ||
     outstanding ||
     !pages ||
     pages.length === 0 ||
@@ -128,19 +132,30 @@ export const searchTypeQuery = (
   return type ? { ...rest, type } : rest;
 };
 
-// The address a new search typed on /search replaces the page's with, whole:
-// the page's pathname and query with the new text and no type, so that the
-// search starts on All.
+// The address a new search typed into the search box goes to, built whole from
+// the current address (pathname and query), the new text and the type kept for
+// the tab (F2-D-341): on /search every parameter of the current address kept
+// but type, the query set to the text and type set to the kept type where one
+// other than All is kept, else left out; from any other page /search with the
+// query and that type, nothing else carried. The kept type is carried as kept,
+// whether or not its kind is shown (the page reads it as any address's type).
 export const newSearchAddress = (
   address: {
     pathname: string;
     query: Record<string, string | string[] | undefined>;
   },
-  text: string
+  text: string,
+  kept: KindShown | undefined
 ): {
   pathname: string;
   query: Record<string, string | string[] | undefined>;
-} => ({
-  pathname: address.pathname,
-  query: { ...searchTypeQuery(address.query, undefined), query: text },
-});
+} =>
+  address.pathname.startsWith('/search')
+    ? {
+        pathname: address.pathname,
+        query: { ...searchTypeQuery(address.query, kept), query: text },
+      }
+    : {
+        pathname: '/search',
+        query: { ...(kept ? { type: kept } : {}), query: text },
+      };

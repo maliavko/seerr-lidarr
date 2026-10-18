@@ -1,0 +1,64 @@
+[
+  {
+    "artistId": 2,
+    "albumId": 4,
+    "path": "/music/Jon Hopkins/a4.mp3",
+    "size": 600103,
+    "dateAdded": "2026-10-17T13:34:10Z",
+    "quality": {
+      "quality": {
+        "id": 26,
+        "name": "MP3-56"
+      },
+      "revision": {
+        "version": 1,
+        "real": 0,
+        "isRepack": false
+      }
+    },
+    "qualityWeight": 9,
+    "customFormats": [],
+    "customFormatScore": 0,
+    "indexerFlags": 0,
+    "mediaInfo": {
+      "audioChannels": 1,
+      "audioBitRate": "56 kbps",
+      "audioCodec": "MP3",
+      "audioBits": "",
+      "audioSampleRate": "22.1kHz"
+    },
+    "qualityCutoffNotMet": false,
+    "id": 36
+  },
+  {
+    "artistId": 2,
+    "albumId": 4,
+    "path": "/music/Jon Hopkins/b4.mp3",
+    "size": 600103,
+    "dateAdded": "2026-10-17T13:34:35Z",
+    "quality": {
+      "quality": {
+        "id": 26,
+        "name": "MP3-56"
+      },
+      "revision": {
+        "version": 1,
+        "real": 0,
+        "isRepack": false
+      }
+    },
+    "qualityWeight": 9,
+    "customFormats": [],
+    "customFormatScore": 0,
+    "indexerFlags": 0,
+    "mediaInfo": {
+      "audioChannels": 1,
+      "audioBitRate": "56 kbps",
+      "audioCodec": "MP3",
+      "audioBits": "",
+      "audioSampleRate": "22.1kHz"
+    },
+    "qualityCutoffNotMet": false,
+    "id": 39
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "albumId": 32,
+  "events": [
+    {
+      "id": 23,
+      "date": "2026-10-17T20:32:30Z",
+      "eventType": "trackFileImported",
+      "trackId": 4458,
+      "albumId": 32,
+      "data": {
+        "fileId": "52"
+      }
+    },
+    {
+      "id": 47,
+      "date": "2026-10-17T20:47:47Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 4458,
+      "albumId": 32,
+      "data": {
+        "reason": "Manual"
+      }
+    },
+    {
+      "id": 101,
+      "date": "2026-10-18T07:53:30Z",
+      "eventType": "trackFileImported",
+      "trackId": 4458,
+      "albumId": 32,
+      "data": {
+        "fileId": "128"
+      }
+    },
+    {
+      "id": 102,
+      "date": "2026-10-18T07:53:32Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 4458,
+      "albumId": 32,
+      "data": {
+        "reason": "Upgrade"
+      }
+    },
+    {
+      "id": 103,
+      "date": "2026-10-18T07:53:33Z",
+      "eventType": "trackFileImported",
+      "trackId": 4459,
+      "albumId": 32,
+      "data": {
+        "fileId": "129"
+      }
+    },
+    {
+      "id": 105,
+      "date": "2026-10-18T07:53:39Z",
+      "eventType": "trackFileDeleted",
+      "trackId": 4459,
+      "albumId": 32,
+      "data": {
+        "reason": "Manual"
+      }
+    },
+    {
+      "id": 106,
+      "date": "2026-10-18T07:53:41Z",
+      "eventType": "trackFileImported",
+      "trackId": 4458,
+      "albumId": 32,
+      "data": {
+        "fileId": "131"
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": 4458,
+      "trackFileId": 131
+    },
+    {
+      "id": 4459,
+      "trackFileId": 0
+    },
+    {
+      "id": 4460,
+      "trackFileId": 0
+    },
+    {
+      "id": 4461,
+      "trackFileId": 0
+    },
+    {
+      "id": 4462,
+      "trackFileId": 0
+    },
+    {
+      "id": 4463,
+      "trackFileId": 0
+    },
+    {
+      "id": 4464,
+      "trackFileId": 0
+    },
+    {
+      "id": 4465,
+      "trackFileId": 0
+    },
+    {
+      "id": 4466,
+      "trackFileId": 0
+    },
+    {
+      "id": 4467,
+      "trackFileId": 0
+    },
+    {
+      "id": 4468,
+      "trackFileId": 0
+    },
+    {
+      "id": 4469,
+      "trackFileId": 0
+    }
+  ],
+  "trackFiles": [
+    {
+      "id": 131,
+      "albumId": 32,
+      "dateAdded": "2026-10-18T07:53:41Z"
+    }
+  ]
+}

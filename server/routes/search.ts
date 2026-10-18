@@ -3,8 +3,9 @@ import type { TmdbSearchMultiResponse } from '@server/api/themoviedb/interfaces'
 import Media from '@server/entity/Media';
 import type { KindShown } from '@server/lib/kindsShown';
 import { getKindsShown } from '@server/lib/kindsShown';
-import { searchMusic } from '@server/lib/music';
-import { buildMusicResults } from '@server/lib/musicResults';
+import { readMusicSearch } from '@server/lib/music';
+import { buildMusicResultsCounted } from '@server/lib/musicResults';
+import type { SearchReadFailure } from '@server/lib/search';
 import { findSearchProvider } from '@server/lib/search';
 import logger from '@server/logger';
 import type { MusicResults } from '@server/models/Search';
@@ -14,21 +15,52 @@ import { Router } from 'express';
 const searchRoutes = Router();
 
 // The music a search shows (R-3): the artists and then the albums Lidarr's
-// lookup found, with their media rows and the status R-6 gives them (D-362).
-// An album whose covering is undecided is left out, the rest standing; Lidarr
-// failing, or no default Lidarr server, is no music and nothing else (R-14,
-// D-8).
-async function findMusicResults(query: string): Promise<MusicResults[]> {
+// lookup found, with their media rows and the status R-6 gives them (D-362),
+// and which of the two lookups failed, or whether some of the music could not
+// be built (an album whose covering is undecided is left out, the rest
+// standing, and counts as a failed build: F2-D-441); no default Lidarr
+// server is no music and nothing else (R-14, D-8). Where the results cannot be
+// built it throws.
+interface MusicRead {
+  results: MusicResults[];
+  failed: string[];
+}
+
+async function readMusicResults(query: string): Promise<MusicRead> {
+  const music = await readMusicSearch(query);
+  const failed = [
+    ...(music.failed.artists ? ["Lidarr's artist lookup"] : []),
+    ...(music.failed.albums ? ["Lidarr's album lookup"] : []),
+  ];
+
+  const built = await buildMusicResultsCounted(music.artists, music.albums);
+
+  // albums left out because their covering could not be decided are music
+  // that was found and could not be built (F2-D-441: some or all of it)
+  return {
+    results: built.results,
+    failed:
+      built.leftOut > 0
+        ? [...failed, "Lidarr's search (the music built)"]
+        : failed,
+  };
+}
+
+// The music beside TMDB's results of a no-type search: the results the
+// lookups that answered gave, and which lookups failed; music that cannot be
+// built into results (some or all of it, its media rows unreadable among
+// them) is a failed read of the default Lidarr's search as well, as under the
+// type music (F2-D-441).
+async function findMusicBesideTmdb(query: string): Promise<MusicRead> {
   try {
-    const music = await searchMusic(query);
-    return await buildMusicResults(music.artists, music.albums);
+    return await readMusicResults(query);
   } catch (e) {
     logger.debug('Something went wrong retrieving music search results', {
       label: 'API',
       errorMessage: e.message,
       query,
     });
-    return [];
+    return { results: [], failed: ["Lidarr's search (the music built)"] };
   }
 }
 
@@ -63,8 +95,16 @@ searchRoutes.get('/', async (req, res, next) => {
   if (type && !kindsShown.includes(type)) {
     type = undefined;
   }
+  // every result of a kind not shown is left out (F2-D-401)
+  const keptResults = <T extends { mediaType: string }>(list: T[]): T[] =>
+    list.filter((result) => {
+      const kind = kindOfResult(result.mediaType);
+      return kind === undefined || kindsShown.includes(kind);
+    });
   const searchProvider = findSearchProvider(queryString.toLowerCase());
   let results: TmdbSearchMultiResponse;
+  // the source being read, for the one log of a failed search (F2-D-401)
+  let source = 'search';
 
   try {
     if (!type && !kindsShown.includes('movie') && !kindsShown.includes('tv')) {
@@ -84,27 +124,58 @@ searchRoutes.get('/', async (req, res, next) => {
       // later page answers no results of 1 page
       const requestedPage = Number(req.query.page);
       const later = requestedPage > 1;
-      const music = later ? [] : await findMusicResults(queryString);
+      let music: MusicResults[] = [];
+
+      if (!later) {
+        source = "Lidarr's search";
+        const read = await readMusicResults(queryString);
+        music = read.results;
+
+        // a lookup failed and what the other gave is no result: the source
+        // failed, never a page of no results (F2-D-401)
+        if (read.failed.length > 0 && keptResults(music).length === 0) {
+          source = read.failed.join(' and ');
+          throw new Error(`${source} failed and nothing else was found`);
+        }
+
+        // results are left: they are answered and each failed read logged
+        for (const name of read.failed) {
+          logger.warn('A read of a search failed, the rest answered', {
+            label: 'API',
+            query: queryString,
+            type: 'music',
+            source: name,
+          });
+        }
+      }
 
       return res.status(200).json({
         page: later ? requestedPage : 1,
         totalPages: 1,
         totalResults: music.length,
-        results: music.filter((result) =>
-          kindsShown.includes(kindOfResult(result.mediaType) as KindShown)
-        ),
+        results: keptResults(music),
       });
     }
 
+    let failures: SearchReadFailure[] = [];
+
     if (searchProvider) {
+      source = 'the id provider';
       const [id] = queryString
         .toLowerCase()
         .match(searchProvider.pattern) as RegExpMatchArray;
-      results = await searchProvider.search({
+      const answer = await searchProvider.search({
         id,
         language,
         query: queryString,
       });
+      failures = answer.failures ?? [];
+      results = {
+        page: answer.page,
+        total_pages: answer.total_pages,
+        total_results: answer.total_results,
+        results: answer.results,
+      };
 
       if (type) {
         results = {
@@ -120,9 +191,12 @@ searchRoutes.get('/', async (req, res, next) => {
         query: queryString,
         page: Number(req.query.page),
         language,
+        // a failed read of TMDB is the failure of the source (F2-D-401)
+        failOnError: true,
       };
 
       if (type === 'movie') {
+        source = 'TMDB searchMovies';
         const movies = await tmdb.searchMovies(options);
         results = {
           ...movies,
@@ -132,6 +206,7 @@ searchRoutes.get('/', async (req, res, next) => {
           })),
         };
       } else if (type === 'tv') {
+        source = 'TMDB searchTvShows';
         const shows = await tmdb.searchTvShows(options);
         results = {
           ...shows,
@@ -141,6 +216,7 @@ searchRoutes.get('/', async (req, res, next) => {
           })),
         };
       } else if (type === 'person') {
+        source = 'TMDB searchPerson';
         const people = await tmdb.searchPerson(options);
         results = {
           ...people,
@@ -150,10 +226,12 @@ searchRoutes.get('/', async (req, res, next) => {
           })),
         };
       } else {
+        source = 'TMDB searchMulti';
         results = await tmdb.searchMulti(options);
       }
     }
 
+    source = 'the media rows';
     const media = await Media.getRelatedMedia(
       req.user,
       results.results.map((result) => ({
@@ -164,35 +242,65 @@ searchRoutes.get('/', async (req, res, next) => {
 
     // music stands on the first page only, after TMDB's results, and is never
     // found through an id search (D-101)
-    const music =
-      !type && !searchProvider && results.page === 1
-        ? await findMusicResults(queryString)
-        : [];
+    const reachesMusic = !type && !searchProvider && results.page === 1;
+    const music: MusicRead = reachesMusic
+      ? await findMusicBesideTmdb(queryString)
+      : { results: [], failed: [] };
 
     // every result of a kind not shown is left out, the page and the page
     // count of the source read staying however few results are left
-    const shown = [
+    const shown = keptResults([
       ...mapSearchResults(results.results, media),
-      ...music,
-    ].filter((result) => {
-      const kind = kindOfResult(result.mediaType);
-      return kind === undefined || kindsShown.includes(kind);
-    });
+      ...music.results,
+    ]);
+
+    // a read that failed whose results the answer would keep (of the type
+    // asked, or of a kind shown) and what answered leaves no result: the
+    // source failed, never a page of no results (F2-D-401); where results are
+    // left they are answered and each failed read logged
+    const keptFailures = failures.filter(
+      (failure) =>
+        (type ? failure.kind === type : true) &&
+        kindsShown.includes(failure.kind)
+    );
+    const failedReads = [
+      ...keptFailures.map((failure) => ({
+        source: `the id provider's read of ${failure.kind}`,
+        error: failure.error,
+      })),
+      ...music.failed.map((name) => ({ source: name, error: undefined })),
+    ];
+
+    if (failedReads.length > 0 && shown.length === 0) {
+      source = failedReads.map((read) => read.source).join(' and ');
+      throw new Error(`${source} failed and nothing else was found`);
+    }
+    for (const read of failedReads) {
+      logger.warn('A read of a search failed, the rest answered', {
+        label: 'API',
+        query: queryString,
+        type: type ?? 'none',
+        source: read.source,
+        errorMessage: (read.error as Error | undefined)?.message,
+      });
+    }
 
     return res.status(200).json({
       page: results.page,
       totalPages:
-        music.length > 0
+        music.results.length > 0
           ? Math.max(results.total_pages, 1)
           : results.total_pages,
-      totalResults: results.total_results + music.length,
+      totalResults: results.total_results + music.results.length,
       results: shown,
     });
   } catch (e) {
-    logger.debug('Something went wrong retrieving search results', {
+    logger.error('Something went wrong retrieving search results', {
       label: 'API',
       errorMessage: e.message,
       query: req.query.query,
+      type: type ?? 'none',
+      source,
     });
     return next({
       status: 500,

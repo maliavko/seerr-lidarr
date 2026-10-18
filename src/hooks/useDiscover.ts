@@ -5,9 +5,19 @@ import {
   newLoadMark,
   searchLoadStep,
 } from '@app/utils/searchLoading';
+import {
+  isErrorOfList,
+  makeSearchFetcher,
+  pagesOfList,
+  searchListKey,
+  searchPageState,
+  type SearchPageState,
+} from '@app/utils/searchState';
 import { MediaStatus } from '@server/constants/media';
+import axios from 'axios';
 import { useEffect, useRef } from 'react';
 import { useIntl } from 'react-intl';
+import type { BareFetcher } from 'swr';
 import useSWRInfinite from 'swr/infinite';
 import useSettings from './useSettings';
 import { Permission, useUser } from './useUser';
@@ -17,6 +27,8 @@ export interface BaseSearchResult<T> {
   totalResults: number;
   totalPages: number;
   results: T[];
+  // the address the page was asked for (the search page's fetcher tags it)
+  requestedUrl?: string;
 }
 
 interface BaseMedia {
@@ -39,6 +51,10 @@ interface DiscoverResult<T, S> {
   titles: T[];
   firstResultData?: BaseSearchResult<T> & S;
   mutate?: () => void;
+  // with endByPageCount only: what the page shows (F2-D-341) and the read that
+  // reads the failed page again
+  searchState?: SearchPageState;
+  retry?: () => void;
 }
 
 const extraEncodes: [RegExp, string][] = [
@@ -57,6 +73,12 @@ export const encodeURIExtraParams = (string: string): string => {
 
   return finalString;
 };
+
+// the search page's fetcher: a timeout, and every answer and error tagged with
+// the address it was asked for
+const searchFetcher = makeSearchFetcher((url, config) =>
+  axios.get(url, config)
+);
 
 const useDiscover = <
   T extends BaseMedia,
@@ -79,39 +101,77 @@ const useDiscover = <
   const { hasPermission } = useUser();
   const { addToast } = useToasts();
   const intl = useIntl();
-  const { data, error, size, setSize, isValidating, mutate } = useSWRInfinite<
-    BaseSearchResult<T> & S
-  >(
+  const pageUrl = (pageIndex: number) => {
+    const params: Record<string, unknown> = {
+      page: pageIndex + 1,
+      ...options,
+    };
+
+    const finalQueryString = Object.keys(params)
+      .map(
+        (paramKey) =>
+          `${paramKey}=${encodeURIExtraParams(params[paramKey] as string)}`
+      )
+      .join('&');
+
+    return `${endpoint}?${finalQueryString}`;
+  };
+  const {
+    data: swrData,
+    error: swrError,
+    size,
+    setSize,
+    isValidating,
+    mutate,
+  } = useSWRInfinite<BaseSearchResult<T> & S>(
     (pageIndex: number, previousPageData) => {
       if (previousPageData && pageIndex + 1 > previousPageData.totalPages) {
         return null;
       }
 
-      const params: Record<string, unknown> = {
-        page: pageIndex + 1,
-        ...options,
-      };
-
-      const finalQueryString = Object.keys(params)
-        .map(
-          (paramKey) =>
-            `${paramKey}=${encodeURIExtraParams(params[paramKey] as string)}`
-        )
-        .join('&');
-
-      return `${endpoint}?${finalQueryString}`;
+      // the search page's pages are kept under keys of their own, never
+      // under the plain address another reader of it may hold untagged
+      return endByPageCount
+        ? searchListKey(pageUrl(pageIndex))
+        : pageUrl(pageIndex);
     },
     {
       initialSize: 3,
       revalidateFirstPage: false,
       dedupingInterval: 30000,
       revalidateOnFocus: false,
+      // The search page (F2-D-341 (b)): a read of 30 seconds at most, never
+      // read again by itself where it failed (Retry reads it), its answers
+      // and errors tagged with the address they were asked for.
+      ...(endByPageCount
+        ? {
+            fetcher: searchFetcher as unknown as BareFetcher<
+              BaseSearchResult<T> & S
+            >,
+            shouldRetryOnError: false,
+          }
+        : {}),
     }
   );
 
+  // The search page shows the list of the query and type in its address alone
+  // (F2-D-341 (a)): the pages and the error that belong to that list's
+  // addresses, never those of another query or type.
+  const data = endByPageCount ? pagesOfList(swrData, pageUrl) : swrData;
+  const listError = endByPageCount
+    ? isErrorOfList(swrError, pageUrl, size)
+      ? swrError
+      : undefined
+    : swrError;
+  const error = listError;
+  // the last read failed where its error stands and no read is going on
+  const failed = endByPageCount && !!listError && !isValidating;
+
   const resultIds: Set<number | string> = new Set<number | string>();
 
-  const isLoadingInitialData = !data && !error;
+  const isLoadingInitialData = endByPageCount
+    ? data!.length === 0 && !error
+    : !data && !error;
   const isLoadingMore =
     isLoadingInitialData ||
     (size > 0 &&
@@ -121,6 +181,12 @@ const useDiscover = <
 
   const fetchMore = () => {
     setSize(size + 1);
+  };
+
+  // Retry (the search page): reads the pages that failed again - the pages
+  // loaded are kept - and loads on from there
+  const retry = () => {
+    setSize(size);
   };
 
   let titles = (data ?? []).reduce((a, v) => {
@@ -194,11 +260,11 @@ const useDiscover = <
       pages: data,
       titles: titles.length,
       outstanding:
-        !!error ||
         !data ||
         isValidating ||
         data.length < size ||
         !data.every((page) => !!page),
+      failed,
       mark: loadMark.current,
     });
 
@@ -210,14 +276,24 @@ const useDiscover = <
   });
 
   useEffect(() => {
-    if (error && titles.length) {
+    // the search page shows a failed read itself, with Retry, and no toast
+    if (!endByPageCount && error && titles.length) {
       addToast(intl.formatMessage(globalMessages.error), {
         appearance: 'error',
         autoDismiss: true,
       });
       console.error('Error while fetching discover titles:', error);
     }
-  }, [data, error, addToast, intl, titles.length]);
+  }, [data, error, addToast, intl, titles.length, endByPageCount]);
+
+  const searchState = endByPageCount
+    ? searchPageState({
+        pages: data ?? [],
+        titles: titles.length,
+        failed,
+        loadingMore: isLoadingMore,
+      })
+    : undefined;
 
   return {
     isLoadingInitialData,
@@ -225,10 +301,12 @@ const useDiscover = <
     fetchMore,
     isEmpty,
     isReachingEnd,
-    error: error && titles.length ? null : error,
+    error: endByPageCount ? error : error && titles.length ? null : error,
     titles,
     firstResultData: data?.[0],
     mutate,
+    searchState,
+    retry: endByPageCount ? retry : undefined,
   };
 };
 

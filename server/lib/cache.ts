@@ -256,7 +256,7 @@ class CacheManager {
       max: LIDARRMETADATA_MAX_KEYS,
     }),
     listenbrainz: new Cache('listenbrainz', 'ListenBrainz API', {
-      stdTtl: 21600,
+      stdTtl: 86400,
       max: LISTENBRAINZ_MAX_KEYS,
     }),
     rt: new Cache('rt', 'Rotten Tomatoes API', {

@@ -1,11 +1,13 @@
 import { MediaStatus } from '@server/constants/media';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import nodePath from 'node:path';
 import { afterEach, describe, it } from 'node:test';
 import { createElement } from 'react';
 import { loadClient, renderClient } from './musicTestSupport';
 
 // The music sliders, the Discover Music page and the Similar Artists slider
-// (F2-D-93; F2-R-2 to F2-R-6, F2-R-14). SWR is replaced by a table of answers
+// (F2-D-294; F2-R-91, F2-R-4, F2-R-6, F2-R-93, F2-R-14). SWR is replaced by a table of answers
 // by key (a value is its data, an Error its failure, absent is loading); the
 // keys asked are recorded, and the components are rendered to markup.
 type Answer = unknown;
@@ -111,11 +113,6 @@ const albumSliders = [
     path: 'components/Discover/RecentlyAddedMusicSlider',
     url: '/api/v1/music/recentlyadded',
   },
-  {
-    name: 'Popular Albums',
-    path: 'components/Discover/PopularAlbumsSlider',
-    url: '/api/v1/music/popular',
-  },
 ];
 
 for (const slider of albumSliders) {
@@ -170,6 +167,57 @@ for (const slider of albumSliders) {
     });
   });
 }
+
+describe('the Similar to Your Library slider', () => {
+  const path = 'components/Discover/SimilarToLibrarySlider';
+  const url = '/api/v1/music/library/similar';
+
+  it('reads /api/v1/music/library/similar, once, and shows an artist card of each result, in the order given, linking to its artist page', async () => {
+    const html = await render(path, {
+      [url]: {
+        results: [
+          artist(
+            's-1',
+            'Near',
+            MediaStatus.AVAILABLE,
+            'https://c.example/n.jpg'
+          ),
+          artist('s-2', 'Far', undefined, 'https://c.example/f.jpg'),
+          artist('s-3', 'Last'),
+        ],
+      },
+    });
+
+    assert.deepEqual(asked, [url]);
+    assert.equal((html.match(/data-testid="artist-card"/g) ?? []).length, 3);
+    assert.equal((html.match(/data-testid="album-card"/g) ?? []).length, 0);
+    const near = html.indexOf('https://c.example/n.jpg');
+    const far = html.indexOf('https://c.example/f.jpg');
+    const last = html.indexOf('href="/music/artist/s-3"');
+    assert.ok(near >= 0 && far > near && last > far);
+    assert.match(html, /bg-green-500\/80/);
+    assert.doesNotMatch(html, NO_RESULTS);
+  });
+
+  it('has its default title Similar to Your Library, or the title it is given', async () => {
+    const answers = { [url]: { results: [artist('s', 'X')] } };
+
+    assert.match(
+      await render(path, answers),
+      /<span>Similar to Your Library<\/span>/
+    );
+    assert.match(
+      await render(path, answers, { title: 'Mine' }),
+      /<span>Mine<\/span>/
+    );
+  });
+
+  it('shows the empty state on an empty answer and on a failed one, and not while loading', async () => {
+    assert.match(await render(path, { [url]: { results: [] } }), NO_RESULTS);
+    assert.match(await render(path, { [url]: new Error('500') }), NO_RESULTS);
+    assert.doesNotMatch(await render(path, {}), NO_RESULTS);
+  });
+});
 
 describe('the Recent Music Requests slider', () => {
   const path = 'components/Discover/RecentMusicRequestsSlider';
@@ -271,7 +319,9 @@ describe('the Discover Music page', () => {
     '/api/v1/request?filter=all&take=20&sort=added&skip=0&mediaType=music': {
       results: [],
     },
-    '/api/v1/music/popular': { results: [album('p', 'PopularAlbum')] },
+    '/api/v1/music/library/similar': {
+      results: [artist('s', 'SimilarArtist')],
+    },
   };
 
   it('has its heading and shows the three sliders in order while music is shown', async () => {
@@ -281,25 +331,27 @@ describe('the Discover Music page', () => {
     const at = [
       'Recently Added',
       'Recent Music Requests',
-      'Popular Albums',
+      'Similar to Your Library',
     ].map((t) => html.indexOf(`<span>${t}</span>`));
     assert.ok(at[0] > 0 && at[0] < at[1] && at[1] < at[2], at.join());
     assert.deepEqual(asked, [
       '/api/v1/music/recentlyadded',
       '/api/v1/request?filter=all&take=20&sort=added&skip=0&mediaType=music',
-      '/api/v1/music/popular',
+      '/api/v1/music/library/similar',
     ]);
     assert.doesNotMatch(html, /discover-music-notice/);
+    assert.doesNotMatch(html, /Popular Albums/);
+    assert.ok(!asked.includes('/api/v1/music/popular'));
   });
 
   it('keeps the page when one source fails or is empty', async () => {
     const html = await render(path, {
       ...all,
-      '/api/v1/music/popular': new Error('500'),
+      '/api/v1/music/library/similar': new Error('500'),
     });
 
     assert.match(html, /AddedAlbum/);
-    assert.match(html, /<span>Popular Albums<\/span>/);
+    assert.match(html, /<span>Similar to Your Library<\/span>/);
     assert.match(html, NO_RESULTS);
   });
 
@@ -312,6 +364,33 @@ describe('the Discover Music page', () => {
       assert.doesNotMatch(html, /slider-title/);
       assert.deepEqual(asked, []);
     }
+  });
+});
+
+describe('no client file reads /api/v1/music/popular', () => {
+  it('is read by none of the sources under src, and PopularAlbumsSlider is gone', () => {
+    const root = nodePath.join(process.cwd(), 'src');
+    const walk = (dir: string): string[] =>
+      fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
+        const full = nodePath.join(dir, e.name);
+        return e.isDirectory() ? walk(full) : [full];
+      });
+    const sources = walk(root).filter(
+      (f) => /\.(ts|tsx)$/.test(f) && !/\.test\.tsx?$/.test(f)
+    );
+
+    assert.ok(sources.length > 100);
+    for (const file of sources) {
+      assert.ok(
+        !fs.readFileSync(file, 'utf8').includes('/music/popular'),
+        `${file} reads /music/popular`
+      );
+    }
+    assert.ok(
+      !fs.existsSync(
+        nodePath.join(root, 'components/Discover/PopularAlbumsSlider')
+      )
+    );
   });
 });
 

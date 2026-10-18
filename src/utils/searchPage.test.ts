@@ -40,10 +40,23 @@ const show = async ({
   require(swr);
   require.cache[swr]!.exports = {
     __esModule: true,
-    default: (getKey: (i: number, previous: unknown) => string | null) => {
-      keys.push(getKey(0, null));
+    default: (
+      getKey: (i: number, previous: unknown) => string[] | string | null
+    ) => {
+      // the search page's list keys are ['search-page-list', address]
+      const addressOf = (i: number) => {
+        const key = getKey(i, null);
+
+        return Array.isArray(key) ? key[1] : key;
+      };
+
+      keys.push(addressOf(0));
       return {
-        data: pages.map((p) => ({ ...p, results: [] })),
+        data: pages.map((p, i) => ({
+          ...p,
+          results: [],
+          requestedUrl: addressOf(i) ?? undefined,
+        })),
         error: undefined,
         size: Math.max(pages.length, 1),
         setSize: () => {},

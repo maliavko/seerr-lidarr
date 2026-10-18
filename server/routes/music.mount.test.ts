@@ -64,7 +64,7 @@ describe('the music routes in the API router', () => {
 
   for (const path of [
     '/api/v1/music/recentlyadded',
-    '/api/v1/music/popular',
+    '/api/v1/music/library/similar',
     `/api/v1/music/artist/${MBID}/similar`,
   ]) {
     it(`refuses an unauthenticated GET ${path} with 403`, async () => {

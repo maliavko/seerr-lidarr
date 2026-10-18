@@ -32,7 +32,7 @@ class DiscoverSlider {
           slider.type !== undefined &&
           musicSliderTypes.includes(slider.type)
         ) {
-          // The music sliders go after the last slider saved, disabled (F2-D-211)
+          // The music sliders go after the last slider saved, disabled (F2-D-295)
           const highest = await sliderRepository.maximum('order');
           await sliderRepository.save(
             new DiscoverSlider({

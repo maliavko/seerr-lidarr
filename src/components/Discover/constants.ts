@@ -90,7 +90,7 @@ export const sliderTitles = defineMessages('components.Discover', {
   tmdbtvstreamingservices: 'TMDB TV Streaming Services',
   recentlyaddedmusic: 'Recently Added Music',
   recentmusicrequests: 'Recent Music Requests',
-  popularalbums: 'Popular Albums',
+  similartolibrary: 'Similar to Your Library',
 });
 
 export const QueryFilterOptions = z.object({

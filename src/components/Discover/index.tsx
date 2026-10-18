@@ -8,11 +8,11 @@ import DiscoverSliderEdit from '@app/components/Discover/DiscoverSliderEdit';
 import MovieGenreSlider from '@app/components/Discover/MovieGenreSlider';
 import NetworkSlider from '@app/components/Discover/NetworkSlider';
 import PlexWatchlistSlider from '@app/components/Discover/PlexWatchlistSlider';
-import PopularAlbumsSlider from '@app/components/Discover/PopularAlbumsSlider';
 import RecentMusicRequestsSlider from '@app/components/Discover/RecentMusicRequestsSlider';
 import RecentRequestsSlider from '@app/components/Discover/RecentRequestsSlider';
 import RecentlyAddedMusicSlider from '@app/components/Discover/RecentlyAddedMusicSlider';
 import RecentlyAddedSlider from '@app/components/Discover/RecentlyAddedSlider';
+import SimilarToLibrarySlider from '@app/components/Discover/SimilarToLibrarySlider';
 import StudioSlider from '@app/components/Discover/StudioSlider';
 import TvGenreSlider from '@app/components/Discover/TvGenreSlider';
 import { sliderTitles } from '@app/components/Discover/constants';
@@ -420,10 +420,10 @@ const Discover = () => {
               />
             );
             break;
-          case DiscoverSliderType.POPULAR_ALBUMS:
+          case DiscoverSliderType.SIMILAR_TO_LIBRARY:
             sliderComponent = (
-              <PopularAlbumsSlider
-                title={intl.formatMessage(sliderTitles.popularalbums)}
+              <SimilarToLibrarySlider
+                title={intl.formatMessage(sliderTitles.similartolibrary)}
               />
             );
             break;

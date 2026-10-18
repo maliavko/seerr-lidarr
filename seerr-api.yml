@@ -5955,7 +5955,7 @@ paths:
   /search:
     get:
       summary: Search for movies, TV shows, people, artists, or albums
-      description: Returns a list of movies, TV shows, people, artists and albums in a JSON object. Without a type, artists and then albums (as found by the default Lidarr server) follow TMDB's results on the first page only, are counted in totalResults, and are never found by an id search; with no default Lidarr server, or Lidarr failing, the answer has no music. With a type, only that type's results are answered, read from that type's own source (TMDB's search of movies, of TV or of people; the default Lidarr's search of artists and albums, as page 1 of 1, a later page answering no results of 1 page); a type whose kind is not shown (movie while no Radarr server is configured, tv while no Sonarr server is, music while no Lidarr server is default, person while neither movie nor tv is shown) is answered as no type. Where neither movie nor tv is shown, TMDB is not read - with music shown the answer is that of the type music, with no kind shown it is page 1 of 1 with no results. Every result of a kind not shown is left out, the page and totalPages of the source read and its totalResults kept however few results are left. The status of a music result's mediaInfo is computed as MediaInfo describes; an album is left out of the results where a whole-artist request of its artist stands and the artist's albums or the saved metadata profile cannot be read, the other results standing.
+      description: Returns a list of movies, TV shows, people, artists and albums in a JSON object. Without a type, artists and then albums (as found by the default Lidarr server) follow TMDB's results on the first page only, are counted in totalResults, and are never found by an id search; with no default Lidarr server the answer has no music, and where one of the two lookups of the default Lidarr's search fails the other's artists or albums are answered, the failure logged. With a type, only that type's results are answered, read from that type's own source (TMDB's search of movies, of TV or of people; the default Lidarr's search of artists and albums, as page 1 of 1, a later page answering no results of 1 page); a type whose kind is not shown (movie while no Radarr server is configured, tv while no Sonarr server is, music while no Lidarr server is default, person while neither movie nor tv is shown) is answered as no type. Where neither movie nor tv is shown, TMDB is not read - with music shown the answer is that of the type music, with no kind shown it is page 1 of 1 with no results. Every result of a kind not shown is left out, the page and totalPages of the source read and its totalResults kept however few results are left. The status of a music result's mediaInfo is computed as MediaInfo describes; an album is left out of the results where a whole-artist request of its artist stands and the artist's albums or the saved metadata profile cannot be read, the other results standing; an album so left out is music that could not be built into results, a failed read of the default Lidarr's search that is answered 500 where nothing else is left and otherwise logged. Where the source an answer is read from fails, the answer is 500 and never a page of no results - a type's own source (TMDB's search of movies, of TV or of people; the default Lidarr's search of artists and albums, whose results cannot be built among them); without a type, TMDB where movie or tv is shown; the default Lidarr's search where only music is shown; the id providers (tmdb:, imdb:, tvdb:, year:) where their reads fail. A source of several reads (the default Lidarr's two lookups, year:'s two TMDB searches, tmdb:'s three reads) fails where one of its reads failed whose results the answer would keep and what the reads that answered give, once the type and the kinds shown are applied, is no result (a read of tmdb:'s answered not found, HTTP 404, found nothing and is no failure); where they leave results those are answered and the failed read logged. Without a type where movie or tv is shown, TMDB answering, one of the default Lidarr's two lookups read beside it (page 1 of a plain query) failing, or the music they found failing to be built into results (some or all of it, an album left out for its covering among it), is answered 500 where what TMDB's answer and the music read and built give, once the kinds shown are applied, is no result, and otherwise with those results, TMDB's page and counts, the failed lookup or build logged.
       tags:
         - search
       parameters:
@@ -6009,6 +6009,16 @@ paths:
                         - $ref: '#/components/schemas/PersonResult'
                         - $ref: '#/components/schemas/ArtistResult'
                         - $ref: '#/components/schemas/AlbumResult'
+        '500':
+          description: Unable to retrieve search results - the source the answer is read from failed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Unable to retrieve search results.
   /search/keyword:
     get:
       summary: Search for keywords
@@ -7308,7 +7318,7 @@ paths:
   /music/recentlyadded:
     get:
       summary: Get the recently added albums
-      description: Returns up to 20 albums the default Lidarr server holds at least one track file of, as music results (mediaType `album`), the album whose newest track file Lidarr gained most recently first. Lidarr is read as it stands at each call. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
+      description: Returns up to 20 albums the default Lidarr server holds at least one track file of, as music results (mediaType `album`), in the order Lidarr imported them, the album imported last first. An album's place is the time Lidarr's history records for the import that brought it into the library while Lidarr held no file of it - its first import or, where every file of it was removed since, the import that brought it back; files imported while Lidarr holds a file of the album (an upgrade, a rename, a retag, a missing track added) never move it; where the history keeps no such import the place is the earliest time Lidarr gained a track file it still holds of the album, and albums of one import run stand by their own recorded times, ties in Lidarr's order. Lidarr is read as it stands at each call. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
       tags:
         - music
       responses:
@@ -7326,10 +7336,10 @@ paths:
                       anyOf:
                         - $ref: '#/components/schemas/ArtistResult'
                         - $ref: '#/components/schemas/AlbumResult'
-  /music/popular:
+  /music/library/similar:
     get:
-      summary: Get the popular albums
-      description: Returns up to 20 of the albums (release groups) most listened to on ListenBrainz site-wide over its latest monthly statistics, read keyless, most listened first, as music results (mediaType `album`); an entry without a MusicBrainz release-group id is left out. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
+      summary: Get the artists similar to those in the library
+      description: Returns up to 20 artists ListenBrainz gives as similar to artists the default Lidarr server holds, read keyless, none of which Lidarr holds as the call is made, as music results (mediaType `artist`), each with the image Lidarr's metadata service gives it, where it gives one. The library is read at each call; where it holds more than 30 artists the similar artists of 30 of them, spread over the whole library by Lidarr's ids, are read, so that the answer is sent within about ten seconds. The artist similar to more of the read artists comes first, then the one with the higher best score, then by id; the answer is the same for every user. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set, the library is empty or a source fails (the failure is logged, never answered as an error).
       tags:
         - music
       responses:
@@ -7350,7 +7360,7 @@ paths:
   /music/artist/{mbid}/similar:
     get:
       summary: Get the artists similar to an artist
-      description: Returns up to 20 artists ListenBrainz gives as similar to the artist, read keyless by its MusicBrainz id, most similar first, the artist itself never among them, as music results (mediaType `artist`), each with the image Lidarr's metadata service gives it, where it gives one. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
+      description: Returns the first 20 of the artists ListenBrainz gives as similar to the artist, read keyless by its MusicBrainz id, most similar first, the artist itself never among them, as music results (mediaType `artist`), each with the image Lidarr's metadata service gives it, where it gives one. The status of each item's mediaInfo is computed as MediaInfo describes. The answer is an empty list where no default Lidarr server is set or the source fails (the failure is logged, never answered as an error).
       tags:
         - music
       parameters:

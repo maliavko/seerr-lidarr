@@ -16,27 +16,12 @@ import type {
   InternalAxiosRequestConfig,
 } from 'axios';
 
-// ListenBrainz's answers, recorded once (the first 40 entries of the site-wide
-// release-group statistics of range=month, which hold five repeated release
-// groups and three entries without a release-group id, and the first 30 of
-// the similar artists of Radiohead)
+// ListenBrainz's answer, recorded once (the first 30 of the similar artists of
+// Radiohead)
 const fixture = <T>(name: string): T =>
   JSON.parse(
     readFileSync(join(__dirname, 'listenbrainz.fixtures', name), 'utf8')
   ) as T;
-
-interface ReleaseGroupEntry {
-  artist_mbids?: string[];
-  artist_name?: string;
-  caa_id?: number | null;
-  caa_release_mbid?: string | null;
-  release_group_mbid?: string | null;
-  release_group_name?: string;
-}
-
-interface Stats {
-  payload: { release_groups: ReleaseGroupEntry[] };
-}
 
 interface Similar {
   artist_mbid?: string | null;
@@ -44,7 +29,6 @@ interface Similar {
   score?: number;
 }
 
-const stats = fixture<Stats>('sitewide-release-groups-month.json');
 const similar = fixture<Similar[]>('similar-artists-radiohead.json');
 
 const RADIOHEAD = 'a74b1b7f-71a5-4011-9441-d0b5e4122711';
@@ -102,21 +86,6 @@ function wire(
   return calls;
 }
 
-const statsWith = (release_groups: ReleaseGroupEntry[]): Stats => ({
-  payload: { release_groups },
-});
-
-const entry = (
-  n: number,
-  extra: ReleaseGroupEntry = {}
-): ReleaseGroupEntry => ({
-  artist_mbids: [`aaaaaaaa-0000-4000-8000-${String(n).padStart(12, '0')}`],
-  artist_name: `Artist ${n}`,
-  release_group_mbid: `bbbbbbbb-0000-4000-8000-${String(n).padStart(12, '0')}`,
-  release_group_name: `Album ${n}`,
-  ...extra,
-});
-
 describe('the ListenBrainz client', () => {
   beforeEach(() => cacheManager.getCache('listenbrainz').flush());
 
@@ -132,214 +101,6 @@ describe('the ListenBrainz client', () => {
       (client as unknown as { axios: AxiosInstance }).axios.defaults.timeout,
       5000
     );
-  });
-
-  describe('getPopularAlbums', () => {
-    it("asks the site-wide release-group statistics of the month, 100 entries, with Seerr's User-Agent and no key", async () => {
-      const client = new ListenBrainzAPI();
-      const calls = wire(client, () => ({ data: stats }));
-
-      await client.getPopularAlbums();
-
-      assert.strictEqual(calls.length, 1);
-      assert.strictEqual(calls[0].baseURL, 'https://api.listenbrainz.org/1');
-      assert.strictEqual(calls[0].url, '/stats/sitewide/release-groups');
-      assert.deepStrictEqual(calls[0].params, { range: 'month', count: 100 });
-      assert.strictEqual(
-        calls[0].headers['User-Agent'],
-        getMusicBrainzUserAgent()
-      );
-      assert.strictEqual(calls[0].headers['Authorization'], undefined);
-    });
-
-    it("answers each release group once, in ListenBrainz's order, dropping entries without a release-group id, at most 20", async () => {
-      const client = new ListenBrainzAPI();
-      wire(client, () => ({ data: stats }));
-
-      const albums = await client.getPopularAlbums();
-
-      const entries = stats.payload.release_groups;
-      const expected: string[] = [];
-      for (const e of entries) {
-        if (e.release_group_mbid && !expected.includes(e.release_group_mbid)) {
-          expected.push(e.release_group_mbid);
-        }
-      }
-
-      assert.ok(
-        entries.some((e) => !e.release_group_mbid),
-        'the fixture holds entries without an id'
-      );
-      assert.ok(
-        entries.length - expected.length >= 5,
-        'the fixture holds repeats and dropped entries'
-      );
-      assert.strictEqual(albums.length, 20);
-      assert.deepStrictEqual(
-        albums.map((album) => album.mbid),
-        expected.slice(0, 20)
-      );
-      assert.strictEqual(albums[0].title, 'ARIRANG');
-    });
-
-    it('keeps the first of a repeated release group, the most listened', async () => {
-      const client = new ListenBrainzAPI();
-      wire(client, () => ({
-        data: statsWith([
-          entry(1, { artist_name: 'first' }),
-          entry(2),
-          entry(1, { artist_name: 'second' }),
-        ]),
-      }));
-
-      const albums = await client.getPopularAlbums();
-
-      assert.deepStrictEqual(
-        albums.map((album) => [album.title, album.artistName]),
-        [
-          ['Album 1', 'first'],
-          ['Album 2', 'Artist 2'],
-        ]
-      );
-    });
-
-    it('answers fewer than 20 where fewer distinct albums come, and a null or empty id is no id', async () => {
-      const client = new ListenBrainzAPI();
-      wire(client, () => ({
-        data: statsWith([
-          entry(1),
-          entry(2, { release_group_mbid: null }),
-          entry(3, { release_group_mbid: '' }),
-          entry(4, { release_group_mbid: undefined }),
-          entry(1),
-        ]),
-      }));
-
-      const albums = await client.getPopularAlbums();
-
-      assert.deepStrictEqual(
-        albums.map((album) => album.title),
-        ['Album 1']
-      );
-    });
-
-    it("answers {mbid, title, artistMbid (the first), artistName} and the release's cover where both caa fields are given", async () => {
-      const client = new ListenBrainzAPI();
-      wire(client, () => ({
-        data: statsWith([
-          entry(1, {
-            artist_mbids: ['first-artist', 'second-artist'],
-            caa_id: 44649507220,
-            caa_release_mbid: '8c0e8294-93f0-45d4-a98f-e9a37060de4a',
-          }),
-        ]),
-      }));
-
-      const [album] = await client.getPopularAlbums();
-
-      assert.deepStrictEqual(album, {
-        mbid: 'bbbbbbbb-0000-4000-8000-000000000001',
-        title: 'Album 1',
-        artistMbid: 'first-artist',
-        artistName: 'Artist 1',
-        coverUrl:
-          'https://coverartarchive.org/release/8c0e8294-93f0-45d4-a98f-e9a37060de4a/44649507220-250.jpg',
-      });
-    });
-
-    it("answers the release group's front cover where an entry names no caa_id or no caa_release_mbid", async () => {
-      const client = new ListenBrainzAPI();
-      wire(client, () => ({
-        data: statsWith([
-          entry(1, { caa_id: null, caa_release_mbid: 'x' }),
-          entry(2, { caa_id: 5, caa_release_mbid: null }),
-          entry(3),
-        ]),
-      }));
-
-      const albums = await client.getPopularAlbums();
-
-      assert.deepStrictEqual(
-        albums.map((album) => album.coverUrl),
-        [1, 2, 3].map(
-          (n) =>
-            `https://coverartarchive.org/release-group/bbbbbbbb-0000-4000-8000-${String(n).padStart(12, '0')}/front-250`
-        )
-      );
-    });
-
-    it('answers an album with no artist ids without an artist, and still lists it', async () => {
-      const client = new ListenBrainzAPI();
-      wire(client, () => ({
-        data: statsWith([
-          entry(1, { artist_mbids: [] }),
-          entry(2, { artist_mbids: undefined, artist_name: undefined }),
-        ]),
-      }));
-
-      const albums = await client.getPopularAlbums();
-
-      assert.strictEqual(albums.length, 2);
-      assert.strictEqual(albums[0].artistMbid, undefined);
-      assert.strictEqual(albums[1].artistMbid, undefined);
-      assert.strictEqual(albums[1].artistName, undefined);
-    });
-
-    it('keeps its answer in the listenbrainz cache for 6 hours, asking once', async () => {
-      const client = new ListenBrainzAPI();
-      const calls = wire(client, () => ({ data: stats }));
-      const store = cacheManager.getCache('listenbrainz').data;
-      const set = mock.method(store, 'set');
-
-      const first = await client.getPopularAlbums();
-      const second = await client.getPopularAlbums();
-      set.mock.restore();
-
-      assert.strictEqual(calls.length, 1);
-      assert.deepStrictEqual(second, first);
-      assert.strictEqual(set.mock.callCount(), 1);
-      assert.strictEqual(set.mock.calls[0].arguments[2], 21600);
-      assert.strictEqual(store.getStats().keys, 1);
-    });
-
-    for (const [name, respond] of [
-      ['a network error', () => ({ error: new Error('connect ECONNREFUSED') })],
-      ['a timeout', () => ({ error: new Error('timeout of 5000ms exceeded') })],
-      ['a 500', () => ({ status: 500, data: 'oops' })],
-      ['a 429', () => ({ status: 429, data: { error: 'slow down' } })],
-      ['an answer with no payload', () => ({ data: {} })],
-      [
-        'an answer whose list is not a list',
-        () => ({ data: { payload: { release_groups: 'x' } } }),
-      ],
-      ['a body that is not JSON', () => ({ data: '<html>' })],
-      ['a null body', () => ({ data: null })],
-    ] as [string, () => { status?: number; data?: unknown; error?: Error }][]) {
-      it(`answers [] on ${name}, never an error, and keeps nothing`, async () => {
-        const client = new ListenBrainzAPI();
-        const calls = wire(client, respond);
-
-        assert.deepStrictEqual(await client.getPopularAlbums(), []);
-        assert.deepStrictEqual(await client.getPopularAlbums(), []);
-        assert.strictEqual(calls.length, 2, 'a failure is asked again');
-      });
-    }
-
-    it('reads an entry it cannot read as no album, the rest standing', async () => {
-      const client = new ListenBrainzAPI();
-      wire(client, () => ({
-        data: {
-          payload: {
-            release_groups: [null, 'x', 7, entry(1), { artist_mbids: 'no' }],
-          },
-        },
-      }));
-
-      assert.deepStrictEqual(
-        (await client.getPopularAlbums()).map((album) => album.title),
-        ['Album 1']
-      );
-    });
   });
 
   describe('getSimilarArtists', () => {
@@ -365,21 +126,46 @@ describe('the ListenBrainz client', () => {
       );
     });
 
-    it('answers at most 20 {mbid, name}, by score descending', async () => {
+    it('answers every entry left, more than 20, each {mbid, name, score}, by score descending', async () => {
       const client = new ListenBrainzAPI();
       wire(client, () => ({ data: [...similar].reverse() }));
 
       const artists = await client.getSimilarArtists(RADIOHEAD);
 
-      assert.strictEqual(artists.length, 20);
-      const expected = [...similar]
-        .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
-        .slice(0, 20);
+      assert.ok(similar.length > 20, 'the fixture holds more than 20 entries');
+      assert.strictEqual(artists.length, similar.length);
+      const expected = [...similar].sort(
+        (a, b) => (b.score ?? 0) - (a.score ?? 0)
+      );
       assert.deepStrictEqual(
         artists,
-        expected.map((a) => ({ mbid: a.artist_mbid, name: a.name }))
+        expected.map((a) => ({
+          mbid: a.artist_mbid,
+          name: a.name,
+          score: a.score,
+        }))
       );
       assert.strictEqual(artists[0].name, 'Nirvana');
+      assert.strictEqual(artists[0].score, 11156);
+    });
+
+    it('answers a score that is a number, 0 where the entry gives none or one that is not a number', async () => {
+      const client = new ListenBrainzAPI();
+      wire(client, () => ({
+        data: [
+          { artist_mbid: 'a', name: 'A' },
+          { artist_mbid: 'b', name: 'B', score: null },
+          { artist_mbid: 'c', name: 'C', score: 'not a number' },
+          { artist_mbid: 'd', name: 'D', score: 7 },
+        ],
+      }));
+
+      assert.deepStrictEqual(await client.getSimilarArtists(RADIOHEAD), [
+        { mbid: 'd', name: 'D', score: 7 },
+        { mbid: 'a', name: 'A', score: 0 },
+        { mbid: 'b', name: 'B', score: 0 },
+        { mbid: 'c', name: 'C', score: 0 },
+      ]);
     });
 
     it('drops the artist itself and entries without an artist_mbid', async () => {
@@ -395,7 +181,23 @@ describe('the ListenBrainz client', () => {
       }));
 
       assert.deepStrictEqual(await client.getSimilarArtists(RADIOHEAD), [
-        { mbid: 'm-1', name: 'Kept' },
+        { mbid: 'm-1', name: 'Kept', score: 10 },
+      ]);
+    });
+
+    it('drops an entry without a name, or with an empty one', async () => {
+      const client = new ListenBrainzAPI();
+      wire(client, () => ({
+        data: [
+          { artist_mbid: 'm-1', score: 50 },
+          { artist_mbid: 'm-2', name: '', score: 40 },
+          { artist_mbid: 'm-3', name: null, score: 30 },
+          { artist_mbid: 'm-4', name: 'Kept', score: 1 },
+        ],
+      }));
+
+      assert.deepStrictEqual(await client.getSimilarArtists(RADIOHEAD), [
+        { mbid: 'm-4', name: 'Kept', score: 1 },
       ]);
     });
 
@@ -424,7 +226,7 @@ describe('the ListenBrainz client', () => {
       assert.strictEqual(calls.length, 1);
     });
 
-    it('keeps its answer 6 hours', async () => {
+    it('keeps its answer 24 hours: the call asks 86400 seconds', async () => {
       const client = new ListenBrainzAPI();
       wire(client, () => ({ data: similar }));
       const set = mock.method(
@@ -436,7 +238,7 @@ describe('the ListenBrainz client', () => {
       set.mock.restore();
 
       assert.strictEqual(set.mock.callCount(), 1);
-      assert.strictEqual(set.mock.calls[0].arguments[2], 21600);
+      assert.strictEqual(set.mock.calls[0].arguments[2], 86400);
     });
 
     it('keeps one answer per artist', async () => {
@@ -476,7 +278,7 @@ describe('the ListenBrainz client', () => {
       }));
 
       assert.deepStrictEqual(await client.getSimilarArtists(RADIOHEAD), [
-        { mbid: 'm-1', name: 'Kept' },
+        { mbid: 'm-1', name: 'Kept', score: 1 },
       ]);
     });
   });
@@ -494,8 +296,6 @@ describe('the failure log of the ListenBrainz client', () => {
   ): Error => Object.assign(new Error(message), { isAxiosError: true }, extra);
 
   const unreadable: Record<string, string> = {
-    getPopularAlbums:
-      'unreadable answer: the answer holds no list of release groups',
     getSimilarArtists: 'unreadable answer: the answer is not a list',
   };
 
@@ -611,7 +411,6 @@ describe('the failure log of the ListenBrainz client', () => {
     (client: ListenBrainzAPI) => Promise<unknown[]>,
     Record<string, unknown>,
   ][] = [
-    ['getPopularAlbums', (client) => client.getPopularAlbums(), {}],
     [
       'getSimilarArtists',
       (client) => client.getSimilarArtists(RADIOHEAD),
@@ -706,10 +505,6 @@ describe('the failure log of the ListenBrainz client', () => {
     }
 
     assert.strictEqual(
-      seen.getPopularAlbums,
-      'unreadable answer: the answer holds no list of release groups'
-    );
-    assert.strictEqual(
       seen.getSimilarArtists,
       'unreadable answer: the answer is not a list'
     );
@@ -737,11 +532,15 @@ describe('the failure log of the ListenBrainz client', () => {
 });
 
 describe('the listenbrainz cache', () => {
-  it('is one of the caches the product lists, answers kept 6 hours', () => {
+  it('is one of the caches the product lists, its stdTtl 86400 seconds (24 hours)', () => {
     const cache = cacheManager.getAllCaches().listenbrainz;
 
     assert.ok(cache);
     assert.strictEqual(cache.id, 'listenbrainz');
     assert.strictEqual(cache, cacheManager.getCache('listenbrainz'));
+    assert.strictEqual(
+      (cache.data as unknown as { stdTtl: number }).stdTtl,
+      86400
+    );
   });
 });

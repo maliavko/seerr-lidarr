@@ -24,6 +24,7 @@ const unload = () => {
     }
   }
 };
+let lastConfig: Record<string, unknown> = {};
 const answer = async (
   pages: Page[],
   endByPageCount?: boolean
@@ -35,14 +36,18 @@ const answer = async (
   require(swr);
   require.cache[swr]!.exports = {
     __esModule: true,
-    default: () => ({
-      data: pages,
-      error: undefined,
-      size: pages.length,
-      setSize: () => {},
-      isValidating: false,
-      mutate: () => {},
-    }),
+    default: (_key: unknown, config: Record<string, unknown>) => {
+      lastConfig = config;
+      return {
+        // the search page's fetcher tags each page with the address it was asked
+        data: pages.map((p, i) => ({ ...p, requestedUrl: `/x?page=${i + 1}` })),
+        error: undefined,
+        size: pages.length,
+        setSize: () => {},
+        isValidating: false,
+        mutate: () => {},
+      };
+    },
   };
   type Hook = (
     endpoint: string,
@@ -113,6 +118,13 @@ describe('useDiscover with endByPageCount', () => {
 });
 
 describe('useDiscover without endByPageCount', () => {
+  it("keeps the global fetcher and SWR's own error retry: nothing of the search page's", async () => {
+    await answer([page(1, 5, 3)]);
+
+    assert.equal('fetcher' in lastConfig, false);
+    assert.equal('shouldRetryOnError' in lastConfig, false);
+  });
+
   it('keeps its end test: a short page ends it, and no title is empty', async () => {
     assert.equal((await answer([page(1, 5, 3)])).end, true);
     assert.deepEqual(await answer([page(1, 4, 0)]), { end: true, empty: true });

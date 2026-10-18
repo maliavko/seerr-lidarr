@@ -1,0 +1,137 @@
+{
+  "page": 1,
+  "pageSize": 4,
+  "sortKey": "date",
+  "sortDirection": "descending",
+  "totalRecords": 6,
+  "records": [
+    {
+      "albumId": 5,
+      "artistId": 2,
+      "trackId": 461,
+      "sourceTitle": "b5",
+      "quality": {
+        "quality": {
+          "id": 26,
+          "name": "MP3-56"
+        },
+        "revision": {
+          "version": 1,
+          "real": 0,
+          "isRepack": false
+        }
+      },
+      "customFormats": [],
+      "customFormatScore": 0,
+      "qualityCutoffNotMet": false,
+      "date": "2026-10-17T13:34:40Z",
+      "eventType": "trackFileImported",
+      "data": {
+        "fileId": "40",
+        "droppedPath": "/music/_import/b5.mp3",
+        "importedPath": "/music/Jon Hopkins/b5.mp3",
+        "downloadClient": null,
+        "releaseGroup": null,
+        "size": "600103",
+        "indexerFlags": "0"
+      },
+      "id": 8
+    },
+    {
+      "albumId": 4,
+      "artistId": 2,
+      "trackId": 398,
+      "sourceTitle": "b4",
+      "quality": {
+        "quality": {
+          "id": 26,
+          "name": "MP3-56"
+        },
+        "revision": {
+          "version": 1,
+          "real": 0,
+          "isRepack": false
+        }
+      },
+      "customFormats": [],
+      "customFormatScore": 0,
+      "qualityCutoffNotMet": false,
+      "date": "2026-10-17T13:34:35Z",
+      "eventType": "trackFileImported",
+      "data": {
+        "fileId": "39",
+        "droppedPath": "/music/_import/b4.mp3",
+        "importedPath": "/music/Jon Hopkins/b4.mp3",
+        "downloadClient": null,
+        "releaseGroup": null,
+        "size": "600103",
+        "indexerFlags": "0"
+      },
+      "id": 6
+    },
+    {
+      "albumId": 3,
+      "artistId": 2,
+      "trackId": 349,
+      "sourceTitle": "b3",
+      "quality": {
+        "quality": {
+          "id": 26,
+          "name": "MP3-56"
+        },
+        "revision": {
+          "version": 1,
+          "real": 0,
+          "isRepack": false
+        }
+      },
+      "customFormats": [],
+      "customFormatScore": 0,
+      "qualityCutoffNotMet": false,
+      "date": "2026-10-17T13:34:30Z",
+      "eventType": "trackFileImported",
+      "data": {
+        "fileId": "38",
+        "droppedPath": "/music/_import/b3.mp3",
+        "importedPath": "/music/Jon Hopkins/b3.mp3",
+        "downloadClient": null,
+        "releaseGroup": null,
+        "size": "600103",
+        "indexerFlags": "0"
+      },
+      "id": 5
+    },
+    {
+      "albumId": 5,
+      "artistId": 2,
+      "trackId": 461,
+      "sourceTitle": "a5",
+      "quality": {
+        "quality": {
+          "id": 26,
+          "name": "MP3-56"
+        },
+        "revision": {
+          "version": 1,
+          "real": 0,
+          "isRepack": false
+        }
+      },
+      "customFormats": [],
+      "customFormatScore": 0,
+      "qualityCutoffNotMet": false,
+      "date": "2026-10-17T13:34:16Z",
+      "eventType": "trackFileImported",
+      "data": {
+        "fileId": "37",
+        "droppedPath": "/music/_import/a5.mp3",
+        "importedPath": "/music/Jon Hopkins/a5.mp3",
+        "downloadClient": null,
+        "releaseGroup": null,
+        "size": "600103",
+        "indexerFlags": "0"
+      },
+      "id": 3
+    }
+  ]
+}

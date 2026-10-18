@@ -1,9 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { boxAfterLanding } from '@app/utils/searchBox';
+import { readKeptSearchType, tabStorage } from '@app/utils/searchKeptType';
 import { newSearchAddress } from '@app/utils/searchLoading';
 import type { Nullable } from '@app/utils/typeHelpers';
 import { useRouter } from 'next/router';
 import type { Dispatch, SetStateAction } from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { UrlObject } from 'url';
 import useDebouncedState from './useDebouncedState';
 
@@ -25,6 +27,31 @@ const useSearchInput = (): SearchObject => {
     (router.query.query as string) ?? ''
   );
 
+  // The text this hook last asked the router to go to, and whether its address
+  // has landed (F2-D-341 (a)): what tells an address that lands for an earlier
+  // text from the one asked for.
+  const routed = useRef<string | null>(null);
+  const routedLanded = useRef(false);
+
+  const route = (text: string) => {
+    routed.current = text;
+    routedLanded.current = false;
+
+    // the type last chosen by a pill press in this tab, read now (F2-D-341)
+    const address = newSearchAddress(
+      { pathname: router.pathname, query: router.query },
+      text,
+      readKeptSearchType(tabStorage())
+    );
+
+    if (router.pathname.startsWith('/search')) {
+      router.replace(address);
+    } else {
+      setLastRoute(router.asPath);
+      router.push(address).then(() => window.scrollTo(0, 0));
+    }
+  };
+
   /**
    * This effect handles routing when the debounced search input
    * value changes.
@@ -34,23 +61,7 @@ const useSearchInput = (): SearchObject => {
    */
   useEffect(() => {
     if (debouncedValue !== '' && searchOpen) {
-      if (router.pathname.startsWith('/search')) {
-        // a new query starts on All: the type is left out
-        router.replace(
-          newSearchAddress(
-            { pathname: router.pathname, query: router.query },
-            debouncedValue
-          )
-        );
-      } else {
-        setLastRoute(router.asPath);
-        router
-          .push({
-            pathname: '/search',
-            query: { query: debouncedValue },
-          })
-          .then(() => window.scrollTo(0, 0));
-      }
+      route(debouncedValue);
     }
   }, [debouncedValue]);
 
@@ -79,7 +90,9 @@ const useSearchInput = (): SearchObject => {
    *
    * If after a route change, the new debounced value is not the same
    * as the query value then we will update the searchValue to either the
-   * new query or to an empty string (in the case of null). This makes sure
+   * new query or to an empty string (in the case of null) - but only as
+   * boxAfterLanding answers (F2-D-341 (a)): never where text was typed after
+   * that address was asked, which the debounce then routes. This makes sure
    * that the value in the searchbox is whatever the user last entered regardless
    * of routing to something like a detail page.
    *
@@ -90,16 +103,39 @@ const useSearchInput = (): SearchObject => {
    * is on /search
    */
   useEffect(() => {
-    if (router.query.query !== debouncedValue) {
+    const landing = (router.query.query as string | undefined) ?? '';
+
+    if (landing === routed.current) {
+      routedLanded.current = true;
+    }
+
+    const answer = boxAfterLanding({
+      box: searchValue,
+      debounced: debouncedValue,
+      routed: routed.current,
+      routedLanded: routedLanded.current,
+      landing,
+    });
+
+    if (answer.reroute) {
+      route(debouncedValue);
+    }
+
+    if (answer.follow) {
       setSearchValue(
         router.query.query
           ? decodeURIComponent(router.query.query as string)
           : ''
       );
+    }
 
-      if (!router.pathname.startsWith('/search') && !router.query.query) {
-        setIsOpen(false);
-      }
+    if (
+      router.query.query !== debouncedValue &&
+      (answer.follow || searchValue === '') &&
+      !router.pathname.startsWith('/search') &&
+      !router.query.query
+    ) {
+      setIsOpen(false);
     }
 
     if (router.pathname.startsWith('/search')) {

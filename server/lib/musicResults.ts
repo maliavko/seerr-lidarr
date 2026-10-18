@@ -16,6 +16,16 @@ export async function buildMusicResults(
   artists: MusicArtistSummary[],
   albums: MusicAlbumSummary[]
 ): Promise<MusicResults[]> {
+  return (await buildMusicResultsCounted(artists, albums)).results;
+}
+
+// The same, with the number of albums left out because their covering is
+// undecided (a failed read of the covering's sources), for the search route to
+// read as music that could not be built (F2-D-441).
+export async function buildMusicResultsCounted(
+  artists: MusicArtistSummary[],
+  albums: MusicAlbumSummary[]
+): Promise<{ results: MusicResults[]; leftOut: number }> {
   const media = await Media.getRelatedMusicMedia([
     ...artists.map((artist) => ({
       mbid: artist.id,
@@ -40,7 +50,7 @@ export async function buildMusicResults(
   const rowOf = (mbid: string, kind: MusicKind) =>
     media.find((row) => row.musicBrainzId === mbid && row.musicKind === kind);
 
-  return [
+  const results = [
     ...artists.map((artist, index) => {
       const resolved = resolutions[index];
 
@@ -64,4 +74,9 @@ export async function buildMusicResults(
         : [];
     }),
   ];
+
+  return {
+    results,
+    leftOut: artists.length + albums.length - results.length,
+  };
 }

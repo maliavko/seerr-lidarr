@@ -1,0 +1,40 @@
+[
+  {
+    "artistId": 2,
+    "foreignTrackId": "6220737a-7032-3bdf-8cc0-111ff5b1aaab",
+    "foreignRecordingId": "70824dd3-a356-47a0-aed7-e1fbc2f641d3",
+    "trackFileId": 36,
+    "albumId": 4,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "1",
+    "title": "Circle",
+    "duration": 348800,
+    "mediumNumber": 1,
+    "hasFile": true,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 397
+  },
+  {
+    "artistId": 2,
+    "foreignTrackId": "9fa2e3c9-84c9-34f9-9b55-d1b7ac0ca324",
+    "foreignRecordingId": "5067f958-71e9-4106-8c65-6a27aa57f8f1",
+    "trackFileId": 39,
+    "albumId": 4,
+    "explicit": false,
+    "absoluteTrackNumber": 2,
+    "trackNumber": "2",
+    "title": "Second Sense",
+    "duration": 313573,
+    "mediumNumber": 1,
+    "hasFile": true,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 398
+  }
+]

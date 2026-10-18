@@ -1,0 +1,21 @@
+[
+  {
+    "artistId": 2,
+    "foreignTrackId": "9f33fd22-bdb9-39b7-a8e9-743bd715b3bd",
+    "foreignRecordingId": "3cae8a01-5724-4afa-808b-e260bcecf57f",
+    "trackFileId": 38,
+    "albumId": 3,
+    "explicit": false,
+    "absoluteTrackNumber": 1,
+    "trackNumber": "1",
+    "title": "Elegiac",
+    "duration": 384133,
+    "mediumNumber": 1,
+    "hasFile": true,
+    "ratings": {
+      "votes": 0,
+      "value": 0
+    },
+    "id": 349
+  }
+]

@@ -5,7 +5,10 @@ import { MediaStatus, MediaType, MusicKind } from '@server/constants/media';
 import { getRepository } from '@server/datasource';
 import Media from '@server/entity/Media';
 import type { MusicAlbumSummary, MusicArtistSummary } from '@server/lib/music';
-import { buildMusicResults } from '@server/lib/musicResults';
+import {
+  buildMusicResults,
+  buildMusicResultsCounted,
+} from '@server/lib/musicResults';
 import { setupTestDb } from '@server/test/db';
 
 // The helper search's music results and the music sliders are both built by
@@ -95,5 +98,15 @@ describe('buildMusicResults', () => {
         undefined,
       ]
     );
+  });
+
+  it('counts the albums left out, none where every covering is decided', async () => {
+    const counted = await buildMusicResultsCounted(
+      [artist(1)],
+      [album(1, 1), album(2, 1)]
+    );
+
+    assert.strictEqual(counted.results.length, 3);
+    assert.strictEqual(counted.leftOut, 0);
   });
 });

@@ -1,8 +1,8 @@
 import Header from '@app/components/Common/Header';
 import PageTitle from '@app/components/Common/PageTitle';
-import PopularAlbumsSlider from '@app/components/Discover/PopularAlbumsSlider';
 import RecentlyAddedMusicSlider from '@app/components/Discover/RecentlyAddedMusicSlider';
 import RecentMusicRequestsSlider from '@app/components/Discover/RecentMusicRequestsSlider';
+import SimilarToLibrarySlider from '@app/components/Discover/SimilarToLibrarySlider';
 import useSettings from '@app/hooks/useSettings';
 import defineMessages from '@app/utils/defineMessages';
 import type { NextPage } from 'next';
@@ -14,7 +14,7 @@ const messages = defineMessages('pages.discover.music', {
     'Music is not set up. Add a Lidarr server and mark it as default in Settings > Services to discover music.',
 });
 
-// The Discover Music page (F2-R-2, F2-D-93): the three sliders in this order
+// The Discover Music page (F2-R-91, F2-D-294): the three sliders in this order
 // while music is shown; otherwise a notice, no slider and so no fetch.
 const DiscoverMusicPage: NextPage = () => {
   const intl = useIntl();
@@ -31,7 +31,7 @@ const DiscoverMusicPage: NextPage = () => {
         <>
           <RecentlyAddedMusicSlider />
           <RecentMusicRequestsSlider />
-          <PopularAlbumsSlider />
+          <SimilarToLibrarySlider />
         </>
       ) : (
         <div

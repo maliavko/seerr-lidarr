@@ -36,6 +36,9 @@ interface SearchOptions {
   page?: number;
   includeAdult?: boolean;
   language?: string;
+  // a failed read is thrown, not answered as an empty page 1 of 1 (F2-D-401:
+  // set by the search route alone)
+  failOnError?: boolean;
 }
 
 interface SingleSearchOptions extends SearchOptions {
@@ -206,6 +209,7 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
     page = 1,
     includeAdult = false,
     language = this.locale,
+    failOnError = false,
   }: SearchOptions): Promise<TmdbSearchMultiResponse> => {
     try {
       const data = await this.get<TmdbSearchMultiResponse>('/search/multi', {
@@ -213,7 +217,11 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
       });
 
       return data;
-    } catch {
+    } catch (e) {
+      if (failOnError) {
+        throw e;
+      }
+
       return {
         page: 1,
         results: [],
@@ -228,6 +236,7 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
     page = 1,
     includeAdult = false,
     language = this.locale,
+    failOnError = false,
     year,
   }: SingleSearchOptions): Promise<TmdbSearchMovieResponse> => {
     try {
@@ -242,7 +251,11 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
       });
 
       return data;
-    } catch {
+    } catch (e) {
+      if (failOnError) {
+        throw e;
+      }
+
       return {
         page: 1,
         results: [],
@@ -257,6 +270,7 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
     page = 1,
     includeAdult = false,
     language = this.locale,
+    failOnError = false,
     year,
   }: SingleSearchOptions): Promise<TmdbSearchTvResponse> => {
     try {
@@ -271,7 +285,11 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
       });
 
       return data;
-    } catch {
+    } catch (e) {
+      if (failOnError) {
+        throw e;
+      }
+
       return {
         page: 1,
         results: [],
@@ -286,6 +304,7 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
     page = 1,
     includeAdult = false,
     language = this.locale,
+    failOnError = false,
   }: SearchOptions): Promise<TmdbSearchPersonResponse> => {
     try {
       const data = await this.get<TmdbSearchPersonResponse>('/search/person', {
@@ -298,7 +317,11 @@ class TheMovieDb extends ExternalAPI implements TvShowProvider {
       });
 
       return data;
-    } catch {
+    } catch (e) {
+      if (failOnError) {
+        throw e;
+      }
+
       return {
         page: 1,
         results: [],

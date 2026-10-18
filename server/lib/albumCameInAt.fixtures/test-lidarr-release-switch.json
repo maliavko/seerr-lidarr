@@ -1,0 +1,116 @@
+{
+  "albumId": 21,
+  "events": [
+    {
+      "id": 86,
+      "date": "2026-10-18T07:51:14Z",
+      "eventType": "trackFileImported",
+      "trackId": 1435,
+      "albumId": 21,
+      "data": {
+        "fileId": "116"
+      }
+    },
+    {
+      "id": 87,
+      "date": "2026-10-18T07:51:14Z",
+      "eventType": "trackFileImported",
+      "trackId": 1436,
+      "albumId": 21,
+      "data": {
+        "fileId": "117"
+      }
+    },
+    {
+      "id": 88,
+      "date": "2026-10-18T07:51:14Z",
+      "eventType": "trackFileImported",
+      "trackId": 1437,
+      "albumId": 21,
+      "data": {
+        "fileId": "118"
+      }
+    },
+    {
+      "id": 90,
+      "date": "2026-10-18T07:51:35Z",
+      "eventType": "trackFileImported",
+      "trackId": 1427,
+      "albumId": 21,
+      "data": {
+        "fileId": "120"
+      }
+    },
+    {
+      "id": 91,
+      "date": "2026-10-18T07:51:35Z",
+      "eventType": "trackFileImported",
+      "trackId": 1428,
+      "albumId": 21,
+      "data": {
+        "fileId": "121"
+      }
+    },
+    {
+      "id": 92,
+      "date": "2026-10-18T07:51:35Z",
+      "eventType": "trackFileImported",
+      "trackId": 1429,
+      "albumId": 21,
+      "data": {
+        "fileId": "122"
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": 1427,
+      "trackFileId": 120
+    },
+    {
+      "id": 1428,
+      "trackFileId": 121
+    },
+    {
+      "id": 1429,
+      "trackFileId": 122
+    },
+    {
+      "id": 1430,
+      "trackFileId": 0
+    },
+    {
+      "id": 1431,
+      "trackFileId": 0
+    },
+    {
+      "id": 1432,
+      "trackFileId": 0
+    },
+    {
+      "id": 1433,
+      "trackFileId": 0
+    },
+    {
+      "id": 1434,
+      "trackFileId": 0
+    }
+  ],
+  "trackFiles": [
+    {
+      "id": 120,
+      "albumId": 21,
+      "dateAdded": "2026-10-18T07:51:35Z"
+    },
+    {
+      "id": 121,
+      "albumId": 21,
+      "dateAdded": "2026-10-18T07:51:35Z"
+    },
+    {
+      "id": 122,
+      "albumId": 21,
+      "dateAdded": "2026-10-18T07:51:35Z"
+    }
+  ]
+}

@@ -10,6 +10,8 @@ import type {
   LidarrArtist,
   LidarrArtistOptions,
   LidarrCommand,
+  LidarrHistoryEvent,
+  LidarrHistoryPage,
   LidarrTrack,
   LidarrTrackFile,
   MetadataProfile,
@@ -1138,5 +1140,98 @@ describe('LidarrAPI timeout', () => {
     });
 
     assert.strictEqual(getAxios(lidarr).defaults.timeout, 4321);
+  });
+});
+
+describe('LidarrAPI history', () => {
+  afterEach(() => mock.restoreAll());
+
+  it("reads one album's history by its artist and album ids, every event type", async () => {
+    const lidarr = buildLidarr();
+    const events = fixture<LidarrHistoryEvent[]>('history-album-5');
+    const get = mock.method(getAxios(lidarr), 'get', async () => ({
+      data: events,
+    }));
+
+    const answer = await lidarr.getAlbumHistory(2, 5);
+
+    assert.deepStrictEqual(get.mock.calls[0].arguments, [
+      '/history/artist',
+      { params: { artistId: 2, albumId: 5 } },
+    ]);
+    assert.strictEqual(answer, events);
+    // what Lidarr answered of an album whose file was replaced: an import, an
+    // import and a delete whose data says why
+    assert.deepStrictEqual(answer.map((e) => e.eventType).sort(), [
+      'trackFileDeleted',
+      'trackFileImported',
+      'trackFileImported',
+    ]);
+    assert.strictEqual(
+      answer.find((e) => e.eventType === 'trackFileDeleted')?.data?.reason,
+      'Upgrade'
+    );
+  });
+
+  it('reads a page of the import history: trackFileImported only, by date descending', async () => {
+    const lidarr = buildLidarr();
+    const page = fixture<LidarrHistoryPage>('history-imports-page');
+    const get = mock.method(getAxios(lidarr), 'get', async () => ({
+      data: page,
+    }));
+
+    const answer = await lidarr.getImportHistory(2, 200);
+
+    assert.deepStrictEqual(get.mock.calls[0].arguments, [
+      '/history',
+      {
+        params: {
+          page: 2,
+          pageSize: 200,
+          sortKey: 'date',
+          sortDirection: 'descending',
+          eventType: 3,
+        },
+      },
+    ]);
+    assert.strictEqual(answer, page);
+    assert.ok(answer.records.every((r) => r.eventType === 'trackFileImported'));
+    const dates = answer.records.map((r) => Date.parse(r.date));
+    assert.deepStrictEqual(
+      dates,
+      [...dates].sort((a, b) => b - a)
+    );
+  });
+
+  it('throws a [Lidarr] error with the cause when a history read fails', async () => {
+    const lidarr = buildLidarr();
+    const cause = lidarrError(500, { message: 'boom' });
+    mock.method(getAxios(lidarr), 'get', async () => {
+      throw cause;
+    });
+
+    for (const [call, act] of [
+      [() => lidarr.getAlbumHistory(2, 5), 'the history of an album'],
+      [() => lidarr.getImportHistory(1, 200), 'the import history'],
+    ] as const) {
+      const error = await rejection(call());
+
+      assert.strictEqual(
+        error.message,
+        `[Lidarr] Failed to retrieve ${act}: Request failed with status code 500`
+      );
+      assert.strictEqual(error.cause, cause);
+    }
+  });
+
+  it('reads the file each track holds with getTracks', async () => {
+    const lidarr = buildLidarr();
+    const tracks = fixture<LidarrTrack[]>('tracks-history-album-5');
+    mock.method(getAxios(lidarr), 'get', async () => ({ data: tracks }));
+
+    const answer = await lidarr.getTracks(5);
+
+    assert.strictEqual(answer[0].trackFileId, 40);
+    assert.strictEqual(answer[0].id, 461);
   });
 });

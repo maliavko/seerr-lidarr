@@ -10,13 +10,13 @@ setupTestDb();
 const musicTypes = [
   DiscoverSliderType.RECENTLY_ADDED_MUSIC,
   DiscoverSliderType.RECENT_MUSIC_REQUESTS,
-  DiscoverSliderType.POPULAR_ALBUMS,
+  DiscoverSliderType.SIMILAR_TO_LIBRARY,
 ];
 
 const saved = () =>
   getRepository(DiscoverSlider).find({ order: { order: 'ASC', id: 'ASC' } });
 
-// The step that creates the built-in sliders (F2-D-7, F2-D-211): the three
+// The step that creates the built-in sliders (F2-D-284, F2-D-295): the three
 // music sliders go after the last row saved, disabled, once, and a row saved
 // is never touched.
 describe('DiscoverSlider.bootstrapSliders and the music sliders', () => {
@@ -114,7 +114,7 @@ describe('DiscoverSlider.bootstrapSliders and the music sliders', () => {
     });
     // the administrator enabled and moved it to the top, and removed a sibling
     await repository.update(requests.id, { enabled: true, order: -5 });
-    await repository.delete({ type: DiscoverSliderType.POPULAR_ALBUMS });
+    await repository.delete({ type: DiscoverSliderType.SIMILAR_TO_LIBRARY });
     const before = await saved();
 
     await DiscoverSlider.bootstrapSliders();
@@ -125,7 +125,7 @@ describe('DiscoverSlider.bootstrapSliders and the music sliders', () => {
     assert.equal(moved?.order, -5);
     assert.equal(after.length, before.length + 1);
     const created = after.find(
-      (r) => r.type === DiscoverSliderType.POPULAR_ALBUMS
+      (r) => r.type === DiscoverSliderType.SIMILAR_TO_LIBRARY
     );
     assert.equal(created?.enabled, false);
     assert.equal(created?.order, 13); // the highest order saved (12) + 1
@@ -134,6 +134,79 @@ describe('DiscoverSlider.bootstrapSliders and the music sliders', () => {
       assert.equal(now?.order, row.order);
       assert.equal(now?.enabled, row.enabled);
     }
+  });
+
+  for (const enabled of [true, false]) {
+    it(`on an install holding a Popular Albums row of an earlier build (type 24, ${
+      enabled ? 'enabled' : 'disabled'
+    }, moved off the end) keeps it at its place and state as Similar to Your Library and adds no second type-24 row (F2-D-284, F2-D-295)`, async () => {
+      const repository = getRepository(DiscoverSlider);
+      // what the earlier build left: the twelve built-ins, then Recently Added
+      // Music (22), Popular Albums (24, the row under test) placed in the
+      // middle by the administrator, Recent Music Requests (23) last
+      for (const slider of defaultSliders.slice(0, 12)) {
+        await repository.save(new DiscoverSlider(slider));
+      }
+      await repository.save(
+        new DiscoverSlider({
+          type: DiscoverSliderType.RECENTLY_ADDED_MUSIC,
+          isBuiltIn: true,
+          enabled: false,
+          order: 12,
+        })
+      );
+      const similar = await repository.save(
+        new DiscoverSlider({
+          type: 24,
+          isBuiltIn: true,
+          enabled,
+          order: 5, // moved off the end
+        })
+      );
+      await repository.save(
+        new DiscoverSlider({
+          type: DiscoverSliderType.RECENT_MUSIC_REQUESTS,
+          isBuiltIn: true,
+          enabled: false,
+          order: 14,
+        })
+      );
+      const before = await saved();
+
+      await DiscoverSlider.bootstrapSliders();
+
+      const after = await saved();
+      assert.equal(after.length, before.length, 'no row is added');
+      assert.equal(
+        after.filter((r) => r.type === DiscoverSliderType.SIMILAR_TO_LIBRARY)
+          .length,
+        1
+      );
+      const row = after.find((r) => r.id === similar.id);
+      assert.equal(row?.type, DiscoverSliderType.SIMILAR_TO_LIBRARY);
+      assert.equal(row?.order, 5);
+      assert.equal(row?.enabled, enabled);
+      assert.equal(row?.isBuiltIn, true);
+      assert.deepEqual(
+        after.map((r) => [r.id, r.type, r.order, r.enabled]),
+        before.map((r) => [r.id, r.type, r.order, r.enabled])
+      );
+    });
+  }
+
+  it('names the type SIMILAR_TO_LIBRARY with the value 24 and has no POPULAR_ALBUMS', () => {
+    assert.equal(DiscoverSliderType.SIMILAR_TO_LIBRARY, 24);
+    assert.equal(
+      (DiscoverSliderType as unknown as Record<string, unknown>)[
+        'POPULAR_ALBUMS'
+      ],
+      undefined
+    );
+    assert.equal(
+      defaultSliders.filter((s) => s.type === 24).length,
+      1,
+      'one default slider of type 24'
+    );
   });
 
   it('is idempotent: a second run creates nothing and changes nothing', async () => {

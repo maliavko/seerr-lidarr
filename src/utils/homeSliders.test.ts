@@ -261,7 +261,7 @@ describe('the menu (F2-R-1, F2-D-211)', () => {
     for (const [type, title] of [
       [T.RECENTLY_ADDED_MUSIC, 'Recently Added Music'],
       [T.RECENT_MUSIC_REQUESTS, 'Recent Music Requests'],
-      [T.POPULAR_ALBUMS, 'Popular Albums'],
+      [T.SIMILAR_TO_LIBRARY, 'Similar to Your Library'],
     ] as const) {
       const html = await render(
         'components/Discover/DiscoverSliderEdit',
@@ -329,7 +329,7 @@ describe('the Discover page (the home page)', () => {
       row(T.POPULAR_MOVIES),
       row(T.POPULAR_TV),
       row(T.RECENTLY_ADDED_MUSIC),
-      row(T.POPULAR_ALBUMS),
+      row(T.SIMILAR_TO_LIBRARY),
     ];
 
     await home(sliders, ['movie', 'person']);
@@ -346,7 +346,8 @@ describe('the Discover page (the home page)', () => {
     await home(sliders, ['music']);
     assert.ok(!asked.some((k) => k.startsWith('/api/v1/discover')));
     assert.ok(asked.includes('/api/v1/music/recentlyadded'));
-    assert.ok(asked.includes('/api/v1/music/popular'));
+    assert.ok(asked.includes('/api/v1/music/library/similar'));
+    assert.ok(!asked.includes('/api/v1/music/popular'));
   });
 
   it('fetches nothing and shows no slider where no kind is shown', async () => {
@@ -370,17 +371,17 @@ describe('the Discover page (the home page)', () => {
       'components/Discover',
       {
         [slidersUrl]: [
-          row(T.POPULAR_ALBUMS),
+          row(T.SIMILAR_TO_LIBRARY),
           row(T.RECENT_MUSIC_REQUESTS),
           row(T.RECENTLY_ADDED_MUSIC),
         ],
         '/api/v1/music/recentlyadded': { results: [] },
-        '/api/v1/music/popular': { results: [] },
+        '/api/v1/music/library/similar': { results: [] },
       },
       { kindsShown: ['music'] }
     );
     const at = [
-      'Popular Albums',
+      'Similar to Your Library',
       'Recent Music Requests',
       'Recently Added Music',
     ].map((t) => html.indexOf(`<span>${t}</span>`));
@@ -397,7 +398,7 @@ describe('the Discover page (the home page)', () => {
       'components/Discover',
       {
         [slidersUrl]: [
-          row(T.POPULAR_ALBUMS, false),
+          row(T.SIMILAR_TO_LIBRARY, false),
           row(T.RECENT_MUSIC_REQUESTS, false),
           row(T.RECENTLY_ADDED_MUSIC, false),
         ],

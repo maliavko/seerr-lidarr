@@ -1,0 +1,3024 @@
+[
+  {
+    "artist": "Insomnium",
+    "albumId": 687,
+    "title": "Since the Day It All Came Down",
+    "events": [
+      {
+        "id": 17371,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75623,
+        "albumId": 687,
+        "data": { "fileId": "16931" }
+      },
+      {
+        "id": 17370,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75622,
+        "albumId": 687,
+        "data": { "fileId": "16930" }
+      },
+      {
+        "id": 17359,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75621,
+        "albumId": 687,
+        "data": { "fileId": "16919" }
+      },
+      {
+        "id": 17355,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75620,
+        "albumId": 687,
+        "data": { "fileId": "16915" }
+      },
+      {
+        "id": 17349,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75619,
+        "albumId": 687,
+        "data": { "fileId": "16909" }
+      },
+      {
+        "id": 17341,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75618,
+        "albumId": 687,
+        "data": { "fileId": "16901" }
+      },
+      {
+        "id": 17333,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75617,
+        "albumId": 687,
+        "data": { "fileId": "16893" }
+      },
+      {
+        "id": 17320,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75616,
+        "albumId": 687,
+        "data": { "fileId": "16880" }
+      },
+      {
+        "id": 17310,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75615,
+        "albumId": 687,
+        "data": { "fileId": "16870" }
+      },
+      {
+        "id": 17301,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75614,
+        "albumId": 687,
+        "data": { "fileId": "16861" }
+      },
+      {
+        "id": 17295,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75613,
+        "albumId": 687,
+        "data": { "fileId": "16855" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16855, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16861, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16870, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16880, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16893, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16901, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16909, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16915, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16919, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16930, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16931, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 688,
+    "title": "In the Halls of Awaiting",
+    "events": [
+      {
+        "id": 17365,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75718,
+        "albumId": 688,
+        "data": { "fileId": "16925" }
+      },
+      {
+        "id": 17363,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75717,
+        "albumId": 688,
+        "data": { "fileId": "16923" }
+      },
+      {
+        "id": 17356,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75716,
+        "albumId": 688,
+        "data": { "fileId": "16916" }
+      },
+      {
+        "id": 17343,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75715,
+        "albumId": 688,
+        "data": { "fileId": "16903" }
+      },
+      {
+        "id": 17338,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75714,
+        "albumId": 688,
+        "data": { "fileId": "16898" }
+      },
+      {
+        "id": 17332,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75713,
+        "albumId": 688,
+        "data": { "fileId": "16892" }
+      },
+      {
+        "id": 17324,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75712,
+        "albumId": 688,
+        "data": { "fileId": "16884" }
+      },
+      {
+        "id": 17315,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75711,
+        "albumId": 688,
+        "data": { "fileId": "16875" }
+      },
+      {
+        "id": 17304,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75710,
+        "albumId": 688,
+        "data": { "fileId": "16864" }
+      },
+      {
+        "id": 17288,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75709,
+        "albumId": 688,
+        "data": { "fileId": "16848" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16848, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16864, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16875, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16884, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16892, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16898, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16903, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16916, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16923, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16925, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 689,
+    "title": "Above the Weeping World",
+    "events": [
+      {
+        "id": 17358,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 123666,
+        "albumId": 689,
+        "data": { "fileId": "16918" }
+      },
+      {
+        "id": 17354,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 123665,
+        "albumId": 689,
+        "data": { "fileId": "16914" }
+      },
+      {
+        "id": 17344,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 123664,
+        "albumId": 689,
+        "data": { "fileId": "16904" }
+      },
+      {
+        "id": 17337,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 123663,
+        "albumId": 689,
+        "data": { "fileId": "16897" }
+      },
+      {
+        "id": 17327,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 123662,
+        "albumId": 689,
+        "data": { "fileId": "16887" }
+      },
+      {
+        "id": 17322,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 123661,
+        "albumId": 689,
+        "data": { "fileId": "16882" }
+      },
+      {
+        "id": 17311,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 123660,
+        "albumId": 689,
+        "data": { "fileId": "16871" }
+      },
+      {
+        "id": 17305,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 123659,
+        "albumId": 689,
+        "data": { "fileId": "16865" }
+      },
+      {
+        "id": 17294,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 123658,
+        "albumId": 689,
+        "data": { "fileId": "16854" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16854, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16865, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16871, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16882, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16887, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16897, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16904, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16914, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16918, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 690,
+    "title": "Across the Dark",
+    "events": [
+      {
+        "id": 17369,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 118587,
+        "albumId": 690,
+        "data": { "fileId": "16929" }
+      },
+      {
+        "id": 17360,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 118586,
+        "albumId": 690,
+        "data": { "fileId": "16920" }
+      },
+      {
+        "id": 17353,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 118585,
+        "albumId": 690,
+        "data": { "fileId": "16913" }
+      },
+      {
+        "id": 17346,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 118584,
+        "albumId": 690,
+        "data": { "fileId": "16906" }
+      },
+      {
+        "id": 17334,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 118583,
+        "albumId": 690,
+        "data": { "fileId": "16894" }
+      },
+      {
+        "id": 17328,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 118582,
+        "albumId": 690,
+        "data": { "fileId": "16888" }
+      },
+      {
+        "id": 17319,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 118581,
+        "albumId": 690,
+        "data": { "fileId": "16879" }
+      },
+      {
+        "id": 17313,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 118580,
+        "albumId": 690,
+        "data": { "fileId": "16873" }
+      },
+      {
+        "id": 17303,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 118579,
+        "albumId": 690,
+        "data": { "fileId": "16863" }
+      },
+      {
+        "id": 17290,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 118578,
+        "albumId": 690,
+        "data": { "fileId": "16850" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16850, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16863, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16873, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16879, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16888, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16894, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16906, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16913, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16920, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16929, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 691,
+    "title": "Shadows of the Dying Sun",
+    "events": [
+      {
+        "id": 17367,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75799,
+        "albumId": 691,
+        "data": { "fileId": "16927" }
+      },
+      {
+        "id": 17362,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75798,
+        "albumId": 691,
+        "data": { "fileId": "16922" }
+      },
+      {
+        "id": 17357,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75797,
+        "albumId": 691,
+        "data": { "fileId": "16917" }
+      },
+      {
+        "id": 17342,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75796,
+        "albumId": 691,
+        "data": { "fileId": "16902" }
+      },
+      {
+        "id": 17340,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75795,
+        "albumId": 691,
+        "data": { "fileId": "16900" }
+      },
+      {
+        "id": 17331,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75794,
+        "albumId": 691,
+        "data": { "fileId": "16891" }
+      },
+      {
+        "id": 17325,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75803,
+        "albumId": 691,
+        "data": { "fileId": "16885" }
+      },
+      {
+        "id": 17318,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75793,
+        "albumId": 691,
+        "data": { "fileId": "16878" }
+      },
+      {
+        "id": 17316,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75802,
+        "albumId": 691,
+        "data": { "fileId": "16876" }
+      },
+      {
+        "id": 17312,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75792,
+        "albumId": 691,
+        "data": { "fileId": "16872" }
+      },
+      {
+        "id": 17306,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75801,
+        "albumId": 691,
+        "data": { "fileId": "16866" }
+      },
+      {
+        "id": 17298,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75791,
+        "albumId": 691,
+        "data": { "fileId": "16858" }
+      },
+      {
+        "id": 17291,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75790,
+        "albumId": 691,
+        "data": { "fileId": "16851" }
+      },
+      {
+        "id": 17287,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75800,
+        "albumId": 691,
+        "data": { "fileId": "16847" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16847, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16851, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16858, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16866, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16872, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16876, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16878, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16885, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16891, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16900, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16902, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16917, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16922, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16927, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 692,
+    "title": "Winter\u2019s Gate",
+    "events": [
+      {
+        "id": 17392,
+        "date": "2025-09-26T15:09:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 75861,
+        "albumId": 692,
+        "data": { "fileId": "17081" }
+      },
+      {
+        "id": 17391,
+        "date": "2025-09-26T15:09:11Z",
+        "eventType": "trackFileImported",
+        "trackId": 75860,
+        "albumId": 692,
+        "data": { "fileId": "17080" }
+      },
+      {
+        "id": 17390,
+        "date": "2025-09-26T15:09:11Z",
+        "eventType": "trackFileImported",
+        "trackId": 75859,
+        "albumId": 692,
+        "data": { "fileId": "17079" }
+      },
+      {
+        "id": 17389,
+        "date": "2025-09-26T15:09:11Z",
+        "eventType": "trackFileImported",
+        "trackId": 75858,
+        "albumId": 692,
+        "data": { "fileId": "17078" }
+      },
+      {
+        "id": 17388,
+        "date": "2025-09-26T15:09:11Z",
+        "eventType": "trackFileImported",
+        "trackId": 75857,
+        "albumId": 692,
+        "data": { "fileId": "17077" }
+      },
+      {
+        "id": 17387,
+        "date": "2025-09-26T15:09:11Z",
+        "eventType": "trackFileImported",
+        "trackId": 75856,
+        "albumId": 692,
+        "data": { "fileId": "17076" }
+      },
+      {
+        "id": 17386,
+        "date": "2025-09-26T15:09:11Z",
+        "eventType": "trackFileImported",
+        "trackId": 75855,
+        "albumId": 692,
+        "data": { "fileId": "17075" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 17075, "dateAdded": "2025-09-26T15:09:11Z" },
+      { "id": 17076, "dateAdded": "2025-09-26T15:09:11Z" },
+      { "id": 17077, "dateAdded": "2025-09-26T15:09:11Z" },
+      { "id": 17078, "dateAdded": "2025-09-26T15:09:11Z" },
+      { "id": 17079, "dateAdded": "2025-09-26T15:09:11Z" },
+      { "id": 17080, "dateAdded": "2025-09-26T15:09:11Z" },
+      { "id": 17081, "dateAdded": "2025-09-26T15:09:11Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 693,
+    "title": "Heart Like a Grave",
+    "events": [
+      {
+        "id": 17366,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75909,
+        "albumId": 693,
+        "data": { "fileId": "16926" }
+      },
+      {
+        "id": 17361,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75908,
+        "albumId": 693,
+        "data": { "fileId": "16921" }
+      },
+      {
+        "id": 17352,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75907,
+        "albumId": 693,
+        "data": { "fileId": "16912" }
+      },
+      {
+        "id": 17345,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75906,
+        "albumId": 693,
+        "data": { "fileId": "16905" }
+      },
+      {
+        "id": 17339,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75905,
+        "albumId": 693,
+        "data": { "fileId": "16899" }
+      },
+      {
+        "id": 17329,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75904,
+        "albumId": 693,
+        "data": { "fileId": "16889" }
+      },
+      {
+        "id": 17317,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75903,
+        "albumId": 693,
+        "data": { "fileId": "16877" }
+      },
+      {
+        "id": 17314,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75902,
+        "albumId": 693,
+        "data": { "fileId": "16874" }
+      },
+      {
+        "id": 17300,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75901,
+        "albumId": 693,
+        "data": { "fileId": "16860" }
+      },
+      {
+        "id": 17297,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75911,
+        "albumId": 693,
+        "data": { "fileId": "16857" }
+      },
+      {
+        "id": 17293,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75900,
+        "albumId": 693,
+        "data": { "fileId": "16853" }
+      },
+      {
+        "id": 17292,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75910,
+        "albumId": 693,
+        "data": { "fileId": "16852" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16852, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16853, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16857, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16860, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16874, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16877, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16889, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16899, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16905, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16912, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16921, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16926, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 694,
+    "title": "One for Sorrow",
+    "events": [
+      {
+        "id": 17373,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75979,
+        "albumId": 694,
+        "data": { "fileId": "16933" }
+      },
+      {
+        "id": 17372,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75978,
+        "albumId": 694,
+        "data": { "fileId": "16932" }
+      },
+      {
+        "id": 17368,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75977,
+        "albumId": 694,
+        "data": { "fileId": "16928" }
+      },
+      {
+        "id": 17364,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75976,
+        "albumId": 694,
+        "data": { "fileId": "16924" }
+      },
+      {
+        "id": 17350,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75975,
+        "albumId": 694,
+        "data": { "fileId": "16910" }
+      },
+      {
+        "id": 17348,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 75974,
+        "albumId": 694,
+        "data": { "fileId": "16908" }
+      },
+      {
+        "id": 17336,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75973,
+        "albumId": 694,
+        "data": { "fileId": "16896" }
+      },
+      {
+        "id": 17330,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75972,
+        "albumId": 694,
+        "data": { "fileId": "16890" }
+      },
+      {
+        "id": 17321,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75971,
+        "albumId": 694,
+        "data": { "fileId": "16881" }
+      },
+      {
+        "id": 17309,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75970,
+        "albumId": 694,
+        "data": { "fileId": "16869" }
+      },
+      {
+        "id": 17302,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 75969,
+        "albumId": 694,
+        "data": { "fileId": "16862" }
+      },
+      {
+        "id": 17289,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 75968,
+        "albumId": 694,
+        "data": { "fileId": "16849" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16849, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16862, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16869, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16881, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16890, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16896, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16908, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16910, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16924, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16928, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16932, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16933, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 695,
+    "title": "Anno 1696",
+    "events": [
+      {
+        "id": 17351,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 120497,
+        "albumId": 695,
+        "data": { "fileId": "16911" }
+      },
+      {
+        "id": 17347,
+        "date": "2025-09-26T14:01:39Z",
+        "eventType": "trackFileImported",
+        "trackId": 120496,
+        "albumId": 695,
+        "data": { "fileId": "16907" }
+      },
+      {
+        "id": 17335,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 120495,
+        "albumId": 695,
+        "data": { "fileId": "16895" }
+      },
+      {
+        "id": 17326,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 120494,
+        "albumId": 695,
+        "data": { "fileId": "16886" }
+      },
+      {
+        "id": 17323,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 120493,
+        "albumId": 695,
+        "data": { "fileId": "16883" }
+      },
+      {
+        "id": 17308,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 120492,
+        "albumId": 695,
+        "data": { "fileId": "16868" }
+      },
+      {
+        "id": 17307,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 120500,
+        "albumId": 695,
+        "data": { "fileId": "16867" }
+      },
+      {
+        "id": 17299,
+        "date": "2025-09-26T14:01:38Z",
+        "eventType": "trackFileImported",
+        "trackId": 120491,
+        "albumId": 695,
+        "data": { "fileId": "16859" }
+      },
+      {
+        "id": 17296,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 120499,
+        "albumId": 695,
+        "data": { "fileId": "16856" }
+      },
+      {
+        "id": 17286,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 120498,
+        "albumId": 695,
+        "data": { "fileId": "16846" }
+      },
+      {
+        "id": 17285,
+        "date": "2025-09-26T14:01:37Z",
+        "eventType": "trackFileImported",
+        "trackId": 120490,
+        "albumId": 695,
+        "data": { "fileId": "16845" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 16845, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16846, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16856, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16859, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16867, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16868, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16883, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16886, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16895, "dateAdded": "2025-09-26T14:01:35Z" },
+      { "id": 16907, "dateAdded": "2025-09-26T14:01:36Z" },
+      { "id": 16911, "dateAdded": "2025-09-26T14:01:36Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 10909,
+    "title": "Argent Moon",
+    "events": [
+      {
+        "id": 51323,
+        "date": "2026-02-14T12:21:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 707543,
+        "albumId": 10909,
+        "data": { "fileId": "63359" }
+      },
+      {
+        "id": 51322,
+        "date": "2026-02-14T12:21:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 707542,
+        "albumId": 10909,
+        "data": { "fileId": "63358" }
+      },
+      {
+        "id": 51321,
+        "date": "2026-02-14T12:21:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 707541,
+        "albumId": 10909,
+        "data": { "fileId": "63357" }
+      },
+      {
+        "id": 51320,
+        "date": "2026-02-14T12:21:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 707540,
+        "albumId": 10909,
+        "data": { "fileId": "63356" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 63356, "dateAdded": "2026-02-14T12:21:10Z" },
+      { "id": 63357, "dateAdded": "2026-02-14T12:21:11Z" },
+      { "id": 63358, "dateAdded": "2026-02-14T12:21:11Z" },
+      { "id": 63359, "dateAdded": "2026-02-14T12:21:11Z" }
+    ]
+  },
+  {
+    "artist": "Insomnium",
+    "albumId": 12345,
+    "title": "Netherworlds",
+    "events": [
+      {
+        "id": 63459,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841345,
+        "albumId": 12345,
+        "data": { "fileId": "95624" }
+      },
+      {
+        "id": 63458,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841344,
+        "albumId": 12345,
+        "data": { "fileId": "95623" }
+      },
+      {
+        "id": 63457,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841343,
+        "albumId": 12345,
+        "data": { "fileId": "95622" }
+      },
+      {
+        "id": 63456,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841342,
+        "albumId": 12345,
+        "data": { "fileId": "95621" }
+      },
+      {
+        "id": 63455,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841341,
+        "albumId": 12345,
+        "data": { "fileId": "95620" }
+      },
+      {
+        "id": 63454,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841340,
+        "albumId": 12345,
+        "data": { "fileId": "95619" }
+      },
+      {
+        "id": 63453,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841339,
+        "albumId": 12345,
+        "data": { "fileId": "95618" }
+      },
+      {
+        "id": 63452,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841338,
+        "albumId": 12345,
+        "data": { "fileId": "95617" }
+      },
+      {
+        "id": 63451,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841337,
+        "albumId": 12345,
+        "data": { "fileId": "95616" }
+      },
+      {
+        "id": 63450,
+        "date": "2026-10-16T06:28:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 841336,
+        "albumId": 12345,
+        "data": { "fileId": "95615" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 95615, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95616, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95617, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95618, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95619, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95620, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95621, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95622, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95623, "dateAdded": "2026-10-16T06:27:59Z" },
+      { "id": 95624, "dateAdded": "2026-10-16T06:27:59Z" }
+    ]
+  },
+  {
+    "artist": "VILT",
+    "albumId": 13519,
+    "title": "Divine Intervention",
+    "events": [
+      {
+        "id": 63477,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919952,
+        "albumId": 13519,
+        "data": { "fileId": "95711" }
+      },
+      {
+        "id": 63476,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919951,
+        "albumId": 13519,
+        "data": { "fileId": "95710" }
+      },
+      {
+        "id": 63475,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919950,
+        "albumId": 13519,
+        "data": { "fileId": "95709" }
+      },
+      {
+        "id": 63474,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919949,
+        "albumId": 13519,
+        "data": { "fileId": "95708" }
+      },
+      {
+        "id": 63473,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919948,
+        "albumId": 13519,
+        "data": { "fileId": "95707" }
+      },
+      {
+        "id": 63472,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919947,
+        "albumId": 13519,
+        "data": { "fileId": "95706" }
+      },
+      {
+        "id": 63471,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919946,
+        "albumId": 13519,
+        "data": { "fileId": "95705" }
+      },
+      {
+        "id": 63470,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919945,
+        "albumId": 13519,
+        "data": { "fileId": "95704" }
+      },
+      {
+        "id": 63469,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919944,
+        "albumId": 13519,
+        "data": { "fileId": "95703" }
+      },
+      {
+        "id": 63468,
+        "date": "2026-10-16T22:50:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 919943,
+        "albumId": 13519,
+        "data": { "fileId": "95702" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 95702, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95703, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95704, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95705, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95706, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95707, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95708, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95709, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95710, "dateAdded": "2026-10-16T22:50:59Z" },
+      { "id": 95711, "dateAdded": "2026-10-16T22:50:59Z" }
+    ]
+  },
+  {
+    "artist": "Greta Van Fleet",
+    "albumId": 3391,
+    "title": "The Battle at Garden\u2019s Gate",
+    "events": [
+      {
+        "id": 41685,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258975,
+        "albumId": 3391,
+        "data": { "fileId": "49346" }
+      },
+      {
+        "id": 41684,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258974,
+        "albumId": 3391,
+        "data": { "fileId": "49345" }
+      },
+      {
+        "id": 41683,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258973,
+        "albumId": 3391,
+        "data": { "fileId": "49344" }
+      },
+      {
+        "id": 41682,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258972,
+        "albumId": 3391,
+        "data": { "fileId": "49343" }
+      },
+      {
+        "id": 41681,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258971,
+        "albumId": 3391,
+        "data": { "fileId": "49342" }
+      },
+      {
+        "id": 41680,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258970,
+        "albumId": 3391,
+        "data": { "fileId": "49341" }
+      },
+      {
+        "id": 41679,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258969,
+        "albumId": 3391,
+        "data": { "fileId": "49340" }
+      },
+      {
+        "id": 41678,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258968,
+        "albumId": 3391,
+        "data": { "fileId": "49339" }
+      },
+      {
+        "id": 41677,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258967,
+        "albumId": 3391,
+        "data": { "fileId": "49338" }
+      },
+      {
+        "id": 41676,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258966,
+        "albumId": 3391,
+        "data": { "fileId": "49337" }
+      },
+      {
+        "id": 41675,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258965,
+        "albumId": 3391,
+        "data": { "fileId": "49336" }
+      },
+      {
+        "id": 41674,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileImported",
+        "trackId": 258964,
+        "albumId": 3391,
+        "data": { "fileId": "49335" }
+      },
+      {
+        "id": 41673,
+        "date": "2026-01-06T18:05:09Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258967,
+        "albumId": 3391,
+        "data": { "reason": "Upgrade" }
+      },
+      {
+        "id": 41672,
+        "date": "2026-01-06T18:05:08Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258967,
+        "albumId": 3391,
+        "data": { "reason": "Upgrade" }
+      },
+      {
+        "id": 37900,
+        "date": "2025-12-22T16:12:32Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258975,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37899,
+        "date": "2025-12-22T16:12:32Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258974,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37898,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258973,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37897,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258972,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37896,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258971,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37895,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258970,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37894,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258969,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37893,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258968,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37892,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258966,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37891,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258965,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37890,
+        "date": "2025-12-22T16:12:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 258964,
+        "albumId": 3391,
+        "data": { "reason": "Manual" }
+      },
+      {
+        "id": 37879,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258975,
+        "albumId": 3391,
+        "data": { "fileId": "34399" }
+      },
+      {
+        "id": 37878,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258974,
+        "albumId": 3391,
+        "data": { "fileId": "34398" }
+      },
+      {
+        "id": 37877,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258973,
+        "albumId": 3391,
+        "data": { "fileId": "34397" }
+      },
+      {
+        "id": 37876,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258972,
+        "albumId": 3391,
+        "data": { "fileId": "34396" }
+      },
+      {
+        "id": 37875,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258971,
+        "albumId": 3391,
+        "data": { "fileId": "34395" }
+      },
+      {
+        "id": 37874,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258970,
+        "albumId": 3391,
+        "data": { "fileId": "34394" }
+      },
+      {
+        "id": 37873,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258969,
+        "albumId": 3391,
+        "data": { "fileId": "34393" }
+      },
+      {
+        "id": 37872,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258968,
+        "albumId": 3391,
+        "data": { "fileId": "34392" }
+      },
+      {
+        "id": 37871,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258967,
+        "albumId": 3391,
+        "data": { "fileId": "34391" }
+      },
+      {
+        "id": 37870,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258966,
+        "albumId": 3391,
+        "data": { "fileId": "34390" }
+      },
+      {
+        "id": 37869,
+        "date": "2025-12-20T15:22:12Z",
+        "eventType": "trackFileImported",
+        "trackId": 258965,
+        "albumId": 3391,
+        "data": { "fileId": "34389" }
+      },
+      {
+        "id": 37868,
+        "date": "2025-12-20T15:22:11Z",
+        "eventType": "trackFileImported",
+        "trackId": 258964,
+        "albumId": 3391,
+        "data": { "fileId": "34388" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 49335, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49336, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49337, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49338, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49339, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49340, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49341, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49342, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49343, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49344, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49345, "dateAdded": "2026-01-06T18:05:09Z" },
+      { "id": 49346, "dateAdded": "2026-01-06T18:05:09Z" }
+    ]
+  },
+  {
+    "artist": "Greta Van Fleet",
+    "albumId": 12806,
+    "title": "Palace for the People",
+    "events": [
+      {
+        "id": 63491,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919868,
+        "albumId": 12806,
+        "data": { "fileId": "95724" }
+      },
+      {
+        "id": 63490,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919867,
+        "albumId": 12806,
+        "data": { "fileId": "95723" }
+      },
+      {
+        "id": 63489,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919866,
+        "albumId": 12806,
+        "data": { "fileId": "95722" }
+      },
+      {
+        "id": 63488,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919865,
+        "albumId": 12806,
+        "data": { "fileId": "95721" }
+      },
+      {
+        "id": 63487,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919864,
+        "albumId": 12806,
+        "data": { "fileId": "95720" }
+      },
+      {
+        "id": 63486,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919863,
+        "albumId": 12806,
+        "data": { "fileId": "95719" }
+      },
+      {
+        "id": 63485,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919862,
+        "albumId": 12806,
+        "data": { "fileId": "95718" }
+      },
+      {
+        "id": 63484,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919861,
+        "albumId": 12806,
+        "data": { "fileId": "95717" }
+      },
+      {
+        "id": 63483,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919860,
+        "albumId": 12806,
+        "data": { "fileId": "95716" }
+      },
+      {
+        "id": 63482,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919859,
+        "albumId": 12806,
+        "data": { "fileId": "95715" }
+      },
+      {
+        "id": 63481,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919858,
+        "albumId": 12806,
+        "data": { "fileId": "95714" }
+      },
+      {
+        "id": 63480,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919857,
+        "albumId": 12806,
+        "data": { "fileId": "95713" }
+      },
+      {
+        "id": 63479,
+        "date": "2026-10-16T23:21:01Z",
+        "eventType": "trackFileImported",
+        "trackId": 919856,
+        "albumId": 12806,
+        "data": { "fileId": "95712" }
+      },
+      {
+        "id": 62908,
+        "date": "2026-10-09T04:49:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 881537,
+        "albumId": 12806,
+        "data": { "fileId": "94512" }
+      },
+      {
+        "id": 62907,
+        "date": "2026-10-09T04:49:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 881536,
+        "albumId": 12806,
+        "data": { "fileId": "94511" }
+      },
+      {
+        "id": 62906,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881535,
+        "albumId": 12806,
+        "data": { "fileId": "94510" }
+      },
+      {
+        "id": 62905,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881534,
+        "albumId": 12806,
+        "data": { "fileId": "94509" }
+      },
+      {
+        "id": 62904,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881533,
+        "albumId": 12806,
+        "data": { "fileId": "94508" }
+      },
+      {
+        "id": 62903,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881532,
+        "albumId": 12806,
+        "data": { "fileId": "94507" }
+      },
+      {
+        "id": 62902,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881531,
+        "albumId": 12806,
+        "data": { "fileId": "94506" }
+      },
+      {
+        "id": 62901,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881530,
+        "albumId": 12806,
+        "data": { "fileId": "94505" }
+      },
+      {
+        "id": 62900,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881529,
+        "albumId": 12806,
+        "data": { "fileId": "94504" }
+      },
+      {
+        "id": 62899,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881528,
+        "albumId": 12806,
+        "data": { "fileId": "94503" }
+      },
+      {
+        "id": 62898,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881527,
+        "albumId": 12806,
+        "data": { "fileId": "94502" }
+      },
+      {
+        "id": 62897,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881526,
+        "albumId": 12806,
+        "data": { "fileId": "94501" }
+      },
+      {
+        "id": 62896,
+        "date": "2026-10-09T04:48:59Z",
+        "eventType": "trackFileImported",
+        "trackId": 881525,
+        "albumId": 12806,
+        "data": { "fileId": "94500" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 95712, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95713, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95714, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95715, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95716, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95717, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95718, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95719, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95720, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95721, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95722, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95723, "dateAdded": "2026-10-16T23:21:01Z" },
+      { "id": 95724, "dateAdded": "2026-10-16T23:21:01Z" }
+    ]
+  },
+  {
+    "artist": "Pink Floyd",
+    "albumId": 4220,
+    "title": "The Wall",
+    "events": [
+      {
+        "id": 43247,
+        "date": "2026-01-07T14:28:36Z",
+        "eventType": "trackFileImported",
+        "trackId": 335212,
+        "albumId": 4220,
+        "data": { "fileId": "50795" }
+      },
+      {
+        "id": 43246,
+        "date": "2026-01-07T14:28:36Z",
+        "eventType": "trackFileImported",
+        "trackId": 335225,
+        "albumId": 4220,
+        "data": { "fileId": "50794" }
+      },
+      {
+        "id": 43245,
+        "date": "2026-01-07T14:28:36Z",
+        "eventType": "trackFileImported",
+        "trackId": 335211,
+        "albumId": 4220,
+        "data": { "fileId": "50793" }
+      },
+      {
+        "id": 43244,
+        "date": "2026-01-07T14:28:36Z",
+        "eventType": "trackFileImported",
+        "trackId": 335224,
+        "albumId": 4220,
+        "data": { "fileId": "50792" }
+      },
+      {
+        "id": 43243,
+        "date": "2026-01-07T14:28:36Z",
+        "eventType": "trackFileImported",
+        "trackId": 335223,
+        "albumId": 4220,
+        "data": { "fileId": "50791" }
+      },
+      {
+        "id": 43242,
+        "date": "2026-01-07T14:28:36Z",
+        "eventType": "trackFileImported",
+        "trackId": 335210,
+        "albumId": 4220,
+        "data": { "fileId": "50790" }
+      },
+      {
+        "id": 43241,
+        "date": "2026-01-07T14:28:36Z",
+        "eventType": "trackFileImported",
+        "trackId": 335209,
+        "albumId": 4220,
+        "data": { "fileId": "50789" }
+      },
+      {
+        "id": 43240,
+        "date": "2026-01-07T14:28:35Z",
+        "eventType": "trackFileImported",
+        "trackId": 335222,
+        "albumId": 4220,
+        "data": { "fileId": "50788" }
+      },
+      {
+        "id": 43239,
+        "date": "2026-01-07T14:28:35Z",
+        "eventType": "trackFileImported",
+        "trackId": 335208,
+        "albumId": 4220,
+        "data": { "fileId": "50787" }
+      },
+      {
+        "id": 43238,
+        "date": "2026-01-07T14:28:35Z",
+        "eventType": "trackFileImported",
+        "trackId": 335221,
+        "albumId": 4220,
+        "data": { "fileId": "50786" }
+      },
+      {
+        "id": 43237,
+        "date": "2026-01-07T14:28:35Z",
+        "eventType": "trackFileImported",
+        "trackId": 335207,
+        "albumId": 4220,
+        "data": { "fileId": "50785" }
+      },
+      {
+        "id": 43236,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335220,
+        "albumId": 4220,
+        "data": { "fileId": "50784" }
+      },
+      {
+        "id": 43235,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335219,
+        "albumId": 4220,
+        "data": { "fileId": "50783" }
+      },
+      {
+        "id": 43234,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335206,
+        "albumId": 4220,
+        "data": { "fileId": "50782" }
+      },
+      {
+        "id": 43233,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335205,
+        "albumId": 4220,
+        "data": { "fileId": "50781" }
+      },
+      {
+        "id": 43232,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335218,
+        "albumId": 4220,
+        "data": { "fileId": "50780" }
+      },
+      {
+        "id": 43231,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335217,
+        "albumId": 4220,
+        "data": { "fileId": "50779" }
+      },
+      {
+        "id": 43230,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335204,
+        "albumId": 4220,
+        "data": { "fileId": "50778" }
+      },
+      {
+        "id": 43229,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335216,
+        "albumId": 4220,
+        "data": { "fileId": "50777" }
+      },
+      {
+        "id": 43228,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335203,
+        "albumId": 4220,
+        "data": { "fileId": "50776" }
+      },
+      {
+        "id": 43227,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335202,
+        "albumId": 4220,
+        "data": { "fileId": "50775" }
+      },
+      {
+        "id": 43226,
+        "date": "2026-01-07T14:28:34Z",
+        "eventType": "trackFileImported",
+        "trackId": 335215,
+        "albumId": 4220,
+        "data": { "fileId": "50774" }
+      },
+      {
+        "id": 43225,
+        "date": "2026-01-07T14:28:33Z",
+        "eventType": "trackFileImported",
+        "trackId": 335201,
+        "albumId": 4220,
+        "data": { "fileId": "50773" }
+      },
+      {
+        "id": 43224,
+        "date": "2026-01-07T14:28:33Z",
+        "eventType": "trackFileImported",
+        "trackId": 335214,
+        "albumId": 4220,
+        "data": { "fileId": "50772" }
+      },
+      {
+        "id": 43223,
+        "date": "2026-01-07T14:28:33Z",
+        "eventType": "trackFileImported",
+        "trackId": 335200,
+        "albumId": 4220,
+        "data": { "fileId": "50771" }
+      },
+      {
+        "id": 43222,
+        "date": "2026-01-07T14:28:33Z",
+        "eventType": "trackFileImported",
+        "trackId": 335213,
+        "albumId": 4220,
+        "data": { "fileId": "50770" }
+      },
+      {
+        "id": 43221,
+        "date": "2026-01-07T14:28:32Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 335218,
+        "albumId": 4220,
+        "data": { "reason": "Upgrade" }
+      },
+      {
+        "id": 43220,
+        "date": "2026-01-07T14:28:31Z",
+        "eventType": "trackFileDeleted",
+        "trackId": 335218,
+        "albumId": 4220,
+        "data": { "reason": "Upgrade" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 50770, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50771, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50772, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50773, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50774, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50775, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50776, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50777, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50778, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50779, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50780, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50781, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50782, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50783, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50784, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50785, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50786, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50787, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50788, "dateAdded": "2026-01-07T14:28:32Z" },
+      { "id": 50789, "dateAdded": "2026-01-07T14:28:33Z" },
+      { "id": 50790, "dateAdded": "2026-01-07T14:28:33Z" },
+      { "id": 50791, "dateAdded": "2026-01-07T14:28:33Z" },
+      { "id": 50792, "dateAdded": "2026-01-07T14:28:33Z" },
+      { "id": 50793, "dateAdded": "2026-01-07T14:28:33Z" },
+      { "id": 50794, "dateAdded": "2026-01-07T14:28:33Z" },
+      { "id": 50795, "dateAdded": "2026-01-07T14:28:33Z" }
+    ]
+  },
+  {
+    "artist": "Pink Floyd",
+    "albumId": 4256,
+    "title": "Atom Heart Mother",
+    "events": [
+      {
+        "id": 63466,
+        "date": "2026-10-16T07:03:02Z",
+        "eventType": "trackFileImported",
+        "trackId": 345044,
+        "albumId": 4256,
+        "data": { "fileId": "95629" }
+      },
+      {
+        "id": 63465,
+        "date": "2026-10-16T07:03:02Z",
+        "eventType": "trackFileImported",
+        "trackId": 345043,
+        "albumId": 4256,
+        "data": { "fileId": "95628" }
+      },
+      {
+        "id": 63464,
+        "date": "2026-10-16T07:03:02Z",
+        "eventType": "trackFileImported",
+        "trackId": 345042,
+        "albumId": 4256,
+        "data": { "fileId": "95627" }
+      },
+      {
+        "id": 63463,
+        "date": "2026-10-16T07:03:02Z",
+        "eventType": "trackFileImported",
+        "trackId": 345041,
+        "albumId": 4256,
+        "data": { "fileId": "95626" }
+      },
+      {
+        "id": 63462,
+        "date": "2026-10-16T07:03:02Z",
+        "eventType": "trackFileImported",
+        "trackId": 345040,
+        "albumId": 4256,
+        "data": { "fileId": "95625" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 95625, "dateAdded": "2026-10-16T07:03:02Z" },
+      { "id": 95626, "dateAdded": "2026-10-16T07:03:02Z" },
+      { "id": 95627, "dateAdded": "2026-10-16T07:03:02Z" },
+      { "id": 95628, "dateAdded": "2026-10-16T07:03:02Z" },
+      { "id": 95629, "dateAdded": "2026-10-16T07:03:02Z" }
+    ]
+  },
+  {
+    "artist": "Pink Floyd",
+    "albumId": 4262,
+    "title": "The Dark Side of the Moon",
+    "events": [
+      {
+        "id": 43090,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351060,
+        "albumId": 4262,
+        "data": { "fileId": "50745" }
+      },
+      {
+        "id": 43089,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351059,
+        "albumId": 4262,
+        "data": { "fileId": "50744" }
+      },
+      {
+        "id": 43088,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351058,
+        "albumId": 4262,
+        "data": { "fileId": "50743" }
+      },
+      {
+        "id": 43087,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351057,
+        "albumId": 4262,
+        "data": { "fileId": "50742" }
+      },
+      {
+        "id": 43086,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351056,
+        "albumId": 4262,
+        "data": { "fileId": "50741" }
+      },
+      {
+        "id": 43085,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351055,
+        "albumId": 4262,
+        "data": { "fileId": "50740" }
+      },
+      {
+        "id": 43084,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351054,
+        "albumId": 4262,
+        "data": { "fileId": "50739" }
+      },
+      {
+        "id": 43083,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351053,
+        "albumId": 4262,
+        "data": { "fileId": "50738" }
+      },
+      {
+        "id": 43082,
+        "date": "2026-01-07T13:52:43Z",
+        "eventType": "trackFileImported",
+        "trackId": 351052,
+        "albumId": 4262,
+        "data": { "fileId": "50737" }
+      },
+      {
+        "id": 43081,
+        "date": "2026-01-07T13:52:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 351051,
+        "albumId": 4262,
+        "data": { "fileId": "50736" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 50736, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50737, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50738, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50739, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50740, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50741, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50742, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50743, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50744, "dateAdded": "2026-01-07T13:52:41Z" },
+      { "id": 50745, "dateAdded": "2026-01-07T13:52:41Z" }
+    ]
+  },
+  {
+    "artist": "Pink Floyd",
+    "albumId": 10516,
+    "title": "Delicate Sound of Thunder",
+    "events": [
+      {
+        "id": 45837,
+        "date": "2026-01-13T00:57:53Z",
+        "eventType": "trackFileImported",
+        "trackId": 676752,
+        "albumId": 10516,
+        "data": { "fileId": "56188" }
+      },
+      {
+        "id": 45836,
+        "date": "2026-01-13T00:57:53Z",
+        "eventType": "trackFileImported",
+        "trackId": 676759,
+        "albumId": 10516,
+        "data": { "fileId": "56187" }
+      },
+      {
+        "id": 45835,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676751,
+        "albumId": 10516,
+        "data": { "fileId": "56186" }
+      },
+      {
+        "id": 45834,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676758,
+        "albumId": 10516,
+        "data": { "fileId": "56185" }
+      },
+      {
+        "id": 45833,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676750,
+        "albumId": 10516,
+        "data": { "fileId": "56184" }
+      },
+      {
+        "id": 45832,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676757,
+        "albumId": 10516,
+        "data": { "fileId": "56183" }
+      },
+      {
+        "id": 45831,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676749,
+        "albumId": 10516,
+        "data": { "fileId": "56182" }
+      },
+      {
+        "id": 45830,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676756,
+        "albumId": 10516,
+        "data": { "fileId": "56181" }
+      },
+      {
+        "id": 45829,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676748,
+        "albumId": 10516,
+        "data": { "fileId": "56180" }
+      },
+      {
+        "id": 45828,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676755,
+        "albumId": 10516,
+        "data": { "fileId": "56179" }
+      },
+      {
+        "id": 45827,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676747,
+        "albumId": 10516,
+        "data": { "fileId": "56178" }
+      },
+      {
+        "id": 45826,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676754,
+        "albumId": 10516,
+        "data": { "fileId": "56177" }
+      },
+      {
+        "id": 45825,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676746,
+        "albumId": 10516,
+        "data": { "fileId": "56176" }
+      },
+      {
+        "id": 45824,
+        "date": "2026-01-13T00:57:52Z",
+        "eventType": "trackFileImported",
+        "trackId": 676753,
+        "albumId": 10516,
+        "data": { "fileId": "56175" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 56175, "dateAdded": "2026-01-13T00:57:50Z" },
+      { "id": 56176, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56177, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56178, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56179, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56180, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56181, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56182, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56183, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56184, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56185, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56186, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56187, "dateAdded": "2026-01-13T00:57:51Z" },
+      { "id": 56188, "dateAdded": "2026-01-13T00:57:51Z" }
+    ]
+  },
+  {
+    "artist": "Foo Fighters",
+    "albumId": 5004,
+    "title": "Echoes, Silence, Patience & Grace",
+    "events": [],
+    "trackFiles": [
+      { "id": 95737, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95743, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95750, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95755, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95762, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95767, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95774, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95780, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95788, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95793, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95797, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95803, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95805, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95806, "dateAdded": "2026-10-17T22:49:27Z" }
+    ]
+  },
+  {
+    "artist": "Foo Fighters",
+    "albumId": 5005,
+    "title": "One by One",
+    "events": [
+      {
+        "id": 41486,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400412,
+        "albumId": 5005,
+        "data": { "fileId": "49153" }
+      },
+      {
+        "id": 41485,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400411,
+        "albumId": 5005,
+        "data": { "fileId": "49152" }
+      },
+      {
+        "id": 41484,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400410,
+        "albumId": 5005,
+        "data": { "fileId": "49151" }
+      },
+      {
+        "id": 41483,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400409,
+        "albumId": 5005,
+        "data": { "fileId": "49150" }
+      },
+      {
+        "id": 41482,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400408,
+        "albumId": 5005,
+        "data": { "fileId": "49149" }
+      },
+      {
+        "id": 41481,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400407,
+        "albumId": 5005,
+        "data": { "fileId": "49148" }
+      },
+      {
+        "id": 41480,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400406,
+        "albumId": 5005,
+        "data": { "fileId": "49147" }
+      },
+      {
+        "id": 41479,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400405,
+        "albumId": 5005,
+        "data": { "fileId": "49146" }
+      },
+      {
+        "id": 41478,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400404,
+        "albumId": 5005,
+        "data": { "fileId": "49145" }
+      },
+      {
+        "id": 41477,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400403,
+        "albumId": 5005,
+        "data": { "fileId": "49144" }
+      },
+      {
+        "id": 41476,
+        "date": "2026-01-06T16:02:06Z",
+        "eventType": "trackFileImported",
+        "trackId": 400402,
+        "albumId": 5005,
+        "data": { "fileId": "49143" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 53035, "dateAdded": "2026-01-08T08:49:25Z" },
+      { "id": 53036, "dateAdded": "2026-01-08T08:49:25Z" },
+      { "id": 53037, "dateAdded": "2026-01-08T08:49:25Z" },
+      { "id": 53038, "dateAdded": "2026-01-08T08:49:25Z" },
+      { "id": 53039, "dateAdded": "2026-01-08T08:49:26Z" },
+      { "id": 53040, "dateAdded": "2026-01-08T08:49:26Z" },
+      { "id": 53041, "dateAdded": "2026-01-08T08:49:26Z" },
+      { "id": 53042, "dateAdded": "2026-01-08T08:49:26Z" },
+      { "id": 53043, "dateAdded": "2026-01-08T08:49:27Z" },
+      { "id": 53044, "dateAdded": "2026-01-08T08:49:27Z" },
+      { "id": 53045, "dateAdded": "2026-01-08T08:49:28Z" }
+    ]
+  },
+  {
+    "artist": "Foo Fighters",
+    "albumId": 5007,
+    "title": "The Colour and the Shape",
+    "events": [
+      {
+        "id": 41733,
+        "date": "2026-01-06T18:42:47Z",
+        "eventType": "trackFileImported",
+        "trackId": 400810,
+        "albumId": 5007,
+        "data": { "fileId": "49394" }
+      },
+      {
+        "id": 41732,
+        "date": "2026-01-06T18:42:47Z",
+        "eventType": "trackFileImported",
+        "trackId": 400809,
+        "albumId": 5007,
+        "data": { "fileId": "49393" }
+      },
+      {
+        "id": 41731,
+        "date": "2026-01-06T18:42:47Z",
+        "eventType": "trackFileImported",
+        "trackId": 400808,
+        "albumId": 5007,
+        "data": { "fileId": "49392" }
+      },
+      {
+        "id": 41730,
+        "date": "2026-01-06T18:42:47Z",
+        "eventType": "trackFileImported",
+        "trackId": 400807,
+        "albumId": 5007,
+        "data": { "fileId": "49391" }
+      },
+      {
+        "id": 41729,
+        "date": "2026-01-06T18:42:47Z",
+        "eventType": "trackFileImported",
+        "trackId": 400806,
+        "albumId": 5007,
+        "data": { "fileId": "49390" }
+      },
+      {
+        "id": 41728,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400805,
+        "albumId": 5007,
+        "data": { "fileId": "49389" }
+      },
+      {
+        "id": 41727,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400804,
+        "albumId": 5007,
+        "data": { "fileId": "49388" }
+      },
+      {
+        "id": 41726,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400803,
+        "albumId": 5007,
+        "data": { "fileId": "49387" }
+      },
+      {
+        "id": 41725,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400802,
+        "albumId": 5007,
+        "data": { "fileId": "49386" }
+      },
+      {
+        "id": 41724,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400801,
+        "albumId": 5007,
+        "data": { "fileId": "49385" }
+      },
+      {
+        "id": 41723,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400800,
+        "albumId": 5007,
+        "data": { "fileId": "49384" }
+      },
+      {
+        "id": 41722,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400799,
+        "albumId": 5007,
+        "data": { "fileId": "49383" }
+      },
+      {
+        "id": 41721,
+        "date": "2026-01-06T18:42:46Z",
+        "eventType": "trackFileImported",
+        "trackId": 400798,
+        "albumId": 5007,
+        "data": { "fileId": "49382" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 52321, "dateAdded": "2026-01-08T07:29:06Z" },
+      { "id": 52322, "dateAdded": "2026-01-08T07:29:06Z" },
+      { "id": 52323, "dateAdded": "2026-01-08T07:29:06Z" },
+      { "id": 52324, "dateAdded": "2026-01-08T07:29:06Z" },
+      { "id": 52326, "dateAdded": "2026-01-08T07:29:06Z" },
+      { "id": 95740, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95744, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95751, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95756, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95764, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95770, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95773, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95782, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95787, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95792, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95798, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95802, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95804, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95807, "dateAdded": "2026-10-17T22:49:27Z" }
+    ]
+  },
+  {
+    "artist": "Angra",
+    "albumId": 10151,
+    "title": "Rebirth",
+    "events": [],
+    "trackFiles": [
+      { "id": 52098, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52106, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52118, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52124, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52136, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52141, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52158, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52164, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52171, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52187, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52197, "dateAdded": "2026-01-08T07:26:57Z" }
+    ]
+  },
+  {
+    "artist": "Angra",
+    "albumId": 10154,
+    "title": "Secret Garden",
+    "events": [],
+    "trackFiles": [
+      { "id": 95736, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95742, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95748, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95753, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95760, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95766, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95771, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95778, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95784, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95790, "dateAdded": "2026-10-17T22:49:26Z" }
+    ]
+  },
+  {
+    "artist": "Angra",
+    "albumId": 10155,
+    "title": "Aurora Consurgens",
+    "events": [],
+    "trackFiles": [
+      { "id": 52093, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52104, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52116, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52129, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52135, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52143, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52152, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52161, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52177, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52189, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52194, "dateAdded": "2026-01-08T07:26:57Z" }
+    ]
+  },
+  {
+    "artist": "Angra",
+    "albumId": 10156,
+    "title": "Aqua",
+    "events": [],
+    "trackFiles": [
+      { "id": 52096, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52108, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52114, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52128, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52133, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52147, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52157, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52167, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52175, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52186, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52198, "dateAdded": "2026-01-08T07:26:57Z" }
+    ]
+  },
+  {
+    "artist": "Angra",
+    "albumId": 10157,
+    "title": "\u00d8MNI",
+    "events": [],
+    "trackFiles": [
+      { "id": 52094, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52110, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52113, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52125, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52140, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52148, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52155, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52162, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52180, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52181, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52196, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52199, "dateAdded": "2026-01-08T07:26:57Z" }
+    ]
+  },
+  {
+    "artist": "Angra",
+    "albumId": 10158,
+    "title": "Temple of Shadows",
+    "events": [],
+    "trackFiles": [
+      { "id": 52100, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52109, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52120, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52126, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52139, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52144, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52151, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52170, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52173, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52185, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52191, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52201, "dateAdded": "2026-01-08T07:26:57Z" },
+      { "id": 52202, "dateAdded": "2026-01-08T07:26:57Z" }
+    ]
+  },
+  {
+    "artist": "Angra",
+    "albumId": 10159,
+    "title": "Cycles of Pain",
+    "events": [],
+    "trackFiles": [
+      { "id": 95738, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95741, "dateAdded": "2026-10-17T22:49:24Z" },
+      { "id": 95747, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95758, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95759, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95765, "dateAdded": "2026-10-17T22:49:25Z" },
+      { "id": 95772, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95777, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95783, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95789, "dateAdded": "2026-10-17T22:49:26Z" },
+      { "id": 95795, "dateAdded": "2026-10-17T22:49:27Z" },
+      { "id": 95800, "dateAdded": "2026-10-17T22:49:27Z" }
+    ]
+  },
+  {
+    "artist": "Godflesh",
+    "albumId": 13481,
+    "title": "Pure",
+    "events": [
+      {
+        "id": 63434,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917794,
+        "albumId": 13481,
+        "data": { "fileId": "95599" }
+      },
+      {
+        "id": 63433,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917793,
+        "albumId": 13481,
+        "data": { "fileId": "95598" }
+      },
+      {
+        "id": 63432,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917792,
+        "albumId": 13481,
+        "data": { "fileId": "95597" }
+      },
+      {
+        "id": 63431,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917791,
+        "albumId": 13481,
+        "data": { "fileId": "95596" }
+      },
+      {
+        "id": 63430,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917790,
+        "albumId": 13481,
+        "data": { "fileId": "95595" }
+      },
+      {
+        "id": 63429,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917789,
+        "albumId": 13481,
+        "data": { "fileId": "95594" }
+      },
+      {
+        "id": 63428,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917788,
+        "albumId": 13481,
+        "data": { "fileId": "95593" }
+      },
+      {
+        "id": 63427,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917787,
+        "albumId": 13481,
+        "data": { "fileId": "95592" }
+      },
+      {
+        "id": 63426,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917786,
+        "albumId": 13481,
+        "data": { "fileId": "95591" }
+      },
+      {
+        "id": 63425,
+        "date": "2026-10-16T04:31:00Z",
+        "eventType": "trackFileImported",
+        "trackId": 917785,
+        "albumId": 13481,
+        "data": { "fileId": "95590" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 95590, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95591, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95592, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95593, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95594, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95595, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95596, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95597, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95598, "dateAdded": "2026-10-16T04:31:00Z" },
+      { "id": 95599, "dateAdded": "2026-10-16T04:31:00Z" }
+    ]
+  },
+  {
+    "artist": "Killing Joke",
+    "albumId": 13482,
+    "title": "Pandemonium",
+    "events": [
+      {
+        "id": 63424,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919114,
+        "albumId": 13482,
+        "data": { "fileId": "95589" }
+      },
+      {
+        "id": 63423,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919113,
+        "albumId": 13482,
+        "data": { "fileId": "95588" }
+      },
+      {
+        "id": 63422,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919112,
+        "albumId": 13482,
+        "data": { "fileId": "95587" }
+      },
+      {
+        "id": 63421,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919111,
+        "albumId": 13482,
+        "data": { "fileId": "95586" }
+      },
+      {
+        "id": 63420,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919110,
+        "albumId": 13482,
+        "data": { "fileId": "95585" }
+      },
+      {
+        "id": 63419,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919109,
+        "albumId": 13482,
+        "data": { "fileId": "95584" }
+      },
+      {
+        "id": 63418,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919108,
+        "albumId": 13482,
+        "data": { "fileId": "95583" }
+      },
+      {
+        "id": 63417,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919107,
+        "albumId": 13482,
+        "data": { "fileId": "95582" }
+      },
+      {
+        "id": 63416,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919106,
+        "albumId": 13482,
+        "data": { "fileId": "95581" }
+      },
+      {
+        "id": 63415,
+        "date": "2026-10-16T03:23:42Z",
+        "eventType": "trackFileImported",
+        "trackId": 919105,
+        "albumId": 13482,
+        "data": { "fileId": "95580" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 95580, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95581, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95582, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95583, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95584, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95585, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95586, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95587, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95588, "dateAdded": "2026-10-16T03:23:41Z" },
+      { "id": 95589, "dateAdded": "2026-10-16T03:23:42Z" }
+    ]
+  },
+  {
+    "artist": "Prong",
+    "albumId": 13506,
+    "title": "Cleansing",
+    "events": [
+      {
+        "id": 63449,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919844,
+        "albumId": 13506,
+        "data": { "fileId": "95614" }
+      },
+      {
+        "id": 63448,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919843,
+        "albumId": 13506,
+        "data": { "fileId": "95613" }
+      },
+      {
+        "id": 63447,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919842,
+        "albumId": 13506,
+        "data": { "fileId": "95612" }
+      },
+      {
+        "id": 63446,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919841,
+        "albumId": 13506,
+        "data": { "fileId": "95611" }
+      },
+      {
+        "id": 63445,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919840,
+        "albumId": 13506,
+        "data": { "fileId": "95610" }
+      },
+      {
+        "id": 63444,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919839,
+        "albumId": 13506,
+        "data": { "fileId": "95609" }
+      },
+      {
+        "id": 63443,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919838,
+        "albumId": 13506,
+        "data": { "fileId": "95608" }
+      },
+      {
+        "id": 63442,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919837,
+        "albumId": 13506,
+        "data": { "fileId": "95607" }
+      },
+      {
+        "id": 63441,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919836,
+        "albumId": 13506,
+        "data": { "fileId": "95606" }
+      },
+      {
+        "id": 63440,
+        "date": "2026-10-16T06:10:29Z",
+        "eventType": "trackFileImported",
+        "trackId": 919835,
+        "albumId": 13506,
+        "data": { "fileId": "95605" }
+      },
+      {
+        "id": 63439,
+        "date": "2026-10-16T06:10:28Z",
+        "eventType": "trackFileImported",
+        "trackId": 919834,
+        "albumId": 13506,
+        "data": { "fileId": "95604" }
+      },
+      {
+        "id": 63438,
+        "date": "2026-10-16T06:10:28Z",
+        "eventType": "trackFileImported",
+        "trackId": 919833,
+        "albumId": 13506,
+        "data": { "fileId": "95603" }
+      },
+      {
+        "id": 63437,
+        "date": "2026-10-16T06:10:28Z",
+        "eventType": "trackFileImported",
+        "trackId": 919832,
+        "albumId": 13506,
+        "data": { "fileId": "95602" }
+      },
+      {
+        "id": 63436,
+        "date": "2026-10-16T06:10:28Z",
+        "eventType": "trackFileImported",
+        "trackId": 919831,
+        "albumId": 13506,
+        "data": { "fileId": "95601" }
+      },
+      {
+        "id": 63435,
+        "date": "2026-10-16T06:10:28Z",
+        "eventType": "trackFileImported",
+        "trackId": 919830,
+        "albumId": 13506,
+        "data": { "fileId": "95600" }
+      }
+    ],
+    "trackFiles": [
+      { "id": 95600, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95601, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95602, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95603, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95604, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95605, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95606, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95607, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95608, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95609, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95610, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95611, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95612, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95613, "dateAdded": "2026-10-16T06:10:28Z" },
+      { "id": 95614, "dateAdded": "2026-10-16T06:10:28Z" }
+    ]
+  }
+]
