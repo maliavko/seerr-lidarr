@@ -738,6 +738,9 @@ components:
         activeDirectory:
           type: string
           example: '/music'
+        externalUrl:
+          type: string
+          example: 'https://lidarr.example.com'
         isDefault:
           type: boolean
           example: false
@@ -1035,6 +1038,17 @@ components:
             $ref: '#/components/schemas/MusicAlbumListItem'
         mediaInfo:
           $ref: '#/components/schemas/MediaInfo'
+        links:
+          type: array
+          items:
+            $ref: '#/components/schemas/MusicLink'
+        rating:
+          $ref: '#/components/schemas/MusicRating'
+        lidarrUrl:
+          type: string
+          description: The page in Lidarr, for a user who manages requests, where Lidarr holds it and the server has an external URL
+        facts:
+          $ref: '#/components/schemas/MusicArtistFacts'
     MusicTrack:
       type: object
       required:
@@ -1060,6 +1074,94 @@ components:
           type: number
           description: The track's length in milliseconds, where known
           example: 284000
+        hasFile:
+          type: boolean
+          description: Whether Lidarr holds a file of the track (an album Lidarr holds only)
+    MusicLink:
+      type: object
+      required:
+        - name
+        - label
+        - url
+      properties:
+        name:
+          type: string
+          example: discogs
+        label:
+          type: string
+          example: Discogs
+        url:
+          type: string
+          example: 'https://www.discogs.com/artist/3840'
+    MusicRating:
+      type: object
+      required:
+        - value
+        - votes
+      properties:
+        value:
+          type: number
+          description: MusicBrainz's rating out of 10
+          example: 9.1
+        votes:
+          type: number
+          example: 89
+    MusicArtistFacts:
+      type: object
+      properties:
+        country:
+          type: string
+          example: United Kingdom
+        begin:
+          type: string
+          example: '1991'
+        end:
+          type: string
+        ended:
+          type: boolean
+        albumsHeld:
+          type: number
+        albumsListed:
+          type: number
+        sizeOnDisk:
+          type: number
+          description: Bytes of the artist's files in Lidarr
+    MusicAlbumFacts:
+      type: object
+      properties:
+        label:
+          type: string
+          example: Parlophone
+        country:
+          type: string
+          example: United Kingdom
+        discs:
+          type: number
+        duration:
+          type: number
+          description: Milliseconds of the album's canonical release
+        editions:
+          type: number
+          description: The number of releases of the album
+    MusicAlbumFiles:
+      type: object
+      required:
+        - trackFileCount
+        - trackCount
+        - sizeOnDisk
+        - qualities
+      properties:
+        trackFileCount:
+          type: number
+        trackCount:
+          type: number
+        sizeOnDisk:
+          type: number
+        qualities:
+          type: array
+          items:
+            type: string
+          example: ['FLAC']
     MusicAlbumDetails:
       type: object
       required:
@@ -1120,6 +1222,19 @@ components:
             $ref: '#/components/schemas/MusicTrack'
         mediaInfo:
           $ref: '#/components/schemas/MediaInfo'
+        links:
+          type: array
+          items:
+            $ref: '#/components/schemas/MusicLink'
+        rating:
+          $ref: '#/components/schemas/MusicRating'
+        lidarrUrl:
+          type: string
+          description: The page in Lidarr, for a user who manages requests, where Lidarr holds it and the server has an external URL
+        facts:
+          $ref: '#/components/schemas/MusicAlbumFacts'
+        files:
+          $ref: '#/components/schemas/MusicAlbumFiles'
     Genre:
       type: object
       properties:
@@ -7452,6 +7567,68 @@ paths:
                 $ref: '#/components/schemas/MusicError'
         '500':
           description: The source failed, or a whole-artist request of the album's artist stands and the artist's albums or the saved metadata profile cannot be read
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
+  /music/artist/{mbid}/search:
+    post:
+      summary: Search again in Lidarr
+      description: Asks the default Lidarr server to search again for the artist's missing albums. Requires the MANAGE_REQUESTS permission. Answers 404 where Lidarr does not hold the artist.
+      tags:
+        - music
+      parameters:
+        - in: path
+          name: mbid
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: 'a74b1b7f-71a5-4011-9441-d0b5e4122711'
+      responses:
+        '204':
+          description: The search was started
+        '404':
+          description: Lidarr does not hold the artist
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
+        '403':
+          description: The user may not manage requests
+        '500':
+          description: Lidarr failed, or no default Lidarr server is set
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
+  /music/album/{mbid}/search:
+    post:
+      summary: Search again in Lidarr
+      description: Asks the default Lidarr server to search again for the album. Requires the MANAGE_REQUESTS permission. Answers 404 where Lidarr does not hold the album.
+      tags:
+        - music
+      parameters:
+        - in: path
+          name: mbid
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: 'b1392450-e666-3926-a536-22c65f834433'
+      responses:
+        '204':
+          description: The search was started
+        '404':
+          description: Lidarr does not hold the album
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MusicError'
+        '403':
+          description: The user may not manage requests
+        '500':
+          description: Lidarr failed, or no default Lidarr server is set
           content:
             application/json:
               schema:

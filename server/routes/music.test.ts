@@ -6,6 +6,7 @@ import { afterEach, before, beforeEach, describe, it, mock } from 'node:test';
 import type { LidarrMetadataArtist } from '@server/api/lidarrmetadata';
 import { getLidarrMetadata } from '@server/api/lidarrmetadata';
 import type {
+  MusicBrainzArtist,
   MusicBrainzRelease,
   MusicBrainzReleaseGroup,
 } from '@server/api/musicbrainz';
@@ -14,6 +15,7 @@ import type {
   LidarrAlbum,
   LidarrArtist,
   LidarrTrack,
+  LidarrTrackFile,
 } from '@server/api/servarr/lidarr';
 import LidarrAPI from '@server/api/servarr/lidarr';
 import {
@@ -151,6 +153,9 @@ interface Answers {
   getTracks?: LidarrTrack[] | Error;
   artistAlbums?: MusicBrainzReleaseGroup[] | Error;
   release?: MusicBrainzRelease | Error;
+  // MusicBrainz's record of an artist; none answers as a failure would
+  musicBrainzArtist?: MusicBrainzArtist | Error;
+  getTrackFiles?: LidarrTrackFile[] | Error;
   // Lidarr's metadata service: an artist, an Error, or null for an unknown id
   metadata?: LidarrMetadataArtist | null | Error;
 }
@@ -201,6 +206,21 @@ function answerWith(answers: Answers) {
     reply('lookupAlbumByMbid', answers.lookupAlbumByMbid, null)
   );
   mock.method(proto, 'getTracks', reply('getTracks', answers.getTracks, []));
+  mock.method(
+    proto,
+    'getTrackFiles',
+    reply('getTrackFiles', answers.getTrackFiles, [])
+  );
+  mock.method(
+    getMusicBrainz(),
+    'getArtist',
+    reply<MusicBrainzArtist>(
+      'musicbrainz artist',
+      answers.musicBrainzArtist ??
+        new Error('Request failed with status code 404'),
+      { id: '', name: '' }
+    )
+  );
   mock.method(
     getLidarrMetadata(),
     'getArtist',
@@ -310,7 +330,17 @@ describe('GET /music/artist/:mbid', () => {
     const res = await agent.get(`/api/v1/music/artist/${RADIOHEAD}`);
 
     assert.strictEqual(res.status, 200);
-    assert.deepStrictEqual(res.body, {
+    // the links, rating and facts beside the record, apart
+    const { links, rating, facts, ...record } = res.body;
+    assert.deepStrictEqual(links[0], {
+      name: 'musicbrainz',
+      label: 'MusicBrainz',
+      url: `https://musicbrainz.org/artist/${RADIOHEAD}`,
+    });
+    assert.ok(links.some((link: { name: string }) => link.name === 'discogs'));
+    assert.deepStrictEqual(rating, lookup.ratings);
+    assert.strictEqual(facts.country, undefined, 'MusicBrainz did not answer');
+    assert.deepStrictEqual(record, {
       id: RADIOHEAD,
       name: 'Radiohead',
       overview: lookup.overview,
@@ -574,7 +604,17 @@ describe('GET /music/album/:mbid', () => {
     const res = await agent.get(`/api/v1/music/album/${OK_COMPUTER}`);
 
     assert.strictEqual(res.status, 200);
-    assert.deepStrictEqual(res.body, {
+    // the links, rating and facts beside the record, apart
+    const { links, rating, facts, ...record } = res.body;
+    assert.deepStrictEqual(links[0], {
+      name: 'musicbrainz',
+      label: 'MusicBrainz',
+      url: `https://musicbrainz.org/release-group/${OK_COMPUTER}`,
+    });
+    assert.deepStrictEqual(rating, lookup.ratings);
+    assert.strictEqual(facts.editions, lookup.releases?.length);
+    assert.strictEqual(facts.label, 'Parlophone');
+    assert.deepStrictEqual(record, {
       id: OK_COMPUTER,
       title: 'OK Computer',
       artist: { id: RADIOHEAD, name: 'Radiohead' },
@@ -617,9 +657,17 @@ describe('GET /music/album/:mbid', () => {
       number: 'A1',
       title: 'Airbag',
       length: 284000,
+      hasFile: false,
     });
     assert.ok(res.body.tracks.length > 1);
     assert.ok(!lidarrCalls.includes('musicbrainz release'));
+    // what Lidarr holds of it: no file yet
+    assert.deepStrictEqual(res.body.files, {
+      trackFileCount: 0,
+      trackCount: res.body.tracks.length,
+      sizeOnDisk: 0,
+      qualities: [],
+    });
   });
 
   it('carries the media row of the album as its mediaInfo, and none without one', async () => {
@@ -726,5 +774,94 @@ describe('seerr-api.yml', () => {
       assert.strictEqual(mediaInfo.properties[name]?.nullable, true, name);
       assert.ok(!(mediaInfo.required ?? []).includes(name), name);
     }
+  });
+});
+
+describe('the Lidarr actions of a music page', () => {
+  const heldAlbum = () => ({ ...lookedUpAlbum(), id: 45 });
+
+  it('links a held album to its page in Lidarr for a user who manages requests, where the server has an external URL', async () => {
+    answerWith({ lookupAlbumByMbid: heldAlbum() });
+    getSettings().lidarr = [
+      { ...server, externalUrl: 'https://lidarr.example.org' },
+    ];
+
+    const admin = await loginAs(app);
+    const managed = await admin.get(`/api/v1/music/album/${OK_COMPUTER}`);
+    assert.strictEqual(
+      managed.body.lidarrUrl,
+      `https://lidarr.example.org/album/${OK_COMPUTER}`
+    );
+
+    const user = await loginAs(app, 'demo@seerr.dev');
+    const plain = await user.get(`/api/v1/music/album/${OK_COMPUTER}`);
+    assert.strictEqual(plain.status, 200);
+    assert.ok(!('lidarrUrl' in plain.body));
+  });
+
+  it('gives no Lidarr link without an external URL, nor for an album Lidarr does not hold', async () => {
+    answerWith({ lookupAlbumByMbid: heldAlbum() });
+    const admin = await loginAs(app);
+    const noUrl = await admin.get(`/api/v1/music/album/${OK_COMPUTER}`);
+    assert.ok(!('lidarrUrl' in noUrl.body));
+
+    mock.restoreAll();
+    cacheManager.getCache('lidarr').flush();
+    answerWith({ lookupAlbumByMbid: lookedUpAlbum() });
+    getSettings().lidarr = [
+      { ...server, externalUrl: 'https://lidarr.example.org' },
+    ];
+    const notHeld = await admin.get(`/api/v1/music/album/${OK_COMPUTER}`);
+    assert.ok(!('lidarrUrl' in notHeld.body));
+  });
+
+  it('asks Lidarr to search again for a held album or artist, for a user who manages requests', async () => {
+    answerWith({
+      lookupAlbumByMbid: heldAlbum(),
+      getArtists: [heldArtist()],
+    });
+    const searched: string[] = [];
+    mock.method(LidarrAPI.prototype, 'searchAlbums', async (ids: number[]) => {
+      searched.push(`albums ${ids.join(',')}`);
+    });
+    mock.method(LidarrAPI.prototype, 'searchArtist', async (id: number) => {
+      searched.push(`artist ${id}`);
+    });
+
+    const admin = await loginAs(app);
+    assert.strictEqual(
+      (await admin.post(`/api/v1/music/album/${OK_COMPUTER}/search`)).status,
+      204
+    );
+    assert.strictEqual(
+      (await admin.post(`/api/v1/music/artist/${RADIOHEAD}/search`)).status,
+      204
+    );
+    assert.deepStrictEqual(searched, [
+      'albums 45',
+      `artist ${heldArtist().id}`,
+    ]);
+
+    // the 403 body is the auth middleware's, which the spec does not describe
+    const user = await loginAs(unvalidated, 'demo@seerr.dev');
+    assert.strictEqual(
+      (await user.post(`/api/v1/music/album/${OK_COMPUTER}/search`)).status,
+      403
+    );
+    assert.strictEqual(searched.length, 2);
+  });
+
+  it('answers 404 to a search of what Lidarr does not hold', async () => {
+    answerWith({ lookupAlbumByMbid: lookedUpAlbum(), getArtists: [] });
+
+    const admin = await loginAs(app);
+    assert.strictEqual(
+      (await admin.post(`/api/v1/music/album/${OK_COMPUTER}/search`)).status,
+      404
+    );
+    assert.strictEqual(
+      (await admin.post(`/api/v1/music/artist/${RADIOHEAD}/search`)).status,
+      404
+    );
   });
 });

@@ -53,6 +53,21 @@ export interface MusicBrainzRelease {
   media?: MusicBrainzMedium[];
 }
 
+// An artist's own record with its URL relations (inc=url-rels).
+export interface MusicBrainzArtist {
+  id: string;
+  name: string;
+  type?: string | null;
+  country?: string | null;
+  area?: { name?: string } | null;
+  'life-span'?: {
+    begin?: string | null;
+    end?: string | null;
+    ended?: boolean | null;
+  } | null;
+  relations?: { type?: string; url?: { resource?: string } }[];
+}
+
 export const getMusicBrainzUserAgent = (): string =>
   `Seerr/${getAppVersion()} ( https://github.com/seerr-team/seerr )`;
 
@@ -134,6 +149,21 @@ class MusicBrainzAPI extends ExternalAPI {
         `[MusicBrainz] Failed to retrieve release groups: ${e.message}`,
         { cause: e }
       );
+    }
+  }
+
+  // An artist's record: its type, area, life span and URL relations.
+  public async getArtist(artistMbid: string): Promise<MusicBrainzArtist> {
+    try {
+      return await this.get<MusicBrainzArtist>(
+        `/artist/${artistMbid}`,
+        { params: { inc: 'url-rels' } },
+        CACHE_TTL
+      );
+    } catch (e) {
+      throw new Error(`[MusicBrainz] Failed to retrieve artist: ${e.message}`, {
+        cause: e,
+      });
     }
   }
 

@@ -218,7 +218,7 @@ describe('adding, editing, deleting and listing Lidarr servers', () => {
     assert.deepStrictEqual(getSettings().lidarr, list.body);
   });
 
-  it('keeps the fields of R-1 only', async () => {
+  it('keeps the fields of R-1 and the external URL only', async () => {
     const admin = await loginAs('admin@seerr.dev');
 
     const res = await admin.post('/settings/lidarr').send({
@@ -233,14 +233,24 @@ describe('adding, editing, deleting and listing Lidarr servers', () => {
     });
 
     assert.strictEqual(res.status, 201);
-    assert.deepStrictEqual(res.body, { id: 0, ...server() });
+    assert.deepStrictEqual(res.body, {
+      id: 0,
+      ...server(),
+      externalUrl: 'http://lidarr.example.com',
+    });
 
     const edit = await admin
       .put('/settings/lidarr/0')
       .send({ ...server(), tags: [1], externalUrl: 'http://x', is4k: true });
     assert.strictEqual(edit.status, 200);
-    assert.deepStrictEqual(edit.body, { id: 0, ...server() });
-    assert.deepStrictEqual(getSettings().lidarr, [{ id: 0, ...server() }]);
+    assert.deepStrictEqual(edit.body, {
+      id: 0,
+      ...server(),
+      externalUrl: 'http://x',
+    });
+    assert.deepStrictEqual(getSettings().lidarr, [
+      { id: 0, ...server(), externalUrl: 'http://x' },
+    ]);
   });
 
   it('edits a server in place and keeps its id', async () => {

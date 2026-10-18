@@ -4,6 +4,7 @@ import type { LidarrTestResponse } from '@app/components/Settings/SettingsServic
 import useToasts from '@app/hooks/useToasts';
 import globalMessages from '@app/i18n/globalMessages';
 import defineMessages from '@app/utils/defineMessages';
+import { isValidURL } from '@app/utils/urlValidationHelper';
 import { Transition } from '@headlessui/react';
 import type { LidarrSettings } from '@server/lib/settings';
 import axios from 'axios';
@@ -49,6 +50,11 @@ const messages = defineMessages('components.Settings.LidarrModal', {
   apiKeyHelp: 'Find it in Lidarr: Settings > General > Security > API Key',
   baseUrlHelp:
     'If you set a URL Base in Lidarr (Settings > General > Host), enter it here (e.g. /lidarr). Leave blank otherwise.',
+  externalUrl: 'External URL',
+  externalUrlHelp:
+    'For "Open in Lidarr" links on music pages when the hostname is not reachable from outside your network.',
+  validationExternalUrl: 'You must provide a valid URL',
+  validationExternalUrlTrailingSlash: 'URL must not end in a trailing slash',
 });
 
 interface LidarrModalProps {
@@ -99,6 +105,17 @@ const LidarrModal = ({ onClose, lidarr, onSave }: LidarrModalProps) => {
       .test(
         'no-trailing-slash',
         intl.formatMessage(messages.validationBaseUrlTrailingSlash),
+        (value) => !value || !value.endsWith('/')
+      ),
+    externalUrl: Yup.string()
+      .test(
+        'valid-url',
+        intl.formatMessage(messages.validationExternalUrl),
+        isValidURL
+      )
+      .test(
+        'no-trailing-slash',
+        intl.formatMessage(messages.validationExternalUrlTrailingSlash),
         (value) => !value || !value.endsWith('/')
       ),
   });
@@ -193,6 +210,7 @@ const LidarrModal = ({ onClose, lidarr, onSave }: LidarrModalProps) => {
           ssl: lidarr?.useSsl ?? false,
           apiKey: lidarr?.apiKey,
           baseUrl: lidarr?.baseUrl,
+          externalUrl: lidarr?.externalUrl,
           activeProfileId: lidarr?.activeProfileId,
           activeMetadataProfileId: lidarr?.activeMetadataProfileId,
           rootFolder: lidarr?.activeDirectory,
@@ -215,6 +233,7 @@ const LidarrModal = ({ onClose, lidarr, onSave }: LidarrModalProps) => {
               apiKey: values.apiKey,
               useSsl: values.ssl,
               baseUrl: values.baseUrl,
+              externalUrl: values.externalUrl,
               activeProfileId: Number(values.activeProfileId),
               activeMetadataProfileId: Number(values.activeMetadataProfileId),
               activeProfileName: profileName,
@@ -450,6 +469,29 @@ const LidarrModal = ({ onClose, lidarr, onSave }: LidarrModalProps) => {
                       touched.baseUrl &&
                       typeof errors.baseUrl === 'string' && (
                         <div className="error">{errors.baseUrl}</div>
+                      )}
+                  </div>
+                </div>
+                <div className="form-row">
+                  <label htmlFor="externalUrl" className="text-label">
+                    {intl.formatMessage(messages.externalUrl)}
+                    <span className="label-tip">
+                      {intl.formatMessage(messages.externalUrlHelp)}
+                    </span>
+                  </label>
+                  <div className="form-input-area">
+                    <div className="form-input-field">
+                      <Field
+                        id="externalUrl"
+                        name="externalUrl"
+                        type="text"
+                        inputMode="url"
+                      />
+                    </div>
+                    {errors.externalUrl &&
+                      touched.externalUrl &&
+                      typeof errors.externalUrl === 'string' && (
+                        <div className="error">{errors.externalUrl}</div>
                       )}
                   </div>
                 </div>

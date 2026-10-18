@@ -1,6 +1,7 @@
 import type { LidarrMetadataImage } from '@server/api/lidarrmetadata';
 import { getLidarrMetadata } from '@server/api/lidarrmetadata';
 import type {
+  MusicBrainzArtist,
   MusicBrainzRelease,
   MusicBrainzReleaseGroup,
 } from '@server/api/musicbrainz';
@@ -14,6 +15,21 @@ import type {
 } from '@server/api/servarr/lidarr';
 import LidarrAPI from '@server/api/servarr/lidarr';
 import cacheManager from '@server/lib/cache';
+import type {
+  MusicAlbumFacts,
+  MusicAlbumFiles,
+  MusicArtistFacts,
+  MusicLink,
+  MusicRating,
+} from '@server/lib/musicDetails';
+import {
+  albumFacts,
+  albumFiles,
+  artistFacts,
+  musicLinks,
+  musicRating,
+  officialHomepage,
+} from '@server/lib/musicDetails';
 import { albumInProfile } from '@server/lib/musicProfile';
 import type { LidarrSettings } from '@server/lib/settings';
 import { getSettings } from '@server/lib/settings';
@@ -56,6 +72,8 @@ export interface MusicAlbumSummary {
   // holds the album, of its canonical release otherwise; unknown for an album
   // only MusicBrainz lists
   trackCount?: number;
+  // the tracks Lidarr holds a file of, for an album Lidarr holds
+  trackFileCount?: number;
 }
 
 export interface MusicSearchResults {
@@ -67,6 +85,9 @@ export interface MusicArtist extends MusicArtistSummary {
   backdropUrl?: string;
   genres: string[];
   albums: MusicAlbumSummary[];
+  links: MusicLink[];
+  rating?: MusicRating;
+  facts: MusicArtistFacts;
 }
 
 export interface MusicTrack {
@@ -77,6 +98,8 @@ export interface MusicTrack {
   title: string;
   // milliseconds, where known
   length?: number;
+  // whether Lidarr holds a file of the track, for an album Lidarr holds
+  hasFile?: boolean;
 }
 
 export interface MusicAlbum extends MusicAlbumSummary {
@@ -84,6 +107,11 @@ export interface MusicAlbum extends MusicAlbumSummary {
   overview?: string;
   genres: string[];
   tracks: MusicTrack[];
+  links: MusicLink[];
+  rating?: MusicRating;
+  facts: MusicAlbumFacts;
+  // what Lidarr holds of the album, where it holds it
+  files?: MusicAlbumFiles;
 }
 
 // An artist or album whose own metadata cannot be read: the stated error.
@@ -216,6 +244,7 @@ export const toAlbumSummary = (album: LidarrAlbum): MusicAlbumSummary => ({
   trackCount: album.id
     ? album.statistics?.totalTrackCount || undefined
     : canonicalRelease(album.releases ?? [])?.trackCount,
+  trackFileCount: album.id ? album.statistics?.trackFileCount : undefined,
 });
 
 const toMusicBrainzAlbum = (
@@ -243,6 +272,7 @@ const fromLidarrTracks = (tracks: LidarrTrack[]): MusicTrack[] =>
       number: track.trackNumber,
       title: track.title,
       length: track.duration > 0 ? track.duration : undefined,
+      hasFile: track.hasFile,
     }));
 
 const fromMusicBrainzRelease = (release: MusicBrainzRelease): MusicTrack[] =>
@@ -540,6 +570,48 @@ export async function getArtist(mbid: string): Promise<MusicArtist | null> {
     backdropUrl,
     genres: artist.genres ?? [],
     albums,
+    ...(await artistDetails(mbid, artist, held, albums)),
+  };
+}
+
+// An artist's links, rating and facts. MusicBrainz's record of the artist (its
+// area, life span, official site) failing leaves those out, the rest standing.
+async function artistDetails(
+  mbid: string,
+  artist: LidarrArtist,
+  held: LidarrArtist | undefined,
+  albums: MusicAlbumSummary[]
+): Promise<Pick<MusicArtist, 'links' | 'rating' | 'facts'>> {
+  let musicBrainz: MusicBrainzArtist | undefined;
+
+  try {
+    musicBrainz = await getMusicBrainz().getArtist(mbid);
+  } catch (e) {
+    logFailure('Failed to read an artist from MusicBrainz', e);
+  }
+
+  return {
+    links: musicLinks(
+      'artist',
+      mbid,
+      artist.links,
+      officialHomepage(musicBrainz)
+    ),
+    rating: musicRating(artist.ratings),
+    facts: artistFacts(
+      musicBrainz,
+      {
+        ended: artist.ended,
+        sizeOnDisk: held?.statistics?.sizeOnDisk,
+      },
+      held
+        ? {
+            listed: albums.length,
+            held: albums.filter((album) => (album.trackFileCount ?? 0) > 0)
+              .length,
+          }
+        : undefined
+    ),
   };
 }
 
@@ -618,6 +690,8 @@ export async function getAlbum(mbid: string): Promise<MusicAlbum | null> {
 
   let tracks: MusicTrack[] = [];
 
+  let files: MusicAlbumFiles | undefined;
+
   if (album.id) {
     const albumId = album.id;
 
@@ -631,6 +705,21 @@ export async function getAlbum(mbid: string): Promise<MusicAlbum | null> {
       tracks = fromLidarrTracks(heldTracks);
     } catch (e) {
       logFailure('Failed to read the tracks of an album Lidarr holds', e);
+    }
+
+    try {
+      const trackFiles = await cached(
+        cacheKey(server, 'trackfiles', String(albumId)),
+        HELD_TTL,
+        () => lidarr.getTrackFiles([albumId])
+      );
+
+      files = albumFiles(
+        trackFiles,
+        tracks.length || album.statistics?.totalTrackCount || 0
+      );
+    } catch (e) {
+      logFailure('Failed to read the files of an album Lidarr holds', e);
     }
   } else {
     const releaseId = pickRelease(album);
@@ -655,5 +744,47 @@ export async function getAlbum(mbid: string): Promise<MusicAlbum | null> {
     overview: nonEmpty(album.overview),
     genres: album.genres ?? [],
     tracks,
+    links: musicLinks('album', mbid, album.links),
+    rating: musicRating(album.ratings),
+    facts: albumFacts(canonicalRelease(album.releases ?? []), album.releases),
+    files,
   };
+}
+
+// Ask the default Lidarr server to search again: for an artist's missing
+// albums, or for one album. False where Lidarr does not hold it; throws where
+// there is no default server or Lidarr fails.
+export async function searchInLidarr(
+  kind: 'artist' | 'album',
+  mbid: string
+): Promise<boolean> {
+  const server = getDefaultLidarr();
+
+  if (!server) {
+    throw new MusicSourceError('Music is not configured.');
+  }
+
+  const lidarr = buildLidarr(server);
+
+  if (kind === 'artist') {
+    const artist = (await listHeldArtists(server, lidarr)).find(
+      (held) => held.foreignArtistId === mbid
+    );
+
+    if (!artist?.id) {
+      return false;
+    }
+
+    await lidarr.searchArtist(artist.id);
+    return true;
+  }
+
+  const album = await lidarr.lookupAlbumByMbid(mbid);
+
+  if (!album?.id) {
+    return false;
+  }
+
+  await lidarr.searchAlbums([album.id]);
+  return true;
 }

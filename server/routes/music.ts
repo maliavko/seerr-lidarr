@@ -4,8 +4,11 @@ import {
   getAlbum,
   getArtist,
   getArtistAlbumIds,
+  getDefaultLidarr,
   isMusicConfigured,
+  searchInLidarr,
 } from '@server/lib/music';
+import { lidarrPageUrl } from '@server/lib/musicDetails';
 import { buildMusicResults } from '@server/lib/musicResults';
 import {
   getRecentlyAddedAlbums,
@@ -14,7 +17,9 @@ import {
 } from '@server/lib/musicSliders';
 import type { MusicResolved } from '@server/lib/musicStatus';
 import { musicMediaInfo, resolveMusicItems } from '@server/lib/musicStatus';
+import { Permission } from '@server/lib/permissions';
 import logger from '@server/logger';
+import { isAuthenticated } from '@server/middleware/auth';
 import type { MusicResults } from '@server/models/Search';
 import type { Request, RequestHandler } from 'express';
 import { Router } from 'express';
@@ -157,6 +162,10 @@ musicRoutes.get('/artist/:mbid', async (req, res, next) => {
         };
       }),
       mediaInfo: musicMediaInfo(artistStatus, media?.filter(req.user)),
+      links: artist.links,
+      rating: artist.rating,
+      facts: artist.facts,
+      lidarrUrl: managerLidarrUrl(req, 'artist', artist.id, artist.inLidarr),
     });
   } catch (e) {
     logger.debug('Something went wrong retrieving artist', {
@@ -214,6 +223,11 @@ musicRoutes.get('/album/:mbid', async (req, res, next) => {
       inLidarr: album.inLidarr,
       tracks: album.tracks,
       mediaInfo: musicMediaInfo(resolved, media?.filter(req.user)),
+      links: album.links,
+      rating: album.rating,
+      facts: album.facts,
+      files: album.files,
+      lidarrUrl: managerLidarrUrl(req, 'album', album.id, album.inLidarr),
     });
   } catch (e) {
     logger.debug('Something went wrong retrieving album', {
@@ -227,5 +241,55 @@ musicRoutes.get('/album/:mbid', async (req, res, next) => {
     });
   }
 });
+
+// The page of an artist or album in Lidarr, for a user who manages requests,
+// where Lidarr holds it and the server has an external URL.
+const managerLidarrUrl = (
+  req: Request,
+  kind: 'artist' | 'album',
+  mbid: string,
+  inLidarr: boolean
+): string | undefined => {
+  const server = getDefaultLidarr();
+
+  return server &&
+    inLidarr &&
+    req.user?.hasPermission(Permission.MANAGE_REQUESTS)
+    ? lidarrPageUrl(server, kind, mbid)
+    : undefined;
+};
+
+// Ask Lidarr to search again for an artist's missing albums or for an album,
+// one Lidarr holds; for a user who manages requests.
+for (const kind of ['artist', 'album'] as const) {
+  musicRoutes.post(
+    `/${kind}/:mbid/search`,
+    isAuthenticated(Permission.MANAGE_REQUESTS),
+    async (req, res, next) => {
+      try {
+        const started = await searchInLidarr(kind, String(req.params.mbid));
+
+        if (!started) {
+          return next({
+            status: 404,
+            message: `Lidarr does not hold this ${kind}.`,
+          });
+        }
+
+        return res.status(204).send();
+      } catch (e) {
+        logger.debug('Something went wrong asking Lidarr to search', {
+          label: 'API',
+          errorMessage: e.message,
+          mbid: req.params.mbid,
+        });
+        return next({
+          status: 500,
+          message: 'Unable to start a search in Lidarr.',
+        });
+      }
+    }
+  );
+}
 
 export default musicRoutes;

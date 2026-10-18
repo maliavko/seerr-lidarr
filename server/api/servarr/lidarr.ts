@@ -36,6 +36,11 @@ export interface LidarrImage {
   remoteUrl?: string;
 }
 
+export interface LidarrRatings {
+  votes: number;
+  value: number;
+}
+
 export interface LidarrLink {
   url: string;
   name: string;
@@ -49,6 +54,12 @@ export interface LidarrRelease {
   monitored: boolean;
   // the number of tracks across its media
   trackCount?: number;
+  mediumCount?: number;
+  // milliseconds
+  duration?: number;
+  label?: string[];
+  country?: string[];
+  format?: string;
 }
 
 export interface LidarrTrack {
@@ -104,6 +115,16 @@ export interface LidarrTrackFile {
   artistId?: number;
   // when Lidarr gained the file (ISO 8601)
   dateAdded: string;
+  // bytes
+  size?: number;
+  quality?: { quality?: { name?: string } };
+  mediaInfo?: {
+    audioCodec?: string;
+    // e.g. '320 kbps' or a number of kbps
+    audioBitRate?: string | number;
+    audioBits?: number;
+    audioSampleRate?: string | number;
+  };
 }
 
 // Lidarr answers a track-file read for as many albums as one request names;
@@ -128,6 +149,9 @@ export interface LidarrArtist {
   artistType?: string;
   disambiguation?: string;
   genres: string[];
+  ratings?: LidarrRatings;
+  // whether the artist has ended (split up, died)
+  ended?: boolean;
   monitored: boolean;
   monitorNewItems: LidarrMonitor | string;
   qualityProfileId?: number;
@@ -151,6 +175,8 @@ export interface LidarrAlbum {
   albumType?: string;
   secondaryTypes: string[];
   genres?: string[];
+  links?: LidarrLink[];
+  ratings?: LidarrRatings;
   images: LidarrImage[];
   // the lookup's cover, where it has one
   remoteCover?: string;

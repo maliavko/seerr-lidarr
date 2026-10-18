@@ -6,6 +6,7 @@ import { afterEach, beforeEach, describe, it, mock } from 'node:test';
 import type { LidarrMetadataArtist } from '@server/api/lidarrmetadata';
 import { getLidarrMetadata } from '@server/api/lidarrmetadata';
 import type {
+  MusicBrainzArtist,
   MusicBrainzRelease,
   MusicBrainzReleaseGroup,
 } from '@server/api/musicbrainz';
@@ -14,6 +15,7 @@ import type {
   LidarrAlbum,
   LidarrArtist,
   LidarrTrack,
+  LidarrTrackFile,
 } from '@server/api/servarr/lidarr';
 import LidarrAPI from '@server/api/servarr/lidarr';
 import cacheManager from '@server/lib/cache';
@@ -78,7 +80,10 @@ const lidarrCache = () => cacheManager.getCache('lidarr');
 // the Lidarr, MusicBrainz and Lidarr metadata service calls a test saw
 interface Calls {
   lidarr: string[];
+  // MusicBrainz's release groups and releases
   musicBrainz: string[];
+  // MusicBrainz's records of artists (an artist page's facts and links)
+  musicBrainzArtists: string[];
   metadata: string[];
 }
 
@@ -90,6 +95,9 @@ interface Answers {
   getArtists?: LidarrArtist[] | Error;
   getAlbums?: LidarrAlbum[] | Error;
   getTracks?: LidarrTrack[] | Error;
+  getTrackFiles?: LidarrTrackFile[] | Error;
+  // MusicBrainz's record of the artist; none answers a 404
+  musicBrainzArtist?: MusicBrainzArtist | Error;
   // MusicBrainz, by what the client asks for
   releaseGroups?: MusicBrainzReleaseGroup[] | Error;
   releases?: Record<string, MusicBrainzRelease | Error>;
@@ -196,6 +204,17 @@ function answerWith(answers: Answers) {
         ).call(this);
       }
     ),
+    getTrackFiles: mock.method(
+      proto,
+      'getTrackFiles',
+      function (this: LidarrAPI, albumIds: number[]) {
+        return answer(
+          'getTrackFiles',
+          answers.getTrackFiles ?? [],
+          `getTrackFiles ${albumIds.join(',')}`
+        ).call(this);
+      }
+    ),
   };
 
   // what MusicBrainz is asked, answered on the wire of the shared client
@@ -204,6 +223,20 @@ function answerWith(answers: Answers) {
     wire,
     'get',
     async (url: string, config?: { params?: Record<string, unknown> }) => {
+      if (url.startsWith('/artist/')) {
+        calls.musicBrainzArtists.push(url);
+        if (
+          !answers.musicBrainzArtist ||
+          answers.musicBrainzArtist instanceof Error
+        ) {
+          throw (
+            answers.musicBrainzArtist ??
+            new Error('Request failed with status code 404')
+          );
+        }
+        return { data: answers.musicBrainzArtist };
+      }
+
       calls.musicBrainz.push(
         url === '/release-group'
           ? `${url} ${config?.params?.artist} ${config?.params?.offset}`
@@ -303,7 +336,7 @@ const heldAlbumLookup = () =>
   load<LidarrAlbum[]>('music.fixtures', 'album-lookup-held.json')[0];
 
 beforeEach(() => {
-  calls = { lidarr: [], musicBrainz: [], metadata: [] };
+  calls = { lidarr: [], musicBrainz: [], musicBrainzArtists: [], metadata: [] };
   metadataInFlight = 0;
   metadataMostInFlight = 0;
   clients.length = 0;
@@ -334,6 +367,7 @@ describe('the music metadata service without a default Lidarr server', () => {
     assert.deepStrictEqual(calls, {
       lidarr: [],
       musicBrainz: [],
+      musicBrainzArtists: [],
       metadata: [],
     });
   });
@@ -843,7 +877,12 @@ describe('searchMusic of a held artist', () => {
       mock.restoreAll();
       lidarrCache().flush();
       cacheManager.getCache('lidarrmetadata').flush();
-      calls = { lidarr: [], musicBrainz: [], metadata: [] };
+      calls = {
+        lidarr: [],
+        musicBrainz: [],
+        musicBrainzArtists: [],
+        metadata: [],
+      };
       const lookup = termLookupHeldCovered();
 
       const results = await search(lookup, failure);
@@ -1149,7 +1188,12 @@ describe('getArtist where Lidarr holds the artist', () => {
       lidarrCache().flush();
       cacheManager.getCache('lidarrmetadata').flush();
       mock.restoreAll();
-      calls = { lidarr: [], musicBrainz: [], metadata: [] };
+      calls = {
+        lidarr: [],
+        musicBrainz: [],
+        musicBrainzArtists: [],
+        metadata: [],
+      };
       answerWith({
         getArtists: [heldCovered()],
         getAlbums: heldAlbums(),
@@ -1176,7 +1220,12 @@ describe('getArtist where Lidarr holds the artist', () => {
       lidarrCache().flush();
       cacheManager.getCache('lidarrmetadata').flush();
       mock.restoreAll();
-      calls = { lidarr: [], musicBrainz: [], metadata: [] };
+      calls = {
+        lidarr: [],
+        musicBrainz: [],
+        musicBrainzArtists: [],
+        metadata: [],
+      };
       answerWith({
         getArtists: [heldCovered()],
         getAlbums: [],
@@ -1547,6 +1596,8 @@ describe('getAlbum', () => {
       assert.deepStrictEqual(calls.lidarr, [
         `lookupAlbumByMbid ${OK_COMPUTER}`,
         'getTracks 45',
+        // its files, for their qualities and size
+        'getTrackFiles 45',
       ]);
       assert.deepStrictEqual(calls.musicBrainz, []);
       assert.ok(album);
@@ -1558,6 +1609,7 @@ describe('getAlbum', () => {
         number: 'A1',
         title: 'Airbag',
         length: 284000,
+        hasFile: false,
       });
       assert.deepStrictEqual(
         album.tracks.map((t) => [t.disc, t.position]),
@@ -1613,10 +1665,11 @@ describe('getAlbum', () => {
       await getAlbum(OK_COMPUTER);
       await getAlbum(OK_COMPUTER);
 
-      assert.strictEqual(calls.lidarr.length, 2);
+      // the lookup, the tracks and the files, each read once
+      assert.strictEqual(calls.lidarr.length, 3);
       assert.deepStrictEqual(
         set.mock.calls.map((call) => call.arguments[2]),
-        [21600, 300]
+        [21600, 300, 300]
       );
     });
   });

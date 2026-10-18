@@ -266,6 +266,12 @@ function source({
       'primary-type': 'Album',
     }));
   });
+  // an artist page's facts: MusicBrainz's record of the artist, not asked of
+  // the network here (a failure leaves the facts out)
+  mock.method(getMusicBrainz(), 'getArtist', async () => {
+    throw new Error('Request failed with status code 404');
+  });
+  mock.method(proto, 'getTrackFiles', async () => []);
 }
 
 beforeEach(() => {

@@ -106,6 +106,8 @@ export interface LidarrSettings {
   activeMetadataProfileName: string;
   activeDirectory: string;
   isDefault: boolean;
+  // the address a browser opens Lidarr at, for links to it
+  externalUrl?: string;
 }
 
 export interface SonarrSettings extends DVRSettings {

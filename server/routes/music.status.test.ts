@@ -27,7 +27,6 @@ import cacheManager from '@server/lib/cache';
 import { getSettings } from '@server/lib/settings';
 import { MediaRequestSubscriber } from '@server/subscriber/MediaRequestSubscriber';
 import { setupTestDb } from '@server/test/db';
-import { radarrServer, sonarrServer } from '@server/test/servers';
 import {
   burialUnderOtherProfile,
   listedAlbum,
@@ -39,6 +38,7 @@ import {
   createRoutesApp,
   loginAs,
 } from '@server/test/musicRows';
+import { radarrServer, sonarrServer } from '@server/test/servers';
 import type { Express } from 'express';
 import { Router } from 'express';
 import * as OpenApiValidator from 'express-openapi-validator';
@@ -223,7 +223,12 @@ function source({
       title: `Album ${id}`,
       'primary-type': 'Album',
     }));
+  }); // an artist page's facts: MusicBrainz's record of the artist, not asked of
+  // the network here (a failure leaves the facts out)
+  mock.method(getMusicBrainz(), 'getArtist', async () => {
+    throw new Error('Request failed with status code 404');
   });
+  mock.method(LidarrAPI.prototype, 'getTrackFiles', async () => []);
 }
 
 async function saveRow(

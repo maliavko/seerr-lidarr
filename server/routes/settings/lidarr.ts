@@ -22,6 +22,7 @@ const LIDARR_FIELDS = [
   'activeMetadataProfileName',
   'activeDirectory',
   'isDefault',
+  'externalUrl',
 ] as const;
 
 lidarrRoutes.get('/', (_req, res) => {

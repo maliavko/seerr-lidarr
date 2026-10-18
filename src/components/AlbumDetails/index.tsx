@@ -1,15 +1,24 @@
 import CachedImage from '@app/components/Common/CachedImage';
 import LoadingSpinner from '@app/components/Common/LoadingSpinner';
 import PageTitle from '@app/components/Common/PageTitle';
+import {
+  GenreTags,
+  LidarrManage,
+  MusicFacts,
+  MusicLinks,
+} from '@app/components/MusicDetails';
 import MusicRequestButton from '@app/components/MusicRequestButton';
 import StatusBadge from '@app/components/StatusBadge';
 import ErrorPage from '@app/pages/_error';
 import defineMessages from '@app/utils/defineMessages';
+import type { MusicLinkItem, MusicRatingItem } from '@app/utils/musicFacts';
+import { formatAlbumLength, sizeText } from '@app/utils/musicFacts';
 import {
   formatTrackLength,
   releaseYear,
   shownStatus,
 } from '@app/utils/musicHelpers';
+import { CheckCircleIcon, MinusCircleIcon } from '@heroicons/react/24/solid';
 import type Media from '@server/entity/Media';
 import axios from 'axios';
 import Link from 'next/link';
@@ -23,6 +32,17 @@ const messages = defineMessages('components.AlbumDetails', {
   trackNumber: 'Number',
   trackTitle: 'Title',
   trackLength: 'Length',
+  trackFile: 'In library',
+  releaseDate: 'Release Date',
+  label: 'Label',
+  country: 'Country',
+  discs: 'Discs',
+  length: 'Length',
+  editions: 'Editions',
+  files: 'Files',
+  size: 'Size',
+  hasFile: 'In your library',
+  missingFile: 'Not in your library',
 });
 
 export interface MusicTrack {
@@ -32,6 +52,8 @@ export interface MusicTrack {
   title: string;
   // milliseconds, where known
   length?: number;
+  // whether Lidarr holds a file of it (an album Lidarr holds only)
+  hasFile?: boolean;
 }
 
 export interface MusicAlbumDetails {
@@ -48,6 +70,22 @@ export interface MusicAlbumDetails {
   inLidarr: boolean;
   tracks: MusicTrack[];
   mediaInfo?: Media;
+  links?: MusicLinkItem[];
+  rating?: MusicRatingItem;
+  facts?: {
+    label?: string;
+    country?: string;
+    discs?: number;
+    duration?: number;
+    editions?: number;
+  };
+  files?: {
+    trackFileCount: number;
+    trackCount: number;
+    sizeOnDisk: number;
+    qualities: string[];
+  };
+  lidarrUrl?: string;
 }
 
 interface AlbumDetailsProps {
@@ -75,7 +113,7 @@ const AlbumDetails = ({ album, statusCode }: AlbumDetailsProps) => {
     return <ErrorPage statusCode={code === 404 ? 404 : 500} />;
   }
 
-  const attributes = [data.albumType, ...data.genres].filter(
+  const attributes = [data.albumType, ...(data.secondaryTypes ?? [])].filter(
     (attribute): attribute is string => !!attribute
   );
 
@@ -136,14 +174,80 @@ const AlbumDetails = ({ album, statusCode }: AlbumDetailsProps) => {
           />
         </div>
       </div>
-      {data.overview && (
-        <div className="media-overview">
-          <div className="media-overview-left">
-            <h2>{intl.formatMessage(messages.overview)}</h2>
-            <p data-testid="album-overview">{data.overview}</p>
-          </div>
+      <div className="media-overview">
+        <div className="media-overview-left">
+          {data.overview && (
+            <>
+              <h2>{intl.formatMessage(messages.overview)}</h2>
+              <p data-testid="album-overview">{data.overview}</p>
+            </>
+          )}
+          <GenreTags genres={data.genres} />
+          <MusicLinks links={data.links} />
         </div>
-      )}
+        <div className="media-overview-right">
+          <MusicFacts
+            rating={data.rating}
+            facts={[
+              {
+                label: intl.formatMessage(messages.releaseDate),
+                value: data.releaseDate
+                  ? intl.formatDate(data.releaseDate, {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                      timeZone: 'UTC',
+                    })
+                  : undefined,
+              },
+              {
+                label: intl.formatMessage(messages.label),
+                value: data.facts?.label,
+              },
+              {
+                label: intl.formatMessage(messages.country),
+                value: data.facts?.country,
+              },
+              {
+                label: intl.formatMessage(messages.discs),
+                value: data.facts?.discs,
+              },
+              {
+                label: intl.formatMessage(messages.length),
+                value: data.facts?.duration
+                  ? formatAlbumLength(data.facts.duration)
+                  : undefined,
+              },
+              {
+                label: intl.formatMessage(messages.editions),
+                value: data.facts?.editions,
+              },
+              {
+                label: intl.formatMessage(messages.files),
+                value: data.files
+                  ? [
+                      `${data.files.trackFileCount} / ${data.files.trackCount}`,
+                      data.files.qualities.join(', '),
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')
+                  : undefined,
+              },
+              {
+                label: intl.formatMessage(messages.size),
+                value: sizeText(data.files?.sizeOnDisk),
+              },
+            ]}
+          />
+          <LidarrManage
+            kind="album"
+            mbid={data.id}
+            title={data.title}
+            inLidarr={data.inLidarr}
+            lidarrUrl={data.lidarrUrl}
+          />
+        </div>
+      </div>
       {data.tracks.length > 0 && (
         <div className="mt-6 pb-4 text-white">
           <div className="slider-header">
@@ -166,6 +270,13 @@ const AlbumDetails = ({ album, statusCode }: AlbumDetailsProps) => {
                 <th className="w-20 py-2 text-right">
                   {intl.formatMessage(messages.trackLength)}
                 </th>
+                {data.inLidarr && (
+                  <th className="w-10 py-2 text-right">
+                    <span className="sr-only">
+                      {intl.formatMessage(messages.trackFile)}
+                    </span>
+                  </th>
+                )}
               </tr>
             </thead>
             <tbody>
@@ -180,6 +291,21 @@ const AlbumDetails = ({ album, statusCode }: AlbumDetailsProps) => {
                   <td className="py-2 text-right text-gray-400">
                     {track.length ? formatTrackLength(track.length) : ''}
                   </td>
+                  {data.inLidarr && (
+                    <td className="py-2 pl-2 text-right">
+                      {track.hasFile ? (
+                        <CheckCircleIcon
+                          className="ml-auto h-5 w-5 text-green-500"
+                          aria-label={intl.formatMessage(messages.hasFile)}
+                        />
+                      ) : (
+                        <MinusCircleIcon
+                          className="ml-auto h-5 w-5 text-gray-600"
+                          aria-label={intl.formatMessage(messages.missingFile)}
+                        />
+                      )}
+                    </td>
+                  )}
                 </tr>
               ))}
             </tbody>

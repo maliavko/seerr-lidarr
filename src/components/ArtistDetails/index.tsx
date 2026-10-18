@@ -4,12 +4,20 @@ import LoadingSpinner from '@app/components/Common/LoadingSpinner';
 import PageTitle from '@app/components/Common/PageTitle';
 import SimilarArtistsSlider from '@app/components/Discover/SimilarArtistsSlider';
 import AlbumCard from '@app/components/MusicCard/AlbumCard';
+import {
+  GenreTags,
+  LidarrManage,
+  MusicFacts,
+  MusicLinks,
+} from '@app/components/MusicDetails';
 import MusicRequestButton from '@app/components/MusicRequestButton';
 import StatusBadge from '@app/components/StatusBadge';
 import ErrorPage from '@app/pages/_error';
 import type { AlbumView } from '@app/utils/albumTable';
 import { readAlbumView, saveAlbumView } from '@app/utils/albumTable';
 import defineMessages from '@app/utils/defineMessages';
+import type { MusicLinkItem, MusicRatingItem } from '@app/utils/musicFacts';
+import { activeYears, sizeText } from '@app/utils/musicFacts';
 import { shownStatus } from '@app/utils/musicHelpers';
 import { Squares2X2Icon, TableCellsIcon } from '@heroicons/react/24/outline';
 import type Media from '@server/entity/Media';
@@ -24,6 +32,14 @@ const messages = defineMessages('components.ArtistDetails', {
   albums: 'Albums',
   cardView: 'Show as cards',
   tableView: 'Show as table',
+  type: 'Type',
+  country: 'Country',
+  active: 'Active',
+  present: 'present',
+  ended: 'Ended',
+  inLibrary: 'In Library',
+  albumsHeld: '{held} of {listed} albums',
+  size: 'Size',
 });
 
 export interface MusicAlbumListItem {
@@ -49,6 +65,18 @@ export interface MusicArtistDetails {
   inLidarr: boolean;
   albums: MusicAlbumListItem[];
   mediaInfo?: Media;
+  links?: MusicLinkItem[];
+  rating?: MusicRatingItem;
+  facts?: {
+    country?: string;
+    begin?: string;
+    end?: string;
+    ended?: boolean;
+    albumsHeld?: number;
+    albumsListed?: number;
+    sizeOnDisk?: number;
+  };
+  lidarrUrl?: string;
 }
 
 interface ArtistDetailsProps {
@@ -85,7 +113,7 @@ const ArtistDetails = ({ artist, statusCode }: ArtistDetailsProps) => {
     return <ErrorPage statusCode={code === 404 ? 404 : 500} />;
   }
 
-  const attributes = [data.artistType, ...data.genres].filter(
+  const attributes = [data.artistType, data.disambiguation].filter(
     (attribute): attribute is string => !!attribute
   );
 
@@ -154,14 +182,67 @@ const ArtistDetails = ({ artist, statusCode }: ArtistDetailsProps) => {
           />
         </div>
       </div>
-      {data.overview && (
-        <div className="media-overview">
-          <div className="media-overview-left">
-            <h2>{intl.formatMessage(messages.overview)}</h2>
-            <p data-testid="artist-overview">{data.overview}</p>
-          </div>
+      <div className="media-overview">
+        <div className="media-overview-left">
+          {data.overview && (
+            <>
+              <h2>{intl.formatMessage(messages.overview)}</h2>
+              <p data-testid="artist-overview">{data.overview}</p>
+            </>
+          )}
+          <GenreTags genres={data.genres} />
+          <MusicLinks links={data.links} />
         </div>
-      )}
+        <div className="media-overview-right">
+          <MusicFacts
+            rating={data.rating}
+            facts={[
+              {
+                label: intl.formatMessage(messages.type),
+                value: data.artistType,
+              },
+              {
+                label: intl.formatMessage(messages.country),
+                value: data.facts?.country,
+              },
+              {
+                label: intl.formatMessage(messages.active),
+                value:
+                  activeYears(
+                    data.facts?.begin,
+                    data.facts?.end,
+                    data.facts?.ended,
+                    intl.formatMessage(messages.present)
+                  ) ??
+                  (data.facts?.ended
+                    ? intl.formatMessage(messages.ended)
+                    : undefined),
+              },
+              {
+                label: intl.formatMessage(messages.inLibrary),
+                value:
+                  data.facts?.albumsListed !== undefined
+                    ? intl.formatMessage(messages.albumsHeld, {
+                        held: data.facts.albumsHeld ?? 0,
+                        listed: data.facts.albumsListed,
+                      })
+                    : undefined,
+              },
+              {
+                label: intl.formatMessage(messages.size),
+                value: sizeText(data.facts?.sizeOnDisk),
+              },
+            ]}
+          />
+          <LidarrManage
+            kind="artist"
+            mbid={data.id}
+            title={data.name}
+            inLidarr={data.inLidarr}
+            lidarrUrl={data.lidarrUrl}
+          />
+        </div>
+      </div>
       {data.albums.length > 0 && (
         <>
           <div className="slider-header">
